@@ -105,6 +105,7 @@ main a{
 .bc_text_heavy { font-weight: 900; }
 
 //Classes for font sizes
+.bc_text_14 { font-size: 14px; }
 .bc_text_16 { font-size: 16px; }
 .bc_text_18 { font-size: 18px; }
 .bc_text_20 { font-size: 20px; }
@@ -132,6 +133,7 @@ main a{
 .bc_letter_spacing_24 { letter-spacing: 24px; }
 .bc_letter_spacing_25 { letter-spacing: 25px; }
 .bc_letter_spacing_36 { letter-spacing: 36px; }
+.bc_letter_spacing_100 { letter-spacing: 100px; }
 
 body, ::placeholder, button {
   font-family: $default_font_family;

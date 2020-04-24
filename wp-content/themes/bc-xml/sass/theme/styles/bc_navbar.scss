@@ -1,5 +1,12 @@
 // Nav bar color scheme according to theme customizer
 .bc_nav_container{
+	@media only screen and (max-width: 768px) {
+		position: absolute !important;
+		top: 0 !important;
+		z-index: 10 !important;
+		background: #fff !important;
+	}
+	background: none !important;
 	#navbarSupportedContent{
 		@media (hover: none), only screen and (max-width: 991px) {
 			height: auto;
@@ -19,18 +26,42 @@
 		background-color: $primary_color; // Mobile nav bar Background
 	}
 	.navbar-nav{
+		display: contents !important;
 		li {
-
+			&:hover{
+				background: none !important;
+			}
 			a {
-				color: $secondary_color; //Top level link
-				svg { color: $info_color; } // Top level dropdown icon
+				color: $primary_color !important;
+			    text-align: center;
+			    font-size: 16px;
+			    line-height: 34px;
+			    text-transform: uppercase;
+			    font-weight: $default_font_family !important;
+			    font-weight: 400;
+			    padding-right: 0.3rem !important;
+			    padding-left: .3rem !important;
+			    &:hover{
+			    	color: $secondary_color !important;
+			    }
+			    @media (hover: none), only screen and (max-width: 740px) {
+			    	text-align: left !important;
+			    	padding-left: 10px !important;
+			    }
+				svg {
+					display: none !important;
+					@media (hover: none), only screen and (max-width: 991px) {
+						display: block !important;
+						color: red !important;
+					}
+				} // Top level dropdown icon
 			}
 			&:hover{
 				background-color: $info_color;	// Top level dropdown background hover
 				@media (hover: none), only screen and (max-width: 991px) {
-					background-color: #ffffff00 !important; // Mobile nav bar Background
+					background-color: none !important; // Mobile nav bar Background
 				}		
-				svg { color: $primary_color; } //Top level dropdown icon hover
+				svg { color: $primary_color;} //Top level dropdown icon hover
 				a.nav-link { color: $secondary_color; } // Top level link hover	
 			}
 		}
@@ -104,8 +135,7 @@
 }
 .navbar-nav{
 	li{
-		padding-top: .5rem;
-		padding-bottom: .5rem;	
+		padding: 0 !important;	
 	}
 	& > li {
 		padding-left: 10px;
