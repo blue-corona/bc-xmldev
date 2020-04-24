@@ -64,14 +64,15 @@
 }
 
 //Classes for bg color
-.bc_color_primary_bg { background-color: $primary_color; }
-.bc_color_secondary_bg { background-color: $secondary_color; }
-.bc_color_tertiary_bg { background-color: $tertiary_color; }
-.bc_color_quaternary_bg{ background-color: $quaternary_color; }
-.bc_color_error_bg { background-color: $error_color; }
-.bc_color_warning_bg { background-color: $warning_color; }
-.bc_color_success_bg { background-color: $success_color; }
-.bc_color_info_bg { background-color: $info_color; }
+.bc_color_primary_bg { background-color: $primary_color !important; }
+.bc_color_secondary_bg { background-color: $secondary_color !important; }
+.bc_color_tertiary_bg { background-color: $tertiary_color !important; }
+.bc_color_quaternary_bg{ background-color: $quaternary_color !important; }
+.bc_color_error_bg { background-color: $error_color !important; }
+.bc_color_warning_bg { background-color: $warning_color !important; }
+.bc_color_success_bg { background-color: $success_color !important; }
+.bc_color_info_bg { background-color: $info_color !important; }
+.bc_color_light_bg { background-color: $light_color !important; }
 .bc_color_black_bg { background-color: #000000; }
 
 //Classes for hover color

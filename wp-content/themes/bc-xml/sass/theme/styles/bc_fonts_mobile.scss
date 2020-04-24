@@ -1,4 +1,87 @@
 @media only screen and (max-width: 768px) {
+	h1, .h1{
+	font-family: $primary_color;
+	font-size: 36px;
+	font-weight: 100;
+	text-transform: uppercase;
+	line-height: 36px;
+	letter-spacing: 50;
+	color: $primary_color;
+}
+
+h2, .h2{
+	font-family: $quaternary_color;
+	font-size: 32px;
+	font-weight: 100;
+	text-transform: uppercase;
+	line-height: 32px;
+	letter-spacing: 25px;
+	color: $secondary_color;
+}
+
+h3, .h3{
+	font-family: $primary_color;
+	font-size: 28px;
+	font-weight: 300;
+	text-transform: uppercase;
+	line-height: 28px;
+	letter-spacing: 25px;
+	color: $primary_color;
+}
+
+h4, .h4{
+	font-family: $secondary_color;
+	font-size: 24px;
+	font-weight: 300;
+	text-transform: uppercase;
+	line-height: 24px;
+	letter-spacing: 25;
+	color: $tertiary_color;
+}
+
+h5, .h5{
+	font-family: $default_font_family;
+	font-size: 18px;
+	font-weight: 400; 
+	text-transform: none;
+	line-height: 24px;
+	letter-spacing: default;
+	color: $primary_color;
+}
+
+h6, .h6{
+	font-family: $default_font_family;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: none;
+	line-height: 18px;
+	letter-spacing: default;
+	color: $primary_color;
+}
+
+p, .p{
+	font-family: $quaternary_color;
+	font-size: 18px;
+	font-weight: 300;
+	text-transform: none;
+	line-height: 30px;
+	letter-spacing: 25px;
+	color: $secondary_color;
+
+}
+
+main a{
+	font-family: $secondary_color;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: none;
+	line-height: 30px;
+	letter-spacing: 25px;
+	color: $tertiary_color;
+	&:hover{
+		text-decoration: underline;
+	}
+}
 	//Classes for font-weights
 	.bc_sm_text_thin { font-weight: 100; }
 	.bc_sm_text_xlight { font-weight: 200; }

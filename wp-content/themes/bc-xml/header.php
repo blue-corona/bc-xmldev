@@ -31,44 +31,18 @@ defined( 'ABSPATH' ) || exit;
     echo  '<header class="bc_header bc_color_secondary_bg">';
  }?>
     <!-- announcement bar background color-->
-    <div class="container-fluid bc_color_primary_bg bc_announcement_bar p-0">
+    <div class="container-fluid bc_color_light_bg bc_announcement_bar p-0">
         
         <!-- Hide this section if announcement bar is disabled-->
         <?php if(bc_get_theme_mod('bc_theme_options', 'header', 'announcement_bar', 'enabled') == 'enabled'){?>
         <div class="container">
             <div class="row text-center text-lg-left bc_announcement_bar_text">
                 <!-- announcement bar content-->
-                <?php echo bc_get_theme_mod('bc_theme_options', 'header','announcement_bar_content', '<div class="col-sm-12 col-lg-4 col-md-6 pt-2 d-none hide-on-touch d-lg-block">
-                    <h5 class="pl-lg-3">
-                        <a class="bc_color_secondary font-weight-normal" href="#">
-                            <i class="fa fa-clock-o" aria-hidden="true"></i> Same Day Service
-                        </a>
-                    </h5>
-                </div>
-                <div class="col-sm-12 col-lg-4 pt-2 text-center text-lg-left" style="color:#f9d71c;">
-                    <h5 class="bc_color_warning">
-                        <i aria-hidden="true" class="fa fa-star"></i>
-                        <i aria-hidden="true" class="fa fa-star"></i>
-                        <i aria-hidden="true" class="fa fa-star"></i>
-                        <i aria-hidden="true" class="fa fa-star"></i>
-                        <i aria-hidden="true" class="fa fa-star"></i>
-                        <span>
-                            <a class="bc_color_secondary no_hover_underline" href="#">
-                                &nbsp; Read Our Reviews <i aria-hidden="true" class="fa fa-chevron-circle-right"></i>
-                            </a>
-                        </span>
-                    </h5>
+                <?php echo bc_get_theme_mod('bc_theme_options', 'header','announcement_bar_content', '
+                <div class="col-sm-12 col-lg-12 text-center text-lg-left">
+                    <span class="bc_color_secondary bc-text-16 bc_line_height_36"> <span class="bc_color_primary">NEWS  //</span>  Lorem ipsum dolor sit amet consectetur adipiscing elit sed do labore et dolore magna aliqua  | <a href="#" class="bc_font_bold bc_color_primary">Learn More</a> </span>
                 </div>'); ?>
-                <!-- announcement bar with search bar start -->
-                <?php if( bc_get_theme_mod('bc_theme_options', 'header','search_bar', 'enabled') == 'enabled' && bc_get_theme_mod('bc_theme_options', 'bc_logo_location',false, 'left') == 'left' ){?>
-                <?php get_template_part( 'page-templates/header/bc-announcement-bar-with-searchbar' ); ?>
-                <?php }?>
-                <!-- announcement bar with search bar end-->
 
-                <!-- announcement bar with button start -->
-                <?php if( bc_get_theme_mod('bc_theme_options', 'bc_logo_location',false, 'center') == 'center'){?>
-                <?php get_template_part( 'page-templates/header/bc-announcement-bar-with-buttons' ); ?>
-                <?php }?>
                 <!-- announcement bar with button end-->
                 <?php get_template_part( 'page-templates/header/bc-announcement-bar-mobile' ); ?>
             </div>
