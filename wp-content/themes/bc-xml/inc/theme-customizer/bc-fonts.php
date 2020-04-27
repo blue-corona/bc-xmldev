@@ -107,10 +107,10 @@ function bc_customize_font($wp_customize){
 
 }
 
-add_action('customize_register', 'bc_customize_font');
+// add_action('customize_register', 'bc_customize_font');
 
-add_action( 'wp_head', 'font_style');
-function font_style($wp_customize){
+// add_action( 'wp_head', 'font_style');
+/*function font_style($wp_customize){
     $theme_h1_configuration = get_theme_mod('bc_theme_h1_configuration');
     $theme_h2_configuration = get_theme_mod('bc_theme_h2_configuration');
     $theme_h3_configuration = get_theme_mod('bc_theme_h3_configuration');
@@ -145,4 +145,4 @@ $setting = 'font-family:'.bc_get_theme_mod('bc_theme_'.$tag.'_configuration', $t
     color:'.bc_get_theme_mod('bc_theme_'.$tag.'_configuration', $tag.'_color','', '#00395e').';
     '.bc_get_theme_mod('bc_theme_'.$tag.'_configuration', $tag.'_additional_css','', '');
     return $setting;
-}
+}*/

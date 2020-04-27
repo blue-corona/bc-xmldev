@@ -1,4 +1,4 @@
-<div class="d-lg-none show-on-touch">
+<div class="d-lg-none show-on-touch bg-white">
     <div class="container-fluid m-0 px-0">
         <div class="container p-0">
             <div class="row no-gutters">
@@ -13,7 +13,7 @@
                     </button>
                 </div>
                 <div class="col-2 bc_color_primary_bg text-center pt-3">
-                    <i class="fas fa-phone text-white bc_text_24 bc_line_height_24"></i>
+                    <a href="tel: 555-555-5555"><i class="fas fa-phone text-white bc_text_24 bc_line_height_24"></i></a>
                 </div>
             </div>
         </div>

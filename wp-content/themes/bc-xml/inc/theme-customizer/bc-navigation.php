@@ -248,9 +248,9 @@ function bc_customize_navigation($wp_customize){
 
 }
 
-add_action('customize_register', 'bc_customize_navigation');
+// add_action('customize_register', 'bc_customize_navigation');
 
-add_action( 'wp_head', 'navigation_style');
+// add_action( 'wp_head', 'navigation_style');
 function navigation_style($wp_customize){
 ?>
 <style type="text/css">
@@ -267,12 +267,10 @@ function navigation_style($wp_customize){
     }
     .bc_nav_container .navbar-nav > li a.nav-link { color: <?php echo bc_get_theme_mod('bc_theme_options', 'navigation_bar','top_level_link', '#116eab');?>; } /*Top level links */
     .bc_nav_container .navbar-nav > li a.nav-link:hover { color: <?php echo bc_get_theme_mod('bc_theme_options', 'navigation_bar','top_level_link', '#116eab');?>; } /*Top level links */
-    .bc_nav_container .navbar-nav > li:hover a.nav-link { color: <?php echo bc_get_theme_mod('bc_theme_options', 'navigation_bar','top_level_link_hover', '#ffffff');?>;
-        background-color: <?php echo bc_get_theme_mod('bc_theme_options', 'navigation_bar','top_level_dropdown_background', '#ffffff');?>;
-        ; } /* Top level link hover */
+    .bc_nav_container .navbar-nav > li:hover a.nav-link { background: none !important; } /* Top level link hover */
     .bc_nav_container .navbar-nav > li a svg { color: <?php echo bc_get_theme_mod('bc_theme_options', 'navigation_bar','top_level_dropdown_icon', '#116eab');?>; } /*NEW Top level dropdown icon*/
     .bc_nav_container .navbar-nav > li:hover svg { color: <?php echo bc_get_theme_mod('bc_theme_options', 'navigation_bar','top_level_dropdown_icon_hover', '#00395e;');?>; } /*NEW Top level dropdown icon hover*/
-    .bc_nav_container .navbar-nav > li:hover { background-color: <?php echo bc_get_theme_mod('bc_theme_options', 'navigation_bar','top_level_dropdown_background', '#116eab');?>; } /* NEW Top level dropdown background hover    */
+    .bc_nav_container .navbar-nav > li:hover { background-color: transparent !important; } /* NEW Top level dropdown background hover    */
   
     .bc_nav_container .navbar-nav .dropdown-menu { background-color: <?php echo bc_get_theme_mod('bc_theme_options', 'navigation_bar','dropdown_background', '#116eab');?>; } /* Dropdown background*/
      .bc_nav_container .dropdown li:hover a, .bc_nav_container .dropdown .dropdown-item:hover a { color: <?php echo bc_get_theme_mod('bc_theme_options', 'navigation_bar','dropdown_link_hover', '#ffffff');?>; } /* Dropdown Link Hover */

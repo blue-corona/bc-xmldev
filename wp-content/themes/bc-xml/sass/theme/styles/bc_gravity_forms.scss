@@ -336,3 +336,53 @@ select{
 ul.gform_fields li::before {
  list-style-type: none;
 }
+
+#gform_5{
+	ul{
+		li{
+			padding-left: 0;
+			label {
+			    color: #1D1817;
+			    opacity: .5;
+			    margin-top: 15px;
+			    font-size: 14px!important;
+			    font-weight: 400!important;
+			    .gfield_required {
+				    color: #1D1817;
+				}
+			}
+		}
+	}
+}
+
+#gform_5{
+	ul{
+		li.gfield{
+			.large {
+			    padding: 5px 10px!important;
+			    border-radius: 0 !important;
+			    border: 1px solid #E7DECD !important;
+			    box-shadow: 0 0 4px rgba(0,0,0,0.18) !important;
+			    margin-bottom: 5px;
+			}
+		}
+	}
+	.gform_footer{
+		padding-left: 0 !important;
+	}
+}
+#gform_5 input[type=submit]{
+    background-color: #666D89 !important;
+    width: 166px !important;
+    float: left;
+    border-radius: 0 !important;
+    font-size: 22px;
+    margin: 10px 0;
+    padding: 10px 10px;
+    line-height: 26px;
+    font-weight: 300 !important;
+    color: #ffffff !important;
+    &:hover{
+    	background: #545A71 !important;
+    }
+}

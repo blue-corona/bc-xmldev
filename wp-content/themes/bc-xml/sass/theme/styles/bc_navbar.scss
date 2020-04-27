@@ -28,9 +28,6 @@
 	.navbar-nav{
 		display: contents !important;
 		li {
-			&:hover{
-				background: none !important;
-			}
 			a {
 				color: $primary_color !important;
 			    text-align: center;
@@ -46,7 +43,9 @@
 			    }
 			    @media (hover: none), only screen and (max-width: 740px) {
 			    	text-align: left !important;
-			    	padding-left: 10px !important;
+			    	padding: 0 10px !important;
+			    	font-size: 20px;
+			    	line-height: 55px;
 			    }
 				svg {
 					display: none !important;
@@ -57,7 +56,7 @@
 				} // Top level dropdown icon
 			}
 			&:hover{
-				background-color: $info_color;	// Top level dropdown background hover
+				background-color: none;	// Top level dropdown background hover
 				@media (hover: none), only screen and (max-width: 991px) {
 					background-color: none !important; // Mobile nav bar Background
 				}		
@@ -66,7 +65,7 @@
 			}
 		}
 		.dropdown-menu{ 
-			background-color: $info_color; // Dropdown background
+			background-color: #cbb893cc !important; // Dropdown background
 			@media (hover: none), only screen and (max-width: 991px) {
 				 background-color: #ffffff00 !important; 
 			} 
@@ -96,9 +95,9 @@
 			}
 
 			&:hover{
-				background-color: $tertiary_color; 	//Dropdown background hover	
+				background-color: #ffffff; 	//Dropdown background hover	
 				@media (hover: none), only screen and (max-width: 991px) {
-					background-color: #ffffff00 !important; // Mobile nav bar Background
+					background-color: #ffffff !important; // Mobile nav bar Background
 				}
 				svg { color: $secondary_color; } // Dropdown icon hover
 				a { // Dropdown icon hover

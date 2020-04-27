@@ -26,7 +26,7 @@ defined( 'ABSPATH' ) || exit;
 <body>
 <!-- Show header accordingly fixed or default -->
 <?php if(bc_get_theme_mod('bc_theme_options', 'header', 'type', 'fixed') == 'fixed'){
-    echo '<header class="bc_header fixed-top">';
+    echo '<header class="bc_header">';
  }else{
     echo  '<header class="bc_header">';
  }?>
@@ -35,12 +35,12 @@ defined( 'ABSPATH' ) || exit;
         
         <!-- Hide this section if announcement bar is disabled-->
         <?php if(bc_get_theme_mod('bc_theme_options', 'header', 'announcement_bar', 'enabled') == 'enabled'){?>
-        <div class="container p-0 mt-4">
+        <div class="container p-0">
             <div class="row no-gutters text-center text-lg-left bc_announcement_bar_text">
                 <!-- announcement bar content-->
                 <?php echo bc_get_theme_mod('bc_theme_options', 'header','announcement_bar_content', '
-                <div class="col-sm-12 col-lg-12 text-center d-none d-lg-block">
-                    <span class="bc_color_secondary bc_text_16 bc_line_height_36"> <span class="bc_color_primary">NEWS  //</span>  <span class="d-none d-md-inline">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do labore et dolore magna aliqua</span>  | <a href="#" class="bc_font_bold bc_color_primary --imp">Learn More <i class="far fa-chevron-circle-right bc_text_14 bc_line_height_36 pl-2"></i> </a> </span>
+                <div class="col-12 col-lg-12 text-center d-none d-lg-block">
+                    <span class="bc_color_secondary bc_text_16 bc_line_height_36"> <span class="bc_color_primary">NEWS  //</span>  <span class="d-none d-md-inline">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do labore et dolore magna aliqua</span>  | <a href="#" class="bc_text_bold">  Learn More <i class="far fa-chevron-circle-right bc_text_18 ml-2 mt-2"></i> </a> </span>
                 </div>'); ?>
 
                 <!-- announcement bar with button end-->

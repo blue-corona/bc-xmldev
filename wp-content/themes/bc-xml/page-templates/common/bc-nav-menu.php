@@ -1,4 +1,4 @@
-<div class="container-fluid bc_nav_container px-0 m-0">
+<div class="container-fluid bc_nav_container px-0 m-0 sticky-top">
     <div class="container px-0">
         <nav class="navbar navbar-expand-lg navbar-dark m-auto d-table w-100 px-0">
             <div id="navbarSupportedContent" class="navbar-collapse collapse" style="">
@@ -24,7 +24,22 @@
                     ];
                     wp_nav_menu( $args )
                 ?>
+                <div class="d-lg-none show-mar">
+                    <?php echo get_search_form(['icon_color_class' => 'text-white'])?>
+                </div>
             </div>
         </nav>
     </div>
 </div>
+
+<!-- <script type="text/javascript">
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 50) {
+      $("#sticky_stop").addClass("nave");
+    } else {
+      $("#sticky_stop").removeClass("nave");
+    }
+  });
+});
+</script> -->

@@ -2,43 +2,39 @@
 
 //Default BC core font scheme
 h1, .h1{
-	font-family: $primary_color;
+	font-family: $default_font_family;
 	font-size: 48px;
 	font-weight: 100;
 	text-transform: uppercase;
 	line-height: 48px;
-	letter-spacing: 50;
 	color: $primary_color;
 }
 
 h2, .h2{
-	font-family: $quaternary_color;
+	font-family: $default_font_family;
 	font-size: 36px;
 	font-weight: 100;
 	text-transform: uppercase;
 	line-height: 36px;
-	letter-spacing: 25px;
-	color: $secondary_color;
+	color: $brown_color;
 }
 
 h3, .h3{
-	font-family: $primary_color;
+	font-family: $default_font_family;
 	font-size: 28px;
 	font-weight: 300;
 	text-transform: uppercase;
 	line-height: 28px;
-	letter-spacing: 25px;
 	color: $primary_color;
 }
 
 h4, .h4{
-	font-family: $secondary_color;
+	font-family: $default_font_family;
 	font-size: 24px;
 	font-weight: 300;
 	text-transform: uppercase;
 	line-height: 26px;
-	letter-spacing: 25;
-	color: $tertiary_color;
+	color: $secondary_color;
 }
 
 h5, .h5{
@@ -62,26 +58,30 @@ h6, .h6{
 }
 
 p, .p{
-	font-family: $quaternary_color;
+	font-family: $alternate_font_family_1;
 	font-size: 20px;
 	font-weight: 300;
 	text-transform: none;
 	line-height: 34px;
-	letter-spacing: 25px;
-	color: $secondary_color;
-
+	color: $brown_color;
+	a{
+		&:hover{
+			color: $secondary_color;
+			text-decoration: underline;;
+		}
+	}
 }
 
 main a{
-	font-family: $secondary_color;
+	font-family: $alternate_font_family_1;
 	font-size: 20px;
 	font-weight: 700;
 	text-transform: none;
 	line-height: 34px;
-	letter-spacing: 25px;
-	color: $tertiary_color;
+	color: $secondary_color;
 	&:hover{
 		text-decoration: underline;
+		color: $secondary_color;
 	}
 }
 
@@ -108,8 +108,11 @@ main a{
 .bc_text_14 { font-size: 14px; }
 .bc_text_16 { font-size: 16px; }
 .bc_text_18 { font-size: 18px; }
+.bc_text_19 { font-size: 19px; }
 .bc_text_20 { font-size: 20px; }
 .bc_text_24 { font-size: 24px; }
+.bc_text_26 { font-size: 26px; }
+.bc_text_28 { font-size: 28px; }
 .bc_text_30 { font-size: 30px; }
 .bc_text_36 { font-size: 36px; }
 .bc_text_48 { font-size: 48px; }
@@ -122,10 +125,13 @@ main a{
 .bc_line_height_22 { line-height: 22px; }
 .bc_line_height_24 { line-height: 24px; }
 .bc_line_height_26 { line-height: 26px; }
+.bc_line_height_28 { line-height: 28px; }
 .bc_line_height_30 { line-height: 30px; }
 .bc_line_height_34 { line-height: 34px; }
 .bc_line_height_36 { line-height: 36px; }
+.bc_line_height_40 { line-height: 40px; }
 .bc_line_height_48 { line-height: 48px; }
+.bc_line_height_50 { line-height: 50px; }
 .bc_line_height_60 { line-height: 60px; }
 
 
