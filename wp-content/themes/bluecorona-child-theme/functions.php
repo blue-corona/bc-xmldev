@@ -31,3 +31,63 @@ function add_child_theme_textdomain() {
     load_child_theme_textdomain( 'understrap-child', get_stylesheet_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
+
+// Accordion Shortcode Start
+// [bc_accordion]
+// [bc_card title="Property Protection Guarantee"]
+// <p>All property such as lawns, shrubbery, carpeting, floors, walls, furniture and door frames are protected. Damaged property will be replaced or repaired.</p>
+// [bc_card]
+//     [/bc_accordion]
+add_shortcode( 'bc_accordion', 'accordion_shortcode' );
+function accordion_shortcode( $atts, $content = null ) {
+    $content = str_replace('<br>', '', $content);
+    return '<div id="accordion" class="accordion w-100 text-left">' . do_shortcode($content) . '</div>';
+}
+add_shortcode( 'bc_card', 'card_shortcode' );
+function card_shortcode( $atts, $content = null ) {
+    $title='';  
+    if(isset($atts['title'])) {
+        $title = $atts['title'];
+    }
+    $iconClass = 'fal fa-plus-circle';
+    $expanded = '';
+    if(isset($atts['expanded'])) {
+        $expanded = 'show';
+        $iconClass = 'fal fa-minus-circle';
+    }
+    $id = 'collapse'.rand(0,100000);
+    return '<div class="card bg-transparent border-0 py-4 py-4">
+                <div id="headingOne" class="card-header border-0  bg-transparent p-0">
+                    <h3 class="my-3 bc_color_secondary  bc_font_alt_2 bc_line_height_36   my-4 bc_text_36 bc_text_light text-capitalize">'.$title.'<i class="'.$iconClass.' bc_color_success  bc_text_30  float-right toggle_icon mt-2 ml-2" data-toggle="collapse" data-target="#'.$id.'" aria-controls="'.$id.'"></i></h3>
+                </div>
+                <div id="'.$id.'" class="collapse '.$expanded.'" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">'.do_shortcode($content).'</div>
+                </div>
+            </div>';
+}
+
+//shortcode for phone number
+//<a href="tel:[site_info_phone_number]">[site_info_phone_number]</a>
+add_shortcode( 'site_info_phone_number', 'bc_site_info_phone_number' );
+function bc_site_info_phone_number ( $atts ) {
+    $anchor = true;
+    if(isset($atts['anchor'])){
+        $anchor = $atts['anchor'];
+    }
+    $tel = bc_get_theme_mod('bc_theme_options', 'bc_phone',false, '3334357</sub>');
+    ob_start();
+    if($anchor){
+        echo "<a href='tel:$tel'>$tel</a>";
+    }else{
+     echo $tel;
+    }
+    return ob_get_clean();
+}
+
+// shortcode for logo
+//[img src="https://example.com/image.jpg"] an example image [/img]
+add_shortcode('img', 'img_shortcode');
+function img_shortcode($atts, $content = null) {
+    extract(shortcode_atts(array("src" => ''), $atts));
+    return '<img src="' . $src . '" alt="'. do_shortcode($content) .'" />';
+}
