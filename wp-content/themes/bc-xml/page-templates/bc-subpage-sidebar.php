@@ -68,17 +68,72 @@ global $post;
                 <div class="col-lg-4 pl-lg-4">
                     <div class="how_we_work position-relative overflow-hdden bc_color_lightgray_bg text-center px-4 pt-5 pb-4">
                         <span></span>
-                        <h3 class="position-relative bottom-line">how we work</h3>
+                        <h3 class="position-relative bottom_line">how we work</h3>
                         <p class="mt-5">We’re here to help you make investments that align with your lifestyle.</p>
                         <a href="#" class="btn_primary py-2 px-3 mt-4">learn how</a>
                     </div>
                     <div class="who_we_are mt-5 text-center">
-                       <h3 class="position-relative bottom-line text-uppercase">who we are</h3>
-
+                       <h3 class="position-relative bottom_line text-uppercase">who we are</h3>
+                       <div class="swiper-container team-swiper pb-3">
+                            <div class="swiper-wrapper pb-2">
+                                <div class="swiper-slide text-center p-4">
+                                    <div class="image position-relative d-inline-block mx-auto p-3">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brett-headshot.jpg" class="img-fluid" alt="Contact-banner">
+                                    </div>
+                                     <span class="position-relative bottom_line_2 bc_color_primary bc_text_24 bc_line_height_50 bc_font_alt_1 bc_text_bold d-block">Brett Bernstein, CFP<sup>®</sup> </span>
+                                    <span class="bc_color_secondary bc_text_24 bc_line_height_50 bc_font_alt_1 d-block mt-2">CEO & Co-founder</span>
+                                </div>
+                                <div class="swiper-slide text-center p-4">
+                                    <div class="image position-relative d-inline-block mx-auto p-3">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brett-headshot.jpg" class="img-fluid" alt="Contact-banner">
+                                    </div>
+                                     <span class="position-relative bottom_line_2 bc_color_primary bc_text_24 bc_line_height_50 bc_font_alt_1 bc_text_bold d-block">Brett Bernstein, CFP<sup>®</sup> </span>
+                                    <span class="bc_color_secondary bc_text_24 bc_line_height_50 bc_font_alt_1 d-block mt-2">CEO & Co-founder</span>
+                                </div>
+                                <div class="swiper-slide text-center p-4">
+                                    <div class="image position-relative d-inline-block mx-auto p-3">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brett-headshot.jpg" class="img-fluid" alt="Contact-banner">
+                                    </div>
+                                     <span class="position-relative bottom_line_2 bc_color_primary bc_text_24 bc_line_height_50 bc_font_alt_1 bc_text_bold d-block">Brett Bernstein, CFP<sup>®</sup> </span>
+                                    <span class="bc_color_secondary bc_text_24 bc_line_height_50 bc_font_alt_1 d-block mt-2">CEO & Co-founder</span>
+                                </div>
+                                <div class="swiper-slide text-center p-4">
+                                    <div class="image position-relative d-inline-block mx-auto p-3">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brett-headshot.jpg" class="img-fluid" alt="Contact-banner">
+                                    </div>
+                                     <span class="position-relative bottom_line_2 bc_color_primary bc_text_24 bc_line_height_50 bc_font_alt_1 bc_text_bold d-block">Brett Bernstein, CFP<sup>®</sup> </span>
+                                    <span class="bc_color_secondary bc_text_24 bc_line_height_50 bc_font_alt_1 d-block mt-2">CEO & Co-founder</span>
+                                </div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination team-pagination"></div>
+                        </div>
+                        <a href="#" class="btn_secondary px-4 py-2 mt-3">FULL TEAM</a>
+                    </div>
+                    <div class="resources px-4 py-5 mt-5 text-center">
+                        <h3 class="position-relative bottom_line text-uppercase">resources</h3>
+                        <p class="mt-5 bc_color_primary bc_text_24 bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
+                        <a href="#" class="btn_primary px-3 py-2 mt-3">learn how</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </main>
+
+<script type="text/javascript">
+    var swiperTestimonial = new Swiper('.team-swiper', {
+      slidesPerView: 1,
+      loop: true,
+      speed: 400,
+      // autoplay: true,
+      paginationClickable: true,
+      pagination: {
+        el: '.team-pagination',
+        type: 'bullets',
+        clickable: true,
+      },
+    });
+</script>
+
 <?php get_footer();?>

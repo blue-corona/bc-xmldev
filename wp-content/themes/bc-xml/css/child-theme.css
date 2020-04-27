@@ -9163,7 +9163,7 @@ ul.bullete_style {
   opacity: .5;
   background: #666d89; }
 
-.bottom-line:before {
+.bottom_line:before {
   position: absolute;
   content: "";
   left: 50%;
@@ -9173,6 +9173,17 @@ ul.bullete_style {
   height: 1px;
   width: 94px;
   background: #545A71; }
+
+.bottom_line_2:before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  bottom: -5px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 1px;
+  width: 100px;
+  background: #666d89; }
 
 .how_we_work {
   border-top: 6px solid #666d89;
@@ -9206,5 +9217,39 @@ ul.bullete_style {
     height: 1px;
     width: 225px;
     background: #c8c8c8; }
+
+.team-pagination .swiper-pagination-bullet {
+  width: 18px !important;
+  height: 18px !important;
+  margin: 0 3px;
+  border-radius: 50%;
+  border: 2px solid #666d89;
+  background: #ffffff !important;
+  opacity: .5 !important; }
+
+.team-pagination .swiper-pagination-bullet-active {
+  opacity: .5;
+  background: #666d89 !important; }
+
+.image {
+  width: auto;
+  height: auto; }
+  .image:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    background: transparent;
+    border-top: 8px solid #666d89;
+    border-left: 8px solid #666d89;
+    border-right: 8px solid #ffffff;
+    border-bottom: 8px solid #ffffff; }
+
+.resources {
+  background: url(../img/resources-eagle.png);
+  height: auto; }
 
 /*# sourceMappingURL=child-theme.css.map */
