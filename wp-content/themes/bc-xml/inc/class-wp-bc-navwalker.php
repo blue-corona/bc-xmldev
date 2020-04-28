@@ -264,7 +264,9 @@ if ( ! class_exists( 'Bluecorona_WP_Bootstrap_Navwalker' ) ) {
 			 * @param int      $depth Depth of menu item. Used for padding.
 			 */
 			$title = apply_filters( 'nav_menu_item_title', $title, $item, $args, $depth );
-
+echo "<pre>";
+print_r($title);
+echo "</pre>";
 			// If the .sr-only class was set apply to the nav items text only.
 			if ( in_array( 'sr-only', $linkmod_classes, true ) ) {
 				$title         = self::wrap_for_screen_reader( $title );
