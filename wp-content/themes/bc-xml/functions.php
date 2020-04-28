@@ -87,15 +87,12 @@ function bc_site_info_phone_number ( $atts ) {
 // shortcode for logo to be placed in menu
 //[header_menu_logo]
 add_shortcode('header_menu_logo', 'bc_logo_shortcode_for_menu');
-function img_shortcode($atts) {
+function bc_logo_shortcode_for_menu($atts) {
  $logo =  bc_get_theme_mod('bc_theme_options', 'bc_logo_upload',false, get_template_directory_uri().'/img/logo.jpg');
- 
- // print_r($logo);die('ss');
     ob_start();
     if(isset($logo)){
         echo '<img src="'.$logo.'" class="img-fluid"/>';
     }
     return ob_get_clean();
-
 }
-
+add_filter('wp_nav_menu_items', 'do_shortcode');
