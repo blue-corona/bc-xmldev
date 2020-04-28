@@ -9174,6 +9174,17 @@ ul.bullete_style {
   width: 94px;
   background: #545A71; }
 
+.bottom_line1:before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  bottom: -20px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 1px;
+  width: 94px;
+  background: #CBB893; }
+
 .bottom_line_2:before {
   position: absolute;
   content: "";
@@ -9251,5 +9262,11 @@ ul.bullete_style {
 .resources {
   background: url(../img/resources-eagle.png);
   height: auto; }
+
+.graphic_lines {
+  background: url(../img/lines-graphic.png);
+  background-size: 100% 100%;
+  background-position: center;
+  padding-top: 140px; }
 
 /*# sourceMappingURL=child-theme.css.map */
