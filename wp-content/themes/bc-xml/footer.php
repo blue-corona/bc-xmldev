@@ -17,7 +17,7 @@ defined( 'ABSPATH' ) || exit;
     <?php if ( is_front_page() ) {?>
         <?php get_template_part( 'page-templates/common/servicearea' ); ?>
     <?php }else{?>
-        <div class="container py-3"></div>
+        <!-- <div class="container py-3"></div> -->
     <?php } ?>
     </div>
     <!-- Footer Links -->
