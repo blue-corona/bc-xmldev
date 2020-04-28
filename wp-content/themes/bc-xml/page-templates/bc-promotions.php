@@ -10,27 +10,18 @@ get_header();
 global $post;
 ?>
 <main>
-    <div class="container-fluid p-0 bc_hero_container bc_home_section_bg py-5" <?php if (has_post_thumbnail() ) { $image = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_id() ), 'single-post-thumbnail' ); ?> style="background-image: url('<?php echo $image[0]; ?>');" <?php }?>>
-        <div class="container p-4">
-            <div class="row">
-                <div class="col-sm-12 ">
-                    <div class="bc_subpage_hero_overlay d-block d-md-flex text-center">
-                        <?php $title = get_post_meta( $post->ID, 'title_overlay', true );
-                        if(isset($title) && !empty($title)){
-                            echo $title;
-                        }?>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="container-fluid px-0 m-0 subpage_banner">
+   <div class="row no-gutters">
+            <div class="col-12" <?php if (has_post_thumbnail() ) {     $image = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_id() ), 'single-post-thumbnail' ); ?> style="min-height:391px;background-repeat: no-repeat; background-image: url('<?php echo $image[0]; ?>');"<?php  } else { ?> style="min-height:391px; background-repeat: no-repeat;background-image: url('<?php echo get_stylesheet_directory_uri();?>/img/contact-banner.jpg');"  <?php }?>>
+   
+             </div>
+       </div>
     </div>
     
-
-<div class="container-fluid">
-    <div class="container">
-        <div class="row">
-            <!-- The Content Starts -->
-            <div class="col-lg-8 col-md-12 col-xs-12 mt-2 px-5">
+<div class="container-fluid py-5 m-0">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-8">
 				<div class="row text-center">
                 <?php
                 $args  = array( 'post_type' => 'bc_promotions', 'posts_per_page' => -1, 'order'=> 'DESC','post_status'  => 'publish');
