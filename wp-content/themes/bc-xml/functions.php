@@ -84,10 +84,15 @@ function bc_site_info_phone_number ( $atts ) {
     return ob_get_clean();
 }
 
-// shortcode for logo
-//[img src="https://example.com/image.jpg"] an example image [/img]
-add_shortcode('img', 'img_shortcode');
-function img_shortcode($atts, $content = null) {
-    extract(shortcode_atts(array("src" => ''), $atts));
-    return '<img src="' . $src . '" alt="'. do_shortcode($content) .'" />';
+// shortcode for logo to be placed in menu
+//[header_menu_logo]
+add_shortcode('header_menu_logo', 'bc_logo_shortcode_for_menu');
+function bc_logo_shortcode_for_menu($atts) {
+ $logo =  bc_get_theme_mod('bc_theme_options', 'bc_logo_upload',false, get_template_directory_uri().'/img/logo.jpg');
+    ob_start();
+    if(isset($logo)){
+        echo '<img src="'.$logo.'" class="img-fluid"/>';
+    }
+    return ob_get_clean();
 }
+add_filter('wp_nav_menu_items', 'do_shortcode');
