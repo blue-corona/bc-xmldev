@@ -524,12 +524,39 @@ ul.bullete_style{
 	background-size: 100% 100%;
 	background-position: center;
 	padding-top: 140px;
+	@media only screen and (max-width: 740px) {
+		background: url(../img/lines-graphic-mobile.png);
+		background-size: cover;
+	}
 }
 .members{
 	.img{
 		width: 100%;
 		height: 218px;
-		background: #ccc;
 		margin: auto;
+	}
+	.detail{
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		box-shadow: 1px 1px 32px rgba(0,0,0,0.15);
+		transform: translateY(110%);
+		transition: .5s;
+	}
+	&:hover{
+		.detail{
+			transform: translateY(0);
+		}
+	}
+}
+.testimonials{
+	background: url(../img/testimonials.png);
+	background-size: 100% 100%;
+	background-position: center;
+	padding-top: 140px;
+	@media only screen and (max-width: 740px) {
+		background: url(../img/testimonials-mobile.png);
+		background-size: cover;
 	}
 }
