@@ -9269,4 +9269,10 @@ ul.bullete_style {
   background-position: center;
   padding-top: 140px; }
 
+.members .img {
+  width: 100%;
+  height: 218px;
+  background: #ccc;
+  margin: auto; }
+
 /*# sourceMappingURL=child-theme.css.map */
