@@ -95,9 +95,9 @@
 			}
 
 			&:hover{
-				background-color: #ffffff; 	//Dropdown background hover	
+				background-color: #fffaf0; 	//Dropdown background hover	
 				@media (hover: none), only screen and (max-width: 991px) {
-					background-color: #ffffff !important; // Mobile nav bar Background
+					background-color: #fffaf0 !important; // Mobile nav bar Background
 				}
 				svg { color: $secondary_color; } // Dropdown icon hover
 				a { // Dropdown icon hover
@@ -108,7 +108,7 @@
 	}
 }
 
-.navbar-toggler-icon{ color: $tertiary_color; } // Toggle icon color
+.navbar-toggler-icon{ color: $primary_color; } // Toggle icon color
 
 //Menu dropdown modifications
 

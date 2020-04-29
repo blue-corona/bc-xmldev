@@ -27,10 +27,10 @@ defined( 'ABSPATH' ) || exit;
                 <div class="col-lg-4 pr-lg-4 text-center text-md-left">
                     <div class="footer_logo position-relative text-center">
                         <a href="#">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/xml-logo-footer.jpg" class="img-fluid d-block mx-auto" alt="logo">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/XML-Logo-footer.jpg" class="img-fluid d-block mx-auto" alt="logo">
                         </a>
                     </div>
-                    <span class="bc_text_16 bc_line_height_26 bc_font_alt_1 bc_color_primary d-block mt-4 mb-3">Securities offered through Lara, May & Associates, LLC, Member <span class="
+                    <span class="bc_text_16 bc_line_height_26 bc_font_alt_1 bc_color_primary d-block mt-5 mb-3">Securities offered through Lara, May & Associates, LLC, Member <span class="
                             bc_color_secondary">FINRA / SIPC </span> Headquartered at 7600 Leesburg Pike, Suite 120 East, Falls Church, VA 22043, 555-555-5555</span>
                     <div class="socil-icon position-relative">
                         <i class="fab fa-facebook-f bc_color_secondary bc_text_19 mr-2"></i>
@@ -62,7 +62,7 @@ defined( 'ABSPATH' ) || exit;
                     <a href="#" class="d-block bc_text_16 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> Portfolio Logins</a>
                     <a href="#" class="d-block bc_text_16 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> Broker Check</a>
                 </div>
-                <div class="col-lg-2 d-md-none text-center">
+                <div class="col-lg-2 mt-4 d-md-none text-center">
                     <span class="d-block bc_text_26 bc_line_height_26 bc_font_default bc_text_light bc_color_primary">Logins</span>
                     <a href="#" class="d-block bc_text_16 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mt-3"> Broker Check </a>
                     <a href="#" class="d-block bc_text_16 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> Fidelity</a>

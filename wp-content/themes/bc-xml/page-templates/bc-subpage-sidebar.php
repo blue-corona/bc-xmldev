@@ -13,7 +13,7 @@ global $post;
     <div class="container-fluid px-0 m-0 subpage_banner">
         <div class="row no-gutters">
             <div class="col-12">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/contact-banner.jpg" class="img-fluid" alt="Contact-banner">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/contact-banner.jpg" class="img-fluid w-100" alt="Contact-banner">
             </div>
         </div>
     </div>
