@@ -145,6 +145,7 @@ global $post;
         clickable: true,
       },
     });
+
 </script>
 
 <?php get_footer();?>
