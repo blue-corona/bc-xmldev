@@ -36,6 +36,9 @@
 	background-image:none !important;
 	display: block !important;
 	font-size: 20px;
+	@media only screen and (max-width: 740px) {
+		display:none !important;
+	}
 
 }
 
@@ -80,5 +83,14 @@
 .bc_hero_swiper{
 	.swiper-pagination-bullet-active{
 		background:#116eab;
+	}
+}
+.community-members-swiper{
+	.swiper-slide{
+		margin: 0 22px !important;
+		@media only screen and (max-width: 740px){
+			margin: 0 7px !important;
+			padding: 0 10px 40px 0 !important;
+		}
 	}
 }
