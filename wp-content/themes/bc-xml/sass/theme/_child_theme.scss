@@ -576,9 +576,39 @@ ul.bullete_style{
   		outline: none !important;
   	}
 }
+.bg-none{
+	background: none !important;
+}
 .border_primary{
 	border: 1px solid $primary_color;
 }
 .borde_b_primary{
 	border-bottom: 6px solid $secondary_color;
+}
+.cursor_pointer{
+	&:hover{
+		cursor: pointer;
+	}
+}
+.menu{
+	position: fixed;
+	top: 50px;
+	z-index: 999;
+	background: red;
+	width: 100%;
+}
+.menu-alt{
+	position: fixed;
+	top: 200px;
+	z-index: 999;
+	background: blue;
+	width: 100%;
+}
+.gradient{
+	height: 309px;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	background: linear-gradient(#FFFFFF 0%, #ffffff00 100%);
 }

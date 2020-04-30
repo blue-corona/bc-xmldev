@@ -91,7 +91,7 @@ function bc_logo_shortcode_for_menu($atts) {
  $logo =  bc_get_theme_mod('bc_theme_options', 'bc_logo_upload',false, get_template_directory_uri().'/img/logo.png');
     ob_start();
     if(isset($logo)){
-        echo '<img src="'.$logo.'" class="img-fluid"/>';
+        echo '<img src="'.$logo.'" class="img-fluid d-none d-lg-block"/>';
     }
     return ob_get_clean();
 }
