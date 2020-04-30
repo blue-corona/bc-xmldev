@@ -66,3 +66,4 @@ defined( 'ABSPATH' ) || exit;
     <?php get_template_part( 'page-templates/common/bc-nav-menu' ); ?>
 </div>
 </header>
+
