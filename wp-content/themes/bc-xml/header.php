@@ -26,7 +26,7 @@ defined( 'ABSPATH' ) || exit;
 <body>
 <!-- Show header accordingly fixed or default -->
 <?php if(bc_get_theme_mod('bc_theme_options', 'header', 'type', 'fixed') == 'fixed'){
-    echo '<header class="bc_header">';
+    echo '<header class="bc_header fixed-top">';
  }else{
     echo  '<header class="bc_header">';
  }?>
@@ -66,3 +66,4 @@ defined( 'ABSPATH' ) || exit;
     <?php get_template_part( 'page-templates/common/bc-nav-menu' ); ?>
 </div>
 </header>
+

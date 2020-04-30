@@ -4,7 +4,7 @@
             <div class="row no-gutters">
                 <div class=" col-8 mr-0 p-2">
                 	<a href="<?php echo get_home_url();?>">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mobile-logo.png" class="img-fluid bc_branding_logo" alt="logo">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mobile-logo.png" class="img-fluid bc_branding_logo" alt="mobile-logo">
                 	</a>
                 </div>
                 <div class=" col-2 pl-0 text-center m-auto">

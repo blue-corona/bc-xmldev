@@ -9,8 +9,8 @@
 	background: none !important;
 	#navbarSupportedContent{
 		@media (hover: none), only screen and (max-width: 991px) {
-			height: auto;
-		    max-height: 500px;
+			/*height: auto;*/
+		    height: 500px;
 		    overflow-x: hidden;
 		}
 	}
@@ -46,11 +46,12 @@
 			    	padding: 0 10px !important;
 			    	font-size: 20px;
 			    	line-height: 55px;
+			    	border-bottom: 1px solid #666d896b;
 			    }
 				svg {
 					display: none !important;
 					@media (hover: none), only screen and (max-width: 991px) {
-						display: block !important;
+						/*display: block !important;*/
 						color: red !important;
 					}
 				} // Top level dropdown icon
@@ -134,7 +135,10 @@
 }
 .navbar-nav{
 	li{
-		padding: 0 !important;	
+		padding: 0 !important;
+		@media only screen and (max-width: 740px) {
+			padding: 0 30px !important;
+		}
 	}
 	& > li {
 		padding-left: 10px;
@@ -225,5 +229,18 @@
 				width: 100%
 			}
 		}
+	}
+}
+.navbar-collapse{
+	@media only screen and (max-width: 740px) {
+		position: relative;
+		background-color: #F6F4F1;
+	}
+	.eagle-png{
+		right: -50px;
+		bottom: 30px;
+	  height: 206px;
+	  width: 266px;
+	  opacity: 0.4;
 	}
 }
