@@ -53,7 +53,7 @@ get_header();?>
                           </div>
                           <span class="bc_font_alt_1 bc_text_22 bc_line_height_26 bc_font_bold bc_color_primary border-bottom pb-2 mt-3 d-block">Full Name</span>
                           <span class="bc_font_alt_1 bc_text_22 bc_line_height_26 bc_text_normal bc_color_secondary my-2 d-block">Titl</span>
-                          <div class="position-absolute detail bc_color_primary_bg p-3">
+                          <div class="position-absolute detail p-3">
                             <span class="bc_text_18 bc_line_height_30 text-white bc_font_default bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </span>
                           </div>
                         </div>
@@ -65,7 +65,7 @@ get_header();?>
                           </div>
                           <span class="bc_font_alt_1 bc_text_22 bc_line_height_26 bc_font_bold bc_color_primary border-bottom pb-2 mt-3 d-block">Full Name</span>
                           <span class="bc_font_alt_1 bc_text_22 bc_line_height_26 bc_text_normal bc_color_secondary my-2 d-block">Titl</span>
-                          <div class="position-absolute detail bc_color_primary_bg p-3">
+                          <div class="position-absolute detail p-3">
                             <span class="bc_text_18 bc_line_height_30 text-white bc_font_default bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </span>
                           </div>
                         </div>
@@ -77,7 +77,7 @@ get_header();?>
                           </div>
                           <span class="bc_font_alt_1 bc_text_22 bc_line_height_26 bc_font_bold bc_color_primary border-bottom pb-2 mt-3 d-block">Full Name</span>
                           <span class="bc_font_alt_1 bc_text_22 bc_line_height_26 bc_text_normal bc_color_secondary my-2 d-block">Titl</span>
-                          <div class="position-absolute detail bc_color_primary_bg p-3">
+                          <div class="position-absolute detail p-3">
                             <span class="bc_text_18 bc_line_height_30 text-white bc_font_default bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </span>
                           </div>
                         </div>
@@ -89,7 +89,7 @@ get_header();?>
                           </div>
                           <span class="bc_font_alt_1 bc_text_22 bc_line_height_26 bc_font_bold bc_color_primary border-bottom pb-2 mt-3 d-block">Full Name</span>
                           <span class="bc_font_alt_1 bc_text_22 bc_line_height_26 bc_text_normal bc_color_secondary my-2 d-block">Titl</span>
-                          <div class="position-absolute detail bc_color_primary_bg p-3">
+                          <div class="position-absolute detail p-3">
                             <span class="bc_text_18 bc_line_height_30 text-white bc_font_default bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </span>
                           </div>
                         </div>
