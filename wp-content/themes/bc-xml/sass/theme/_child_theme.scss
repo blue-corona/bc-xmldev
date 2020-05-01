@@ -244,6 +244,13 @@ div, {
 	}
 }
 
+.shape-1 {
+  box-sizing: border-box;
+  height: 1px;
+  width: 100%;
+  border: 1px solid #BCA568;
+  background-color: #BCA568;
+}
 .bc_line_height{
 	line-height: 1.2
 }
@@ -318,8 +325,8 @@ ul.bullete_style{
 		line-height: 24px;
 		margin-bottom: 1em;
 		color: $brown_color;
-		&:before{
-		  content: "\2022";
+		/*&:before{
+		  content: "";
 		  font-family: "Font Awesome 5 Pro";
 		  color: $primary_color;
 		  font-weight: bold;
@@ -327,9 +334,16 @@ ul.bullete_style{
 		  font-size: 30px;
 		  width: 1em;
 		  margin-left: -1em;
+		}*/
+		svg{
+			color: $primary_color !important;
+			font-size: 10px;
+			line-height: 40px;
+			margin-right: 15px;
 		}
 	}
 }
+
 .btn_primary{
     background-color: $primary_color !important;
     border-radius: 0 !important;
@@ -524,12 +538,91 @@ ul.bullete_style{
 	background-size: 100% 100%;
 	background-position: center;
 	padding-top: 140px;
+	@media only screen and (max-width: 740px) {
+		background: url(../img/lines-graphic-mobile.png);
+		background-size: cover;
+	}
 }
 .members{
 	.img{
 		width: 100%;
-		height: 218px;
-		background: #ccc;
+		height: 240px;
 		margin: auto;
 	}
+	.detail{
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		box-shadow: 1px 1px 32px rgba(0,0,0,0.15);
+		transform: translateY(110%);
+		transition: .5s;
+		background: #666d89eb;
+		a{
+			margin-top: 50%;
+    		display: block;
+		}
+	}
+	&:hover{
+		.detail{
+			transform: translateY(0);
+		}
+	}
+}
+.testimonials{
+	background: url(../img/testimonials.png);
+	background-size: 100% 100%;
+	background-position: center;
+	padding-top: 140px;
+	@media only screen and (max-width: 740px) {
+		background: url(../img/testimonials-mobile.png);
+		background-size: cover;
+	}
+}
+.Filter_btn{
+	border: none;
+	border-radius: 0;
+	height: 57px;
+  	width: 255px;
+  	&:focus{
+  		border: 1px solid $primary_color;
+  		box-shadow: none !important;
+  		outline: none !important;
+  	}
+}
+.bg-none{
+	background: none !important;
+}
+.border_primary{
+	border: 1px solid $primary_color;
+}
+.borde_b_primary{
+	border-bottom: 6px solid $secondary_color;
+}
+.cursor_pointer{
+	&:hover{
+		cursor: pointer;
+	}
+}
+.menu{
+	position: fixed;
+	top: 50px;
+	z-index: 999;
+	background: red;
+	width: 100%;
+}
+.menu-alt{
+	position: fixed;
+	top: 200px;
+	z-index: 999;
+	background: blue;
+	width: 100%;
+}
+.gradient{
+	height: 309px;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	background: linear-gradient(#FFFFFF 0%, #ffffff00 100%);
 }
