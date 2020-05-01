@@ -22,6 +22,7 @@ defined( 'ABSPATH' ) || exit;
 	<?php wp_head(); ?>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
 <!-- Show header accordingly fixed or default -->
