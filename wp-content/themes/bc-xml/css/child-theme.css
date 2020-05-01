@@ -8108,6 +8108,9 @@ main a {
 .bc_text_30 {
   font-size: 30px; }
 
+.bc_text_32 {
+  font-size: 32px; }
+
 .bc_text_36 {
   font-size: 36px; }
 
@@ -8146,6 +8149,9 @@ main a {
 
 .bc_line_height_30 {
   line-height: 30px; }
+
+.bc_line_height_32 {
+  line-height: 32px; }
 
 .bc_line_height_34 {
   line-height: 34px; }
@@ -8204,6 +8210,9 @@ body, ::placeholder, button {
 .bc_color_primary {
   color: #666d89 !important; }
 
+.bc_color_dark_primary {
+  color: #545A71 !important; }
+
 .bc_color_secondary {
   color: #cbb893 !important; }
 
@@ -8257,6 +8266,9 @@ body, ::placeholder, button {
 
 .bc_color_light_bg {
   background-color: #B9A886 !important; }
+
+.bc_color_brown_bg {
+  background-color: #1D1817; }
 
 .bc_color_black_bg {
   background-color: #000000; }
@@ -8566,18 +8578,18 @@ select {
 ul.gform_fields li::before {
   list-style-type: none; }
 
-#gform_5 ul li {
+#gform_16 ul li {
   padding-left: 0; }
-  #gform_5 ul li label {
+  #gform_16 ul li label {
     color: #1D1817;
     opacity: .5;
     margin-top: 15px;
     font-size: 14px !important;
     font-weight: 400 !important; }
-    #gform_5 ul li label .gfield_required {
+    #gform_16 ul li label .gfield_required {
       color: #1D1817; }
 
-#gform_5 ul li.gfield .large {
+#gform_16 ul li.gfield .large {
   padding: 5px 10px !important;
   border-radius: 0 !important;
   border: 1px solid #E7DECD !important;
@@ -8585,10 +8597,10 @@ ul.gform_fields li::before {
           box-shadow: 0 0 4px rgba(0, 0, 0, 0.18) !important;
   margin-bottom: 5px; }
 
-#gform_5 .gform_footer {
+#gform_16 .gform_footer {
   padding-left: 0 !important; }
 
-#gform_5 input[type=submit] {
+#gform_16 input[type=submit] {
   background-color: #666D89 !important;
   width: 166px !important;
   float: left;
@@ -8599,7 +8611,7 @@ ul.gform_fields li::before {
   line-height: 26px;
   font-weight: 300 !important;
   color: #ffffff !important; }
-  #gform_5 input[type=submit]:hover {
+  #gform_16 input[type=submit]:hover {
     background: #545A71 !important; }
 
 .bc_nav_container {
@@ -9123,8 +9135,10 @@ ul.bullete_style {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    line-height: 24px;
-    margin-bottom: 1em;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 40px;
     color: #1D1817;
     /*&:before{
 		  content: "";
@@ -9156,6 +9170,10 @@ ul.bullete_style {
   .btn_primary:hover {
     background: #545A71 !important;
     text-decoration: none !important; }
+
+.bc_color_gradient {
+  background: -webkit-gradient(linear, right top, left top, from(#E7DECD), to(#CBB893));
+  background: linear-gradient(270deg, #E7DECD 0%, #CBB893 100%); }
 
 .btn_secondary {
   background-color: #cbb893 !important;

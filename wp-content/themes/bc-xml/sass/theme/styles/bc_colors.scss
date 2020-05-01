@@ -2,6 +2,9 @@
 .bc_color_primary { 
 	color: $primary_color !important; 
 }
+.bc_color_dark_primary{
+	color: #545A71 !important;
+}
 .bc_color_secondary { 
 	color: $secondary_color !important; 
 }
@@ -40,6 +43,7 @@
 .bc_color_success_bg { background-color: $success_color !important; }
 .bc_color_info_bg { background-color: $info_color !important; }
 .bc_color_light_bg { background-color: $light_color !important; }
+.bc_color_brown_bg { background-color: $brown_color; }
 .bc_color_black_bg { background-color: #000000; }
 .bc_color_lightgray_bg { background-color: $lightgray_color !important; }
 
