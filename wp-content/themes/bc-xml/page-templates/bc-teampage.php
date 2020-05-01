@@ -32,32 +32,32 @@ get_header();?>
                 <span class="bc_text_24 bc_line_height_26 bc_font_default bc_text_light d-block bc_color_secondary text-uppercase mt-4">Filter by team</span>
               </div>
               <div class="col-lg-3 mt-3">
-                <button class="Filter_btn bc_color_primary bg-white" autofocus>All</button>
+                <button class="Filter_btn bc_color_primary bg-white bc_text_20 bc_line_height_28" autofocus>All</button>
               </div>
               <div class="col-lg-3 mt-3 text-center">
-                <button class="Filter_btn bc_color_primary bg-white">Leadership Team</button>
+                <button class="Filter_btn bc_color_primary bg-white bc_text_20 bc_line_height_28">Leadership Team</button>
               </div>
               <div class="col-lg-3 mt-3 text-center">
-                <button class="Filter_btn bc_color_primary bg-white">Operations Team</button>
+                <button class="Filter_btn bc_color_primary bg-white bc_text_20 bc_line_height_28">Operations Team</button>
               </div>
               <div class="col-lg-3 mt-3 text-center">
-                <button class="Filter_btn bc_color_primary bg-white">Wealth Advisors</button>
+                <button class="Filter_btn bc_color_primary bg-white bc_text_20 bc_line_height_28">Wealth Advisors</button>
               </div>
               <div class="col-12 mt-2">
-                <hr class="mb-2">
+                <hr class="mb-3">
                 <span class="bc_text_24 bc_line_height_26 bc_font_default bc_text_light d-block bc_color_secondary text-uppercase mt-4">Filter by location</span>
               </div>
               <div class="col-lg-3 mt-3">
-                <button class="Filter_btn bc_color_primary bg-white border_primary">All</button>
+                <button class="Filter_btn bc_color_primary bg-white bc_text_20 bc_line_height_28 border_primary">All</button>
               </div>
               <div class="col-lg-3 mt-3 text-center">
-                <button class="Filter_btn bc_color_primary bg-white">Rockville, MD</button>
+                <button class="Filter_btn bc_color_primary bg-white bc_text_20 bc_line_height_28">Rockville, MD</button>
               </div>
               <div class="col-lg-3 mt-3 text-center">
-                <button class="Filter_btn bc_color_primary bg-white">Falls Church, VA</button>
+                <button class="Filter_btn bc_color_primary bg-white bc_text_20 bc_line_height_28">Falls Church, VA</button>
               </div>
               <div class="col-lg-3 mt-3 text-center">
-                <button class="Filter_btn bc_color_primary bg-white">Breckenridge, CO</button>
+                <button class="Filter_btn bc_color_primary bg-white bc_text_20 bc_line_height_28">Breckenridge, CO</button>
               </div>
               <div class="col-lg-4 mt-5">
                 <div class="members px-3 pt-3 pb-4 border position-relative overflow-hidden">
