@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@100;300;400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 //Default BC core font scheme
 h1, .h1{
 	font-family: $default_font_family;
@@ -115,6 +115,7 @@ main a{
 .bc_text_28 { font-size: 28px; }
 .bc_text_30 { font-size: 30px; }
 .bc_text_36 { font-size: 36px; }
+.bc_text_40 { font-size: 40px; }
 .bc_text_48 { font-size: 48px; }
 
 //Classes for line Heights
@@ -122,6 +123,7 @@ main a{
 .bc_line_height_16 { line-height: 16px; }
 .bc_line_height_18 { line-height: 18px; }
 .bc_line_height_20 { line-height: 20px; }
+.bc_line_height_21 { line-height: 21px; }
 .bc_line_height_22 { line-height: 22px; }
 .bc_line_height_24 { line-height: 24px; }
 .bc_line_height_26 { line-height: 26px; }
