@@ -6,6 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -8048,7 +8049,7 @@ main a {
   font-family: "Roboto", sans-serif; }
 
 .bc_font_alt_2 {
-  font-family: "Anton"; }
+  font-family: "Lato", sans-serif; }
 
 .bc_font_alt_3 {
   font-family: "Nunito"; }
@@ -8110,6 +8111,9 @@ main a {
 .bc_text_36 {
   font-size: 36px; }
 
+.bc_text_40 {
+  font-size: 40px; }
+
 .bc_text_48 {
   font-size: 48px; }
 
@@ -8124,6 +8128,9 @@ main a {
 
 .bc_line_height_20 {
   line-height: 20px; }
+
+.bc_line_height_21 {
+  line-height: 21px; }
 
 .bc_line_height_22 {
   line-height: 22px; }
@@ -9044,6 +9051,14 @@ div {
     position: absolute;
     right: 30px; }
 
+.shape-1 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 1px;
+  width: 100%;
+  border: 1px solid #BCA568;
+  background-color: #BCA568; }
+
 .bc_line_height {
   line-height: 1.2; }
 
@@ -9110,16 +9125,22 @@ ul.bullete_style {
             align-items: center;
     line-height: 24px;
     margin-bottom: 1em;
-    color: #1D1817; }
-    ul.bullete_style li:before {
-      content: "\2022";
-      font-family: "Font Awesome 5 Pro";
-      color: #666d89;
-      font-weight: bold;
-      display: inline-block;
-      font-size: 30px;
-      width: 1em;
-      margin-left: -1em; }
+    color: #1D1817;
+    /*&:before{
+		  content: "";
+		  font-family: "Font Awesome 5 Pro";
+		  color: $primary_color;
+		  font-weight: bold;
+		  display: inline-block;
+		  font-size: 30px;
+		  width: 1em;
+		  margin-left: -1em;
+		}*/ }
+    ul.bullete_style li svg {
+      color: #666d89 !important;
+      font-size: 10px;
+      line-height: 40px;
+      margin-right: 15px; }
 
 .btn_primary {
   background-color: #666d89 !important;
