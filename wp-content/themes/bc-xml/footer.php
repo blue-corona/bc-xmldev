@@ -74,13 +74,15 @@ defined( 'ABSPATH' ) || exit;
                     <span class="d-block bc_text_26 bc_line_height_26 bc_font_default bc_text_light bc_color_primary">Connect</span>
                     <span class="d-block mt-2 bc_text_18 bc_line_height_60 bc_font_alt_1 bc_text_16 bc_text_light bc_color_primary">Newsletter Signup</span>
                     <div class="form">
-                        <?php echo do_shortcode('[gravityform id=5 ajax=true]')?>
+                        <?php echo do_shortcode('[gravityform id=16 ajax=true]')?>
                     </div>
                 </div>
                 <div class="col-lg-12 border-top text-md-left pt-2 mt-5 text-center">
                     <span class="bc_text_18 bc_line_height_30 bc_color_brown bc_font_alt_1">
                         <a href="#" class="bc_color_brown bc_text_normal bc_color_brown_hover  bc_sm_text_12 bc_sm_line_height_24">Terms of Use </a>   |   <a href="#" class="bc_color_brown bc_text_normal bc_color_brown_hover  bc_sm_text_12 bc_sm_line_height_24">Privacy Policy</a>   |   <a href="#" class="bc_color_brown bc_text_normal bc_color_brown_hover  bc_sm_text_12 bc_sm_line_height_24">ADV Part 2A </a>  |   <a href="#" class="bc_color_brown bc_text_normal bc_color_brown_hover  bc_sm_text_12 bc_sm_line_height_24"> Form CRS </a>   |  <a href="#" class="bc_color_brown bc_text_normal bc_color_brown_hover  bc_sm_text_12 bc_sm_line_height_24"> WRAP Brochure </a>  |   <a href="#" class="bc_color_brown bc_text_normal bc_color_brown_hover  bc_sm_text_12 bc_sm_line_height_24"> Important Notices</a>
-                        <a href="#" class="bc_color_brown bc_text_normal bc_color_brown_hover  bc_sm_text_12 bc_sm_line_height_24"> Business Continuity  </a> | <a href="#" class="bc_color_brown bc_text_normal bc_color_brown_hover  bc_sm_text_12 bc_sm_line_height_24">  XML Securities  </a>
+                        <span class="d-block">
+                            <a href="#" class="bc_color_brown bc_text_normal bc_color_brown_hover  bc_sm_text_12 bc_sm_line_height_24"> Business Continuity  </a> | <a href="#" class="bc_color_brown bc_text_normal bc_color_brown_hover  bc_sm_text_12 bc_sm_line_height_24">  XML Securities  </a>
+                        </span>
                     </span>
                 </div>
             </div>
