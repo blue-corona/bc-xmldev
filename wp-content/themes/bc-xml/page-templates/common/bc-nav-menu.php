@@ -1,4 +1,4 @@
-<div class="container-fluid bc_nav_container px-0 m-0 sticky-top">
+<div class="container-fluid bc_nav_container px-0 m-0 menu">
     <div class="container px-0">
         <nav class="navbar navbar-expand-lg navbar-dark m-auto d-table w-100 px-0">
             <div id="navbarSupportedContent" class="navbar-collapse collapse" style="">
@@ -27,19 +27,25 @@
                 <div class="d-lg-none show-mar">
                     <?php echo get_search_form(['icon_color_class' => 'text-white'])?>
                 </div>
+                <div class="eagle-png position-absolute d-lg-none">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/eagle.png" class="img-fluid" alt="eagle png">
+                </div>
             </div>
         </nav>
     </div>
 </div>
 
-<!-- <script type="text/javascript">
-$(document).ready(function() {
-  $(window).scroll(function() {
-    if ($(document).scrollTop() > 50) {
-      $("#sticky_stop").addClass("nave");
-    } else {
-      $("#sticky_stop").removeClass("nave");
-    }
-  });
+<!-- <script>
+$(function() {
+    var icon = $(".menu");
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+    
+        if (scroll >= 100) {
+            icon.removeClass('menu').addClass("menu-alt");
+        } else {
+            icon.removeClass("menu-alt").addClass('menu');
+        }
+    });
 });
 </script> -->

@@ -13,6 +13,7 @@ get_header();?>
         <div class="row no-gutters">
             <div class="col-12">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/team-banner.jpg" class="img-fluid w-100" alt="Contact-banner">
+                <div class="gradient position-absolute"></div>
             </div>
         </div>
     </div>
@@ -135,7 +136,7 @@ get_header();?>
     </div>
 
     <div class="container-fluid px-0 m-0 borde_b_primary mt-5">
-      <div class="graphic_lines  pb-5">
+      <div class="graphic_lines pb-5">
           <div class="container">
               <div class="row no-gutters">
                   <div class="col-lg-10 px-lg-4 offset-lg-1 text-center">

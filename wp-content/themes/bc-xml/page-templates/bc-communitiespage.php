@@ -13,6 +13,7 @@ get_header();?>
         <div class="row no-gutters">
             <div class="col-12">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/communities.jpg" class="img-fluid w-100" alt="Contact-banner">
+                <div class="gradient position-absolute"></div>
             </div>
         </div>
     </div>
@@ -107,7 +108,7 @@ get_header();?>
         <div class="container">
             <div class="row no-gutters">
               <div class="col-lg-10 offset-lg-1 text-center pt-lg-5">
-                <span class="bc_text_28 bc_line_height_28 bc_font_default bc_color_primary bc_text_light bottom_line d-block position-relative mt-3">testimonials</span>
+                <span class="bc_text_28 bc_line_height_28 bc_font_default bc_color_primary bc_text_light bottom_line d-block position-relative mt-3 text-uppercase">testimonials</span>
                 <div class="col-lg-12">
                   <div class="swiper-button-next testimonials-button-next d-none d-lg-block">
                       <i class="far fa-chevron-right bc_text_30 bc_line_height_34 bc_color_primary"></i>
@@ -140,8 +141,8 @@ get_header();?>
         </div>
     </div>
 
-    <div class="container-fluid px-0 m-0 bc_color_tertiary_bg">
-      <div class="graphic_lines  pb-5">
+    <div class="container-fluid px-0 m-0 borde_b_primary">
+      <div class="graphic_lines pb-5">
           <div class="container">
               <div class="row no-gutters">
                   <div class="col-lg-10 px-lg-4 offset-lg-1 text-center">
