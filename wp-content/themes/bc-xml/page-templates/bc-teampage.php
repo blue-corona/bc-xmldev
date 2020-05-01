@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: teamPage Template
+ * Template Name: Team Page Template
  */
 
 // Exit if accessed directly.
