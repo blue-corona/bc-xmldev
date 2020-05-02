@@ -24,12 +24,11 @@ get_header();
             <div class="row text-center text-lg-center text-md-center ">
                 <div class="offset-md-2 col-md-8 col-12 offset-lg-2 col-lg-8 col-sm-12 px-3">
                     <h3 class="position-relative bottom_line mb-5">What We Believe</h3>
-
-                    <div class="pt-4 pb-4 what-we-video position-relative bg-white overflow-hidden" data-toggle="modal" data-target="#exampleModal">
+                    <div class="mx-5 what_we_video position-relative bg-white overflow-hidden" data-toggle="modal" data-target="#exampleModal">
                         <div class="row">
-                            <div class="offset-2 col-md-8 mt-n3">
+                            <div class="offset-2 col-md-8 mt-n3 pb-5">
                                 <span class="position-absolute"><i class="fas fa-caret-right text-white"></i></span>
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/what-we-icon.png" class="img-fluid w-75 mx-auto mt-n5">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/what-we-icon.png" class="img-fluid w-100 mx-auto mt-n5">
                             </div>
                         </div>
                     </div>

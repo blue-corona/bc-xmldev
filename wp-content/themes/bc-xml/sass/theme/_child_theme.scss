@@ -636,11 +636,12 @@ ul.bullete_style{
 
 //what we do
 
-.what-we-video{
+.what_we_video{
 	border:1px solid #fff;
 	box-shadow:13px 13px 0px $secondary_color;
+	transition: all ease 0.5s;
 	&:hover{
 		border-color: $tertiary_color;
-		
+		cursor:pointer;
 	}
 }

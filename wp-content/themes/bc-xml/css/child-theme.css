@@ -9552,11 +9552,14 @@ ul.bullete_style {
   background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#ffffff00));
   background: linear-gradient(#FFFFFF 0%, #ffffff00 100%); }
 
-.what-we-video {
+.what_we_video {
   border: 1px solid #fff;
   -webkit-box-shadow: 13px 13px 0px #cbb893;
-          box-shadow: 13px 13px 0px #cbb893; }
-  .what-we-video:hover {
-    border-color: #e7decd; }
+          box-shadow: 13px 13px 0px #cbb893;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s; }
+  .what_we_video:hover {
+    border-color: #e7decd;
+    cursor: pointer; }
 
 /*# sourceMappingURL=child-theme.css.map */
