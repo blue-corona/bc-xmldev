@@ -30,7 +30,7 @@ defined( 'ABSPATH' ) || exit;
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/XML-Logo-footer.jpg" class="img-fluid d-block mx-auto" alt="logo">
                         </a>
                     </div>
-                    <span class="bc_text_16 bc_line_height_26 bc_font_alt_1 bc_color_primary d-block mt-5 mb-3">Securities offered through Lara, May & Associates, LLC, Member <span class="
+                    <span class="bc_text_16 bc_line_height_28 bc_font_alt_1 bc_color_primary d-block mt-5 mb-3">Securities offered through Lara, May & Associates, LLC, Member <span class="
                             bc_color_secondary">FINRA / SIPC </span> Headquartered at 7600 Leesburg Pike, Suite 120 East, Falls Church, VA 22043, 555-555-5555</span>
                     <div class="socil-icon position-relative">
                         <i class="fab fa-facebook-f bc_color_secondary bc_text_19 mr-2"></i>
@@ -40,15 +40,15 @@ defined( 'ABSPATH' ) || exit;
                 </div>
                 <div class="col-lg-2 text-center text-md-left mt-5 mt-md-0">
                     <span class="bc_text_26 bc_line_height_26 bc_font_default bc_text_light bc_color_primary">Locations</span>
-                    <span class="d-block bc_text_18 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_secondary  mb-2 mt-3">Rockville, MD</span>
+                    <span class="d-block bc_text_18 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_secondary mt-3">Rockville, MD</span>
                     <a href="#" class="d-block bc_text_16 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> T: 555-555-5555</a>
                     <a href="#" class="d-block bc_text_16 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1">F: 555-555-5555</a>
-                    <span class="d-block bc_text_18 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_secondary  mb-2 mt-3"> Falls Church, VA </span>
+                    <span class="d-block bc_text_18 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_secondary mt-3"> Falls Church, VA </span>
                     <a href="#" class="d-block bc_text_16 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> T: 555-555-5555</a>
                     <a href="#" class="d-block bc_text_16 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> LMA: 555-555-5555</a>
                     <a href="#" class="d-block bc_text_16 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1">F: 555-555-5555</a>
                     <a href="#" class="d-block bc_text_16 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> LMA: 555-555-5555</a>
-                    <span class="d-block bc_text_18 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_secondary  mb-2 mt-3"> Breckenridge, CO</span>
+                    <span class="d-block bc_text_18 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_secondary mt-3"> Breckenridge, CO</span>
                     <a href="#" class="d-block bc_text_16 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> T: 555-555-5555</a>
                     <a href="#" class="d-block bc_text_16 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> F: 555-555-5555</a>
                 </div>
@@ -74,13 +74,15 @@ defined( 'ABSPATH' ) || exit;
                     <span class="d-block bc_text_26 bc_line_height_26 bc_font_default bc_text_light bc_color_primary">Connect</span>
                     <span class="d-block mt-2 bc_text_18 bc_line_height_60 bc_font_alt_1 bc_text_16 bc_text_light bc_color_primary">Newsletter Signup</span>
                     <div class="form">
-                        <?php echo do_shortcode('[gravityform id=5 ajax=true]')?>
+                        <?php echo do_shortcode('[gravityform id=16 ajax=true]')?>
                     </div>
                 </div>
                 <div class="col-lg-12 border-top text-md-left pt-2 mt-5 text-center">
                     <span class="bc_text_18 bc_line_height_30 bc_color_brown bc_font_alt_1">
                         <a href="#" class="bc_color_brown bc_text_normal bc_color_brown_hover  bc_sm_text_12 bc_sm_line_height_24">Terms of Use </a>   |   <a href="#" class="bc_color_brown bc_text_normal bc_color_brown_hover  bc_sm_text_12 bc_sm_line_height_24">Privacy Policy</a>   |   <a href="#" class="bc_color_brown bc_text_normal bc_color_brown_hover  bc_sm_text_12 bc_sm_line_height_24">ADV Part 2A </a>  |   <a href="#" class="bc_color_brown bc_text_normal bc_color_brown_hover  bc_sm_text_12 bc_sm_line_height_24"> Form CRS </a>   |  <a href="#" class="bc_color_brown bc_text_normal bc_color_brown_hover  bc_sm_text_12 bc_sm_line_height_24"> WRAP Brochure </a>  |   <a href="#" class="bc_color_brown bc_text_normal bc_color_brown_hover  bc_sm_text_12 bc_sm_line_height_24"> Important Notices</a>
-                        <a href="#" class="bc_color_brown bc_text_normal bc_color_brown_hover  bc_sm_text_12 bc_sm_line_height_24"> Business Continuity  </a> | <a href="#" class="bc_color_brown bc_text_normal bc_color_brown_hover  bc_sm_text_12 bc_sm_line_height_24">  XML Securities  </a>
+                        <span class="d-block">
+                            <a href="#" class="bc_color_brown bc_text_normal bc_color_brown_hover  bc_sm_text_12 bc_sm_line_height_24"> Business Continuity  </a> | <a href="#" class="bc_color_brown bc_text_normal bc_color_brown_hover  bc_sm_text_12 bc_sm_line_height_24">  XML Securities  </a>
+                        </span>
                     </span>
                 </div>
             </div>
