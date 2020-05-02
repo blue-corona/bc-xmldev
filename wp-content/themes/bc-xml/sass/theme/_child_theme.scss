@@ -640,8 +640,20 @@ ul.bullete_style{
 	border:1px solid #fff;
 	box-shadow:13px 13px 0px $secondary_color;
 	transition: all ease 0.5s;
+	span{
+		position:absolute;
+		background:$primary_color;
+		width:40px;
+		height:40px;
+		line-height:40px;
+		top:50%;
+		left:50%;
+		transform:translate{-50%, -50%};
+		z-index:9;
+	}
 	&:hover{
 		border-color: $tertiary_color;
 		cursor:pointer;
 	}
+
 }
