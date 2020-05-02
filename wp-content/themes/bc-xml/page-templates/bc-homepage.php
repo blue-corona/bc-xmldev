@@ -23,11 +23,11 @@ get_header();
         <div class="container px-md-4">
             <div class="row text-center text-lg-center text-md-center ">
                 <div class="offset-md-2 col-md-8 col-12 offset-lg-2 col-lg-8 col-sm-12 px-3">
-                    <h3>What We Believe</h3>
+                    <h3 class="position-relative bottom_line mb-5">What We Believe</h3>
 
-                    <div class="pt-4 pb-4 what-we-video" data-toggle="modal" data-target="#exampleModal">
-                        <span><i class="fas fa-caret-right"></i></span>
-                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-testimonials.png" class="img-fluid w-75 mx-auto">
+                    <div class="pt-4 pb-4 what-we-video position-relative bg-white" data-toggle="modal" data-target="#exampleModal">
+                        <span class="position-absolute"><i class="fas fa-caret-right text-white"></i></span>
+                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/what-we-icon.png" class="img-fluid w-75 mx-auto">
                     </div>
 
                     <!-- Modal -->
@@ -57,7 +57,19 @@ get_header();
 
 
    
-
+    <div class="container-fluid px-0 m-0 borde_b_primary mt-5">
+      <div class="graphic_lines pb-5">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-10 px-lg-4 offset-lg-1 text-center">
+                    <span class="position-relative bc_text_36 bc_line_height_36 mt-5 bc_font_default bc_text_thin text-white bottom_line1 d-block">Wondering if there might be something more you and your money could do?</span>
+                    <span class="bc_text_20 bc_line_height_34 bc_font_alt_1 bc_text_light text-white d-block mt-4 pt-1">There are several different ways to connect with us. Chose whichever you are most <br> comfortable with. </span>
+                    <a href="#" class="btn_secondary px-4 py-2 mt-4">let’s talk </a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
 
     
     <?php 
