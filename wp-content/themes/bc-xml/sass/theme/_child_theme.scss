@@ -638,11 +638,9 @@ ul.bullete_style{
 
 .what-we-video{
 	border:1px solid #fff;
-	&:before{
-		position: absolute;
-		content: "";
-		top: 13;
-		left: -13;
-		background:$secondary_color;
+	box-shadow:13px 13px 0px $secondary_color;
+	&:hover{
+		border-color: $tertiary_color;
+		
 	}
 }

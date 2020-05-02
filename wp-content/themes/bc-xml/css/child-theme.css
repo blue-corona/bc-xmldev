@@ -9553,12 +9553,10 @@ ul.bullete_style {
   background: linear-gradient(#FFFFFF 0%, #ffffff00 100%); }
 
 .what-we-video {
-  border: 1px solid #fff; }
-  .what-we-video:before {
-    position: absolute;
-    content: "";
-    top: 13;
-    left: -13;
-    background: #cbb893; }
+  border: 1px solid #fff;
+  -webkit-box-shadow: 13px 13px 0px #cbb893;
+          box-shadow: 13px 13px 0px #cbb893; }
+  .what-we-video:hover {
+    border-color: #e7decd; }
 
 /*# sourceMappingURL=child-theme.css.map */
