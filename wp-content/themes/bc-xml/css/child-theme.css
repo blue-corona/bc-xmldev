@@ -8894,7 +8894,6 @@ ul.gform_fields li::before {
     font-weight: 100;
     text-transform: uppercase;
     line-height: 36px;
-    letter-spacing: 50;
     color: #666d89; }
   h2, .h2 {
     font-family: #1d1817;
@@ -8902,7 +8901,6 @@ ul.gform_fields li::before {
     font-weight: 100;
     text-transform: uppercase;
     line-height: 32px;
-    letter-spacing: 25px;
     color: #cbb893; }
   h3, .h3 {
     font-family: #666d89;
@@ -8910,7 +8908,6 @@ ul.gform_fields li::before {
     font-weight: 300;
     text-transform: uppercase;
     line-height: 28px;
-    letter-spacing: 25px;
     color: #666d89; }
   h4, .h4 {
     font-family: #cbb893;
@@ -8918,7 +8915,6 @@ ul.gform_fields li::before {
     font-weight: 300;
     text-transform: uppercase;
     line-height: 24px;
-    letter-spacing: 25;
     color: #e7decd; }
   h5, .h5 {
     font-family: "Work Sans", sans-serif;
@@ -8949,7 +8945,6 @@ ul.gform_fields li::before {
     font-weight: 700;
     text-transform: none;
     line-height: 30px;
-    letter-spacing: 25px;
     color: #e7decd; }
     main a:hover {
       text-decoration: underline; }
@@ -9625,5 +9620,14 @@ ul.bullete_style {
   font-weight: 300;
   letter-spacing: 0;
   line-height: 60px; }
+
+.who_we_buttons .swiper-button-next {
+  right: -5px; }
+
+.who_we_buttons .swiper-button-prev {
+  left: -0px; }
+
+.who_we {
+  background-color: #FAF8F5; }
 
 /*# sourceMappingURL=child-theme.css.map */
