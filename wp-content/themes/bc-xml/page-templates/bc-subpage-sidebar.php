@@ -28,12 +28,12 @@ global $post;
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, hyperlink example qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam. </p>
                     <a href="#" class="btn_primary py-2 px-3 mt-4">CTA GOES HERE</a>
                     <h3 class="mt-5 pl-4 mb-2">Bulleted List Example</h3>
-                    <ul class="bullete_style pl-5">
-                        <li>Sed ut perspiciatis unde</li>
-                        <li>Omnis iste natus error sit</li>
-                        <li>Voluptatem accusantium</li>
-                        <li>Doloremque laudantium</li>
-                        <li>Totam rem aperiam amet</li>
+                    <ul class="bullete_style pl-4" >
+                        <li> <i class="fas fa-circle"></i> Sed ut perspiciatis unde</li>
+                        <li> <i class="fas fa-circle"></i> Omnis iste natus error sit</li>
+                        <li>  <i class="fas fa-circle"></i> Voluptatem accusantium</li>
+                        <li> <i class="fas fa-circle"></i> Doloremque laudantium</li>
+                        <li> <i class="fas fa-circle"></i> Totam rem aperiam amet</li>
                     </ul>
                     <div id="accordion" class="accordion w-100 border-bottom mt-4">
                       <div class="card rounded-0 mb-0">
@@ -69,12 +69,12 @@ global $post;
                 <div class="col-lg-4 pl-lg-4">
                     <div class="how_we_work position-relative overflow-hdden bc_color_lightgray_bg text-center px-4 pt-5 pb-4">
                         <span></span>
-                        <h3 class="position-relative bottom_line">how we work</h3>
-                        <p class="mt-5">We’re here to help you make investments that align with your lifestyle.</p>
+                        <h3 class="position-relative bottom_line bc_color_dark_primary bc_text_normal">how we work</h3>
+                        <p class="mt-5 bc_color_dark_primary bc_text_24 bc_text_normal">We’re here to help you make investments that align with your lifestyle.</p>
                         <a href="#" class="btn_primary py-2 px-3 mt-4">learn how</a>
                     </div>
                     <div class="who_we_are mt-5 pt-lg-5 text-center">
-                       <h3 class="position-relative bottom_line text-uppercase">who we are</h3>
+                       <h3 class="position-relative bottom_line text-uppercase bc_text_normal">who we are</h3>
                        <div class="swiper-container team-swiper pb-3 mt-4">
                             <div class="swiper-wrapper pb-2">
                                 <div class="swiper-slide text-center p-4">
@@ -113,7 +113,7 @@ global $post;
                     </div>
                     <div class="resources px-4 py-5 mt-5 text-center">
                         <h3 class="position-relative bottom_line text-uppercase bc_text_normal">resources</h3>
-                        <p class="mt-5 bc_color_primary bc_text_24 bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
+                        <p class="mt-5 bc_color_dark_primary bc_text_24 bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
                         <a href="#" class="btn_primary px-3 py-2 mt-3">learn how</a>
                     </div>
                 </div>
