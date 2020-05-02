@@ -27,7 +27,7 @@ get_header();
                     <div class="mx-5 position-relative bg-white overflow-hidden what_we_video" data-toggle="modal" data-target="#exampleModal">
                         <div class="row">
                             <div class="offset-2 col-md-8 mt-n3 pb-5">
-                                <span class="position-absolute play_icon p-3 text-center">
+                                <span class="position-absolute play_icon text-center">
                                     <i class="fas fa-caret-right"></i>
                                 </span>
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/what-we-icon.png" class="img-fluid w-100 mx-auto mt-n5">
@@ -61,7 +61,150 @@ get_header();
         </div>
     </div> 
 
+    <div class="container-fluid p-0 pt-5 pb-5">
+        <div class="container px-md-4">
+            <div class="row">
+                <div class="col-md-12 text-center text-lg-center text-md-center"><h3 class="position-relative bottom_line mb-5">How We Work</h3></div>
+                <div class="col-md-12 m-4">
+                    <div class="swiper-container how_we_swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide bg-white" >
+                              <div class="row align-items-center">
+                                    <div class="offset-md-1 col-md-5 col-12">
+                                        <div class="pl-5">
+                                            <p class="text-uppercase">team driven<span class="d-block">investing</span></p>
+                                            <p>“No one knows everything.” We try to make informed, rational decisions that align your investments with your lifestyle.</p>
+                                            <a href="#" class="btn_primary py-2 px-3 mt-4">LEARN HOW</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 d-none d-md-block">
+                                        <div class="image position-relative d-inline-block mx-auto p-3">
+                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.jpg" class="img-fluid" alt="team" >
+                                        </div>
+                                    </div>
+                              </div>
+                          </div>
+                          <div class="swiper-slide bg-white">
+                              <div class="row align-items-center">
+                                    <div class="offset-md-1 col-md-5 col-12">
+                                        <div class="pl-5">
+                                            <p class="text-uppercase">360<span class="d-block">SUPPORT</span></p>
+                                            <p>“We have a person for that”. If it’s important to you, we are here to help, beyond just investments and planning.</p>
+                                            <a href="#" class="btn_primary py-2 px-3 mt-4">LEARN HOW</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 d-none d-md-block">
+                                        <div class="image position-relative d-inline-block mx-auto p-3">
+                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.jpg" class="img-fluid" alt="team" >
+                                        </div>
+                                    </div>
+                              </div>
+                          </div>
+                          <div class="swiper-slide bg-white">
+                              <div class="row align-items-center">
+                                    <div class="offset-md-1 col-md-5 col-12">
+                                        <div class="pl-5">
+                                            <p class="text-uppercase"><span class="d-block">QUALIFIED</span></p>
+                                            <p>“We’ve got the credentials.”</p>
+                                            <a href="#" class="btn_primary py-2 px-3 mt-4">Meet the team</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 d-none d-md-block">
+                                        <div class="image position-relative d-inline-block mx-auto p-3">
+                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.jpg" class="img-fluid" alt="team" >
+                                        </div>
+                                    </div>
+                              </div>
+                          </div>
+                          <div class="swiper-slide bg-white">
+                              <div class="row align-items-center">
+                                    <div class="offset-md-1 col-md-5 col-12">
+                                        <div class="pl-5">
+                                            <p class="text-uppercase">Community<span class="d-block">CENTRIC</span></p>
+                                            <p>“Our clients are not clones.”</p>
+                                            <a href="#" class="btn_primary py-2 px-3 mt-4">Learn more about how we advise our community</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 d-none d-md-block">
+                                        <div class="image position-relative d-inline-block mx-auto p-3">
+                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.jpg" class="img-fluid" alt="team" >
+                                        </div>
+                                    </div>
+                              </div>
+                          </div>
+                          <div class="swiper-slide bg-white">
+                              <div class="row align-items-center">
+                                    <div class="offset-md-1 col-md-5 col-12">
+                                        <div class="pl-5">
+                                            <p class="text-uppercase"><span class="d-block">INDEPENDENT</span></p>
+                                            <p>“We think for ourselves.”</p>
+                                            <a href="#" class="btn_primary py-2 px-3 mt-4">Read about our beliefs and how we invest in our community</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 d-none d-md-block">
+                                        <div class="image position-relative d-inline-block mx-auto p-3">
+                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.jpg" class="img-fluid" alt="team" >
+                                        </div>
+                                    </div>
+                              </div>
+                          </div>
+                        </div>
+                        
+                        <div class="swiper-pagination how_we_pagination"></div>
+                       
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
 
+    <div class="container-fluid p-0 pt-5 pb-5">
+        <div class="container px-md-4">
+            <div class="row">
+                <div class="col-md-12 text-center text-lg-center text-md-center"><h3 class="position-relative bottom_line mb-5">Who We Are</h3></div>
+                <div class="col-md-7 col-12 order-2 order-md-1 ">
+                  <!-- Swiper -->
+                    <div class="swiper-container who_we_swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="image position-relative d-inline-block mx-auto p-3">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brett-headshot.jpg">
+                            </div>
+                            <h3 class="position-relative bottom_line_2 bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center">Brett Bernstein, CFP®</h3>
+                            <p class="bc_color_secondary bc_text_16 bc_line_height_50 bc_font_alt_1 d-block mt-2 text-center">CEO & Co-founder</p>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="image position-relative d-inline-block mx-auto p-3">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rob-headshot.jpg">
+                            </div>
+                            <h3 class="position-relative bottom_line_2 bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center">Rob Kantor</h3>
+                            <p class="bc_color_secondary bc_text_16 bc_line_height_50 bc_font_alt_1 d-block mt-2 text-center">CIO & Co-founder</p>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="image position-relative d-inline-block mx-auto p-3">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/curtis-headshot.jpg">
+                            </div>
+                            <h3 class="position-relative bottom_line_2 bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center">Curtis Congdon, CRPC®, CFP®</h3>
+                            <p class="bc_color_secondary bc_text_16 bc_line_height_50 bc_font_alt_1 d-block mt-2 text-center">President</p>
+                          </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination who_we_pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="who_we_buttons">
+                            <div class="swiper-button-next"><i class="fal fa-angle-right"></i></div>
+                            <div class="swiper-button-prev"><i class="fal fa-angle-left"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 order-1 order-md-2">
+                    <h2 class="text-capitalize">A Team of <span class="d-block">Passionate Experts</span></h2>
+                    <p>With roots back to 1981 XML has been passionate about assembling a team of experts not just in money management but also in listening and in sincere care for our client's well being. We currently have CFPs, CRPCs, MBAs working to improve our Client's lives.</p>
+                    <a href="#" class="btn_secondary px-4 py-2 mt-4">FULL TEAM</a>
+                </div>
+            </div>
+        </div>
+    </div>
    
     <div class="container-fluid px-0 m-0 borde_b_primary mt-5">
       <div class="graphic_lines pb-5">
@@ -112,7 +255,30 @@ jQuery(document).ready(function(){
     });
 });
 
-
+var swiper = new Swiper('.how_we_swiper', {
+      direction: 'vertical',
+      spaceBetween: 30,
+      effect: 'fade',
+      pagination: {
+        el: '.how_we_pagination',
+        clickable: true,
+      },
+});
+var swiper = new Swiper('.who_we_swiper', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.who_we_pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+ });
 </script>
 <?php }
 add_action( 'wp_footer' , 'serviceAreaJavascript' );?>

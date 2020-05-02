@@ -634,6 +634,8 @@ ul.bullete_style{
 }
 
 
+
+
 //what we do
 
 .what_we_video{
@@ -641,19 +643,86 @@ ul.bullete_style{
 	box-shadow:13px 13px 0px $secondary_color;
 	transition: all ease 0.5s;
 	span{
-		position:absolute;
 		background:$primary_color;
-		width:40px;
-		height:40px;
-		line-height:40px;
-		top:50%;
-		left:50%;
-		transform:translate{-50%, -50%};
-		z-index:9;
+		width: 40px;
+	    height: 40px;
+	    top: 50%;
+	    left: 50%;
+	    z-index: 9;
+	    transform: translate(-50%);
+	    border-radius: 100%;
+	    line-height: 40px;
+	    display: block;
+	    color: #fff;
+	    font-size: 32px;
 	}
 	&:hover{
 		border-color: $tertiary_color;
 		cursor:pointer;
 	}
 
+}
+
+.how_we_swiper{
+	p{
+		span{
+			color: #666D89;
+			font-size: 40px;
+			font-weight: 600;
+			letter-spacing: 0;
+			line-height: 38px;
+		}
+	}
+}
+.how_we_swiper{
+	max-height:450px;
+}
+.how_we_pagination{
+	left:0px;
+	width:20px;
+	.swiper-pagination-bullet{
+	    width: 18px !important;
+	    height: 18px !important;
+	    margin: 0 3px;
+	    border-radius: 50%;
+	    border: 2px solid $primary_color;
+	    background: #ffffff !important;
+	    opacity: .5 !important;
+	}
+}
+.how_we_pagination{
+	.swiper-pagination-bullet-active{
+	    opacity: .5;
+	    background: $primary_color !important;
+	}
+}
+.who_we_pagination{
+	left:0px;
+	width:20px;
+	.swiper-pagination-bullet{
+	    width: 18px !important;
+	    height: 18px !important;
+	    margin: 0 3px;
+	    border-radius: 50%;
+	    border: 2px solid $primary_color;
+	    background: #ffffff !important;
+	    opacity: .5 !important;
+	}
+}
+.who_we_pagination{
+	.swiper-pagination-bullet-active{
+	    opacity: .5;
+	    background: $primary_color !important;
+	}
+}
+
+.who_we_buttons{
+	div{
+	    opacity: 0.6;
+		color: $primary_color;
+		font-size: 30px;
+		font-weight: 300;
+		letter-spacing: 0;
+		line-height: 60px;
+	}
 }
