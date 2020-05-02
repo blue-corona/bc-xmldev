@@ -25,9 +25,13 @@ get_header();
                 <div class="offset-md-2 col-md-8 col-12 offset-lg-2 col-lg-8 col-sm-12 px-3">
                     <h3 class="position-relative bottom_line mb-5">What We Believe</h3>
 
-                    <div class="pt-4 pb-4 what-we-video position-relative bg-white" data-toggle="modal" data-target="#exampleModal">
-                        <span class="position-absolute"><i class="fas fa-caret-right text-white"></i></span>
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/what-we-icon.png" class="img-fluid w-50 mx-auto">
+                    <div class="pt-4 pb-4 what-we-video position-relative bg-white overflow-hidden" data-toggle="modal" data-target="#exampleModal">
+                        <div class="row">
+                            <div class="offset-2 col-md-8 mt-n3">
+                                <span class="position-absolute"><i class="fas fa-caret-right text-white"></i></span>
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/what-we-icon.png" class="img-fluid w-75 mx-auto mt-n5">
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Modal -->

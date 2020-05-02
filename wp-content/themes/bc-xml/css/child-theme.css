@@ -9552,4 +9552,13 @@ ul.bullete_style {
   background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#ffffff00));
   background: linear-gradient(#FFFFFF 0%, #ffffff00 100%); }
 
+.what-we-video {
+  border: 1px solid #fff; }
+  .what-we-video:before {
+    position: absolute;
+    content: "";
+    top: 13;
+    left: -13;
+    background: #cbb893; }
+
 /*# sourceMappingURL=child-theme.css.map */
