@@ -27,7 +27,7 @@ get_header();
 
                     <div class="pt-4 pb-4 what-we-video position-relative bg-white" data-toggle="modal" data-target="#exampleModal">
                         <span class="position-absolute"><i class="fas fa-caret-right text-white"></i></span>
-                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/what-we-icon.png" class="img-fluid w-75 mx-auto">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/what-we-icon.png" class="img-fluid w-50 mx-auto">
                     </div>
 
                     <!-- Modal -->
