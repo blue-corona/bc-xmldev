@@ -9,42 +9,46 @@ defined( 'ABSPATH' ) || exit;
 get_header('variant-announcement-bar');?>
 
 <main role="main">
-   <div class="container-fluid px-0 m-0 subpage_banner">
-   <div class="row no-gutters">
-            <div class="col-12"
- <?php if (has_post_thumbnail() ) 
-{ 
-    $image = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_id() ), 'single-post-thumbnail' ); ?> style="min-height:391px;background-repeat: no-repeat; background-image: url('<?php echo $image[0]; ?>');"
-     <?php 
- }
- else
- {
-  ?> 
-    style="min-height:391px; background-repeat: no-repeat;background-image: url('<?php echo get_stylesheet_directory_uri();?>/img/contact-banner.jpg');" 
-    <?php 
-}
-    ?>>
-   
+  <div class="container-fluid px-0 m-0 subpage_banner">
+        <div class="row no-gutters">
+            <div class="col-12">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/contact-banner.jpg" class="img-fluid w-100" alt="Contact-banner">
+                <div class="gradient position-absolute"></div>
+            </div>
+        </div>
     </div>
+   <div class="container-fluid m-0 py-5">
+     <div class="container">
+       <div class="row no-gutters">
+         <div class="col-lg-8">
+           <div class="row no-gutters">
+             <div class="col-lg-12 mb-4">
+                <h1> let’s talk </h1>
+                <h2 class="text-capitalize mt-4"> Our Offices </h2>
+                <p> Three locations to better serve our clients </p>
+             </div>
+             <div class="col-md-6 mb-5">
+                <h3> ROCKVILLE, MD </h3>
+                <p class="mb-0"> One Preserve Parkway <br> Suite 120 <br> Rockville, MD 20852 <br></p>
+                <p class="bc_text_bold mb-0">T: 555-555-5555</p>
+                <p class="bc_text_bold mb-0">F: 555-555-5555</p>
+                <a href="#" class="bc_text_bold bc_text_20 bc_line_height_34"> MAP > </a>
+             </div>
+             <div class="col-md-6 text-right  mb-5">
+               <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rockville.jpg" class="img-fluid" alt="rockville">
+             </div>
+             <div class="col-md-6  mb-5">
+                <h3> FALLS CHURCH, VA </h3>
+                <p class="mb-0"> 7600 Leesburg Pike <br> Suite 120 East <br> Falls Church, VA 22043</p>
+                <p class="bc_text_bold mb-0">T: 555-555-5555</p>
+                <p class="bc_text_bold mb-0">F: 555-555-5555</p>
+                <a href="#" class="bc_text_bold bc_text_20 bc_line_height_34"> MAP > </a>
+             </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
    </div>
-</div>
- <div class="container-fluid py-5 m-0">
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="col-lg-12">
-
-    <!-- Contact Form and section -->
-    <?php 
-    if ( have_posts() ) : 
-    	while ( have_posts() ) : the_post();
-			the_content();
-		endwhile;
-	endif;
-	?>
-
-   </div>
-  </div>
-  </div> 
-</div>
 </main>
 <?php get_footer();?>
