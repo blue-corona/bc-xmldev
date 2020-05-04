@@ -19,18 +19,18 @@ get_header();
             get_template_part( 'page-templates/hero-section/bc-hero-video' );
         }
     ?>
-    <div class="container-fluid p-0 pt-5 pb-5 mt-n5 what_we_do">
-        <div class="container px-md-4">
-            <div class="row text-center text-lg-center text-md-center ">
-                <div class="offset-md-2 col-md-8 col-12 offset-lg-2 col-lg-8 col-sm-12 px-3">
+    <div class="container-fluid p-0 pt-5 pb-5 what_we_do">
+        <div class="container pt-5 pb-5 px-lg-5">
+            <div class="row text-center text-lg-center text-md-center p-lg-5 px-0">
+                <div class="col-12 offset-lg-2 col-lg-8 col-sm-12 pt-5 pb-5 px-2 px-md-0">
                     <h3 class="position-relative bottom_line mb-5">What We Believe</h3>
-                    <div class="mx-5 position-relative bg-white overflow-hidden what_we_video" data-toggle="modal" data-target="#exampleModal">
+                    <div class="mx-md-5 mx-4 position-relative bg-white overflow-hidden what_we_video" data-toggle="modal" data-target="#exampleModal">
                         <div class="row">
-                            <div class="offset-2 col-md-8 mt-n3 pb-5">
+                            <div class="offset-lg-2 col-lg-8 mt-n3 pb-md-5 pb-3">
                                 <span class="position-absolute play_icon text-center">
                                     <i class="fas fa-caret-right"></i>
                                 </span>
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/what-we-icon.png" class="img-fluid w-100 mx-auto mt-n5">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/what-we-icon.png" class="img-fluid  mx-auto mt-md-n5 mt-n3">
 
                             </div>
                         </div>
@@ -65,13 +65,13 @@ get_header();
         <div class="container px-md-4">
             <div class="row">
                 <div class="col-md-12 text-center text-lg-center text-md-center"><h3 class="position-relative bottom_line mb-5">How We Work</h3></div>
-                <div class="col-md-12 m-4">
+                <div class="col-md-12 m-md-4">
                     <div class="swiper-container how_we_swiper">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide bg-white" >
                               <div class="row align-items-center">
                                     <div class="offset-md-1 col-md-5 col-12">
-                                        <div class="pl-5">
+                                        <div class="pl-md-5 text-center text-md-left">
                                             <p class="text-uppercase">team driven<span class="d-block">investing</span></p>
                                             <p>“No one knows everything.” We try to make informed, rational decisions that align your investments with your lifestyle.</p>
                                             <a href="#" class="btn_primary py-2 px-3 mt-4">LEARN HOW</a>
@@ -87,7 +87,7 @@ get_header();
                           <div class="swiper-slide bg-white">
                               <div class="row align-items-center">
                                     <div class="offset-md-1 col-md-5 col-12">
-                                        <div class="pl-5">
+                                        <div class="pl-md-5 text-center text-md-left">
                                             <p class="text-uppercase">360<span class="d-block">SUPPORT</span></p>
                                             <p>“We have a person for that”. If it’s important to you, we are here to help, beyond just investments and planning.</p>
                                             <a href="#" class="btn_primary py-2 px-3 mt-4">LEARN HOW</a>
@@ -103,7 +103,7 @@ get_header();
                           <div class="swiper-slide bg-white">
                               <div class="row align-items-center">
                                     <div class="offset-md-1 col-md-5 col-12">
-                                        <div class="pl-5">
+                                        <div class="pl-md-5 text-center text-md-left">
                                             <p class="text-uppercase"><span class="d-block">QUALIFIED</span></p>
                                             <p>“We’ve got the credentials.”</p>
                                             <a href="#" class="btn_primary py-2 px-3 mt-4">Meet the team</a>
@@ -119,7 +119,7 @@ get_header();
                           <div class="swiper-slide bg-white">
                               <div class="row align-items-center">
                                     <div class="offset-md-1 col-md-5 col-12">
-                                        <div class="pl-5">
+                                        <div class="pl-md-5 text-center text-md-left">
                                             <p class="text-uppercase">Community<span class="d-block">CENTRIC</span></p>
                                             <p>“Our clients are not clones.”</p>
                                             <a href="#" class="btn_primary py-2 px-3 mt-4">Learn more about how we advise our community</a>
@@ -135,7 +135,7 @@ get_header();
                           <div class="swiper-slide bg-white">
                               <div class="row align-items-center">
                                     <div class="offset-md-1 col-md-5 col-12">
-                                        <div class="pl-5">
+                                        <div class="pl-md-5 text-center text-md-left">
                                             <p class="text-uppercase"><span class="d-block">INDEPENDENT</span></p>
                                             <p>“We think for ourselves.”</p>
                                             <a href="#" class="btn_primary py-2 px-3 mt-4">Read about our beliefs and how we invest in our community</a>
@@ -156,6 +156,10 @@ get_header();
                 </div>                
             </div>
         </div>
+    </div>
+    
+    <div class="container-fluid p-0">
+      <div class="grey-bg"></div>
     </div>
 
     <div class="container-fluid p-0 pt-5 pb-5 who_we">
@@ -268,6 +272,11 @@ var swiper = new Swiper('.how_we_swiper', {
         el: '.how_we_pagination',
         clickable: true,
       },
+      breakpoints:{
+        767:{
+          direction: 'horizontal',
+        }
+      }
 });
 var swiper = new Swiper('.who_we_swiper', {
       slidesPerView: 3,

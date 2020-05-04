@@ -9547,6 +9547,37 @@ ul.bullete_style {
   background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#ffffff00));
   background: linear-gradient(#FFFFFF 0%, #ffffff00 100%); }
 
+.home_banner {
+  background-position: bottom; }
+
+.what_we_do {
+  background-image: url("../img/what-we.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin-top: -11.76rem; }
+  @media only screen and (max-width: 991px) {
+    .what_we_do {
+      margin-top: -11.4rem; } }
+  @media only screen and (max-width: 768px) {
+    .what_we_do {
+      background-image: url("../img/what-we-mobile.png");
+      margin-top: -8rem; } }
+  @media only screen and (max-width: 767px) {
+    .what_we_do {
+      margin-top: -5.3rem;
+      padding: 7rem 0 !important; } }
+  @media only screen and (max-width: 661px) {
+    .what_we_do {
+      margin-top: -4.4rem;
+      padding: 4rem 0rem !important; } }
+  @media only screen and (max-width: 620px) {
+    .what_we_do {
+      margin-top: -4.2rem; } }
+  @media only screen and (max-width: 540px) {
+    .what_we_do {
+      margin-top: -3.9rem; } }
+
 .what_we_video {
   border: 1px solid #fff;
   -webkit-box-shadow: 13px 13px 0px #cbb893;
@@ -9567,9 +9598,21 @@ ul.bullete_style {
     display: block;
     color: #fff;
     font-size: 32px; }
+  .what_we_video img {
+    opacity: 0.3;
+    -webkit-transition: all ease 0.4s;
+    transition: all ease 0.4s; }
+    @media screen and (max-width: 991px) {
+      .what_we_video img {
+        max-width: 400px; } }
+    @media screen and (max-width: 767px) {
+      .what_we_video img {
+        max-width: 250px; } }
   .what_we_video:hover {
     border-color: #e7decd;
     cursor: pointer; }
+    .what_we_video:hover img {
+      opacity: 1; }
 
 .how_we_swiper p span {
   color: #666D89;
@@ -9580,22 +9623,48 @@ ul.bullete_style {
 
 .how_we_swiper {
   max-height: 450px; }
+  @media screen and (max-width: 767px) {
+    .how_we_swiper {
+      max-width: 100%;
+      height: 100%; } }
 
 .how_we_pagination {
   left: 0px;
   width: 20px; }
   .how_we_pagination .swiper-pagination-bullet {
-    width: 18px !important;
-    height: 18px !important;
+    width: 26px !important;
+    height: 26px !important;
     margin: 0 3px;
-    border-radius: 50%;
-    border: 2px solid #666d89;
-    background: #ffffff !important;
-    opacity: .5 !important; }
+    background-size: cover;
+    background: url("../img/pagination.png");
+    opacity: 1; }
 
 .how_we_pagination .swiper-pagination-bullet-active {
-  opacity: .5;
-  background: #666d89 !important; }
+  background: url("../img/pagination-fill.png"); }
+
+@media (hover: none), only screen and (max-width: 767px) {
+  .how_we_swiper .text-uppercase {
+    min-height: 70px; }
+  .how_we_swiper p {
+    min-height: 110px; }
+  .how_we_pagination {
+    bottom: 90px !important; } }
+
+.grey-bg {
+  background: url("../img/greybg.png");
+  padding: 110px 0px;
+  background-size: cover;
+  position: relative;
+  z-index: 999; }
+
+.who_we {
+  background-image: url("../img/testimonials.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom; }
+  @media only screen and (max-width: 768px) {
+    .who_we {
+      background-image: url("../img/testimonials-mobile.png"); } }
 
 .who_we_pagination {
   left: 0px;
