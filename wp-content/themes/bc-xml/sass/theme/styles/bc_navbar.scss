@@ -244,3 +244,11 @@
 	  opacity: 0.4;
 	}
 }
+.show-mar{
+	z-index: 999;
+}
+.no_shadow{
+	&:focus{
+		box-shadow: none !important;
+	}
+}

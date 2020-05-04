@@ -8821,6 +8821,13 @@ ul.gform_fields li::before {
   width: 266px;
   opacity: 0.4; }
 
+.show-mar {
+  z-index: 999; }
+
+.no_shadow:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important; }
+
 .bc_testimonial_swiper .swiper-slide-container {
   background-image: url("../img/slider-background.png");
   background-position: center;
@@ -9171,7 +9178,7 @@ ul.bullete_style {
   background-color: #666d89 !important;
   border-radius: 0 !important;
   font-size: 22px;
-  line-height: 26px;
+  /*line-height: 26px;*/
   border: none;
   text-transform: uppercase;
   font-family: "Work Sans", sans-serif;
@@ -9190,7 +9197,7 @@ ul.bullete_style {
   background-color: #cbb893 !important;
   border-radius: 0 !important;
   font-size: 22px;
-  line-height: 26px;
+  /*line-height: 26px;*/
   border: none;
   text-transform: uppercase;
   font-family: "Work Sans", sans-serif;

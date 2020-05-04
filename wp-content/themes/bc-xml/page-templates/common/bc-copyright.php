@@ -7,7 +7,7 @@
 defined( 'ABSPATH' ) || exit;
 ?>
 <?php echo bc_get_theme_mod('bc_theme_options', 'footer','copyright_text', '<div class=" container-fluid" style="background: #e3e4e9;">
-  	<div class="container bc_text_gray_color pb-5 pb-md-0 px-0 bc_color_primary text-center text-md-left bc_color_gray bc_text_16 bc_sm_text_13 bc_line_height_50 bc_text_normal bc_font_default">
+  	<div class="container bc_text_gray_color pb-5 pb-md-0 px-0 bc_color_primary text-center text-md-left bc_color_gray bc_text_16 bc_sm_text_13 bc_line_height_50 bc_text_normal bc_font_alt_1">
   		 <span class="bc_text_18 bc_sm_text_13 bc_text_heavy"> © </span> '.date("Y").'  XML FINANCIAL GROUP | </span> <span class="d-lg-inline-block bc_color_primary --imp">WEB DESIGN BY
 		   <a class="bc_color_primary bc_color_quinary_hover bc_text_normal no_hover_underline bc_text_16 bc_sm_text_13" href="https://www.bluecorona.com" target="_blank"><img src="'.get_template_directory_uri().'/img/bc_logo.png">&nbsp;Blue Corona</a> </span>
 		  <span class="d-inline-block "> |</span><a class="bc_color_primary bc_color_quinary_hover bc_text_normal no_hover_underline bc_text_16 bc_sm_text_13" href="#" data-toggle="modal" data-target="#disclaimer">Disclaimer</a>
