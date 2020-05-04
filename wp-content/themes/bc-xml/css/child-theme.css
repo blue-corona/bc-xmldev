@@ -6160,7 +6160,6 @@ button.bg-dark:focus {
   position: fixed !important; }
 
 .position-sticky {
-  position: -webkit-sticky !important;
   position: sticky !important; }
 
 .fixed-top {
@@ -6177,9 +6176,8 @@ button.bg-dark:focus {
   left: 0;
   z-index: 1030; }
 
-@supports ((position: -webkit-sticky) or (position: sticky)) {
+@supports (position: sticky) {
   .sticky-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020; } }
@@ -9222,30 +9220,35 @@ ul.bullete_style {
   background-position: center;
   background-size: contain; }
 
-.accordion .card-header:after {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  -webkit-transform: translatey(-50%);
-          transform: translatey(-50%);
-  z-index: 10;
-  content: "";
-  height: 20px;
-  width: 20px;
-  background: url(../img/minus-solid.png);
-  background-position: center;
-  background-size: contain; }
-
-.accordion .collapse:before {
-  position: absolute;
-  content: "";
-  left: 25px;
-  top: 3px;
-  height: 1px;
-  width: 40%;
-  opacity: .5;
-  background: #666d89; }
-
+/*.accordion{
+	.card-header{
+		&:after {
+		    position: absolute;
+			right: 10px;
+			top: 50%;
+		    transform: translatey(-50%);
+			z-index: 10;
+		    content: "";
+		    height: 20px;
+		    width: 20px;
+		    background: url(../img/minus-solid.png);
+		    background-position: center;
+		    background-size: contain;
+		}
+	}
+	.collapse{
+		&:before{
+		    position: absolute;
+		    content: "";
+		    left: 25px;
+		    top: 3px;
+		    height: 1px;
+		    width: 40%;
+		    opacity: .5;
+		    background: $primary_color;
+		}
+	}
+}*/
 .bottom_line:before {
   position: absolute;
   content: "";
