@@ -648,6 +648,45 @@ ul.bullete_style{
 	background-repeat:no-repeat;
 	background-position:bottom;
 	margin-top:-11.76rem;
+	.what_we_video{
+		border:1px solid #fff;
+		box-shadow:13px 13px 0px $secondary_color;
+		transition: all ease 0.5s;
+		span{
+			background:$primary_color;
+			width: 40px;
+		    height: 40px;
+		    top: 50%;
+		    left: 50%;
+		    z-index: 9;
+		    transform: translate(-50%);
+		    border-radius: 100%;
+		    line-height: 40px;
+		    display: block;
+		    color: #fff;
+		    font-size: 32px;
+		}
+		img{
+			opacity:0.3;
+			transition: all ease 0.4s;
+			@media screen and (max-width: 991px) {
+				max-width:400px;
+			}
+			@media screen and (max-width: 767px) {
+				max-width:250px;
+			}
+		}
+		&:hover{
+			border-color: $tertiary_color;
+			cursor:pointer;
+			img{
+				opacity:1;
+			}
+		}
+
+
+	}
+
 	@media only screen and (max-width: 991px) {
 		margin-top:-11.4rem;
 	}
@@ -656,63 +695,15 @@ ul.bullete_style{
 		margin-top: -8rem;
 	}
 	@media only screen and (max-width: 767px) {
-		margin-top: -5.3rem;
-    	padding: 7rem 0!important;
+		margin-top: -4.5rem;
+    	padding: 7.6rem 0 !important;
 	}
-	@media only screen and (max-width: 661px) {
-		margin-top: -4.4rem;
-    	padding: 4rem 0rem!important;
-	}
-	@media only screen and (max-width: 620px) {
-		margin-top:-4.2rem;
-	}
-	@media only screen and (max-width: 540px) {
-		margin-top:-3.9rem;
-	}
+	
 }
-
-.what_we_video{
-	border:1px solid #fff;
-	box-shadow:13px 13px 0px $secondary_color;
-	transition: all ease 0.5s;
-	span{
-		background:$primary_color;
-		width: 40px;
-	    height: 40px;
-	    top: 50%;
-	    left: 50%;
-	    z-index: 9;
-	    transform: translate(-50%);
-	    border-radius: 100%;
-	    line-height: 40px;
-	    display: block;
-	    color: #fff;
-	    font-size: 32px;
-	}
-	img{
-		opacity:0.3;
-		transition: all ease 0.4s;
-		@media screen and (max-width: 991px) {
-			max-width:400px;
-		}
-		@media screen and (max-width: 767px) {
-			max-width:250px;
-		}
-	}
-	&:hover{
-		border-color: $tertiary_color;
-		cursor:pointer;
-		img{
-			opacity:1;
-		}
-	}
-
-
-}
-
 
 
 .how_we_swiper{
+	max-height:450px;
 	p{
 		span{
 			color: #666D89;
@@ -722,14 +713,12 @@ ul.bullete_style{
 			line-height: 38px;
 		}
 	}
-}
-.how_we_swiper{
-	max-height:450px;
 	@media screen and (max-width: 767px) {
 		max-width:100%;
 		height:100%;
 	}
 }
+
 
 .how_we_pagination{
 	left:0px;
@@ -742,12 +731,11 @@ ul.bullete_style{
 	    background:url('../img/pagination.png');
 	    opacity: 1;
 	}
-}
-.how_we_pagination{
 	.swiper-pagination-bullet-active{
 	    background:url('../img/pagination-fill.png');
 	}
 }
+
 
 @media (hover: none), only screen and (max-width: 767px) {
 	.how_we_swiper {
@@ -777,6 +765,52 @@ ul.bullete_style{
 	background-repeat:no-repeat;
 	background-position:bottom;
 	margin-top: -11.76rem;
+	.who_we_pagination{
+		left:0px;
+		width:20px;
+		.swiper-pagination-bullet{
+		    width: 18px !important;
+		    height: 18px !important;
+		    margin: 0 3px;
+		    border-radius: 50%;
+		    border: 2px solid $primary_color;
+		    background: #ffffff !important;
+		    opacity: .5 !important;
+		}
+		.swiper-pagination-bullet-active{
+			opacity: .5;
+			background: $primary_color !important;
+		}
+	}
+
+
+	.who_we_buttons{
+		div{
+		    opacity: 0.6;
+			color: $primary_color;
+			font-size: 30px;
+			font-weight: 300;
+			letter-spacing: 0;
+			line-height: 60px;
+		}
+		.who_we_next{
+			right:-5px;
+			top:60px;
+		}
+		.who_we_prev{
+			left:-5px;
+			top:60px;
+		}
+	}
+	.team_text{
+		@media (hover: none), only screen and (max-width: 767px){
+			 h2{
+			 	font-size:32px;
+			 	line-height:32px;
+			 	color:$quaternary_color
+			}
+		}
+	}
 	@media only screen and (max-width: 768px) {
 		margin-top: -11rem;
 		padding:5rem 0rem !important;
@@ -784,57 +818,6 @@ ul.bullete_style{
 	
 }
 
-
-.who_we_pagination{
-	left:0px;
-	width:20px;
-	.swiper-pagination-bullet{
-	    width: 18px !important;
-	    height: 18px !important;
-	    margin: 0 3px;
-	    border-radius: 50%;
-	    border: 2px solid $primary_color;
-	    background: #ffffff !important;
-	    opacity: .5 !important;
-	}
-}
-.who_we_pagination{
-	.swiper-pagination-bullet-active{
-	    opacity: .5;
-	    background: $primary_color !important;
-	}
-}
-
-.who_we_buttons{
-	div{
-	    opacity: 0.6;
-		color: $primary_color;
-		font-size: 30px;
-		font-weight: 300;
-		letter-spacing: 0;
-		line-height: 60px;
-	}
-}
-
-.who_we_buttons{
-	.who_we_next{
-		right:-5px;
-		top:60px;
-	}
-	.who_we_prev{
-		left:-5px;
-		top:60px;
-	}
-}
-.team_text{
-	@media (hover: none), only screen and (max-width: 767px){
-		 h2{
-		 	font-size:32px;
-		 	line-height:32px;
-		 	color:$quaternary_color
-		}
-	}
-}
 .custom_width{
 	max-width:90%;
 }
