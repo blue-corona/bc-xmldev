@@ -96,3 +96,5 @@ function bc_logo_shortcode_for_menu($atts) {
     return ob_get_clean();
 }
 add_filter('wp_nav_menu_items', 'do_shortcode');
+
+//shortcode for background img

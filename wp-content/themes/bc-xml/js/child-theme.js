@@ -7059,6 +7059,7 @@ jQuery(".bc_toggle_content").on('click', function(e){
 /*******************************
 * ACCORDION WITH TOGGLE ICONS
 *******************************/
+
   // function toggleIcon(e) {
   //     jQuery(e.target)
   //         .prev('.card-header')
@@ -7090,3 +7091,13 @@ return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
     });
   });
 });
+
+  function toggleIcon(e) {
+      jQuery(e.target)
+          .prev('.card-header')
+          .find(".toggle-plus-minus")
+          .toggleClass('fa-plus-circle fa-minus-circle');
+  }
+  jQuery('.accordion').on('hidden.bs.collapse', toggleIcon);
+  jQuery('.accordion').on('shown.bs.collapse', toggleIcon);
+
