@@ -26,14 +26,14 @@ global $post;
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <a href="#">hyperlink example</a> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
                     <h2 class="mt-4">Subheading Goes Here</h2>
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, hyperlink example qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam. </p>
-                    <a href="#" class="btn_primary py-2 px-3 mt-4 bc_line_height_50">CTA GOES HERE</a>
+                    <a href="#" class="btn_primary py-1 px-3 mt-4 bc_line_height_50">CTA GOES HERE</a>
                     <h3 class="mt-5 pl-4 mb-2">Bulleted List Example</h3>
                     <ul class="bullete_style pl-4" >
-                        <li> <i class="fas fa-circle"></i> Sed ut perspiciatis unde</li>
-                        <li> <i class="fas fa-circle"></i> Omnis iste natus error sit</li>
-                        <li>  <i class="fas fa-circle"></i> Voluptatem accusantium</li>
-                        <li> <i class="fas fa-circle"></i> Doloremque laudantium</li>
-                        <li> <i class="fas fa-circle"></i> Totam rem aperiam amet</li>
+                        <li class="bc_line_height_40"> <i class="fas fa-circle"></i> Sed ut perspiciatis unde</li>
+                        <li class="bc_line_height_40"> <i class="fas fa-circle"></i> Omnis iste natus error sit</li>
+                        <li class="bc_line_height_40">  <i class="fas fa-circle"></i> Voluptatem accusantium</li>
+                        <li class="bc_line_height_40"> <i class="fas fa-circle"></i> Doloremque laudantium</li>
+                        <li class="bc_line_height_40"> <i class="fas fa-circle"></i> Totam rem aperiam amet</li>
                     </ul>
                     <div id="accordion" class="accordion w-100 border-bottom mt-4">
                       <div class="card rounded-0 mb-0">
@@ -71,7 +71,7 @@ global $post;
                         <span></span>
                         <h3 class="position-relative bottom_line bc_color_dark_primary bc_text_normal">how we work</h3>
                         <p class="mt-5 bc_color_dark_primary bc_text_24 bc_text_normal">We’re here to help you make investments that align with your lifestyle.</p>
-                        <a href="#" class="btn_primary py-2 px-3 mt-4">learn how</a>
+                        <a href="#" class="btn_primary bc_line_height_26 py-2 px-3 mt-4">learn how</a>
                     </div>
                     <div class="who_we_are mt-5 pt-lg-5 text-center">
                        <h3 class="position-relative bottom_line text-uppercase bc_text_normal">who we are</h3>
@@ -109,12 +109,12 @@ global $post;
                             <!-- Add Pagination -->
                             <div class="swiper-pagination team-pagination"></div>
                         </div>
-                        <a href="#" class="btn_secondary px-4 py-2 mt-3">FULL TEAM</a>
+                        <a href="#" class="btn_secondary bc_line_height_26 px-4 py-2 mt-3">FULL TEAM</a>
                     </div>
                     <div class="resources px-4 py-5 mt-5 text-center">
                         <h3 class="position-relative bottom_line text-uppercase bc_text_normal">resources</h3>
                         <p class="mt-5 bc_color_dark_primary bc_text_24 bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
-                        <a href="#" class="btn_primary px-3 py-2 mt-3">learn how</a>
+                        <a href="#" class="btn_primary bc_line_height_26 px-3 py-2 mt-3">learn how</a>
                     </div>
                 </div>
             </div>
@@ -127,7 +127,7 @@ global $post;
                 <div class="col-lg-10 px-lg-4 offset-lg-1 text-center">
                     <span class="position-relative bc_text_36 bc_line_height_36 mt-5 bc_font_default bc_text_thin text-white bottom_line1 d-block">Wondering if there might be something more you and your money could do?</span>
                     <span class="bc_text_20 bc_line_height_34 bc_font_alt_1 bc_text_light text-white d-block mt-4 pt-1">There are several different ways to connect with us. Chose whichever you are most <br> comfortable with. </span>
-                    <a href="#" class="btn_secondary px-4 py-2 mt-4">let’s talk </a>
+                    <a href="#" class="btn_secondary bc_line_height_26 px-4 py-2 mt-4">let’s talk </a>
                 </div>
             </div>
         </div>
