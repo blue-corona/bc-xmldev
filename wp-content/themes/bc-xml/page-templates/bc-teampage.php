@@ -64,8 +64,8 @@ get_header();?>
                     <div class="">
                       <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brett-square.jpg" class="img-fluid" alt="brett-square">
                     </div>
-                    <span class="bc_font_alt_1 bc_text_22 bc_line_height_26 bc_text_bold bc_color_primary border-bottom pb-2 mt-3 d-block">Brett Bernstein CFP®</span>
-                    <span class="bc_font_alt_1 bc_text_22 bc_line_height_26 bc_text_normal bc_color_secondary my-2 d-block">CIO & Co-founder</span>
+                    <span class="bc_font_alt_1 bc_text_24 bc_line_height_28 bc_text_bold bc_color_primary border-bottom pb-2 mt-3 d-block">Brett Bernstein CFP®</span>
+                    <span class="bc_font_alt_1 bc_text_22 bc_line_height_41 bc_text_normal bc_color_secondary my-2 d-block">CIO & Co-founder</span>
                     <div class="position-absolute detail p-3 text-center">
                       <a href="#" class="bc_text_20 bc_line_height_48 text-white bc_font_default bc_text_normal no_hover_underline text-uppercase">View Full Bio <i class="fal fa-chevron-circle-right bc_font_default bc_text_20 bc_line_height_48"></i> </a>
                     </div>
@@ -76,8 +76,8 @@ get_header();?>
                     <div class="">
                       <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rob-square.jpg" class="img-fluid" alt="brett-square">
                     </div>
-                    <span class="bc_font_alt_1 bc_text_22 bc_line_height_26 bc_text_bold bc_color_primary border-bottom pb-2 mt-3 d-block">Rob Kantor</span>
-                    <span class="bc_font_alt_1 bc_text_22 bc_line_height_26 bc_text_normal bc_color_secondary my-2 d-block">CIO & Co-founder</span>
+                    <span class="bc_font_alt_1 bc_text_24 bc_line_height_28 bc_text_bold bc_color_primary border-bottom pb-2 mt-3 d-block">Rob Kantor</span>
+                    <span class="bc_font_alt_1 bc_text_22 bc_line_height_41 bc_text_normal bc_color_secondary my-2 d-block">CIO & Co-founder</span>
                     <div class="position-absolute detail p-3 text-center">
                       <a href="#" class="bc_text_20 bc_line_height_48 text-white bc_font_default bc_text_normal no_hover_underline text-uppercase">View Full Bio <i class="fal fa-chevron-circle-right bc_font_default bc_text_20 bc_line_height_48"></i> </a>
                     </div>
@@ -88,8 +88,8 @@ get_header();?>
                     <div class="">
                       <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/curtis-square.jpg" class="img-fluid" alt="brett-square">
                     </div>
-                    <span class="bc_font_alt_1 bc_text_22 bc_line_height_26 bc_text_bold bc_color_primary border-bottom pb-2 mt-3 d-block">Curtis Congdon, CRPC®, CFP®</span>
-                    <span class="bc_font_alt_1 bc_text_22 bc_line_height_26 bc_text_normal bc_color_secondary my-2 d-block">CIO & Co-founder</span>
+                    <span class="bc_font_alt_1 bc_text_24 bc_line_height_28 bc_text_bold bc_color_primary border-bottom pb-2 mt-3 d-block">Curtis Congdon, CRPC®, CFP®</span>
+                    <span class="bc_font_alt_1 bc_text_22 bc_line_height_41 bc_text_normal bc_color_secondary my-2 d-block">CIO & Co-founder</span>
                     <div class="position-absolute detail p-3 text-center">
                       <a href="#" class="bc_text_20 bc_line_height_48 text-white bc_font_default bc_text_normal no_hover_underline text-uppercase">View Full Bio <i class="fal fa-chevron-circle-right bc_font_default bc_text_20 bc_line_height_48"></i> </a>
                     </div>
@@ -100,8 +100,8 @@ get_header();?>
                     <div class="img bc_color_lightgray_bg">
                       
                     </div>
-                    <span class="bc_font_alt_1 bc_text_22 bc_line_height_26 bc_text_bold bc_color_primary border-bottom pb-2 mt-3 d-block">Full Name</span>
-                    <span class="bc_font_alt_1 bc_text_22 bc_line_height_26 bc_text_normal bc_color_secondary my-2 d-block">Titel</span>
+                    <span class="bc_font_alt_1 bc_text_24 bc_line_height_28 bc_text_bold bc_color_primary border-bottom pb-2 mt-3 d-block">Full Name</span>
+                    <span class="bc_font_alt_1 bc_text_22 bc_line_height_41 bc_text_normal bc_color_secondary my-2 d-block">Titel</span>
                     <div class="position-absolute detail p-3 text-center">
                       <a href="#" class="bc_text_20 bc_line_height_48 text-white bc_font_default bc_text_normal no_hover_underline text-uppercase">View Full Bio <i class="fal fa-chevron-circle-right bc_font_default bc_text_20 bc_line_height_48"></i> </a>
                     </div>
@@ -112,8 +112,8 @@ get_header();?>
                     <div class="img bc_color_lightgray_bg">
                       
                     </div>
-                    <span class="bc_font_alt_1 bc_text_22 bc_line_height_26 bc_text_bold bc_color_primary border-bottom pb-2 mt-3 d-block">Full Name</span>
-                    <span class="bc_font_alt_1 bc_text_22 bc_line_height_26 bc_text_normal bc_color_secondary my-2 d-block">Titl</span>
+                    <span class="bc_font_alt_1 bc_text_24 bc_line_height_28 bc_text_bold bc_color_primary border-bottom pb-2 mt-3 d-block">Full Name</span>
+                    <span class="bc_font_alt_1 bc_text_22 bc_line_height_41 bc_text_normal bc_color_secondary my-2 d-block">Titl</span>
                     <div class="position-absolute detail p-3 text-center">
                       <a href="#" class="bc_text_20 bc_line_height_48 text-white bc_font_default bc_text_normal no_hover_underline text-uppercase">View Full Bio <i class="fal fa-chevron-circle-right bc_font_default bc_text_20 bc_line_height_48"></i> </a>
                     </div>
@@ -124,8 +124,8 @@ get_header();?>
                     <div class="img bc_color_lightgray_bg">
                       
                     </div>
-                    <span class="bc_font_alt_1 bc_text_22 bc_line_height_26 bc_text_bold bc_color_primary border-bottom pb-2 mt-3 d-block">Full Name</span>
-                    <span class="bc_font_alt_1 bc_text_22 bc_line_height_26 bc_text_normal bc_color_secondary my-2 d-block">Titl</span>
+                    <span class="bc_font_alt_1 bc_text_24 bc_line_height_28 bc_text_bold bc_color_primary border-bottom pb-2 mt-3 d-block">Full Name</span>
+                    <span class="bc_font_alt_1 bc_text_22 bc_line_height_41 bc_text_normal bc_color_secondary my-2 d-block">Titl</span>
                     <div class="position-absolute detail p-3 text-center">
                       <a href="#" class="bc_text_20 bc_line_height_48 text-white bc_font_default bc_text_normal no_hover_underline text-uppercase">View Full Bio <i class="fal fa-chevron-circle-right bc_font_default bc_text_20 bc_line_height_48"></i> </a>
                     </div>

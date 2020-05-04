@@ -25,14 +25,14 @@ get_header();?>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <a href="#">hyperlink example</a> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
                     <h2 class="mt-4">Subheading Goes Here</h2>
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, hyperlink example qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam. </p>
-                    <a href="#" class="btn_primary py-2 px-3 mt-4">CTA GOES HERE</a>
+                    <a href="#" class="btn_primary py-2 px-3 mt-4 bc_line_height_50">CTA GOES HERE</a>
                     <h3 class="mt-5 pl-4 mb-2">Bulleted List Example</h3>
                     <ul class="bullete_style pl-4" >
-                        <li> <i class="fas fa-circle"></i> Sed ut perspiciatis unde</li>
-                        <li> <i class="fas fa-circle"></i> Omnis iste natus error sit</li>
-                        <li>  <i class="fas fa-circle"></i> Voluptatem accusantium</li>
-                        <li> <i class="fas fa-circle"></i> Doloremque laudantium</li>
-                        <li> <i class="fas fa-circle"></i> Totam rem aperiam amet</li>
+                        <li class="bc_line_height_36"> <i class="fas fa-circle"></i> Sed ut perspiciatis unde</li>
+                        <li class="bc_line_height_36"> <i class="fas fa-circle"></i> Omnis iste natus error sit</li>
+                        <li class="bc_line_height_36"> <i class="fas fa-circle"></i> Voluptatem accusantium</li>
+                        <li class="bc_line_height_36"> <i class="fas fa-circle"></i> Doloremque laudantium</li>
+                        <li class="bc_line_height_36"> <i class="fas fa-circle"></i> Totam rem aperiam amet</li>
                     </ul>
                     <div id="accordion" class="accordion w-100 border-bottom mt-4">
                       <div class="card rounded-0 mb-0">
