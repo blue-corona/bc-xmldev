@@ -44,9 +44,34 @@ get_header('variant-announcement-bar');?>
                 <p class="bc_text_bold mb-0">F: 555-555-5555</p>
                 <a href="#" class="bc_text_bold bc_text_20 bc_line_height_34"> MAP > </a>
              </div>
+             <div class="col-md-6 text-right  mb-5">
+               <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/fallschurch.jpg" class="img-fluid" alt="rockville">
+             </div>
+             <div class="col-md-6 mb-5">
+                <h3> BRECKENRIDGE, CO </h3>
+                <p class="mb-0"> 208 S. Ridge Street <br> P.O. Box 3813 <br> Breckenridge, CO 80424 </p>
+                <p class="bc_text_bold mb-0">T: 555-555-5555</p>
+                <p class="bc_text_bold mb-0">F: 555-555-5555</p>
+                <a href="#" class="bc_text_bold bc_text_20 bc_line_height_34"> MAP > </a>
+             </div>
+             <div class="col-md-6 text-right mb-5">
+               <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/breckenridge.jpg" class="img-fluid" alt="rockville">
              </div>
            </div>
          </div>
+       </div>
+     </div>
+   </div>
+   <div class="container-fluid m-0 pb-5">
+     <div class="container">
+       <div class="row no-gutters">
+          <div class="col-lg-12 mb-5">
+            <h2>Contact Us</h2>
+            <p>Do you have questions? We would love to begin a conversation.</p>
+          </div>
+          <div class="col-lg-12 text-center">
+            <span class="bc_line_height_64 bc_text_50 bc_font_alt_1 bc_color_brown bc_text_light">Standard Bootstrap <br> Contact Form <br> goes here</span>
+          </div>
        </div>
      </div>
    </div>
