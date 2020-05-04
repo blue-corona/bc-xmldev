@@ -157,23 +157,28 @@ get_header();
             </div>
         </div>
     </div>
-    
+
     <div class="container-fluid p-0">
       <div class="grey-bg"></div>
     </div>
 
-    <div class="container-fluid p-0 pt-5 pb-5 who_we">
-        <div class="container px-md-4">
-            <div class="row">
-                <div class="col-md-12 text-center text-lg-center text-md-center"><h3 class="position-relative bottom_line mb-5">Who We Are</h3></div>
-                <div class="col-md-7 col-12 order-2 order-md-1 mt-3">
+    <div class="container-fluid p-0 pt-5 pb-5 position-relative who_we">
+      <div class="eagle_icon position-absolute">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/eagle.png" class="img-fluid" >
+      </div>
+        <div class="container p-5 px-md-4">
+            <div class="row pt-5">
+                <div class="col-md-12 text-center text-lg-center text-md-center pt-4 pb-md-5"><h3 class="position-relative bottom_line mb-5">Who We Are</h3></div>
+                <div class="col-md-7 col-12 order-2 order-md-1 mt-3 pb-5">
                   <!-- Swiper -->
                     <div class="swiper-container who_we_swiper">
-                        <div class="swiper-wrapper mb-5">
+                      <div class="swiper-wrapper mb-5">
                           <div class="swiper-slide">
                             <div class="px-4">
-                                <div class="image position-relative d-inline-block mx-auto p-3">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brett-headshot.jpg">
+                                <div class="text-center">
+                                  <div class="image position-relative d-inline-block mx-auto p-3">
+                                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brett-headshot.png">
+                                  </div>
                                 </div>
                                 <h3 class="position-relative bottom_line_2 bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center">Brett Bernstein, CFP®</h3>
                                 <p class="bc_color_secondary bc_text_16 bc_line_height_50 bc_font_alt_1 d-block mt-2 text-center">CEO & Co-founder</p>
@@ -181,16 +186,21 @@ get_header();
                           </div>
                           <div class="swiper-slide">
                             <div class="px-4">
+                              <div class="text-center">
                                 <div class="image position-relative d-inline-block mx-auto p-3">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rob-headshot.jpg">
+                                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rob-headshot.png">
                                 </div>
-                                <h3 class="position-relative bottom_line_2 bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center">Rob Kantor</h3>
-                                <p class="bc_color_secondary bc_text_16 bc_line_height_50 bc_font_alt_1 d-block mt-2 text-center">CIO & Co-founder</p>
+                              </div>
+                              <h3 class="position-relative bottom_line_2 bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center">Rob Kantor</h3>
+                              <p class="bc_color_secondary bc_text_16 bc_line_height_50 bc_font_alt_1 d-block mt-2 text-center">CIO & Co-founder</p>
                             </div>
                           </div>
                           <div class="swiper-slide">
-                            <div class="px-4"> <div class="image position-relative d-inline-block mx-auto p-3">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/curtis-headshot.jpg">
+                            <div class="px-4">
+                              <div class="text-center">
+                                <div class="image position-relative d-inline-block mx-auto p-3">
+                                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/curtis-headshot.png">
+                                  </div>
                                 </div>
                                 <h3 class="position-relative bottom_line_2 bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center">Curtis Congdon, CRPC®, CFP®</h3>
                                 <p class="bc_color_secondary bc_text_16 bc_line_height_50 bc_font_alt_1 d-block mt-2 text-center">President</p>
@@ -199,23 +209,24 @@ get_header();
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination who_we_pagination "></div>
-                        <!-- Add Arrows -->
-                        <div class="who_we_buttons">
-                            <div class="swiper-button-next"><i class="fal fa-angle-right"></i></div>
-                            <div class="swiper-button-prev"><i class="fal fa-angle-left"></i></div>
-                        </div>
+                        
                     </div>
+                    <!-- Add Arrows -->
+                        <div class="who_we_buttons">
+                            <div class="swiper-button-next who_we_next"><i class="fal fa-angle-right"></i></div>
+                            <div class="swiper-button-prev who_we_prev"><i class="fal fa-angle-left"></i></div>
+                        </div>
                 </div>
-                <div class="col-md-5 order-1 order-md-2 mt-3">
-                    <h2 class="text-capitalize">A Team of <span class="d-block">Passionate Experts</span></h2>
+                <div class="col-md-5 order-1 order-md-2 mt-3 pb-5 text-center text-md-left team_text">
+                    <h2 class="text-capitalize">A Team of <span class="d-md-block">Passionate Experts</span></h2>
                     <p>With roots back to 1981 XML has been passionate about assembling a team of experts not just in money management but also in listening and in sincere care for our client's well being. We currently have CFPs, CRPCs, MBAs working to improve our Client's lives.</p>
-                    <a href="#" class="btn_secondary px-4 py-2 mt-4">FULL TEAM</a>
+                    <a href="#" class="btn_secondary px-4 py-2 mt-4 mb-5">FULL TEAM</a>
                 </div>
             </div>
         </div>
     </div>
    
-    <div class="container-fluid px-0 m-0 borde_b_primary mt-5">
+    <div class="container-fluid px-0 borde_b_primary mt-minus">
       <div class="graphic_lines pb-5">
         <div class="container">
             <div class="row no-gutters">
@@ -289,8 +300,8 @@ var swiper = new Swiper('.who_we_swiper', {
         clickable: true,
       },
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.who_we_next',
+        prevEl: '.who_we_prev',
     },
     breakpoints: {
         540: {
@@ -302,11 +313,11 @@ var swiper = new Swiper('.who_we_swiper', {
           spaceBetween: 20,
         },
         768: {
-          slidesPerView: 3,
+          slidesPerView: 2,
           spaceBetween: 40,
         },
         1024: {
-          slidesPerView: 3,
+          slidesPerView: 2,
           spaceBetween: 50,
         },
     }
