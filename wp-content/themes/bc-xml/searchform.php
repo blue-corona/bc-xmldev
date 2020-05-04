@@ -16,7 +16,7 @@ defined( 'ABSPATH' ) || exit;
 		</div>
 		<div class="col-10 p-0 pr-3">
 			<div class="form-group">
-				<input class="form-control border-0 bg-none" placeholder="Search" id="s" name="s" type="text" value="<?php the_search_query(); ?>" style="border-bottom:2px solid #ffffff">
+				<input class="form-control border-0 bg-none no_shadow" placeholder="Search" id="s" name="s" type="text" value="<?php the_search_query(); ?>" style="border-bottom:2px solid #ffffff">
 			</div>
 		</div>
     </div>

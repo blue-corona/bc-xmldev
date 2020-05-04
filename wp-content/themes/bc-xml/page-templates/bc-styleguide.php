@@ -42,12 +42,12 @@ get_header();?>
               <div class="my-5"><hr class="shape-1 my-5"></div>
               <span class="bc_text_24 bc_line_height_21 d-block mt-5 mb-3 bc_color_brown bc_font_alt_2 bc_text_normal"> Button Styling </span>
               <div class="mb-4">
-                <button class="btn_primary px-5 py-2 mr-4">Button 1 EX</button>
-                <button class="btn_secondary px-5 py-2">Button 2 EX</button>
+                <button class="btn_primary bc_line_height_26 px-5 py-2 mr-4">Button 1 EX</button>
+                <button class="btn_secondary bc_line_height_26 px-5 py-2">Button 2 EX</button>
               </div>
               <div class="mb-4">
-                <button class="btn_primary px-5 py-2 mr-4" style="background-color: #545A71 !important;">hover 1 EXA</button>
-                <button class="btn_secondary px-5 py-2" style="background-color: #B9A886 !important;">hover 2 EXA</button>
+                <button class="btn_primary bc_line_height_26 px-5 py-2 mr-4" style="background-color: #545A71 !important;">hover 1 EXA</button>
+                <button class="btn_secondary bc_line_height_26 px-5 py-2" style="background-color: #B9A886 !important;">hover 2 EXA</button>
               </div>
               <span class="bc_text_24 bc_line_height_21 d-block mt-5 mb-3 bc_color_brown bc_font_alt_2 bc_text_normal"> Button Styling </span>
               <div class="row m-0">
