@@ -322,8 +322,10 @@ ul.bullete_style{
 	li{
 		display: flex !important;
 		align-items: center;
-		line-height: 24px;
-		margin-bottom: 1em;
+		font-size: 20px;
+		font-family: $alternate_font_family_1;
+		font-weight: 300;
+		line-height: 40px;
 		color: $brown_color;
 		/*&:before{
 		  content: "";
@@ -359,6 +361,9 @@ ul.bullete_style{
     	background: #545A71 !important;
     	text-decoration: none !important;
     }
+}
+.bc_color_gradient{
+	background: linear-gradient(270deg, #E7DECD 0%, #CBB893 100%);
 }
 .btn_secondary{
     background-color: $secondary_color !important;
