@@ -5,7 +5,7 @@
 	font-weight: 100;
 	text-transform: uppercase;
 	line-height: 36px;
-	letter-spacing: 50;
+
 	color: $primary_color;
 }
 
@@ -15,7 +15,6 @@ h2, .h2{
 	font-weight: 100;
 	text-transform: uppercase;
 	line-height: 32px;
-	letter-spacing: 25px;
 	color: $secondary_color;
 }
 
@@ -25,7 +24,6 @@ h3, .h3{
 	font-weight: 300;
 	text-transform: uppercase;
 	line-height: 28px;
-	letter-spacing: 25px;
 	color: $primary_color;
 }
 
@@ -35,7 +33,6 @@ h4, .h4{
 	font-weight: 300;
 	text-transform: uppercase;
 	line-height: 24px;
-	letter-spacing: 25;
 	color: $tertiary_color;
 }
 
@@ -65,7 +62,6 @@ p, .p{
 	font-weight: 300;
 	text-transform: none;
 	line-height: 30px;
-	letter-spacing: 25px;
 	color: $brown_color;
 
 }
@@ -76,7 +72,6 @@ main a{
 	font-weight: 700;
 	text-transform: none;
 	line-height: 30px;
-	letter-spacing: 25px;
 	color: $tertiary_color;
 	&:hover{
 		text-decoration: underline;
