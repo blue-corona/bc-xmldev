@@ -7067,3 +7067,26 @@ jQuery(".bc_toggle_content").on('click', function(e){
   // }
   // jQuery('.accordion').on('hidden.bs.collapse', toggleIcon);
   // jQuery('.accordion').on('shown.bs.collapse', toggleIcon);
+
+
+jQuery(document).ready(function() {
+  // Check if element is scrolled into view
+  function isScrolledIntoView(elem) {
+    var docViewTop = jQuery(window).scrollTop();
+    var docViewBottom = docViewTop + jQuery(window).height();
+
+var elemTop = jQuery(elem).offset().top;
+var elemBottom = elemTop + jQuery(elem).height();
+
+return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+  }
+  // If element is scrolled into view, fade it in
+  jQuery(window).scroll(function() {
+    jQuery('.eagle_icon .animated').each(function() {
+      if (isScrolledIntoView(this) === true) {
+        //jQuery(this).show();
+        jQuery(this).addClass('fadeInLeft');
+      }
+    });
+  });
+});

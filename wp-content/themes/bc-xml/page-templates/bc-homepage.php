@@ -19,14 +19,16 @@ get_header();
             get_template_part( 'page-templates/hero-section/bc-hero-video' );
         }
     ?>
-    <div class="container-fluid p-0 pt-5 pb-5 what_we_do">
+    <!-- background image use shortcode for mobile use background-image:url('../img/what-we-mobile.png');--->
+    <div class="container-fluid p-0 pt-5 pb-5 what_we_do mt-n7" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/img/what-we.png');  background-size:cover;  background-repeat:no-repeat;  background-position:bottom;">
+
         <div class="container pt-5 pb-5 px-lg-5">
             <div class="row text-center text-lg-center text-md-center p-lg-5 px-0">
                 <div class="col-12 offset-lg-2 col-lg-8 col-sm-12 pt-5 pb-5 px-2 px-md-0">
                     <h3 class="position-relative bottom_line mb-5">What We Believe</h3>
                     <div class="mx-md-5 mx-4 position-relative bg-white overflow-hidden what_we_video" data-toggle="modal" data-target="#exampleModal">
                         <div class="row">
-                            <div class="offset-lg-2 col-lg-8 mt-n3 pb-md-5 pb-3">
+                            <div class="offset-lg-2 col-lg-8 mt-n3 pb-md-5 pb-3 m">
                                 <span class="position-absolute play_icon text-center">
                                     <i class="fas fa-caret-right"></i>
                                 </span>
@@ -47,12 +49,9 @@ get_header();
                             </button>
                           </div>
                           <div class="modal-body">
-                            ...
+                            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/403803057" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                           </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                          </div>
+                          
                         </div>
                       </div>
                     </div>
@@ -164,7 +163,7 @@ get_header();
 
     <div class="container-fluid p-0 pt-5 pb-5 position-relative who_we">
       <div class="eagle_icon position-absolute">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/eagle.png" class="img-fluid" >
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/eagle.png" class="img-fluid animated" >
       </div>
         <div class="container p-5 px-md-4">
             <div class="row pt-5">
@@ -206,6 +205,29 @@ get_header();
                                 <p class="bc_color_secondary bc_text_16 bc_line_height_50 bc_font_alt_1 d-block mt-2 text-center">President</p>
                             </div>
                           </div>
+                          <div class="swiper-slide">
+                            <div class="px-4">
+                                <div class="text-center">
+                                  <div class="image position-relative d-inline-block mx-auto p-3">
+                                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brett-headshot.png">
+                                  </div>
+                                </div>
+                                <h3 class="position-relative bottom_line_2 bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center">Brett Bernstein, CFP®</h3>
+                                <p class="bc_color_secondary bc_text_16 bc_line_height_50 bc_font_alt_1 d-block mt-2 text-center">CEO & Co-founder</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="px-4">
+                              <div class="text-center">
+                                <div class="image position-relative d-inline-block mx-auto p-3">
+                                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rob-headshot.png">
+                                </div>
+                              </div>
+                              <h3 class="position-relative bottom_line_2 bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center">Rob Kantor</h3>
+                              <p class="bc_color_secondary bc_text_16 bc_line_height_50 bc_font_alt_1 d-block mt-2 text-center">CIO & Co-founder</p>
+                            </div>
+                          </div>
+                          
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination who_we_pagination "></div>

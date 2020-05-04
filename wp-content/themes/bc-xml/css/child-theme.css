@@ -9550,58 +9550,54 @@ ul.bullete_style {
 .home_banner {
   background-position: bottom; }
 
-.what_we_do {
-  background-image: url("../img/what-we.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  margin-top: -11.76rem; }
-  .what_we_do .what_we_video {
-    border: 1px solid #fff;
-    -webkit-box-shadow: 13px 13px 0px #cbb893;
-            box-shadow: 13px 13px 0px #cbb893;
-    -webkit-transition: all ease 0.5s;
-    transition: all ease 0.5s; }
-    .what_we_do .what_we_video span {
-      background: #666d89;
-      width: 40px;
-      height: 40px;
-      top: 50%;
-      left: 50%;
-      z-index: 9;
-      -webkit-transform: translate(-50%);
-              transform: translate(-50%);
-      border-radius: 100%;
-      line-height: 40px;
-      display: block;
-      color: #fff;
-      font-size: 32px; }
-    .what_we_do .what_we_video img {
-      opacity: 0.3;
-      -webkit-transition: all ease 0.4s;
-      transition: all ease 0.4s; }
-      @media screen and (max-width: 991px) {
-        .what_we_do .what_we_video img {
-          max-width: 400px; } }
-      @media screen and (max-width: 767px) {
-        .what_we_do .what_we_video img {
-          max-width: 250px; } }
-    .what_we_do .what_we_video:hover {
-      border-color: #e7decd;
-      cursor: pointer; }
-      .what_we_do .what_we_video:hover img {
-        opacity: 1; }
-  @media only screen and (max-width: 991px) {
-    .what_we_do {
-      margin-top: -11.4rem; } }
-  @media only screen and (max-width: 768px) {
-    .what_we_do {
-      background-image: url("../img/what-we-mobile.png");
-      margin-top: -8rem; } }
-  @media only screen and (max-width: 767px) {
-    .what_we_do {
-      margin-top: -4.5rem;
-      padding: 7.6rem 0 !important; } }
+.what_we_do .what_we_video {
+  border: 1px solid #fff;
+  -webkit-box-shadow: 13px 13px 0px #cbb893;
+          box-shadow: 13px 13px 0px #cbb893;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s; }
+  .what_we_do .what_we_video span {
+    background: #666d89;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    z-index: 9;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    border-radius: 100%;
+    line-height: 40px;
+    display: block;
+    color: #fff;
+    font-size: 32px; }
+  .what_we_do .what_we_video img {
+    opacity: 0.3;
+    -webkit-transition: all ease 0.4s;
+    transition: all ease 0.4s; }
+    @media (hover: none), only screen and (max-width: 991px) {
+      .what_we_do .what_we_video img {
+        max-width: 400px; } }
+    @media (hover: none), only screen and (max-width: 767px) {
+      .what_we_do .what_we_video img {
+        max-width: 250px; } }
+  .what_we_do .what_we_video:hover {
+    border-color: #e7decd;
+    cursor: pointer; }
+    .what_we_do .what_we_video:hover img {
+      opacity: 1; }
+
+@media only screen and (max-width: 991px) {
+  .what_we_do {
+    margin-top: -11.4rem; } }
+
+@media only screen and (max-width: 768px) {
+  .what_we_do {
+    margin-top: -8rem; } }
+
+@media only screen and (max-width: 767px) {
+  .what_we_do {
+    margin-top: -4.5rem;
+    padding: 7.6rem 0 !important; } }
 
 .how_we_swiper {
   max-height: 450px; }
@@ -9699,15 +9695,13 @@ ul.bullete_style {
 
 .eagle_icon {
   top: 0px;
-  width: 500px;
+  width: 33%;
   left: -60px; }
-  .eagle_icon img {
-    width: 100%; }
   @media (hover: none), only screen and (max-width: 767px) {
     .eagle_icon {
       display: none; } }
 
-.mt-minus {
+.mt-n7 {
   margin-top: -11.76rem; }
 
 /*# sourceMappingURL=child-theme.css.map */

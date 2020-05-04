@@ -643,11 +643,8 @@ ul.bullete_style{
 }
 
 .what_we_do{
-	background-image:url('../img/what-we.png');
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:bottom;
-	margin-top:-11.76rem;
+	
+	
 	.what_we_video{
 		border:1px solid #fff;
 		box-shadow:13px 13px 0px $secondary_color;
@@ -669,10 +666,10 @@ ul.bullete_style{
 		img{
 			opacity:0.3;
 			transition: all ease 0.4s;
-			@media screen and (max-width: 991px) {
+			@media (hover: none), only screen and (max-width: 991px) {
 				max-width:400px;
 			}
-			@media screen and (max-width: 767px) {
+			@media (hover: none), only screen and (max-width: 767px) {
 				max-width:250px;
 			}
 		}
@@ -691,7 +688,7 @@ ul.bullete_style{
 		margin-top:-11.4rem;
 	}
 	@media only screen and (max-width: 768px) {
-		background-image:url('../img/what-we-mobile.png');
+		
 		margin-top: -8rem;
 	}
 	@media only screen and (max-width: 767px) {
@@ -836,16 +833,14 @@ ul.bullete_style{
 }
 .eagle_icon {
     top: 0px;
-    width: 500px;
+    width: 33%;
     left: -60px;
-    img {
-	    width: 100%;
-	}
+    
 	@media (hover: none), only screen and (max-width: 767px) {
 		display:none;
 	}
 }
 
-.mt-minus{
+.mt-n7{
 	margin-top: -11.76rem;
 }
