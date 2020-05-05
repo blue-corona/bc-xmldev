@@ -5,7 +5,7 @@
 @import "styles/bc_navbar";
 @import "styles/bc_swiper";
 @import "styles/bc_fonts_mobile";
-
+@import "styles/bc_bootstrap_override";
 .no_hover_underline:hover{
 	text-decoration:none;
 }
@@ -645,9 +645,27 @@ ul.bullete_style{
 
 //homepage css
 .what_we_do{
+	margin-top: -11.88rem;
+	@media only screen and (max-width: 991px) {
+		margin-top: -11.7rem;
+	}
 	@media only screen and (max-width: 768px) {
+		margin-top: -8rem;	
 		background-image:url('../img/what-we-mobile.png') !important; 
 	}
+	@media only screen and (max-width: 767px) {
+		margin-top: -5.4rem;	
+	}
+	@media only screen and (max-width: 640px) {
+		margin-top: -4.9rem;
+	}
+	@media only screen and (max-width: 575px) {
+		margin-top: -4.6rem;
+	}
+	@media only screen and (max-width: 540px) {
+		margin-top: -4rem;
+	}
+
 	.what_we_video{
 		border:1px solid #fff;
 		box-shadow:13px 13px 0px $secondary_color;
@@ -757,39 +775,4 @@ ul.bullete_style{
     width: 33%;
     left: -60px;
 }
-.mt-n7{
-	margin-top: -11.88rem;
-    
-	@media only screen and (max-width: 991px) {
-		margin-top: -11.7rem;
-	}
-	@media only screen and (max-width: 768px) {
-		margin-top: -8rem;	
-	}
-	@media only screen and (max-width: 767px) {
-		margin-top: -5.4rem;	
-	}
-	@media only screen and (max-width: 640px) {
-		margin-top: -4.9rem;
-	}
-	@media only screen and (max-width: 575px) {
-		margin-top: -4.6rem;
-	}
-	@media only screen and (max-width: 540px) {
-		margin-top: -4rem;
-	}
-	
-}
-.mt-n8{
-	margin-top: -13rem;
-	@media only screen and (max-width: 767px) {
-		margin-top: -16rem;
-    	padding: 4.6rem 0 !important;
-	}
-}
-.mt-n9{
-	margin-top: -13rem;
-	@media only screen and (max-width: 767px) {
-		margin-top: -16rem;
-	}
-}
+
