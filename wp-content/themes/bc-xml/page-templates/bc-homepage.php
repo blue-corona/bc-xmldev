@@ -20,7 +20,7 @@ get_header();
         }
     ?>
     <!-- background image use shortcode for mobile use background-image:url('../img/what-we-mobile.png');--->
-    <div class="container-fluid bc_home_section_bg bc_bg_position_bottom p-0 pt-5 pb-5 what_we_do" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/img/what-we.png');  ">
+    <div class="container-fluid bc_home_section_bg p-0 pt-5 pb-5 what_we_do" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/img/what-we.png'); background-position: bottom; ">
 
         <div class="container pt-5 pb-5 px-lg-5">
             <div class="row text-center text-lg-center text-md-center p-lg-5 px-0">
@@ -159,12 +159,12 @@ get_header();
 
     <!-- background image use shortcode --->
     <div class="container-fluid p-0">
-      <div class="who_we_head position-relative bc_home_section_bg bc_bg_position_center" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/greybg.png'); ">
+      <div class="who_we_head position-relative bc_home_section_bg " style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/greybg.png'); background-position: center;">
       </div>
     </div>
 
     <!-- background image use shortcode--->
-    <div class="container-fluid p-0 pt-5 pb-5 position-relative bc_home_section_bg bc_bg_position_top who_we mt-n8" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/img/testimonials.png');">
+    <div class="container-fluid p-0 pt-5 pb-5 position-relative bc_home_section_bg who_we mt-n8" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/img/testimonials.png'); background-position: top">
       <div class="eagle_icon position-absolute d-none d-md-block">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/eagle.png" class="img-fluid w-100 animated">
       </div>
