@@ -658,12 +658,6 @@ ul.bullete_style{
 		img{
 			opacity:0.3;
 			transition: all ease 0.4s;
-			@media (hover: none), only screen and (max-width: 991px) {
-				max-width:400px;
-			}
-			@media (hover: none), only screen and (max-width: 767px) {
-				max-width:250px;
-			}
 		}
 		&:hover{
 			border-color: $tertiary_color;
@@ -676,9 +670,6 @@ ul.bullete_style{
 }
 .how_we_swiper{
 	max-height:450px;
-	@media screen and (max-width: 767px) {
-		max-width:100%;
-	}
 }
 .how_we_pagination{
 	left:0px;
@@ -767,36 +758,27 @@ ul.bullete_style{
     left: -60px;
 }
 .mt-n7{
-	margin-top: -13rem;
-    padding: 7.6rem 0px !important;
-	@media only screen and (max-width: 1200px) {
-		margin-top: -12.55rem;
-    	padding: 7.6rem 0!important;
-	}
+	margin-top: -11.88rem;
+    
 	@media only screen and (max-width: 991px) {
 		margin-top: -11.7rem;
-    	padding: 7.6rem 0!important;
 	}
 	@media only screen and (max-width: 768px) {
-		margin-top: -8rem;
-    	padding: 7.6rem 0!important;
+		margin-top: -8rem;	
 	}
 	@media only screen and (max-width: 767px) {
-		margin-top: -5.4rem;
-    	padding: 7.6rem 0!important;
+		margin-top: -5.4rem;	
 	}
 	@media only screen and (max-width: 640px) {
 		margin-top: -4.9rem;
-    	padding: 7.6rem 0!important;
 	}
 	@media only screen and (max-width: 575px) {
-		margin-top: -4.7rem;
-    	padding: 7.6rem 0!important;
+		margin-top: -4.6rem;
 	}
 	@media only screen and (max-width: 540px) {
-		margin-top: -4.4rem;
-    	padding: 7.6rem 0!important;
+		margin-top: -4rem;
 	}
+	
 }
 .mt-n8{
 	margin-top: -13rem;

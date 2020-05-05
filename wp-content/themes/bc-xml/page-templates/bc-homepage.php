@@ -28,11 +28,11 @@ get_header();
                     <h3 class="position-relative bottom_line mb-5">What We Believe</h3>
                     <div class="mx-md-5 mx-4 position-relative bg-white overflow-hidden what_we_video" data-toggle="modal" data-target="#exampleModal">
                         <div class="row">
-                            <div class="offset-lg-2 col-lg-8 mt-n3 pb-md-5 pb-3 d-flex justify-content-center align-items-center">
+                            <div class="offset-lg-1 col-lg-10 offset-md-1 col-md-10 mt-n3 pb-md-5 pb-3 d-flex justify-content-center align-items-center">
                                 <span class="position-absolute d-block play_icon text-center mt-md-5 mt-4">
                                     <i class="fas fa-3x fa-play-circle bc_color_primary"></i>
                                 </span>
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/what-we-icon.png" class="img-fluid  mx-auto mt-md-n5 mt-n3">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/what-we-icon.png" class="img-fluid  mx-auto mt-md-n4 mt-n3 w-75">
 
                             </div>
                         </div>
