@@ -345,6 +345,17 @@ ul.bullete_style{
 	}
 }
 
+ol.bullete_style{
+	li{
+		display: flex !important;
+		align-items: center;
+		font-size: 20px;
+		font-family: $alternate_font_family_1;
+		font-weight: 300;
+		color: $brown_color;
+	}
+}
+
 .btn_primary{
     background-color: $primary_color !important;
     border-radius: 0 !important;
