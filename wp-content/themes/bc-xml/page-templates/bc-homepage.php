@@ -157,13 +157,16 @@ get_header();
         </div>
     </div>
 
+    <!-- background image use shortcode --->
     <div class="container-fluid p-0">
-      <div class="grey-bg"></div>
+      <div class="who_we_head position-relative bc_home_section_bg" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/greybg.png'); background-position: center;">
+      </div>
     </div>
 
-    <div class="container-fluid p-0 pt-5 pb-5 position-relative who_we">
-      <div class="eagle_icon position-absolute">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/eagle.png" class="img-fluid animated" >
+    <!-- background image use shortcode--->
+    <div class="container-fluid p-0 pt-5 pb-5 position-relative bc_home_section_bg who_we mt-n8" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/img/testimonials.png');background-position:top;">
+      <div class="eagle_icon position-absolute d-none d-md-block">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/eagle.png" class="img-fluid w-100 animated">
       </div>
         <div class="container p-5 px-md-4">
             <div class="row pt-5">
@@ -235,12 +238,12 @@ get_header();
                     </div>
                     <!-- Add Arrows -->
                         <div class="who_we_buttons">
-                            <div class="swiper-button-next who_we_next"><i class="fal fa-angle-right"></i></div>
-                            <div class="swiper-button-prev who_we_prev"><i class="fal fa-angle-left"></i></div>
+                            <div class="swiper-button-next who_we_next bc_color_primary bc_text_30 bc_text_light bc_line_height_60"><i class="fal fa-2x fa-angle-right"></i></div>
+                            <div class="swiper-button-prev who_we_prev bc_color_primary bc_text_30 bc_text_light bc_line_height_60"><i class="fal fa-2x fa-angle-left"></i></div>
                         </div>
                 </div>
                 <div class="col-md-5 order-1 order-md-2 mt-3 pb-5 text-center text-md-left team_text">
-                    <h2 class="text-capitalize">A Team of <span class="d-md-block">Passionate Experts</span></h2>
+                    <h2 class="text-capitalize bc_text_32 bc_line_height_32 bc_color_quaternary">A Team of <span class="d-md-block">Passionate Experts</span></h2>
                     <p>With roots back to 1981 XML has been passionate about assembling a team of experts not just in money management but also in listening and in sincere care for our client's well being. We currently have CFPs, CRPCs, MBAs working to improve our Client's lives.</p>
                     <a href="#" class="btn_secondary px-4 py-2 mt-4 mb-5">FULL TEAM</a>
                 </div>
@@ -248,7 +251,7 @@ get_header();
         </div>
     </div>
    
-    <div class="container-fluid px-0 borde_b_primary mt-minus">
+    <div class="container-fluid px-0 borde_b_primary mt-n9">
       <div class="graphic_lines pb-5">
         <div class="container">
             <div class="row no-gutters">

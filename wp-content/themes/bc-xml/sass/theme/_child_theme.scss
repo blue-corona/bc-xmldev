@@ -634,11 +634,7 @@ ul.bullete_style{
 }
 
 
-
-
 //homepage css
-
-
 .what_we_do{
 	@media (hover: none), only screen and (max-width: 768px) {
 		background-image:url('../img/what-we-mobile.png') !important; 
@@ -669,7 +665,6 @@ ul.bullete_style{
 		}
 	}	
 }
-
 .how_we_swiper{
 	max-height:450px;
 	@media screen and (max-width: 767px) {
@@ -682,7 +677,6 @@ ul.bullete_style{
 	.swiper-pagination-bullet{
 	    width: 26px !important;
 	    height: 26px !important;
-	    margin: 0 3px;
 	    background-size:cover;
 	    background:url('../img/pagination.png');
 	    opacity: 1;
@@ -691,8 +685,6 @@ ul.bullete_style{
 	    background:url('../img/pagination-fill.png');
 	}
 }
-
-
 @media (hover: none), only screen and (max-width: 767px) {
 	.how_we_swiper {
 		.text-uppercase{
@@ -706,21 +698,11 @@ ul.bullete_style{
 		bottom:90px !important;
 	}
 }
-
-.grey-bg {
-    background: url('../img/greybg.png');
-    padding: 110px 0px;
-    background-size: cover;
-    position: relative;
-    z-index: 999;
+.who_we_head {
+    padding: 115px 0px;
+    z-index: 9;
 }
-
 .who_we{
-	background-image:url('../img/testimonials.png');
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:bottom;
-	margin-top: -11.76rem;
 	.who_we_pagination{
 		left:0px;
 		width:20px;
@@ -738,45 +720,20 @@ ul.bullete_style{
 			background: $primary_color !important;
 		}
 	}
-
-
 	.who_we_buttons{
 		div{
 		    opacity: 0.6;
-			color: $primary_color;
-			font-size: 30px;
-			font-weight: 300;
-			letter-spacing: 0;
-			line-height: 60px;
+		    top:60px;
 		}
 		.who_we_next{
 			right:-5px;
-			top:60px;
 		}
 		.who_we_prev{
 			left:-5px;
-			top:60px;
 		}
 	}
-	.team_text{
-		@media (hover: none), only screen and (max-width: 767px){
-			 h2{
-			 	font-size:32px;
-			 	line-height:32px;
-			 	color:$quaternary_color
-			}
-		}
-	}
-	@media only screen and (max-width: 768px) {
-		margin-top: -11rem;
-		padding:5rem 0rem !important;
-	}
-	
 }
 
-.custom_width{
-	max-width:90%;
-}
 .who_we_swiper {
 	h3 {
 		min-height: 44px;
@@ -794,12 +751,7 @@ ul.bullete_style{
     top: 0px;
     width: 33%;
     left: -60px;
-    
-	@media (hover: none), only screen and (max-width: 767px) {
-		display:none;
-	}
 }
-
 .mt-n7{
 	margin-top: -12rem;
 	@media only screen and (max-width: 1200px) {
@@ -814,5 +766,19 @@ ul.bullete_style{
 	@media only screen and (max-width: 767px) {
 		margin-top: -5.5rem;
     	padding: 7.6rem 0 !important;
+	}
+}
+.mt-n8{
+	margin-top: -12rem;
+	@media only screen and (max-width: 767px) {
+		margin-top: -15rem;
+    	padding: 4.6rem 0 !important;
+	}
+}
+.mt-n9{
+	margin-top: -13rem;
+	
+	@media only screen and (max-width: 767px) {
+		margin-top: -16rem;
 	}
 }
