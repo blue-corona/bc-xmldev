@@ -20,7 +20,7 @@ get_header();
         }
     ?>
     <!-- background image use shortcode for mobile use background-image:url('../img/what-we-mobile.png');--->
-    <div class="container-fluid p-0 pt-5 pb-5 what_we_do mt-n7" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/img/what-we.png');  background-size:cover;  background-repeat:no-repeat;  background-position:bottom;">
+    <div class="container-fluid bc_home_section_bg p-0 pt-5 pb-5 what_we_do mt-n7" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/img/what-we.png');  ">
 
         <div class="container pt-5 pb-5 px-lg-5">
             <div class="row text-center text-lg-center text-md-center p-lg-5 px-0">
@@ -28,9 +28,9 @@ get_header();
                     <h3 class="position-relative bottom_line mb-5">What We Believe</h3>
                     <div class="mx-md-5 mx-4 position-relative bg-white overflow-hidden what_we_video" data-toggle="modal" data-target="#exampleModal">
                         <div class="row">
-                            <div class="offset-lg-2 col-lg-8 mt-n3 pb-md-5 pb-3 m">
-                                <span class="position-absolute play_icon text-center">
-                                    <i class="fas fa-caret-right"></i>
+                            <div class="offset-lg-2 col-lg-8 mt-n3 pb-md-5 pb-3 d-flex justify-content-center align-items-center">
+                                <span class="position-absolute d-block play_icon text-center mt-md-5 mt-4">
+                                    <i class="fas fa-3x fa-play-circle bc_color_primary"></i>
                                 </span>
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/what-we-icon.png" class="img-fluid  mx-auto mt-md-n5 mt-n3">
 
@@ -65,13 +65,13 @@ get_header();
             <div class="row">
                 <div class="col-md-12 text-center text-lg-center text-md-center"><h3 class="position-relative bottom_line mb-5">How We Work</h3></div>
                 <div class="col-md-12 m-md-4">
-                    <div class="swiper-container how_we_swiper">
+                    <div class="swiper-container how_we_swiper h-100">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide bg-white" >
                               <div class="row align-items-center">
                                     <div class="offset-md-1 col-md-5 col-12">
                                         <div class="pl-md-5 text-center text-md-left">
-                                            <p class="text-uppercase">team driven<span class="d-block">investing</span></p>
+                                            <p class="text-uppercase">team driven<span class="d-block bc_color_primary bc_text_40 bc_text_semibold bc_line_height_38">investing</span></p>
                                             <p>“No one knows everything.” We try to make informed, rational decisions that align your investments with your lifestyle.</p>
                                             <a href="#" class="btn_primary py-2 px-3 mt-4">LEARN HOW</a>
                                         </div>
@@ -87,7 +87,7 @@ get_header();
                               <div class="row align-items-center">
                                     <div class="offset-md-1 col-md-5 col-12">
                                         <div class="pl-md-5 text-center text-md-left">
-                                            <p class="text-uppercase">360<span class="d-block">SUPPORT</span></p>
+                                            <p class="text-uppercase">360<span class="d-block bc_color_primary bc_text_40 bc_text_semibold bc_line_height_38">SUPPORT</span></p>
                                             <p>“We have a person for that”. If it’s important to you, we are here to help, beyond just investments and planning.</p>
                                             <a href="#" class="btn_primary py-2 px-3 mt-4">LEARN HOW</a>
                                         </div>
@@ -103,7 +103,7 @@ get_header();
                               <div class="row align-items-center">
                                     <div class="offset-md-1 col-md-5 col-12">
                                         <div class="pl-md-5 text-center text-md-left">
-                                            <p class="text-uppercase"><span class="d-block">QUALIFIED</span></p>
+                                            <p class="text-uppercase"><span class="d-block bc_color_primary bc_text_40 bc_text_semibold bc_line_height_38">QUALIFIED</span></p>
                                             <p>“We’ve got the credentials.”</p>
                                             <a href="#" class="btn_primary py-2 px-3 mt-4">Meet the team</a>
                                         </div>
@@ -119,7 +119,7 @@ get_header();
                               <div class="row align-items-center">
                                     <div class="offset-md-1 col-md-5 col-12">
                                         <div class="pl-md-5 text-center text-md-left">
-                                            <p class="text-uppercase">Community<span class="d-block">CENTRIC</span></p>
+                                            <p class="text-uppercase">Community<span class="d-block bc_color_primary bc_text_40 bc_text_semibold bc_line_height_38">CENTRIC</span></p>
                                             <p>“Our clients are not clones.”</p>
                                             <a href="#" class="btn_primary py-2 px-3 mt-4">Learn more about how we advise our community</a>
                                         </div>
@@ -135,7 +135,7 @@ get_header();
                               <div class="row align-items-center">
                                     <div class="offset-md-1 col-md-5 col-12">
                                         <div class="pl-md-5 text-center text-md-left">
-                                            <p class="text-uppercase"><span class="d-block">INDEPENDENT</span></p>
+                                            <p class="text-uppercase"><span class="d-block bc_color_primary bc_text_40 bc_text_semibold bc_line_height_38">INDEPENDENT</span></p>
                                             <p>“We think for ourselves.”</p>
                                             <a href="#" class="btn_primary py-2 px-3 mt-4">Read about our beliefs and how we invest in our community</a>
                                         </div>

@@ -8165,6 +8165,9 @@ main a {
 .bc_line_height_36 {
   line-height: 36px; }
 
+.bc_line_height_38 {
+  line-height: 38px; }
+
 .bc_line_height_40 {
   line-height: 40px; }
 
@@ -9570,8 +9573,9 @@ ul.bullete_style {
   background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#ffffff00));
   background: linear-gradient(#FFFFFF 0%, #ffffff00 100%); }
 
-.home_banner {
-  background-position: bottom; }
+@media (hover: none), only screen and (max-width: 768px) {
+  .what_we_do {
+    background-image: url("../img/what-we-mobile.png") !important; } }
 
 .what_we_do .what_we_video {
   border: 1px solid #fff;
@@ -9580,19 +9584,7 @@ ul.bullete_style {
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s; }
   .what_we_do .what_we_video span {
-    background: #666d89;
-    width: 40px;
-    height: 40px;
-    top: 50%;
-    left: 50%;
-    z-index: 9;
-    -webkit-transform: translate(-50%);
-            transform: translate(-50%);
-    border-radius: 100%;
-    line-height: 40px;
-    display: block;
-    color: #fff;
-    font-size: 32px; }
+    z-index: 9; }
   .what_we_do .what_we_video img {
     opacity: 0.3;
     -webkit-transition: all ease 0.4s;
@@ -9609,31 +9601,11 @@ ul.bullete_style {
     .what_we_do .what_we_video:hover img {
       opacity: 1; }
 
-@media only screen and (max-width: 991px) {
-  .what_we_do {
-    margin-top: -11.4rem; } }
-
-@media only screen and (max-width: 768px) {
-  .what_we_do {
-    margin-top: -8rem; } }
-
-@media only screen and (max-width: 767px) {
-  .what_we_do {
-    margin-top: -4.5rem;
-    padding: 7.6rem 0 !important; } }
-
 .how_we_swiper {
   max-height: 450px; }
-  .how_we_swiper p span {
-    color: #666D89;
-    font-size: 40px;
-    font-weight: 600;
-    letter-spacing: 0;
-    line-height: 38px; }
   @media screen and (max-width: 767px) {
     .how_we_swiper {
-      max-width: 100%;
-      height: 100%; } }
+      max-width: 100%; } }
 
 .how_we_pagination {
   left: 0px;
@@ -9725,6 +9697,19 @@ ul.bullete_style {
       display: none; } }
 
 .mt-n7 {
-  margin-top: -11.76rem; }
+  margin-top: -12rem; }
+  @media only screen and (max-width: 1200px) {
+    .mt-n7 {
+      margin-top: -9.7rem; } }
+  @media only screen and (max-width: 991px) {
+    .mt-n7 {
+      margin-top: -8.6rem; } }
+  @media only screen and (max-width: 768px) {
+    .mt-n7 {
+      margin-top: -8rem; } }
+  @media only screen and (max-width: 767px) {
+    .mt-n7 {
+      margin-top: -5.5rem;
+      padding: 7.6rem 0 !important; } }
 
 /*# sourceMappingURL=child-theme.css.map */
