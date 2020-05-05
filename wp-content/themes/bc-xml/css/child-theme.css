@@ -9078,6 +9078,15 @@ ul.gform_fields li::before {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.bc_bg_position_top {
+  background-position: top; }
+
+.bc_bg_position_center {
+  background-position: center; }
+
+.bc_bg_position_bottom {
+  background-position: top; }
+
 .bc_default_primary {
   background-color: #01385e; }
 
