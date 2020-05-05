@@ -4,6 +4,7 @@
 @import "styles/bc_gravity_forms";
 @import "styles/bc_navbar";
 @import "styles/bc_swiper";
+@import "styles/bc_fonts_mobile";
 
 .no_hover_underline:hover{
 	text-decoration:none;
@@ -408,7 +409,7 @@ ol.bullete_style{
 		}
 	}
 }
-.accordion{
+/*.accordion{
 	.card-header{
 		&:after {
 		    position: absolute;
@@ -436,7 +437,7 @@ ol.bullete_style{
 		    background: $primary_color;
 		}
 	}
-}
+}*/
 .bottom_line{
 	&:before{
 		position: absolute;
@@ -641,4 +642,216 @@ ol.bullete_style{
 	z-index: 10;
 	width: 100%;
 	background: linear-gradient(#FFFFFF 0%, #ffffff00 100%);
+}
+
+
+
+
+//homepage css
+
+.home_banner {
+    background-position: bottom;
+}
+
+.what_we_do{
+	
+	
+	.what_we_video{
+		border:1px solid #fff;
+		box-shadow:13px 13px 0px $secondary_color;
+		transition: all ease 0.5s;
+		span{
+			background:$primary_color;
+			width: 40px;
+		    height: 40px;
+		    top: 50%;
+		    left: 50%;
+		    z-index: 9;
+		    transform: translate(-50%);
+		    border-radius: 100%;
+		    line-height: 40px;
+		    display: block;
+		    color: #fff;
+		    font-size: 32px;
+		}
+		img{
+			opacity:0.3;
+			transition: all ease 0.4s;
+			@media (hover: none), only screen and (max-width: 991px) {
+				max-width:400px;
+			}
+			@media (hover: none), only screen and (max-width: 767px) {
+				max-width:250px;
+			}
+		}
+		&:hover{
+			border-color: $tertiary_color;
+			cursor:pointer;
+			img{
+				opacity:1;
+			}
+		}
+
+
+	}
+
+	@media only screen and (max-width: 991px) {
+		margin-top:-11.4rem;
+	}
+	@media only screen and (max-width: 768px) {
+		
+		margin-top: -8rem;
+	}
+	@media only screen and (max-width: 767px) {
+		margin-top: -4.5rem;
+    	padding: 7.6rem 0 !important;
+	}
+	
+}
+
+
+.how_we_swiper{
+	max-height:450px;
+	p{
+		span{
+			color: #666D89;
+			font-size: 40px;
+			font-weight: 600;
+			letter-spacing: 0;
+			line-height: 38px;
+		}
+	}
+	@media screen and (max-width: 767px) {
+		max-width:100%;
+		height:100%;
+	}
+}
+
+
+.how_we_pagination{
+	left:0px;
+	width:20px;
+	.swiper-pagination-bullet{
+	    width: 26px !important;
+	    height: 26px !important;
+	    margin: 0 3px;
+	    background-size:cover;
+	    background:url('../img/pagination.png');
+	    opacity: 1;
+	}
+	.swiper-pagination-bullet-active{
+	    background:url('../img/pagination-fill.png');
+	}
+}
+
+
+@media (hover: none), only screen and (max-width: 767px) {
+	.how_we_swiper {
+		.text-uppercase{
+		    min-height:70px;
+		}
+	    p{
+	    	min-height: 110px;
+	    }
+	}
+	.how_we_pagination{
+		bottom:90px !important;
+	}
+}
+
+.grey-bg {
+    background: url('../img/greybg.png');
+    padding: 110px 0px;
+    background-size: cover;
+    position: relative;
+    z-index: 999;
+}
+
+.who_we{
+	background-image:url('../img/testimonials.png');
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:bottom;
+	margin-top: -11.76rem;
+	.who_we_pagination{
+		left:0px;
+		width:20px;
+		.swiper-pagination-bullet{
+		    width: 18px !important;
+		    height: 18px !important;
+		    margin: 0 3px;
+		    border-radius: 50%;
+		    border: 2px solid $primary_color;
+		    background: #ffffff !important;
+		    opacity: .5 !important;
+		}
+		.swiper-pagination-bullet-active{
+			opacity: .5;
+			background: $primary_color !important;
+		}
+	}
+
+
+	.who_we_buttons{
+		div{
+		    opacity: 0.6;
+			color: $primary_color;
+			font-size: 30px;
+			font-weight: 300;
+			letter-spacing: 0;
+			line-height: 60px;
+		}
+		.who_we_next{
+			right:-5px;
+			top:60px;
+		}
+		.who_we_prev{
+			left:-5px;
+			top:60px;
+		}
+	}
+	.team_text{
+		@media (hover: none), only screen and (max-width: 767px){
+			 h2{
+			 	font-size:32px;
+			 	line-height:32px;
+			 	color:$quaternary_color
+			}
+		}
+	}
+	@media only screen and (max-width: 768px) {
+		margin-top: -11rem;
+		padding:5rem 0rem !important;
+	}
+	
+}
+
+.custom_width{
+	max-width:90%;
+}
+.who_we_swiper {
+	h3 {
+		min-height: 44px;
+	}
+}
+.who_we_swiper{
+	.image{
+		&:before{
+			border-right: 8px solid #faf8f5;
+			border-bottom: 8px solid #faf8f5;
+		}
+	}
+}
+.eagle_icon {
+    top: 0px;
+    width: 33%;
+    left: -60px;
+    
+	@media (hover: none), only screen and (max-width: 767px) {
+		display:none;
+	}
+}
+
+.mt-n7{
+	margin-top: -11.76rem;
 }
