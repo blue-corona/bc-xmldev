@@ -20,7 +20,7 @@ get_header();
         }
     ?>
     <!-- background image use shortcode for mobile use background-image:url('../img/what-we-mobile.png');--->
-    <div class="container-fluid bc_home_section_bg p-0 pt-5 pb-5 what_we_do mt-n7" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/img/what-we.png');  ">
+    <div class="container-fluid bc_home_section_bg p-0 pt-5 pb-5 what_we_do mt-n7" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/img/what-we.png'); background-position: bottom;  ">
 
         <div class="container pt-5 pb-5 px-lg-5">
             <div class="row text-center text-lg-center text-md-center p-lg-5 px-0">
