@@ -1,31 +1,29 @@
-<div class="container-fluid p-0 bc_hero_container bc_home_section_bg" style="background-image: url('<?php echo bc_get_theme_mod('bc_theme_home_options', 'background_image', 'bc_background_upload', false);?>')">
-    <div class="hero-overlay-gradient">
-        <div class="container px-4 pt-4">
-            <div class="row text-center text-lg-left text-md-left">
-                <div class="col-md-6 col-xs-12 col-lg-6 col-sm-12 m-auto">
-                    <?php echo bc_get_theme_mod('bc_theme_home_options', 'background_image', 'bc_background_image_overlay_text', false);?>
-
-                    <button onclick="window.location.href = '<?php echo get_home_url().bc_get_theme_mod('bc_theme_home_options', 'background_image', 'bc_background_button_link', '/promotions')?>';"  class="btn bc_color_primary_bg py-2 mt-2 mb-4 mb-md-0 hero-image bc_color_secondary_hover"> <?php echo bc_get_theme_mod('bc_theme_home_options', 'background_image', 'bc_background_button_text', 'Schedule Service Today');?> &nbsp;<i aria-hidden="true" class="fa fa-chevron-circle-right"></i></button>
-                </div>
-                <div class="col-md-6 col-xs-12 col-lg-6 col-sm-12 p-4 d-none d-md-block">
-                    <div class=" col-md-12 col-lg-9 col-sm-12 col-xs-12 offset-lg-2">
-                        <div class="bc_color_info_bg d-flex py-3 px-4">
-                            <div class="m-auto">
-                                <img alt="icon" class="img-fluid align-self-center mt-n3" src="<?php echo get_template_directory_uri();?>/img/24icon.png">
-                                <span class="bc_color_secondary text-capitalize bc_text_30 bc_font_alt_1 text-center  pt-1">
-                                    Emergency Service
-                                </span>
-                            </div>
-                        </div>
-                        <div class="entry-content bc_hero_form_body">
-                           <?php echo do_shortcode('[gravityform id=2 ajax=true]')?>
-                        </div>
-                    </div>
+<div class="container-fluid p-0 pt-5 pb-5 bc_hero_container bc_home_section_bg home_banner d-none d-md-block" style="background-image: url('<?php echo bc_get_theme_mod('bc_theme_home_options', 'background_image', 'bc_background_upload', false);?>')">
+    <div class="hero-overlay-gradient pt-5 pb-5">
+        <div class="container px-md-4 pt-5 pb-5">
+            <div class="row text-center text-lg-center text-md-center pt-md-5 pb-md-5">
+                <div class="offset-md-2 col-md-8 col-xs-12 offset-lg-2 col-lg-8 col-sm-12 m-auto pt-md-5 pb-md-5">
+                   <span class="pt-md-4 d-block h1 position-relative bottom_line">Lifestyle Driven Advice</span>
+                   <p class="p-lg-5 pt-5 m-0 mx-lg-5">It’s not just your money, it’s your life! We believe your money is a means to getting the most out of your life, and work with you to make that a reality.</p>
                 </div>
             </div>
         </div>
     </div><!-- .hero-overlay-gradient-->
-    </div>
+</div>
+
+
+<div class="container-fluid p-0 pt-5 pb-5 bc_hero_container bc_home_section_bg home_banner d-md-none d-sm-block" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/banner-graphic-mobile.png'); ">
+    <div class="hero-overlay-gradient pt-5 pb-5">
+        <div class="container px-md-4 pt-5 pb-5">
+            <div class="row text-center text-lg-center text-md-center pt-md-5 pb-md-5">
+                <div class="offset-md-2 col-md-8 col-xs-12 offset-lg-2 col-lg-8 col-sm-12 m-auto pt-md-5 pb-md-5">
+                   <span class="pt-md-4 d-block h1 position-relative bottom_line">Lifestyle Driven Advice</span>
+                   <p class="p-md-5 pt-5 m-0 mx-md-5">It’s not just your money, it’s your life! We believe your money is a means to getting the most out of your life, and work with you to make that a reality.</p>
+                </div>
+            </div>
+        </div>
+    </div><!-- .hero-overlay-gradient-->
+</div>
 
 <style type="text/css">
 .hero-image{background-color:<?php echo bc_get_theme_mod('bc_theme_home_options', 'background_image', 'bc_background_button_color', '#00395e');?>;color:<?php echo bc_get_theme_mod('bc_theme_home_options', 'background_image', 'bc_background_button_text_color', '#ffffff');?>;}
