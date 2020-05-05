@@ -34,11 +34,11 @@ get_header();?>
                     <a href="#" class="btn_primary py-2 px-3 mt-4 bc_line_height_50">CTA GOES HERE</a>
                     <h3 class="mt-5 pl-4 mb-2">Bulleted List Example</h3>
                     <ul class="bullete_style pl-4" >
-                        <li class="bc_line_height_36"> <i class="fas fa-circle"></i> Sed ut perspiciatis unde</li>
-                        <li class="bc_line_height_36"> <i class="fas fa-circle"></i> Omnis iste natus error sit</li>
-                        <li class="bc_line_height_36"> <i class="fas fa-circle"></i> Voluptatem accusantium</li>
-                        <li class="bc_line_height_36"> <i class="fas fa-circle"></i> Doloremque laudantium</li>
-                        <li class="bc_line_height_36"> <i class="fas fa-circle"></i> Totam rem aperiam amet</li>
+                        <li class="bc_line_height_36"> Sed ut perspiciatis unde</li>
+                        <li class="bc_line_height_36"> Omnis iste natus error sit</li>
+                        <li class="bc_line_height_36"> Voluptatem accusantium</li>
+                        <li class="bc_line_height_36"> Doloremque laudantium</li>
+                        <li class="bc_line_height_36"> Totam rem aperiam amet</li>
                     </ul>
                     <div id="accordion" class="accordion w-100 border-bottom mt-4">
                       <div class="card rounded-0 mb-0">
