@@ -11,17 +11,22 @@ get_header();?>
 <main>
     <div class="container-fluid px-0 m-0 subpage_banner">
         <div class="row no-gutters">
-            <div class="col-12 position-relative">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/contact-banner.jpg" class="img-fluid w-100" alt="Contact-banner">
-                <div class="gradient position-absolute"></div>
-            </div>
+            <div class="col-12 position-relative">  
+     <?php if (has_post_thumbnail() ) {
+      $image = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_id() ), 'single-post-thumbnail' ); ?>
+             <img src="<?php echo $image[0]; ?>" class="img-fluid w-100" alt="Contact-banner">
+           <?php }else{ ?>
+             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/contact-banner.jpg" class="img-fluid w-100" alt="Contact-banner">
+           <?php }?>
+            <div class="gradient position-absolute"></div>
+         
         </div>
     </div>
     <div class="container-fluid py-5 m-0">
         <div class="container">
             <div class="row no-gutters">
                 <div class="col-lg-12">
-
+ 
                    <!--  <h1>Heading Goes Here</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <a href="#">hyperlink example</a> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
                     <h2 class="mt-4">Subheading Goes Here</h2>
