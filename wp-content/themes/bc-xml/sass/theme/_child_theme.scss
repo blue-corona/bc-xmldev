@@ -327,37 +327,40 @@ div, {
 .bc_footer_copyright_bar .bc_footer_copyright_links {
     color: $primary_color !important;
 }
-ul.bullete_style{
-	list-style: none;
-	li{
-		display: flex !important;
-		align-items: center;
-		font-size: 20px;
-		font-family: $alternate_font_family_1;
-		font-weight: 300;
-		color: $brown_color;
-		&:before{
-		  content: "\f111";
-		  font-family: "Font Awesome 5 Pro";
-		  color: $primary_color;
-		  font-weight: bold;
-		  display: inline-block;
-		  font-size: 10px;
-		  width: 1em;
-		  margin-right: 10px;
-		}
-	}
-}
 
-ol.bullete_style{
-	li{
-		display: flex !important;
-		align-items: center;
-		font-size: 20px;
+.bullets_style {
+    ul {
+        font-size: 20px;
 		font-family: $alternate_font_family_1;
 		font-weight: 300;
 		color: $brown_color;
-	}
+		li{
+			list-style: none;
+			align-items: center;
+    		display: flex;
+			&:before {
+				content: "\f111";
+				font-family: "Font Awesome 5 Pro";
+				color: $primary_color;
+				font-weight: bold;
+				font-size: 10px;
+				margin-right: 10px;
+			}
+		}
+    }
+    ol {
+        font-size: 20px;
+		font-family: $alternate_font_family_1;
+		font-weight: 300;
+		color: $brown_color;
+		li {
+	        list-style: none;
+	        font-size: 20px;
+			font-family: $alternate_font_family_1;
+			font-weight: 300;
+			color: $brown_color;
+	    }
+    }
 }
 
 .btn_primary{
@@ -650,16 +653,17 @@ ol.bullete_style{
 
 //homepage css
 .what_we_do{
-	margin-top: -11.88rem;
+	margin-top: -11.7rem;
 	@media only screen and (max-width: 991px) {
-		margin-top: -11.7rem;
+		margin-top: -12rem;
 	}
 	@media only screen and (max-width: 768px) {
-		margin-top: -8rem;	
+		margin-top: -8.4rem;	
 		background-image:url('../img/what-we-mobile.png') !important; 
 	}
 	@media only screen and (max-width: 767px) {
-		margin-top: -5.4rem;	
+		margin-top: -5.1rem;
+    	padding-bottom: 4rem !important;	
 	}
 	@media only screen and (max-width: 640px) {
 		margin-top: -4.9rem;
@@ -667,7 +671,7 @@ ol.bullete_style{
 	@media only screen and (max-width: 575px) {
 		margin-top: -4.6rem;
 	}
-	@media only screen and (max-width: 540px) {
+	@media only screen and (max-width: 500px) {
 		margin-top: -4rem;
 	}
 
@@ -782,6 +786,4 @@ ol.bullete_style{
 }
 
 
-.mt-n7{
-	margin-top: -11.76rem;
-}
+
