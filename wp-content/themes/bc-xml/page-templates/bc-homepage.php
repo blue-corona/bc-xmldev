@@ -20,7 +20,7 @@ get_header();
         }
     ?>
     <!-- background image use shortcode for mobile use background-image:url('../img/what-we-mobile.png');--->
-    <div class="container-fluid p-0 pt-5 pb-5 what_we_do mt-n7" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/img/what-we.png');  background-size:cover;  background-repeat:no-repeat;  background-position:bottom;">
+    <div class="container-fluid bc_home_section_bg p-0 pt-5 pb-5 what_we_do" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/img/what-we.png'); background-position: bottom; ">
 
         <div class="container pt-5 pb-5 px-lg-5">
             <div class="row text-center text-lg-center text-md-center p-lg-5 px-0">
@@ -28,11 +28,11 @@ get_header();
                     <h3 class="position-relative bottom_line mb-5">What We Believe</h3>
                     <div class="mx-md-5 mx-4 position-relative bg-white overflow-hidden what_we_video" data-toggle="modal" data-target="#exampleModal">
                         <div class="row">
-                            <div class="offset-lg-2 col-lg-8 mt-n3 pb-md-5 pb-3 m">
-                                <span class="position-absolute play_icon text-center">
-                                    <i class="fas fa-caret-right"></i>
+                            <div class="offset-lg-1 col-lg-10 offset-md-1 col-md-10 mt-n3 pb-md-5 pb-3 d-flex justify-content-center align-items-center">
+                                <span class="position-absolute d-block play_icon text-center mt-md-5 mt-4">
+                                    <i class="fas fa-3x fa-play-circle bc_color_primary"></i>
                                 </span>
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/what-we-icon.png" class="img-fluid  mx-auto mt-md-n5 mt-n3">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/what-we-icon.png" class="img-fluid  mx-auto mt-md-n4 mt-n3 w-75">
 
                             </div>
                         </div>
@@ -65,13 +65,13 @@ get_header();
             <div class="row">
                 <div class="col-md-12 text-center text-lg-center text-md-center"><h3 class="position-relative bottom_line mb-5">How We Work</h3></div>
                 <div class="col-md-12 m-md-4">
-                    <div class="swiper-container how_we_swiper">
+                    <div class="swiper-container how_we_swiper h-100">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide bg-white" >
                               <div class="row align-items-center">
                                     <div class="offset-md-1 col-md-5 col-12">
                                         <div class="pl-md-5 text-center text-md-left">
-                                            <p class="text-uppercase">team driven<span class="d-block">investing</span></p>
+                                            <p class="text-uppercase">team driven<span class="d-block bc_color_primary bc_text_40 bc_text_semibold bc_line_height_38">investing</span></p>
                                             <p>“No one knows everything.” We try to make informed, rational decisions that align your investments with your lifestyle.</p>
                                             <a href="#" class="btn_primary py-2 px-3 mt-4">LEARN HOW</a>
                                         </div>
@@ -87,7 +87,7 @@ get_header();
                               <div class="row align-items-center">
                                     <div class="offset-md-1 col-md-5 col-12">
                                         <div class="pl-md-5 text-center text-md-left">
-                                            <p class="text-uppercase">360<span class="d-block">SUPPORT</span></p>
+                                            <p class="text-uppercase">360<span class="d-block bc_color_primary bc_text_40 bc_text_semibold bc_line_height_38">SUPPORT</span></p>
                                             <p>“We have a person for that”. If it’s important to you, we are here to help, beyond just investments and planning.</p>
                                             <a href="#" class="btn_primary py-2 px-3 mt-4">LEARN HOW</a>
                                         </div>
@@ -103,7 +103,7 @@ get_header();
                               <div class="row align-items-center">
                                     <div class="offset-md-1 col-md-5 col-12">
                                         <div class="pl-md-5 text-center text-md-left">
-                                            <p class="text-uppercase"><span class="d-block">QUALIFIED</span></p>
+                                            <p class="text-uppercase"><span class="d-block bc_color_primary bc_text_40 bc_text_semibold bc_line_height_38">QUALIFIED</span></p>
                                             <p>“We’ve got the credentials.”</p>
                                             <a href="#" class="btn_primary py-2 px-3 mt-4">Meet the team</a>
                                         </div>
@@ -119,7 +119,7 @@ get_header();
                               <div class="row align-items-center">
                                     <div class="offset-md-1 col-md-5 col-12">
                                         <div class="pl-md-5 text-center text-md-left">
-                                            <p class="text-uppercase">Community<span class="d-block">CENTRIC</span></p>
+                                            <p class="text-uppercase">Community<span class="d-block bc_color_primary bc_text_40 bc_text_semibold bc_line_height_38">CENTRIC</span></p>
                                             <p>“Our clients are not clones.”</p>
                                             <a href="#" class="btn_primary py-2 px-3 mt-4">Learn more about how we advise our community</a>
                                         </div>
@@ -135,7 +135,7 @@ get_header();
                               <div class="row align-items-center">
                                     <div class="offset-md-1 col-md-5 col-12">
                                         <div class="pl-md-5 text-center text-md-left">
-                                            <p class="text-uppercase"><span class="d-block">INDEPENDENT</span></p>
+                                            <p class="text-uppercase"><span class="d-block bc_color_primary bc_text_40 bc_text_semibold bc_line_height_38">INDEPENDENT</span></p>
                                             <p>“We think for ourselves.”</p>
                                             <a href="#" class="btn_primary py-2 px-3 mt-4">Read about our beliefs and how we invest in our community</a>
                                         </div>
@@ -157,13 +157,16 @@ get_header();
         </div>
     </div>
 
+    <!-- background image use shortcode --->
     <div class="container-fluid p-0">
-      <div class="grey-bg"></div>
+      <div class="who_we_head position-relative bc_home_section_bg " style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/greybg.png'); background-position: center;">
+      </div>
     </div>
 
-    <div class="container-fluid p-0 pt-5 pb-5 position-relative who_we">
-      <div class="eagle_icon position-absolute">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/eagle.png" class="img-fluid animated" >
+    <!-- background image use shortcode--->
+    <div class="container-fluid p-0 pt-5 pb-5 position-relative bc_home_section_bg who_we mt-n8" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/img/testimonials.png'); background-position: top">
+      <div class="eagle_icon position-absolute d-none d-md-block">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/eagle.png" class="img-fluid w-100 animated">
       </div>
         <div class="container p-5 px-md-4">
             <div class="row pt-5">
@@ -235,12 +238,12 @@ get_header();
                     </div>
                     <!-- Add Arrows -->
                         <div class="who_we_buttons">
-                            <div class="swiper-button-next who_we_next"><i class="fal fa-angle-right"></i></div>
-                            <div class="swiper-button-prev who_we_prev"><i class="fal fa-angle-left"></i></div>
+                            <div class="swiper-button-next who_we_next bc_color_primary bc_text_30 bc_text_light bc_line_height_60"><i class="fal fa-2x fa-angle-right"></i></div>
+                            <div class="swiper-button-prev who_we_prev bc_color_primary bc_text_30 bc_text_light bc_line_height_60"><i class="fal fa-2x fa-angle-left"></i></div>
                         </div>
                 </div>
                 <div class="col-md-5 order-1 order-md-2 mt-3 pb-5 text-center text-md-left team_text">
-                    <h2 class="text-capitalize">A Team of <span class="d-md-block">Passionate Experts</span></h2>
+                    <h2 class="text-capitalize bc_text_32 bc_line_height_32 bc_color_quaternary">A Team of <span class="d-md-block">Passionate Experts</span></h2>
                     <p>With roots back to 1981 XML has been passionate about assembling a team of experts not just in money management but also in listening and in sincere care for our client's well being. We currently have CFPs, CRPCs, MBAs working to improve our Client's lives.</p>
                     <a href="#" class="btn_secondary px-4 py-2 mt-4 mb-5">FULL TEAM</a>
                 </div>
@@ -248,7 +251,7 @@ get_header();
         </div>
     </div>
    
-    <div class="container-fluid px-0 borde_b_primary mt-minus">
+    <div class="container-fluid px-0 borde_b_primary mt-n9">
       <div class="graphic_lines pb-5">
         <div class="container">
             <div class="row no-gutters">
