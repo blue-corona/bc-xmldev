@@ -31,7 +31,7 @@ get_header();?>
                         <li>Do I really need to think about insurance?</li>
                         <li>How does anyone afford to have kids?!</li>
                         <li>Daycare is so expensive, should one of us stay home?</li>
-                        <li>Can I be a little frivolous and travel?</li>
+                        <li>Can I be a little frivolous and travel? </li>
                     </ul>
                     <div class="mt-5 py-5 border-top">
                       <h2>Community Members</h2>
