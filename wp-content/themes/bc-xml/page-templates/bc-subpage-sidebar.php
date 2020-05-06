@@ -28,13 +28,15 @@ global $post;
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, hyperlink example qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam. </p>
                     <a href="#" class="btn_primary py-1 px-3 mt-4 bc_line_height_50">CTA GOES HERE</a>
                     <h3 class="mt-5 pl-4 mb-2">Bulleted List Example</h3>
-                    <ul class="bullete_style pl-4" >
-                        <li class="bc_line_height_40"> Sed ut perspiciatis unde</li>
-                        <li class="bc_line_height_40"> Omnis iste natus error sit</li>
-                        <li class="bc_line_height_40"> Voluptatem accusantium</li>
-                        <li class="bc_line_height_40"> Doloremque laudantium</li>
-                        <li class="bc_line_height_40"> Totam rem aperiam amet</li>
-                    </ul>
+                    <div class="bullets_style">
+                      <ul class="pl-4" >
+                          <li class="bc_line_height_40"> Sed ut perspiciatis unde</li>
+                          <li class="bc_line_height_40"> Omnis iste natus error sit</li>
+                          <li class="bc_line_height_40"> Voluptatem accusantium</li>
+                          <li class="bc_line_height_40"> Doloremque laudantium</li>
+                          <li class="bc_line_height_40"> Totam rem aperiam amet</li>
+                      </ul>
+                    </div>
                     <div id="accordion" class="accordion w-100 border-bottom mt-4">
                       <div class="card rounded-0 mb-0">
                           <div class="card-header position-relative border-bottom-0 bg-white cursor_pointer" data-toggle="collapse" href="#collapse1">
