@@ -9608,24 +9608,25 @@ div {
   background: linear-gradient(#FFFFFF 0%, #ffffff00 100%); }
 
 .what_we_do {
-  margin-top: -11.88rem; }
+  margin-top: -11.7rem; }
   @media only screen and (max-width: 991px) {
     .what_we_do {
-      margin-top: -11.7rem; } }
+      margin-top: -12rem; } }
   @media only screen and (max-width: 768px) {
     .what_we_do {
-      margin-top: -8rem;
+      margin-top: -8.4rem;
       background-image: url("../img/what-we-mobile.png") !important; } }
   @media only screen and (max-width: 767px) {
     .what_we_do {
-      margin-top: -5.4rem; } }
+      margin-top: -5.1rem;
+      padding-bottom: 4rem !important; } }
   @media only screen and (max-width: 640px) {
     .what_we_do {
       margin-top: -4.9rem; } }
   @media only screen and (max-width: 575px) {
     .what_we_do {
       margin-top: -4.6rem; } }
-  @media only screen and (max-width: 540px) {
+  @media only screen and (max-width: 500px) {
     .what_we_do {
       margin-top: -4rem; } }
   .what_we_do .what_we_video {
