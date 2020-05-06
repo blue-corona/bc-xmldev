@@ -5,7 +5,7 @@
 @import "styles/bc_navbar";
 @import "styles/bc_swiper";
 @import "styles/bc_fonts_mobile";
-
+@import "styles/bc_bootstrap_override";
 .no_hover_underline:hover{
 	text-decoration:none;
 }
@@ -42,6 +42,15 @@
 .bc_home_section_bg{
 	background-repeat:no-repeat;
 	background-size: cover;
+}
+.bc_bg_position_top{
+	background-position: top;
+}
+.bc_bg_position_center{
+	background-position: center;
+}
+.bc_bg_position_bottom{
+	background-position: top;
 }
 .bc_default_primary{
 	background-color:$bc_default_primary;
@@ -642,44 +651,39 @@ div, {
 }
 
 
-
-
 //homepage css
-
-.home_banner {
-    background-position: bottom;
-}
-
 .what_we_do{
-	
-	
+	margin-top: -11.88rem;
+	@media only screen and (max-width: 991px) {
+		margin-top: -11.7rem;
+	}
+	@media only screen and (max-width: 768px) {
+		margin-top: -8rem;	
+		background-image:url('../img/what-we-mobile.png') !important; 
+	}
+	@media only screen and (max-width: 767px) {
+		margin-top: -5.4rem;	
+	}
+	@media only screen and (max-width: 640px) {
+		margin-top: -4.9rem;
+	}
+	@media only screen and (max-width: 575px) {
+		margin-top: -4.6rem;
+	}
+	@media only screen and (max-width: 540px) {
+		margin-top: -4rem;
+	}
+
 	.what_we_video{
 		border:1px solid #fff;
 		box-shadow:13px 13px 0px $secondary_color;
 		transition: all ease 0.5s;
 		span{
-			background:$primary_color;
-			width: 40px;
-		    height: 40px;
-		    top: 50%;
-		    left: 50%;
 		    z-index: 9;
-		    transform: translate(-50%);
-		    border-radius: 100%;
-		    line-height: 40px;
-		    display: block;
-		    color: #fff;
-		    font-size: 32px;
 		}
 		img{
 			opacity:0.3;
 			transition: all ease 0.4s;
-			@media (hover: none), only screen and (max-width: 991px) {
-				max-width:400px;
-			}
-			@media (hover: none), only screen and (max-width: 767px) {
-				max-width:250px;
-			}
 		}
 		&:hover{
 			border-color: $tertiary_color;
@@ -688,50 +692,17 @@ div, {
 				opacity:1;
 			}
 		}
-
-
-	}
-
-	@media only screen and (max-width: 991px) {
-		margin-top:-11.4rem;
-	}
-	@media only screen and (max-width: 768px) {
-		
-		margin-top: -8rem;
-	}
-	@media only screen and (max-width: 767px) {
-		margin-top: -4.5rem;
-    	padding: 7.6rem 0 !important;
-	}
-	
+	}	
 }
-
-
 .how_we_swiper{
 	max-height:450px;
-	p{
-		span{
-			color: #666D89;
-			font-size: 40px;
-			font-weight: 600;
-			letter-spacing: 0;
-			line-height: 38px;
-		}
-	}
-	@media screen and (max-width: 767px) {
-		max-width:100%;
-		height:100%;
-	}
 }
-
-
 .how_we_pagination{
 	left:0px;
 	width:20px;
 	.swiper-pagination-bullet{
 	    width: 26px !important;
 	    height: 26px !important;
-	    margin: 0 3px;
 	    background-size:cover;
 	    background:url('../img/pagination.png');
 	    opacity: 1;
@@ -740,8 +711,6 @@ div, {
 	    background:url('../img/pagination-fill.png');
 	}
 }
-
-
 @media (hover: none), only screen and (max-width: 767px) {
 	.how_we_swiper {
 		.text-uppercase{
@@ -755,21 +724,16 @@ div, {
 		bottom:90px !important;
 	}
 }
-
-.grey-bg {
-    background: url('../img/greybg.png');
-    padding: 110px 0px;
-    background-size: cover;
-    position: relative;
-    z-index: 999;
+@media (hover: none), only screen and (max-width: 440px) {
+	.how_we_pagination{
+		bottom:115px !important;
+	}
 }
-
+.who_we_head {
+    padding: 115px 0px;
+    z-index: 9;
+}
 .who_we{
-	background-image:url('../img/testimonials.png');
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:bottom;
-	margin-top: -11.76rem;
 	.who_we_pagination{
 		left:0px;
 		width:20px;
@@ -787,45 +751,20 @@ div, {
 			background: $primary_color !important;
 		}
 	}
-
-
 	.who_we_buttons{
 		div{
 		    opacity: 0.6;
-			color: $primary_color;
-			font-size: 30px;
-			font-weight: 300;
-			letter-spacing: 0;
-			line-height: 60px;
+		    top:60px;
 		}
 		.who_we_next{
 			right:-5px;
-			top:60px;
 		}
 		.who_we_prev{
 			left:-5px;
-			top:60px;
 		}
 	}
-	.team_text{
-		@media (hover: none), only screen and (max-width: 767px){
-			 h2{
-			 	font-size:32px;
-			 	line-height:32px;
-			 	color:$quaternary_color
-			}
-		}
-	}
-	@media only screen and (max-width: 768px) {
-		margin-top: -11rem;
-		padding:5rem 0rem !important;
-	}
-	
 }
 
-.custom_width{
-	max-width:90%;
-}
 .who_we_swiper {
 	h3 {
 		min-height: 44px;
@@ -843,12 +782,7 @@ div, {
     top: 0px;
     width: 33%;
     left: -60px;
-    
-	@media (hover: none), only screen and (max-width: 767px) {
-		display:none;
-	}
 }
 
-.mt-n7{
-	margin-top: -11.76rem;
-}
+
+
