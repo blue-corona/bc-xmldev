@@ -1,29 +1,29 @@
 @media only screen and (max-width: 768px) {
 	h1, .h1{
 	font-family: $primary_color;
-	font-size: 36px;
+	font-size: 32px;
 	font-weight: 100;
 	text-transform: uppercase;
-	line-height: 36px;
+	line-height: 30x;
 
 	color: $primary_color;
 }
 
 h2, .h2{
 	font-family: $quaternary_color;
-	font-size: 32px;
+	font-size: 26px;
 	font-weight: 100;
 	text-transform: uppercase;
-	line-height: 32px;
+	line-height: 30px;
 	color: $secondary_color;
 }
 
 h3, .h3{
 	font-family: $primary_color;
-	font-size: 28px;
+	font-size: 26px;
 	font-weight: 300;
 	text-transform: uppercase;
-	line-height: 28px;
+	line-height: 30px;
 	color: $primary_color;
 }
 

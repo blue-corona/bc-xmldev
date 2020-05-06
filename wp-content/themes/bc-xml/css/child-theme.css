@@ -8921,24 +8921,24 @@ ul.gform_fields li::before {
 @media only screen and (max-width: 768px) {
   h1, .h1 {
     font-family: #666d89;
-    font-size: 36px;
-    font-weight: 100;
-    text-transform: uppercase;
-    line-height: 36px;
-    color: #666d89; }
-  h2, .h2 {
-    font-family: #1d1817;
     font-size: 32px;
     font-weight: 100;
     text-transform: uppercase;
-    line-height: 32px;
+    line-height: 30x;
+    color: #666d89; }
+  h2, .h2 {
+    font-family: #1d1817;
+    font-size: 26px;
+    font-weight: 100;
+    text-transform: uppercase;
+    line-height: 30px;
     color: #cbb893; }
   h3, .h3 {
     font-family: #666d89;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 300;
     text-transform: uppercase;
-    line-height: 28px;
+    line-height: 30px;
     color: #666d89; }
   h4, .h4 {
     font-family: #cbb893;
@@ -9306,40 +9306,38 @@ div {
 .bc_footer_copyright_bar .bc_footer_copyright_links {
   color: #666d89 !important; }
 
-ul.bullete_style {
-  list-style: none; }
-  ul.bullete_style li {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 20px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    color: #1D1817; }
-    ul.bullete_style li:before {
-      content: "\f111";
-      font-family: "Font Awesome 5 Pro";
-      color: #666d89;
-      font-weight: bold;
-      display: inline-block;
-      font-size: 10px;
-      width: 1em;
-      margin-right: 10px; }
-
-ol.bullete_style li {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.bullets_style ul {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: #1D1817; }
+  .bullets_style ul li {
+    list-style: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .bullets_style ul li:before {
+      content: "\f111";
+      font-family: "Font Awesome 5 Pro";
+      color: #666d89;
+      font-weight: bold;
+      font-size: 10px;
+      margin-right: 10px; }
+
+.bullets_style ol {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #1D1817; }
+  .bullets_style ol li {
+    list-style: none;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #1D1817; }
 
 .btn_primary {
   background-color: #666d89 !important;
