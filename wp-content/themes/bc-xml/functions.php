@@ -35,7 +35,8 @@ function add_child_theme_textdomain() {
 add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
 
 $understrap_include = array(
-    '/widgets//bc-how-we-work.php',
+    '/widgets/bc-how-we-work.php',
+     '/bc-shortcode-override.php',
 );
 foreach ( $understrap_include as $file ) {
     $filepath = locate_template( 'inc' . $file );
