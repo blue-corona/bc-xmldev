@@ -629,7 +629,7 @@ div, {
 }
 .menu{
 	position: fixed;
-	top: 50px;
+	top: 37px;
 	z-index: 999;
 	background: red;
 	width: 100%;
@@ -817,4 +817,13 @@ div, {
     border-radius: 50%;
     background: 0 0;
     border: 3px solid #fff;
+}
+
+.fixed-top.scrolled {
+	background-color: #ffffff!important;
+ 	.menu{
+ 		background-color: #FFFFFF !important;
+	    box-shadow: 0 5px 32px 14px rgba(0,0,0,0.07);
+	    transition: background-color 20ms linear;
+ 	}
 }
