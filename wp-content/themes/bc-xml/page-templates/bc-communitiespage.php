@@ -9,10 +9,16 @@ defined( 'ABSPATH' ) || exit;
 get_header();?>
 
 <main>
+
     <div class="container-fluid px-0 m-0 subpage_banner">
         <div class="row no-gutters">
             <div class="col-12">
+                <?php if (has_post_thumbnail() ) {
+      $image = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_id() ), 'single-post-thumbnail' ); ?>
+             <img src="<?php echo $image[0]; ?>" class="img-fluid w-100" alt="Contact-banner">
+           <?php }else{ ?>
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/communities.jpg" class="img-fluid w-100" alt="Contact-banner">
+                   <?php }?>
                 <div class="gradient position-absolute"></div>
             </div>
         </div>
@@ -21,7 +27,17 @@ get_header();?>
         <div class="container">
             <div class="row no-gutters">
                 <div class="col-lg-12">
-                    <h1>Starting out - Solid Foundation</h1>
+                  <h1><?php the_title()?></h1>
+                   <p> <?php 
+                    if ( have_posts() ) :
+                    while ( have_posts() ) :  the_post();
+                        the_content();
+                    endwhile;
+                    endif;
+                    ?> 
+
+              </p>
+                <!--  <h1>Starting out - Solid Foundation</h1>
                     <p>Great work considering how best to position yourself for the future. We get that yes, someday, you want to retire, but there are also things you want to do now. You aren’t living for a future retirement, but rather want to maximize your entire life. We can work thru that together, building on lessons learned from others in a similar situation, but making it your own.</p>
 
                     <ul class="bullete_style pl-5">
@@ -32,12 +48,16 @@ get_header();?>
                         <li>How does anyone afford to have kids?!</li>
                         <li>Daycare is so expensive, should one of us stay home?</li>
                         <li>Can I be a little frivolous and travel? </li>
-                    </ul>
-                    <div class="mt-5 py-5 border-top">
+                    </ul>-->
+                    <!-- Community Members -->
+                   <!--  <div class="mt-5 py-5 border-top">
                       <h2>Community Members</h2>
                       <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
-                    </div>
-                </div>
+                    </div> --> 
+                </div> 
+
+              <!-- Community Members -->
+
                 <div class="col-lg-12">
                   <div class="swiper-button-next members-button-next d-none d-lg-block">
                       <i class="far fa-chevron-right bc_text_30 bc_line_height_34 bc_color_primary"></i>
@@ -104,7 +124,9 @@ get_header();?>
         </div>
     </div>
 
-    <div class="container-fluid py-5 px-0 testimonials">
+       <?php echo do_shortcode('[bc-testimonial]');?>
+
+   <!--  <div class="container-fluid py-5 px-0 testimonials">
         <div class="container">
             <div class="row no-gutters">
               <div class="col-lg-10 offset-lg-1 text-center pt-lg-5">
@@ -130,18 +152,18 @@ get_header();?>
                       <div class="swiper-slide">
                         <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."</p>
                       </div>
-                    </div>
+                    </div>-->
                     <!-- Add Pagination -->
-                    <div class="swiper-pagination team-pagination"></div>
+                   <!--  <div class="swiper-pagination team-pagination"></div>
                   </div>
                   <a href="#" class="btn_secondary bc_line_height_26 px-5 py-3 mt-3">read all</a>
                 </div>
               </div>
             </div>
         </div>
-    </div>
-
-    <div class="container-fluid px-0 m-0 borde_b_primary">
+    </div>  -->
+ <?php get_template_part( 'page-templates/common/Wondering-if-there' ); ?> 
+   <!--  <div class="container-fluid px-0 m-0 borde_b_primary">
       <div class="graphic_lines pb-5">
           <div class="container">
               <div class="row no-gutters">
@@ -153,7 +175,7 @@ get_header();?>
               </div>
           </div>
         </div>
-    </div>
+    </div> -->
 </main>
 <script type="text/javascript">
   var swiperService = new Swiper('.community-members-swiper', {
