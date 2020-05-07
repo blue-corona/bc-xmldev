@@ -8650,7 +8650,7 @@ ul.gform_fields li::before {
   @media (hover: none), only screen and (max-width: 991px) {
     .bc_nav_container #navbarSupportedContent {
       /*height: auto;*/
-      height: 500px;
+      height: 100vh;
       overflow-x: hidden; } }
   @media (hover: none), only screen and (max-width: 991px) {
     .bc_nav_container a:hover {
@@ -9586,7 +9586,7 @@ div {
 
 .menu {
   position: fixed;
-  top: 50px;
+  top: 37px;
   z-index: 999;
   background: red;
   width: 100%; }
@@ -9747,5 +9747,14 @@ div {
   border-radius: 50%;
   background: 0 0;
   border: 3px solid #fff; }
+
+.fixed-top.scrolled {
+  background-color: #ffffff !important; }
+  .fixed-top.scrolled .menu {
+    background-color: #FFFFFF !important;
+    -webkit-box-shadow: 0 5px 32px 14px rgba(0, 0, 0, 0.07);
+            box-shadow: 0 5px 32px 14px rgba(0, 0, 0, 0.07);
+    -webkit-transition: background-color 20ms linear;
+    transition: background-color 20ms linear; }
 
 /*# sourceMappingURL=child-theme.css.map */
