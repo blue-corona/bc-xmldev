@@ -86,28 +86,15 @@ global $post;
                       </div>
                     </div> -->
                 </div>
-<<<<<<< HEAD
-                 <?php get_template_part( 'sidebar-templates/sidebar-subpagerightsidebar' ); ?>
-                  <!-- begin of sidebar -->
-               
-                    <!-- 
-                     <div class="col-lg-4 pl-lg-4"><div class="how_we_work position-relative overflow-hdden bc_color_lightgray_bg text-center px-4 pt-5 pb-4">
-=======
-                <div class="col-lg-4 pl-lg-4">
+                        <?php get_template_part( 'sidebar-templates/sidebar-subpagerightsidebar' ); ?>
+                <!-- div class="col-lg-4 pl-lg-4">
                     <div class="how_we_work position-relative overflow-hdden bc_color_lightgray_bg text-center px-4 pt-5 pb-4">
->>>>>>> 7b0528a89c9ef9f4544098f2ae3bb3e9523731e0
                         <span></span>
                         <h3 class="position-relative bottom_line bc_color_dark_primary bc_text_normal">how we work</h3>
                         <p class="mt-5 bc_color_dark_primary bc_text_24 bc_text_normal">We’re here to help you make investments that align with your lifestyle.</p>
                       <a href="#" class="btn_primary bc_line_height_26 py-2 px-3 mt-4">learn how</a>
-<<<<<<< HEAD
-                    </div> -->
-
-                <!--  <div class="who_we_are mt-5 pt-lg-5 text-center">
-=======
                     </div>
                     <div class="who_we_are mt-5 pt-lg-5 text-center">
->>>>>>> 7b0528a89c9ef9f4544098f2ae3bb3e9523731e0
                        <h3 class="position-relative bottom_line text-uppercase bc_text_normal">who we are</h3>
                        <div class="swiper-container team-swiper pb-3 mt-4">
                             <div class="swiper-wrapper pb-2">
@@ -139,36 +126,39 @@ global $post;
                                      <span class="position-relative bottom_line_2 bc_color_primary bc_text_24 bc_line_height_50 bc_font_alt_1 bc_text_bold d-block">Brett Bernstein, CFP<sup>®</sup> </span>
                                     <span class="bc_color_secondary bc_text_24 bc_line_height_50 bc_font_alt_1 d-block mt-2">CEO & Co-founder</span>
                                 </div>
-                            </div>
+                            </div>-->
                             <!-- Add Pagination -->
-<<<<<<< HEAD
-                           <!--  <div class="swiper-pagination team-pagination"></div>
-                        </div>
-                        <a href="#" class="btn_secondary bc_line_height_26 px-4 py-2 mt-3">FULL TEAM</a>
-                    </div>   --> 
-                      <!-- <div class="resources px-4 py-5 mt-5 text-center">
-=======
-                            <div class="swiper-pagination team-pagination"></div>
+                            <!-- <div class="swiper-pagination team-pagination"></div>
                         </div>
                         <a href="#" class="btn_secondary bc_line_height_26 px-4 py-2 mt-3">FULL TEAM</a>
                     </div>
                     <div class="resources px-4 py-5 mt-5 text-center">
->>>>>>> 7b0528a89c9ef9f4544098f2ae3bb3e9523731e0
                         <h3 class="position-relative bottom_line text-uppercase bc_text_normal">resources</h3>
                         <p class="mt-5 bc_color_dark_primary bc_text_24 bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
                         <a href="#" class="btn_primary bc_line_height_26 px-3 py-2 mt-3">learn how</a>
-                    </div>  -->
-               <!--  </div>
- -->
-            <!-- end of sidebar -->
+                    </div>
+                </div> --> 
             </div>
         </div>
     </div>
 
+  <!--  <div class="container-fluid px-0 m-0 borde_b_primary mt-5">
+      <div class="graphic_lines pb-5">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-10 px-lg-4 offset-lg-1 text-center">
+                    <span class="position-relative bc_text_36 bc_line_height_36 mt-5 bc_font_default bc_text_thin text-white bottom_line1 d-block">Wondering if there might be something more you and your money could do?</span>
+                    <span class="bc_text_20 bc_line_height_34 bc_font_alt_1 bc_text_light text-white d-block mt-4 pt-1">There are several different ways to connect with us. Chose whichever you are most <br> comfortable with. </span>
+                    <a href="#" class="btn_secondary bc_line_height_26 px-4 py-2 mt-4">let’s talk </a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div> -->
        <?php get_template_part( 'page-templates/common/Wondering-if-there' ); ?> 
 </main>
 
-<!-- <script type="text/javascript">
+<script type="text/javascript">
     var swiperTestimonial = new Swiper('.team-swiper', {
       slidesPerView: 1,
       loop: true,
@@ -182,6 +172,6 @@ global $post;
       },
     });
 
-</script> -->
+</script>
 
 <?php get_footer();?>
