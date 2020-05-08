@@ -111,4 +111,4 @@ function bc_logo_shortcode_for_menu($atts) {
 }
 add_filter('wp_nav_menu_items', 'do_shortcode');
 
-//custom post type for team
+//shortcode for background img
