@@ -12,12 +12,7 @@ get_header();?>
     <div class="container-fluid px-0 m-0 subpage_banner">
         <div class="row no-gutters">
             <div class="col-12">
-              <?php if (has_post_thumbnail() ) {
-      $image = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_id() ), 'single-post-thumbnail' ); ?>
-             <img src="<?php echo $image[0]; ?>" class="img-fluid w-100" alt="Contact-banner">
-           <?php }else{ ?>
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/team-banner.jpg" class="img-fluid w-100" alt="Contact-banner">
-                   <?php }?>
                 <div class="gradient position-absolute"></div>
             </div>
         </div>
@@ -26,18 +21,8 @@ get_header();?>
         <div class="container">
             <div class="row no-gutters">
               <div class="col-lg-12">
-                <!-- <h1>our team</h1>
-                <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <a href="#"> hyperlink example </a> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint </p> -->
-                 <h1><?php the_title()?></h1>
-                   <p> <?php 
-                    if ( have_posts() ) :
-                    while ( have_posts() ) :  the_post();
-                        the_content();
-                    endwhile;
-                    endif;
-                    ?> 
-
-</p>
+                <h1>our team</h1>
+                <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <a href="#"> hyperlink example </a> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint </p>
                 <p class="text-right mt-4"><a href="#" class="btn_secondary bc_line_height_26 py-2 px-4">reset all</a>
                 </p>
               </div>
@@ -74,8 +59,7 @@ get_header();?>
               <div class="col-lg-3 mt-3 text-center">
                 <button class="Filter_btn bc_color_primary bg-white bc_text_20 bc_line_height_28">Breckenridge, CO</button>
               </div>
-
-      <div class="col-lg-4 mt-5">
+              <div class="col-lg-4 mt-5">
                 <div class="members px-3 pt-3 pb-4 border position-relative overflow-hidden">
                     <div class="">
                       <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brett-square.jpg" class="img-fluid" alt="brett-square">
@@ -151,7 +135,7 @@ get_header();?>
         </div>
     </div>
 
-    <!-- <div class="container-fluid px-0 m-0 borde_b_primary mt-5">
+    <div class="container-fluid px-0 m-0 borde_b_primary mt-5">
       <div class="graphic_lines pb-5">
           <div class="container">
               <div class="row no-gutters">
@@ -163,8 +147,7 @@ get_header();?>
               </div>
           </div>
         </div>
-    </div> -->
-      <?php get_template_part( 'page-templates/common/Wondering-if-there' ); ?> 
+    </div>
 </main>
 <script type="text/javascript">
   var swiperService = new Swiper('.community-members-swiper', {
