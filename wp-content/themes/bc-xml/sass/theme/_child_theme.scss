@@ -714,7 +714,7 @@ div, {
 	    background:url('../img/pagination-fill.png');
 	}
 }
-@media (hover: none), only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
 	.how_we_swiper {
 		.text-uppercase{
 		    min-height:70px;
@@ -727,7 +727,7 @@ div, {
 		bottom:90px !important;
 	}
 }
-@media (hover: none), only screen and (max-width: 440px) {
+@media only screen and (max-width: 440px) {
 	.how_we_pagination{
 		bottom:115px !important;
 	}

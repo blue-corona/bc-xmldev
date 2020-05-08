@@ -8020,14 +8020,14 @@ h6, .h6 {
   letter-spacing: default;
   color: #666d89; }
 
-p, .p {
+p, .p, body {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 300;
   text-transform: none;
   line-height: 34px;
   color: #1D1817; }
-  p a:hover, .p a:hover {
+  p a:hover, .p a:hover, body a:hover {
     color: #cbb893;
     text-decoration: underline; }
 
@@ -8207,29 +8207,33 @@ main a {
 .bc_letter_spacing_100 {
   letter-spacing: 100px; }
 
-body, ::-webkit-input-placeholder, button {
+::-webkit-input-placeholder, button {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   line-height: 36px;
   color: #4f9808; }
 
-body, ::-moz-placeholder, button {
+::-moz-placeholder, button {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   line-height: 36px;
   color: #4f9808; }
 
-body, ::-ms-input-placeholder, button {
+::-ms-input-placeholder, button {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   line-height: 36px;
   color: #4f9808; }
 
-body, ::placeholder, button {
+::placeholder, button {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   line-height: 36px;
   color: #4f9808; }
+
+li {
+  line-height: 40px;
+  text-transform: lowercase; }
 
 .bc_color_primary {
   color: #666d89 !important; }
@@ -8922,18 +8926,18 @@ ul.gform_fields li::before {
 @media only screen and (max-width: 768px) {
   h1, .h1 {
     font-family: #666d89;
-    font-size: 32px;
-    font-weight: 100;
+    font-size: 36px;
+    font-weight: 300;
     text-transform: uppercase;
-    line-height: 30x;
+    line-height: 36px;
     color: #666d89; }
   h2, .h2 {
     font-family: #1d1817;
-    font-size: 26px;
-    font-weight: 100;
+    font-size: 30px;
+    font-weight: 300;
     text-transform: uppercase;
     line-height: 30px;
-    color: #cbb893; }
+    color: #1d1817; }
   h3, .h3 {
     font-family: #666d89;
     font-size: 26px;
@@ -8947,7 +8951,7 @@ ul.gform_fields li::before {
     font-weight: 300;
     text-transform: uppercase;
     line-height: 24px;
-    color: #e7decd; }
+    color: #cbb893; }
   h5, .h5 {
     font-family: "Work Sans", sans-serif;
     font-size: 18px;
@@ -9666,7 +9670,7 @@ div {
   .how_we_pagination .swiper-pagination-bullet-active {
     background: url("../img/pagination-fill.png"); }
 
-@media (hover: none), only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .how_we_swiper .text-uppercase {
     min-height: 70px; }
   .how_we_swiper p {
@@ -9674,7 +9678,7 @@ div {
   .how_we_pagination {
     bottom: 90px !important; } }
 
-@media (hover: none), only screen and (max-width: 440px) {
+@media only screen and (max-width: 440px) {
   .how_we_pagination {
     bottom: 115px !important; } }
 
