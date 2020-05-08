@@ -86,7 +86,8 @@ global $post;
                       </div>
                     </div> -->
                 </div>
-                <div class="col-lg-4 pl-lg-4">
+                        <?php get_template_part( 'sidebar-templates/sidebar-subpagerightsidebar' ); ?>
+                <!-- div class="col-lg-4 pl-lg-4">
                     <div class="how_we_work position-relative overflow-hdden bc_color_lightgray_bg text-center px-4 pt-5 pb-4">
                         <span></span>
                         <h3 class="position-relative bottom_line bc_color_dark_primary bc_text_normal">how we work</h3>
@@ -125,9 +126,9 @@ global $post;
                                      <span class="position-relative bottom_line_2 bc_color_primary bc_text_24 bc_line_height_50 bc_font_alt_1 bc_text_bold d-block">Brett Bernstein, CFP<sup>®</sup> </span>
                                     <span class="bc_color_secondary bc_text_24 bc_line_height_50 bc_font_alt_1 d-block mt-2">CEO & Co-founder</span>
                                 </div>
-                            </div>
+                            </div>-->
                             <!-- Add Pagination -->
-                            <div class="swiper-pagination team-pagination"></div>
+                            <!-- <div class="swiper-pagination team-pagination"></div>
                         </div>
                         <a href="#" class="btn_secondary bc_line_height_26 px-4 py-2 mt-3">FULL TEAM</a>
                     </div>
@@ -136,7 +137,7 @@ global $post;
                         <p class="mt-5 bc_color_dark_primary bc_text_24 bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
                         <a href="#" class="btn_primary bc_line_height_26 px-3 py-2 mt-3">learn how</a>
                     </div>
-                </div>
+                </div> --> 
             </div>
         </div>
     </div>
