@@ -827,3 +827,23 @@ div, {
 	    transition: background-color 20ms linear;
  	}
 }
+
+.gform_wrapper{
+	#gform_15{
+		ul {
+			li.gfield {
+				.medium{
+					border-radius: 0px !important;
+					width:100% !important;
+				}
+			}
+		}
+	}
+} 
+
+#gform_15 input[type=submit]{
+	border-radius:0px !important;
+}
+.bc_header{
+	z-index:1031 !important;
+}
