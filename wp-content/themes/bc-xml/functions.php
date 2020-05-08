@@ -37,6 +37,7 @@ add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
 $understrap_include = array(
     '/widgets/bc-how-we-work.php',
      '/bc-shortcode-override.php',
+     '/custom-post-types.php'
 );
 foreach ( $understrap_include as $file ) {
     $filepath = locate_template( 'inc' . $file );
