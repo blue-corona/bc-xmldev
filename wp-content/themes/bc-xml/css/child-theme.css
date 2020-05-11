@@ -7982,7 +7982,7 @@ h2, .h2 {
   font-family: "Work Sans", sans-serif;
   font-size: 36px;
   font-weight: 100;
-  text-transform: uppercase;
+  text-transform: capitalize;
   line-height: 36px;
   color: #1D1817; }
 
