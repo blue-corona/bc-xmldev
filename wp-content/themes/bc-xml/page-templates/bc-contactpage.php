@@ -65,11 +65,11 @@ get_header('variant-announcement-bar');?>
    <div class="container-fluid m-0 pb-5">
      <div class="container">
        <div class="row no-gutters">
-          <div class="col-lg-12 mb-5">
+          <div class="col-lg-12 mb-5 px-md-4">
             <h2>Contact Us</h2>
             <p>Do you have questions? We would love to begin a conversation.</p>
           </div>
-          <div class="col-lg-12 text-center">
+          <div class="col-lg-12 text-center px-md-4">
             <span class="bc_line_height_64 bc_text_50 bc_font_alt_1 bc_color_brown bc_text_light">Standard Bootstrap <br> Contact Form <br> goes here</span>
           </div>
        </div>
