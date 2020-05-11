@@ -9609,8 +9609,8 @@ div {
   left: 0;
   z-index: 10;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#ffffff00));
-  background: linear-gradient(#FFFFFF 0%, #ffffff00 100%); }
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(48%, #ffffff00));
+  background: linear-gradient(#FFFFFF 0%, #ffffff00 48%); }
 
 .what_we_do {
   margin-top: -11.7rem; }
