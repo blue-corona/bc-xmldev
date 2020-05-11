@@ -178,7 +178,7 @@ get_header();
                           <div class="swiper-slide">
                             <div class="px-4">
                                 <div class="text-center">
-                                  <div class="image position-relative d-inline-block mx-auto p-2">
+                                  <div class="image position-relative d-inline-block mx-auto p-2 image_border">
                                       <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brett-headshot.png">
                                   </div>
                                 </div>
@@ -189,7 +189,7 @@ get_header();
                           <div class="swiper-slide">
                             <div class="px-4">
                               <div class="text-center">
-                                <div class="image position-relative d-inline-block mx-auto p-2">
+                                <div class="image position-relative d-inline-block mx-auto p-2 image_border">
                                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rob-headshot.png">
                                 </div>
                               </div>
@@ -200,7 +200,7 @@ get_header();
                           <div class="swiper-slide">
                             <div class="px-4">
                               <div class="text-center">
-                                <div class="image position-relative d-inline-block mx-auto p-2">
+                                <div class="image position-relative d-inline-block mx-auto p-2 image_border">
                                       <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/curtis-headshot.png">
                                   </div>
                                 </div>
@@ -211,7 +211,7 @@ get_header();
                           <div class="swiper-slide">
                             <div class="px-4">
                                 <div class="text-center">
-                                  <div class="image position-relative d-inline-block mx-auto p-2">
+                                  <div class="image position-relative d-inline-block mx-auto p-2 image_border">
                                       <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brett-headshot.png">
                                   </div>
                                 </div>
@@ -222,7 +222,7 @@ get_header();
                           <div class="swiper-slide">
                             <div class="px-4">
                               <div class="text-center">
-                                <div class="image position-relative d-inline-block mx-auto p-2">
+                                <div class="image position-relative d-inline-block mx-auto p-2 image_border">
                                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rob-headshot.png">
                                 </div>
                               </div>
@@ -256,9 +256,9 @@ get_header();
         <div class="container">
             <div class="row no-gutters">
                 <div class="col-lg-10 px-lg-4 offset-lg-1 text-center">
-                    <span class="position-relative bc_text_36 bc_line_height_36 mt-5 bc_font_default bc_text_thin text-white bottom_line1 d-block">Wondering if there might be something more you and your money could do?</span>
+                    <span class="position-relative bc_text_36 bc_line_height_36 mt-5 bc_font_default bc_text_thin text-white bottom_line1 d-block px-md-4">Wondering if there might be something more you and your money could do?</span>
                     <span class="bc_text_20 bc_line_height_34 bc_font_alt_1 bc_text_light text-white d-block mt-4 pt-1">There are several different ways to connect with us. Chose whichever you are most <br> comfortable with. </span>
-                    <a href="#" class="btn_secondary px-4 py-2 mt-4">let’s talk </a>
+                    <a href="#" class="btn_secondary px-5 py-3 mt-4 bc_line_height_26 w-27">let’s talk </a>
                 </div>
             </div>
         </div>
@@ -288,18 +288,8 @@ get_header();
    
 
 </main>
-<?php function serviceAreaJavascript() {?>
-<script type="text/javascript">
-jQuery(document).ready(function(){
-    jQuery(".hide_div").hide();
-    jQuery("#minus").toggle();
-    jQuery(".abc").click(function(){
-        jQuery("#minus").toggle();
-        jQuery("#plus").toggle();
-        jQuery(".hide_div").toggle(500);
-    });
-});
 
+<script type="text/javascript">
 var swiper = new Swiper('.how_we_swiper', {
       direction: 'vertical',
       spaceBetween: 30,
@@ -347,7 +337,6 @@ var swiper = new Swiper('.who_we_swiper', {
         },
     }
  });
+
 </script>
-<?php }
-add_action( 'wp_footer' , 'serviceAreaJavascript' );?>
 <?php get_footer(); ?>

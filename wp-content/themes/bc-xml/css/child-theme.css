@@ -9063,6 +9063,9 @@ ul.gform_fields li::before {
     .mt-n9 {
       margin-top: -16rem; } }
 
+.w-27 {
+  width: 27%; }
+
 .no_hover_underline:hover {
   text-decoration: none; }
 
@@ -9713,16 +9716,6 @@ div {
 
 .who_we_swiper .client_name {
   min-height: 44px; }
-
-.who_we_swiper .image:before {
-  background-image: url(../img/img-border.png);
-  background-size: 100%;
-  top: 0px;
-  width: 72%;
-  left: 0px;
-  background-repeat: no-repeat;
-  border: none;
-  border-radius: 0; }
 
 .eagle_icon {
   top: 0px;

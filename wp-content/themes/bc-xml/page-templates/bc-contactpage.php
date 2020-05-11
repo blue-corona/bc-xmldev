@@ -22,12 +22,12 @@ get_header('variant-announcement-bar');?>
        <div class="row no-gutters">
          <div class="col-lg-8">
            <div class="row no-gutters">
-             <div class="col-lg-12 mb-4">
+             <div class="col-lg-12 mb-4 pl-md-4">
                 <h1> let’s talk </h1>
                 <h2 class="text-capitalize mt-4"> Our Offices </h2>
                 <p> Three locations to better serve our clients </p>
              </div>
-             <div class="col-md-6 mb-5">
+             <div class="col-md-6 mb-5 pl-md-4">
                 <h3> ROCKVILLE, MD </h3>
                 <p class="mb-0"> One Preserve Parkway <br> Suite 120 <br> Rockville, MD 20852 <br></p>
                 <p class="bc_text_bold mb-0">T: 555-555-5555</p>
@@ -37,7 +37,7 @@ get_header('variant-announcement-bar');?>
              <div class="col-md-6 text-right  mb-5">
                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rockville.jpg" class="img-fluid" alt="rockville">
              </div>
-             <div class="col-md-6  mb-5">
+             <div class="col-md-6  mb-5 pl-md-4">
                 <h3> FALLS CHURCH, VA </h3>
                 <p class="mb-0"> 7600 Leesburg Pike <br> Suite 120 East <br> Falls Church, VA 22043</p>
                 <p class="bc_text_bold mb-0">T: 555-555-5555</p>
@@ -47,7 +47,7 @@ get_header('variant-announcement-bar');?>
              <div class="col-md-6 text-right  mb-5">
                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/fallschurch.jpg" class="img-fluid" alt="rockville">
              </div>
-             <div class="col-md-6 mb-5">
+             <div class="col-md-6 mb-5 pl-md-4">
                 <h3> BRECKENRIDGE, CO </h3>
                 <p class="mb-0"> 208 S. Ridge Street <br> P.O. Box 3813 <br> Breckenridge, CO 80424 </p>
                 <p class="bc_text_bold mb-0">T: 555-555-5555</p>
