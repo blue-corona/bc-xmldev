@@ -9721,6 +9721,10 @@ div {
 .who_we .who_we_buttons .who_we_prev {
   left: -5px; }
 
+@media only screen and (max-width: 767px) {
+  .team_text p {
+    padding: 0px 10px; } }
+
 .who_we_swiper .client_name {
   min-height: 44px; }
 
