@@ -246,9 +246,11 @@ get_header();
                         </div>
                 </div>
                 <div class="col-md-5 order-1 order-md-2 mt-3 pb-md-5 pb-3 text-center text-md-left team_text px-md-5">
-                    <h2>A Team of Passionate Experts</h2>
-                    <p>With roots back to 1981 XML has been passionate about assembling a team of experts not just in money management but also in listening and in sincere care for our client's well being. We currently have CFPs, CRPCs, MBAs working to improve our Client's lives.</p>
-                    <a href="#" class="btn_secondary px-4 py-2 mt-4 mb-5 d-md-inline-block d-none">FULL TEAM</a>
+                    <div class="px-md-3">
+                      <h2>A Team of Passionate Experts</h2>
+                      <p>With roots back to 1981 XML has been passionate about assembling a team of experts not just in money management but also in listening and in sincere care for our client's well being. We currently have CFPs, CRPCs, MBAs working to improve our Client's lives.</p>
+                      <a href="#" class="btn_secondary px-4 py-2 mt-4 mb-5 d-md-inline-block d-none">FULL TEAM</a>
+                    </div>
                 </div>
             </div>
         </div>
