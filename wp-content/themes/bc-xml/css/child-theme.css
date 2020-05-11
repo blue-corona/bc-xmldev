@@ -9014,6 +9014,8 @@ ul.gform_fields li::before {
     font-size: 20px; }
   .bc_sm_text_24 {
     font-size: 24px; }
+  .bc_sm_text_28 {
+    font-size: 28px; }
   .bc_sm_text_30 {
     font-size: 30px; }
   .bc_sm_text_36 {
@@ -9034,6 +9036,8 @@ ul.gform_fields li::before {
     line-height: 24px; }
   .bc_sm_line_height_26 {
     line-height: 26px; }
+  .bc_sm_line_height_28 {
+    line-height: 28px; }
   .bc_sm_line_height_30 {
     line-height: 30px; }
   .bc_sm_line_height_34 {

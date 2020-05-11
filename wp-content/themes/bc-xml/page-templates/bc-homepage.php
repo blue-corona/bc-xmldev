@@ -25,12 +25,12 @@ get_header();
         <div class="container pt-5 pb-5 px-lg-5">
             <div class="row text-center text-lg-center text-md-center p-lg-5 px-0">
                 <div class="col-12 offset-lg-2 col-lg-8 col-sm-12 pt-5 pb-5 px-2 px-md-0">
-                    <h3 class="position-relative bottom_line mb-5">What We Believe</h3>
+                    <h3 class="position-relative bottom_line mb-5 bc_sm_line_height_28 bc_sm_text_28">What We Believe</h3>
                     <div class="mx-md-5 mx-4 position-relative bg-white overflow-hidden what_we_video" data-toggle="modal" data-target="#exampleModal">
                         <div class="row">
                             <div class="offset-lg-1 col-lg-10 offset-md-1 col-md-10 mt-n3 pb-md-5 pb-3 d-flex justify-content-center align-items-center">
-                                <span class="position-absolute d-block play_icon text-center mt-md-5 mt-4">
-                                    <i class="fas fa-3x fa-play-circle bc_color_primary"></i>
+                                <span class="position-absolute d-block play_icon text-center mt-md-5 mt-3 ml-n2">
+                                    <i class="fas fa-2x fa-play-circle bc_color_primary"></i>
                                 </span>
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/what-we-icon.png" class="img-fluid  mx-auto mt-md-n4 mt-n3 w-75">
 
