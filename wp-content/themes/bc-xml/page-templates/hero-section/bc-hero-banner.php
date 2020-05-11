@@ -17,7 +17,7 @@
         <div class="container px-md-4 pt-5 pb-5">
             <div class="row text-center text-lg-center text-md-center pt-md-5 pb-md-5">
                 <div class="offset-md-2 col-md-8 col-xs-12 offset-lg-2 col-lg-8 col-sm-12 m-auto pt-md-5 pb-md-5">
-                   <span class="pt-md-4 d-block h1 position-relative bottom_line bc_text_40 bc_line_height_44">Lifestyle Driven Advice</span>
+                   <span class="pt-md-4 d-block position-relative bottom_line bc_text_40 bc_line_height_44 bc_text_thin bc_color_primary px-5">Lifestyle Driven Advice</span>
                    <p class="pt-4 mt-3 m-0 mx-md-5">It’s not just your money, it’s your life! We believe your money is a means to getting the most out of your life, and work with you to make that a reality.</p>
                 </div>
             </div>
