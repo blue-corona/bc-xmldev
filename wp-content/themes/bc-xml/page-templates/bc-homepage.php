@@ -78,7 +78,7 @@ get_header();
                                     </div>
                                     <div class="col-md-5 d-none d-md-block">
                                         <div class="image position-relative d-inline-block mx-auto p-3 image_border">
-                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.jpg" class="img-fluid" alt="team" >
+                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid" alt="team" >
                                         </div>
                                     </div>
                               </div>
@@ -94,7 +94,7 @@ get_header();
                                     </div>
                                     <div class="col-md-5 d-none d-md-block">
                                         <div class="image position-relative d-inline-block mx-auto p-3 image_border">
-                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.jpg" class="img-fluid" alt="team" >
+                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid" alt="team" >
                                         </div>
                                     </div>
                               </div>
@@ -110,7 +110,7 @@ get_header();
                                     </div>
                                     <div class="col-md-5 d-none d-md-block">
                                         <div class="image position-relative d-inline-block mx-auto p-3 image_border">
-                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.jpg" class="img-fluid" alt="team" >
+                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid" alt="team" >
                                         </div>
                                     </div>
                               </div>
@@ -126,7 +126,7 @@ get_header();
                                     </div>
                                     <div class="col-md-5 d-none d-md-block">
                                         <div class="image position-relative d-inline-block mx-auto p-3 image_border">
-                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.jpg" class="img-fluid" alt="team" >
+                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid" alt="team" >
                                         </div>
                                     </div>
                               </div>
@@ -142,7 +142,7 @@ get_header();
                                     </div>
                                     <div class="col-md-5 d-none d-md-block">
                                         <div class="image position-relative d-inline-block mx-auto p-3 image_border">
-                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.jpg" class="img-fluid" alt="team" >
+                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid" alt="team" >
                                         </div>
                                     </div>
                               </div>
@@ -178,7 +178,7 @@ get_header();
                           <div class="swiper-slide">
                             <div class="px-4">
                                 <div class="text-center">
-                                  <div class="image position-relative d-inline-block mx-auto p-3">
+                                  <div class="image position-relative d-inline-block mx-auto p-2">
                                       <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brett-headshot.png">
                                   </div>
                                 </div>
@@ -189,7 +189,7 @@ get_header();
                           <div class="swiper-slide">
                             <div class="px-4">
                               <div class="text-center">
-                                <div class="image position-relative d-inline-block mx-auto p-3">
+                                <div class="image position-relative d-inline-block mx-auto p-2">
                                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rob-headshot.png">
                                 </div>
                               </div>
@@ -200,7 +200,7 @@ get_header();
                           <div class="swiper-slide">
                             <div class="px-4">
                               <div class="text-center">
-                                <div class="image position-relative d-inline-block mx-auto p-3">
+                                <div class="image position-relative d-inline-block mx-auto p-2">
                                       <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/curtis-headshot.png">
                                   </div>
                                 </div>
@@ -211,7 +211,7 @@ get_header();
                           <div class="swiper-slide">
                             <div class="px-4">
                                 <div class="text-center">
-                                  <div class="image position-relative d-inline-block mx-auto p-3">
+                                  <div class="image position-relative d-inline-block mx-auto p-2">
                                       <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brett-headshot.png">
                                   </div>
                                 </div>
@@ -222,7 +222,7 @@ get_header();
                           <div class="swiper-slide">
                             <div class="px-4">
                               <div class="text-center">
-                                <div class="image position-relative d-inline-block mx-auto p-3">
+                                <div class="image position-relative d-inline-block mx-auto p-2">
                                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rob-headshot.png">
                                 </div>
                               </div>
@@ -242,10 +242,10 @@ get_header();
                             <div class="swiper-button-prev who_we_prev bc_color_primary bc_text_30 bc_text_light bc_line_height_60"><i class="fal fa-2x fa-angle-left"></i></div>
                         </div>
                 </div>
-                <div class="col-md-5 order-1 order-md-2 mt-3 pb-5 text-center text-md-left team_text">
-                    <h2 class="text-capitalize bc_text_32 bc_line_height_32 bc_color_quaternary mr-md-5 px-md-5">A Team of Passionate Experts</h2>
-                    <p class="px-md-5">With roots back to 1981 XML has been passionate about assembling a team of experts not just in money management but also in listening and in sincere care for our client's well being. We currently have CFPs, CRPCs, MBAs working to improve our Client's lives.</p>
-                    <a href="#" class="btn_secondary px-4 py-2 mt-4 mb-5 ml-md-5">FULL TEAM</a>
+                <div class="col-md-5 order-1 order-md-2 mt-3 pb-5 text-center text-md-left team_text px-md-5">
+                    <h2>A Team of Passionate Experts</h2>
+                    <p>With roots back to 1981 XML has been passionate about assembling a team of experts not just in money management but also in listening and in sincere care for our client's well being. We currently have CFPs, CRPCs, MBAs working to improve our Client's lives.</p>
+                    <a href="#" class="btn_secondary px-4 py-2 mt-4 mb-5">FULL TEAM</a>
                 </div>
             </div>
         </div>
