@@ -40,38 +40,38 @@ defined( 'ABSPATH' ) || exit;
                 </div>
                 <div class="col-lg-2 text-center text-md-left mt-5 mt-md-0">
                     <span class="bc_text_26 bc_line_height_26 bc_font_default bc_text_light bc_color_primary">Locations</span>
-                    <span class="d-block bc_text_18 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_secondary mt-3">Rockville, MD</span>
-                    <a href="#" class="d-block bc_text_18 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> T: 555-555-5555</a>
-                    <a href="#" class="d-block bc_text_18 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1">F: 555-555-5555</a>
-                    <span class="d-block bc_text_18 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_secondary mt-3"> Falls Church, VA </span>
-                    <a href="#" class="d-block bc_text_18 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> T: 555-555-5555</a>
-                    <a href="#" class="d-block bc_text_18 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> LMA: 555-555-5555</a>
-                    <a href="#" class="d-block bc_text_18 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1">F: 555-555-5555</a>
-                    <a href="#" class="d-block bc_text_18 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> LMA: 555-555-5555</a>
-                    <span class="d-block bc_text_18 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_secondary mt-3"> Breckenridge, CO</span>
-                    <a href="#" class="d-block bc_text_18 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> T: 555-555-5555</a>
-                    <a href="#" class="d-block bc_text_18 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> F: 555-555-5555</a>
+                    <span class="d-block bc_text_18 bc_line_height_40 bc_sm_line_height_50 bc_font_alt_1 bc_text_light bc_color_secondary mt-3 text-uppercase">Rockville, MD</span>
+                    <a href="#" class="d-block bc_text_18 bc_line_height_26 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> T: 555-555-5555</a>
+                    <a href="#" class="d-block bc_text_18 bc_line_height_26 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1">F: 555-555-5555</a>
+                    <span class="d-block bc_text_18 bc_line_height_40 bc_sm_line_height_50 bc_font_alt_1 bc_text_light bc_color_secondary mt-3 text-uppercase"> Falls Church, VA </span>
+                    <a href="#" class="d-block bc_text_18 bc_line_height_26 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> T: 555-555-5555</a>
+                    <a href="#" class="d-block bc_text_18 bc_line_height_26 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> LMA: 555-555-5555</a>
+                    <a href="#" class="d-block bc_text_18 bc_line_height_26 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1">F: 555-555-5555</a>
+                    <a href="#" class="d-block bc_text_18 bc_line_height_26 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> LMA: 555-555-5555</a>
+                    <span class="d-block bc_text_18 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_secondary mt-3 text-uppercase bc_sm_line_height_50"> Breckenridge, CO</span>
+                    <a href="#" class="d-block bc_text_18 bc_line_height_26 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> T: 555-555-5555</a>
+                    <a href="#" class="d-block bc_text_18 bc_line_height_26 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> F: 555-555-5555</a>
                 </div>
                 <div class="col-lg-2 d-none d-lg-block">
-                    <span class="d-block bc_text_26 bc_line_height_26 bc_font_default bc_text_light bc_color_primary">Company</span>
-                    <a href="#" class="d-block bc_text_16 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mt-3"> Team </a>
-                    <a href="#" class="d-block bc_text_16 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> Beliefs</a>
-                    <a href="#" class="d-block bc_text_16 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> Communities</a>
-                    <a href="#" class="d-block bc_text_16 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> Resources</a>
-                    <a href="#" class="d-block bc_text_16 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> Let’s Talk</a>
-                    <a href="#" class="d-block bc_text_16 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> Portfolio Logins</a>
-                    <a href="#" class="d-block bc_text_16 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> Broker Check</a>
+                    <span class="d-block bc_text_26 bc_line_height_40 bc_font_default bc_text_light bc_color_primary">Company</span>
+                    <a href="#" class="d-block bc_text_16 bc_line_height_26 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mt-3"> Team </a>
+                    <a href="#" class="d-block bc_text_16 bc_line_height_26 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> Beliefs</a>
+                    <a href="#" class="d-block bc_text_16 bc_line_height_26 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> Communities</a>
+                    <a href="#" class="d-block bc_text_16 bc_line_height_26 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> Resources</a>
+                    <a href="#" class="d-block bc_text_16 bc_line_height_26 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> Let’s Talk</a>
+                    <a href="#" class="d-block bc_text_16 bc_line_height_26 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> Portfolio Logins</a>
+                    <a href="#" class="d-block bc_text_16 bc_line_height_26 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> Broker Check</a>
                 </div>
                 <div class="col-lg-2 mt-4 d-md-none text-center">
                     <span class="d-block bc_text_26 bc_line_height_26 bc_font_default bc_text_light bc_color_primary">Logins</span>
-                    <a href="#" class="d-block bc_text_16 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mt-3"> Broker Check </a>
-                    <a href="#" class="d-block bc_text_16 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> Fidelity</a>
-                    <a href="#" class="d-block bc_text_16 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> XML Vault</a>
-                    <a href="#" class="d-block bc_text_16 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> First Clearing</a>
-                    <a href="#" class="d-block bc_text_16 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> Wealth Portal</a>
+                    <a href="#" class="d-block bc_text_16 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mt-3"> Broker Check </a>
+                    <a href="#" class="d-block bc_text_16 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> Fidelity</a>
+                    <a href="#" class="d-block bc_text_16 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> XML Vault</a>
+                    <a href="#" class="d-block bc_text_16 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> First Clearing</a>
+                    <a href="#" class="d-block bc_text_16 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> Wealth Portal</a>
                 </div>
                 <div class="col-lg-4 d-none d-lg-block">
-                    <span class="d-block bc_text_26 bc_line_height_26 bc_font_default bc_text_light bc_color_primary">Connect</span>
+                    <span class="d-block bc_text_26 bc_line_height_40 bc_font_default bc_text_light bc_color_primary">Connect</span>
                     <span class="d-block mt-2 bc_text_18 bc_line_height_60 bc_font_alt_1 bc_text_16 bc_text_light bc_color_primary">Newsletter Signup</span>
                     <div class="form">
                         <?php echo do_shortcode('[gravityform id=16 ajax=true]')?>
