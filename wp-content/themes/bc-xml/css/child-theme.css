@@ -8020,14 +8020,14 @@ h6, .h6 {
   letter-spacing: default;
   color: #666d89; }
 
-p, .p {
+p, .p, body {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 300;
   text-transform: none;
   line-height: 34px;
   color: #1D1817; }
-  p a:hover, .p a:hover {
+  p a:hover, .p a:hover, body a:hover {
     color: #cbb893;
     text-decoration: underline; }
 
@@ -8207,29 +8207,33 @@ main a {
 .bc_letter_spacing_100 {
   letter-spacing: 100px; }
 
-body, ::-webkit-input-placeholder, button {
+::-webkit-input-placeholder, button {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   line-height: 36px;
   color: #4f9808; }
 
-body, ::-moz-placeholder, button {
+::-moz-placeholder, button {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   line-height: 36px;
   color: #4f9808; }
 
-body, ::-ms-input-placeholder, button {
+::-ms-input-placeholder, button {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   line-height: 36px;
   color: #4f9808; }
 
-body, ::placeholder, button {
+::placeholder, button {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   line-height: 36px;
   color: #4f9808; }
+
+li {
+  line-height: 40px;
+  text-transform: lowercase; }
 
 .bc_color_primary {
   color: #666d89 !important; }
@@ -8367,9 +8371,9 @@ body, ::placeholder, button {
     margin-left: 10px;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
-    opacity: 1;
+    opacity: 0.5;
     line-height: 36px;
-    color: #4f9808;
+    color: #1C1918;
     font-size: 14px !important;
     font-weight: 400 !important; }
   .floating_labels_wrapper .floating_labels .gfield {
@@ -8391,6 +8395,7 @@ body, ::placeholder, button {
       padding-top: 18px !important;
       padding-bottom: 18px !important; }
   .floating_labels_wrapper .gform_footer {
+    display: none;
     padding: 12px !important;
     margin: 0px 0px !important; }
     .floating_labels_wrapper .gform_footer input {
@@ -8650,7 +8655,7 @@ ul.gform_fields li::before {
   @media (hover: none), only screen and (max-width: 991px) {
     .bc_nav_container #navbarSupportedContent {
       /*height: auto;*/
-      height: 500px;
+      height: 100vh;
       overflow-x: hidden; } }
   @media (hover: none), only screen and (max-width: 991px) {
     .bc_nav_container a:hover {
@@ -8921,18 +8926,18 @@ ul.gform_fields li::before {
 @media only screen and (max-width: 768px) {
   h1, .h1 {
     font-family: #666d89;
-    font-size: 32px;
-    font-weight: 100;
+    font-size: 36px;
+    font-weight: 300;
     text-transform: uppercase;
-    line-height: 30x;
+    line-height: 36px;
     color: #666d89; }
   h2, .h2 {
     font-family: #1d1817;
-    font-size: 26px;
-    font-weight: 100;
+    font-size: 30px;
+    font-weight: 300;
     text-transform: uppercase;
     line-height: 30px;
-    color: #cbb893; }
+    color: #1d1817; }
   h3, .h3 {
     font-family: #666d89;
     font-size: 26px;
@@ -8946,7 +8951,7 @@ ul.gform_fields li::before {
     font-weight: 300;
     text-transform: uppercase;
     line-height: 24px;
-    color: #e7decd; }
+    color: #cbb893; }
   h5, .h5 {
     font-family: "Work Sans", sans-serif;
     font-size: 18px;
@@ -9588,7 +9593,7 @@ div {
 
 .menu {
   position: fixed;
-  top: 50px;
+  top: 37px;
   z-index: 999;
   background: red;
   width: 100%; }
@@ -9610,24 +9615,25 @@ div {
   background: linear-gradient(#FFFFFF 0%, #ffffff00 100%); }
 
 .what_we_do {
-  margin-top: -11.88rem; }
+  margin-top: -11.7rem; }
   @media only screen and (max-width: 991px) {
     .what_we_do {
-      margin-top: -11.7rem; } }
+      margin-top: -12rem; } }
   @media only screen and (max-width: 768px) {
     .what_we_do {
-      margin-top: -8rem;
+      margin-top: -8.4rem;
       background-image: url("../img/what-we-mobile.png") !important; } }
   @media only screen and (max-width: 767px) {
     .what_we_do {
-      margin-top: -5.4rem; } }
+      margin-top: -5.1rem;
+      padding-bottom: 4rem !important; } }
   @media only screen and (max-width: 640px) {
     .what_we_do {
       margin-top: -4.9rem; } }
   @media only screen and (max-width: 575px) {
     .what_we_do {
       margin-top: -4.6rem; } }
-  @media only screen and (max-width: 540px) {
+  @media only screen and (max-width: 500px) {
     .what_we_do {
       margin-top: -4rem; } }
   .what_we_do .what_we_video {
@@ -9652,8 +9658,11 @@ div {
   max-height: 450px; }
 
 .how_we_pagination {
-  left: 0px;
-  width: 20px; }
+  left: 6%;
+  width: 20px;
+  top: 18% !important;
+  -webkit-transform: none !important;
+          transform: none !important; }
   .how_we_pagination .swiper-pagination-bullet {
     width: 26px !important;
     height: 26px !important;
@@ -9663,7 +9672,7 @@ div {
   .how_we_pagination .swiper-pagination-bullet-active {
     background: url("../img/pagination-fill.png"); }
 
-@media (hover: none), only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .how_we_swiper .text-uppercase {
     min-height: 70px; }
   .how_we_swiper p {
@@ -9671,7 +9680,7 @@ div {
   .how_we_pagination {
     bottom: 90px !important; } }
 
-@media (hover: none), only screen and (max-width: 440px) {
+@media only screen and (max-width: 440px) {
   .how_we_pagination {
     bottom: 115px !important; } }
 
@@ -9704,16 +9713,51 @@ div {
 .who_we .who_we_buttons .who_we_prev {
   left: -5px; }
 
-.who_we_swiper h3 {
+.who_we_swiper .client_name {
   min-height: 44px; }
 
 .who_we_swiper .image:before {
-  border-right: 8px solid #faf8f5;
-  border-bottom: 8px solid #faf8f5; }
+  background-image: url(../img/img-border.png);
+  background-size: 100%;
+  top: 0px;
+  width: 72%;
+  left: 0px;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 0; }
 
 .eagle_icon {
   top: 0px;
   width: 33%;
   left: -60px; }
+
+.image_border:before {
+  background-image: url(../img/img-border.png);
+  background-size: 100%;
+  top: 0px;
+  width: 72%;
+  left: 0px;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 0; }
+
+.fixed-top.scrolled {
+  background-color: #ffffff !important; }
+  .fixed-top.scrolled .menu {
+    background-color: #FFFFFF !important;
+    -webkit-box-shadow: 0 5px 32px 14px rgba(0, 0, 0, 0.07);
+            box-shadow: 0 5px 32px 14px rgba(0, 0, 0, 0.07);
+    -webkit-transition: background-color 20ms linear;
+    transition: background-color 20ms linear; }
+
+.gform_wrapper #gform_15 ul li.gfield .medium {
+  border-radius: 0px !important;
+  width: 100% !important; }
+
+#gform_15 input[type=submit] {
+  border-radius: 0px !important; }
+
+.bc_header {
+  z-index: 1031 !important; }
 
 /*# sourceMappingURL=child-theme.css.map */

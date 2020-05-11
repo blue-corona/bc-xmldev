@@ -94,18 +94,29 @@ jQuery(document).ready(function(){
     function () {
         jQuery('ul', this).hide();            
     });
+
+    jQuery('#navbarSupportedContent').on('hidden.bs.collapse', function () {
+        toggleIcon();        
+    })
+    jQuery('#navbarSupportedContent').on('show.bs.collapse', function () {
+        toggleIcon();
+    })
+    function toggleIcon(){
+        jQuery(".navbar-toggler-icon").toggleClass('fa-bars');
+        jQuery(".navbar-toggler-icon").toggleClass('fa-times');
+    }
 });
 
 jQuery(".nav-link").on('touchstart',function(e){
-  // e.preventDefault();
+  console.log(e.target);
   e.stopPropagation();                                                      
   if(jQuery(e.target).is(".nav-link-title")){
     window.location = this.getAttribute('href');
   }
 
-  if(jQuery(e.target).is("a")){
-    return;
-  }
+  // if(jQuery(e.target).is("a")){
+  //   return;
+  // }
   
   if(jQuery(this).children('span').children('svg').hasClass("fa-angle-up")){
     jQuery(this).children('span').children('svg').removeClass("fa-angle-up");
@@ -237,6 +248,8 @@ return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
       }
     });
   });
+
+
 });
 
   function toggleIcon(e) {
@@ -248,3 +261,23 @@ return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
   jQuery('.accordion').on('hidden.bs.collapse', toggleIcon);
   jQuery('.accordion').on('shown.bs.collapse', toggleIcon);
 
+
+//for nav bg on scroll on large screens
+jQuery(document).scroll(function () {
+  if(jQuery(window).width() >= 700){
+      var $nav = jQuery(".fixed-top");
+      $nav.toggleClass('scrolled', jQuery(this).scrollTop() > $nav.height());
+      jQuery('.bc_header.fixed-top.scrolled').unbind('hover'); 
+  }
+});
+
+jQuery(function () {
+  if(jQuery(window).width() >= 700){
+      var $nav = jQuery(".fixed-top");
+      $nav.toggleClass('scrolled', jQuery(this).scrollTop() > $nav.height());
+  }
+});
+
+// jQuery('.bc_header.fixed-top').hover(function(){
+//   jQuery(this).toggleClass('animated fadeIn');
+// });

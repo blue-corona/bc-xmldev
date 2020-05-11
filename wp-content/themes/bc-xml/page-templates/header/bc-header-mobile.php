@@ -34,15 +34,3 @@
         </div>
     </div> -->
 </div>
-<script type="text/javascript">
-    jQuery('#navbarSupportedContent').on('hidden.bs.collapse', function () {
-        toggleIcon();        
-    })
-    jQuery('#navbarSupportedContent').on('show.bs.collapse', function () {
-        toggleIcon();
-    })
-    function toggleIcon(){
-        jQuery(".navbar-toggler-icon").toggleClass('fa-bars');
-        jQuery(".navbar-toggler-icon").toggleClass('fa-times');
-    }
-</script>

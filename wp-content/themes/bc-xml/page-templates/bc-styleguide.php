@@ -69,7 +69,7 @@ get_header();?>
               </div>
               <span class="bc_text_40 bc_line_height_21 d-block mt-5 bc_color_brown bc_font_alt_2 bc_text_bold">MOBILE</span>
               <span class="bc_text_24 bc_line_height_21 d-block mt-5 mb-3 bc_color_brown bc_font_alt_2 bc_text_normal">H1 - Work Sans, Light - #666d89 - Size 36px - Line Height 36px - UPPERCASE </span>
-              <h1 class="bc_text_36 bc_line_height_36">H1 Example</h1>
+              <h1 class="bc_text_36 bc_line_height_36 bc_text_light">H1 Example</h1>
               <span class="bc_text_24 bc_line_height_21 d-block mt-5 mb-3 bc_color_brown bc_font_alt_2 bc_text_normal">H2 - Work Sans, Thin - #1d1817 - Size 36px - Line Height 36px  </span>
               <h2 class="bc_text_32 bc_line_height_32">H2 Example</h2>
               <span class="bc_text_24 bc_line_height_21 d-block mt-5 mb-3 bc_color_brown bc_font_alt_2 bc_text_normal">H3 - Work Sans, Light - #666d89- Size 28px - Line Height 28px - UPPERCASE </span>

@@ -27,10 +27,25 @@ function theme_enqueue_styles() {
     }
 }
 
+
+
 function add_child_theme_textdomain() {
     load_child_theme_textdomain( 'understrap-child', get_stylesheet_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
+
+$understrap_include = array(
+    '/widgets/bc-how-we-work.php',
+     '/bc-shortcode-override.php',
+     '/custom-post-types.php'
+);
+foreach ( $understrap_include as $file ) {
+    $filepath = locate_template( 'inc' . $file );
+    if ( ! $filepath ) {
+        trigger_error( sprintf( 'Error locating /inc%s for inclusion', $file ), E_USER_ERROR );
+    }
+    require_once $filepath;
+}
 
 // Accordion Shortcode Start
 // [bc_accordion]
