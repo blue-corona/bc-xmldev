@@ -12,7 +12,12 @@ get_header();?>
     <div class="container-fluid px-0 m-0 subpage_banner">
         <div class="row no-gutters">
             <div class="col-12">
+               <?php if (has_post_thumbnail() ) {
+      $image = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_id() ), 'single-post-thumbnail' ); ?>
+             <img src="<?php echo $image[0]; ?>" class="img-fluid w-100" alt="Contact-banner">
+           <?php }else{ ?>
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/team-banner.jpg" class="img-fluid w-100" alt="Contact-banner">
+                   <?php }?>
                 <div class="gradient position-absolute"></div>
             </div>
         </div>
@@ -21,8 +26,19 @@ get_header();?>
         <div class="container">
             <div class="row no-gutters">
               <div class="col-lg-12">
-                <h1>our team</h1>
-                <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <a href="#"> hyperlink example </a> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint </p>
+              
+                 <h1><?php the_title()?></h1>
+                   <p class="mt-3"> <?php 
+                    if ( have_posts() ) :
+                    while ( have_posts() ) :  the_post();
+                        the_content();
+                    endwhile;
+                    endif;
+                    ?> 
+
+                   </p>
+
+              <!--   <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <a href="#"> hyperlink example </a> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint </p> -->
                 <p class="text-right mt-4"><a href="#" class="btn_secondary bc_line_height_26 py-2 px-4">reset all</a>
                 </p>
               </div>
@@ -59,83 +75,42 @@ get_header();?>
               <div class="col-lg-3 mt-3 text-center">
                 <button class="Filter_btn bc_color_primary bg-white bc_text_20 bc_line_height_28">Breckenridge, CO</button>
               </div>
+                         
+                             <?php 
+                             $args  = array( 'post_type' => 'bc_teams', 'posts_per_page' => -1, 'order'=> 'DESC','post_status'  => 'publish');
+              $loop = new WP_Query($args);
+                  if($loop->have_posts()) {
+                  while($loop->have_posts()) : $loop->the_post();
+                  $team_position = get_post_meta( get_the_id(), 'team_position', true );
+              ?>
               <div class="col-lg-4 mt-5">
                 <div class="members px-3 pt-3 pb-4 border position-relative overflow-hidden">
                     <div class="">
-                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brett-square.jpg" class="img-fluid" alt="brett-square">
+                    <?php if (has_post_thumbnail() ){
+                      $image = wp_get_attachment_image_src( get_post_thumbnail_id( ), 'full' );?>
+                        <img class="img-fluid" src="<?php echo $image[0]; ?>">
+                    <?php }else{
+                        echo '<img class="img-fluid" src="https://placehold.it/190x242">';
+                    }?>
                     </div>
-                    <span class="bc_font_alt_1 bc_text_24 bc_line_height_28 bc_text_bold bc_color_primary border-bottom pb-2 mt-3 d-block">Brett Bernstein CFP®</span>
-                    <span class="bc_font_alt_1 bc_text_22 bc_line_height_41 bc_text_normal bc_color_secondary my-2 d-block">CIO & Co-founder</span>
+                    <span class="bc_font_alt_1 bc_text_24 bc_line_height_28 bc_text_bold bc_color_primary border-bottom pb-2 mt-3 d-block"><?php the_title();?>®</span>
+                    <span class="bc_font_alt_1 bc_text_22 bc_line_height_41 bc_text_normal bc_color_secondary my-2 d-block"><?php echo $team_position;?></span>
                     <div class="position-absolute detail p-3 text-center">
                       <a href="#" class="bc_text_20 bc_line_height_48 text-white bc_font_default bc_text_normal no_hover_underline text-uppercase">View Full Bio <i class="fal fa-chevron-circle-right bc_font_default bc_text_20 bc_line_height_48"></i> </a>
                     </div>
                   </div>
               </div>
-              <div class="col-lg-4 mt-5">
-                <div class="members px-3 pt-3 pb-4 border position-relative overflow-hidden">
-                    <div class="">
-                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rob-square.jpg" class="img-fluid" alt="brett-square">
-                    </div>
-                    <span class="bc_font_alt_1 bc_text_24 bc_line_height_28 bc_text_bold bc_color_primary border-bottom pb-2 mt-3 d-block">Rob Kantor</span>
-                    <span class="bc_font_alt_1 bc_text_22 bc_line_height_41 bc_text_normal bc_color_secondary my-2 d-block">CIO & Co-founder</span>
-                    <div class="position-absolute detail p-3 text-center">
-                      <a href="#" class="bc_text_20 bc_line_height_48 text-white bc_font_default bc_text_normal no_hover_underline text-uppercase">View Full Bio <i class="fal fa-chevron-circle-right bc_font_default bc_text_20 bc_line_height_48"></i> </a>
-                    </div>
-                  </div>
-              </div>
-              <div class="col-lg-4 mt-5">
-                <div class="members px-3 pt-3 pb-4 border position-relative overflow-hidden">
-                    <div class="">
-                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/curtis-square.jpg" class="img-fluid" alt="brett-square">
-                    </div>
-                    <span class="bc_font_alt_1 bc_text_24 bc_line_height_28 bc_text_bold bc_color_primary border-bottom pb-2 mt-3 d-block">Curtis Congdon, CRPC®, CFP®</span>
-                    <span class="bc_font_alt_1 bc_text_22 bc_line_height_41 bc_text_normal bc_color_secondary my-2 d-block">CIO & Co-founder</span>
-                    <div class="position-absolute detail p-3 text-center">
-                      <a href="#" class="bc_text_20 bc_line_height_48 text-white bc_font_default bc_text_normal no_hover_underline text-uppercase">View Full Bio <i class="fal fa-chevron-circle-right bc_font_default bc_text_20 bc_line_height_48"></i> </a>
-                    </div>
-                  </div>
-              </div>
-              <div class="col-lg-4 mt-4">
-                <div class="members px-3 pt-3 pb-4 border position-relative overflow-hidden">
-                    <div class="img bc_color_lightgray_bg">
-                      
-                    </div>
-                    <span class="bc_font_alt_1 bc_text_24 bc_line_height_28 bc_text_bold bc_color_primary border-bottom pb-2 mt-3 d-block">Full Name</span>
-                    <span class="bc_font_alt_1 bc_text_22 bc_line_height_41 bc_text_normal bc_color_secondary my-2 d-block">Titel</span>
-                    <div class="position-absolute detail p-3 text-center">
-                      <a href="#" class="bc_text_20 bc_line_height_48 text-white bc_font_default bc_text_normal no_hover_underline text-uppercase">View Full Bio <i class="fal fa-chevron-circle-right bc_font_default bc_text_20 bc_line_height_48"></i> </a>
-                    </div>
-                  </div>
-              </div>
-              <div class="col-lg-4 mt-4">
-                <div class="members px-3 pt-3 pb-4 border position-relative overflow-hidden">
-                    <div class="img bc_color_lightgray_bg">
-                      
-                    </div>
-                    <span class="bc_font_alt_1 bc_text_24 bc_line_height_28 bc_text_bold bc_color_primary border-bottom pb-2 mt-3 d-block">Full Name</span>
-                    <span class="bc_font_alt_1 bc_text_22 bc_line_height_41 bc_text_normal bc_color_secondary my-2 d-block">Titl</span>
-                    <div class="position-absolute detail p-3 text-center">
-                      <a href="#" class="bc_text_20 bc_line_height_48 text-white bc_font_default bc_text_normal no_hover_underline text-uppercase">View Full Bio <i class="fal fa-chevron-circle-right bc_font_default bc_text_20 bc_line_height_48"></i> </a>
-                    </div>
-                  </div>
-              </div>
-              <div class="col-lg-4 mt-4">
-                <div class="members px-3 pt-3 pb-4 border position-relative overflow-hidden">
-                    <div class="img bc_color_lightgray_bg">
-                      
-                    </div>
-                    <span class="bc_font_alt_1 bc_text_24 bc_line_height_28 bc_text_bold bc_color_primary border-bottom pb-2 mt-3 d-block">Full Name</span>
-                    <span class="bc_font_alt_1 bc_text_22 bc_line_height_41 bc_text_normal bc_color_secondary my-2 d-block">Titl</span>
-                    <div class="position-absolute detail p-3 text-center">
-                      <a href="#" class="bc_text_20 bc_line_height_48 text-white bc_font_default bc_text_normal no_hover_underline text-uppercase">View Full Bio <i class="fal fa-chevron-circle-right bc_font_default bc_text_20 bc_line_height_48"></i> </a>
-                    </div>
-                  </div>
-              </div>
+              
+             <?php
+        endwhile;
+        }
+    
+    ?>
             </div>
         </div>
     </div>
-
-    <div class="container-fluid px-0 m-0 borde_b_primary mt-5">
+<?php get_template_part( 'page-templates/common/Wondering-if-there' ); ?> 
+   <!--  <div class="container-fluid px-0 m-0 borde_b_primary mt-5">
       <div class="graphic_lines pb-5">
           <div class="container">
               <div class="row no-gutters">
@@ -147,7 +122,7 @@ get_header();?>
               </div>
           </div>
         </div>
-    </div>
+    </div> -->
 </main>
 <script type="text/javascript">
   var swiperService = new Swiper('.community-members-swiper', {
