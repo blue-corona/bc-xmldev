@@ -8933,10 +8933,10 @@ ul.gform_fields li::before {
     color: #666d89; }
   h2, .h2 {
     font-family: #1d1817;
-    font-size: 30px;
-    font-weight: 300;
-    text-transform: uppercase;
-    line-height: 30px;
+    font-size: 32px;
+    font-weight: 100;
+    text-transform: capitalize;
+    line-height: 32px;
     color: #1d1817; }
   h3, .h3 {
     font-family: #666d89;
@@ -9059,7 +9059,7 @@ ul.gform_fields li::before {
   margin-top: -13rem; }
   @media only screen and (max-width: 767px) {
     .mt-n8 {
-      margin-top: -16rem; } }
+      margin-top: -12.9rem; } }
 
 .mt-n9 {
   margin-top: -13rem; }
@@ -9691,6 +9691,10 @@ div {
 .who_we_head {
   padding: 115px 0px;
   z-index: 9; }
+  @media only screen and (max-width: 767px) {
+    .who_we_head {
+      padding: 50px 0px 115px;
+      margin-top: -5rem; } }
 
 .who_we .who_we_pagination {
   left: 0px;
