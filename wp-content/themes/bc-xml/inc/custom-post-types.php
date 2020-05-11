@@ -49,7 +49,7 @@ function bc_team_custom_post_type() {
         'capability_type'     => 'page',
     );
     // Registering your Custom Post Type
-    register_post_type( 'bc_Teams', $args );
+    register_post_type( 'bc_teams', $args );
 }
 
 add_action( 'add_meta_boxes', 'bc_team_create_metabox' );
@@ -58,7 +58,7 @@ function bc_team_create_metabox() {
         'bc_team_metabox',
         'Show On Home Page', // Title to display
         'bc_team_metabox', // Function to call that contains the metabox content
-        'bc_Teams', // Post type to display metabox on
+        'bc_teams', // Post type to display metabox on
         'side', // Where to put it (normal = main colum, side = sidebar, etc.)
         'default' // Priority relative to other metaboxes
     );
@@ -69,7 +69,7 @@ function bc_team_run_after_title_meta_boxes() {
     global $post, $wp_meta_boxes;
     # Output the `below_title` meta boxes:
     do_meta_boxes( get_current_screen(), 'test', $post );
-    unset($wp_meta_boxes['bc_Teams']['test']);
+    unset($wp_meta_boxes['bc_teams']['test']);
 }
 
 function bc_team_metabox() {
