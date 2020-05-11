@@ -23,7 +23,7 @@ get_header('variant-announcement-bar');?>
          <div class="col-lg-8">
            <div class="row no-gutters">
              <div class="col-lg-12 mb-4 pl-md-4">
-                <h1> let’s talk </h1>
+                <h1 class="bc_sm_text_48 bc_sm_line_height_48"> let’s talk </h1>
                 <h2 class="text-capitalize mt-4"> Our Offices </h2>
                 <p> Three locations to better serve our clients </p>
              </div>
@@ -65,12 +65,15 @@ get_header('variant-announcement-bar');?>
    <div class="container-fluid m-0 pb-5">
      <div class="container">
        <div class="row no-gutters">
-          <div class="col-lg-12 mb-5 px-md-4">
+          <div class="col-lg-12 px-md-4">
             <h2>Contact Us</h2>
             <p>Do you have questions? We would love to begin a conversation.</p>
           </div>
-          <div class="col-lg-12 text-center px-md-4">
-            <span class="bc_line_height_64 bc_text_50 bc_font_alt_1 bc_color_brown bc_text_light">Standard Bootstrap <br> Contact Form <br> goes here</span>
+          <div class="col-lg-12 text-center">
+            <div class="entry-content bc_hero_form_body">
+              <?php echo do_shortcode('[gravityform id=25 ajax=true]')?>
+            </div>
+            <!-- <span class="bc_line_height_64 bc_text_50 bc_font_alt_1 bc_color_brown bc_text_light">Standard Bootstrap <br> Contact Form <br> goes here</span> -->
           </div>
        </div>
      </div>
