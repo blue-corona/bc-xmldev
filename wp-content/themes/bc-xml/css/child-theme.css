@@ -9656,7 +9656,7 @@ div {
   max-height: 450px; }
 
 .how_we_pagination {
-  left: 0px;
+  left: 6%;
   width: 20px;
   top: 18% !important;
   -webkit-transform: none !important;
@@ -9715,21 +9715,14 @@ div {
   min-height: 44px; }
 
 .who_we_swiper .image:before {
-  border-top: 4px solid #666d89;
-  border-left: 4px solid #666d89;
-  border-right: 7px solid #faf8f5;
-  border-bottom: 7px solid #faf8f5; }
-
-.who_we_swiper .image:after {
-  position: absolute;
-  content: "";
-  top: 8px;
-  left: 8px;
-  bottom: 0;
-  right: 0;
-  border-radius: 50%;
-  background: 0 0;
-  border: 3px solid #faf8f5; }
+  background-image: url(../img/img-border.png);
+  background-size: 100%;
+  top: 0px;
+  width: 72%;
+  left: 0px;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 0; }
 
 .eagle_icon {
   top: 0px;
@@ -9737,21 +9730,14 @@ div {
   left: -60px; }
 
 .image_border:before {
-  border-top: 5px solid #666d89;
-  border-left: 5px solid #666d89;
-  border-right-width: 14px;
-  border-bottom-width: 14px; }
-
-.image_border:after {
-  position: absolute;
-  content: "";
-  top: 8px;
-  left: 8px;
-  bottom: 0;
-  right: 0;
-  border-radius: 50%;
-  background: 0 0;
-  border: 3px solid #fff; }
+  background-image: url(../img/img-border.png);
+  background-size: 100%;
+  top: 0px;
+  width: 72%;
+  left: 0px;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 0; }
 
 .fixed-top.scrolled {
   background-color: #ffffff !important; }
