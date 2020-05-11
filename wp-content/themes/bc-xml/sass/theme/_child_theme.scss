@@ -629,7 +629,7 @@ div, {
 }
 .menu{
 	position: fixed;
-	top: 50px;
+	top: 37px;
 	z-index: 999;
 	background: red;
 	width: 100%;
@@ -653,16 +653,17 @@ div, {
 
 //homepage css
 .what_we_do{
-	margin-top: -11.88rem;
+	margin-top: -11.7rem;
 	@media only screen and (max-width: 991px) {
-		margin-top: -11.7rem;
+		margin-top: -12rem;
 	}
 	@media only screen and (max-width: 768px) {
-		margin-top: -8rem;	
+		margin-top: -8.4rem;	
 		background-image:url('../img/what-we-mobile.png') !important; 
 	}
 	@media only screen and (max-width: 767px) {
-		margin-top: -5.4rem;	
+		margin-top: -5.1rem;
+    	padding-bottom: 4rem !important;	
 	}
 	@media only screen and (max-width: 640px) {
 		margin-top: -4.9rem;
@@ -670,7 +671,7 @@ div, {
 	@media only screen and (max-width: 575px) {
 		margin-top: -4.6rem;
 	}
-	@media only screen and (max-width: 540px) {
+	@media only screen and (max-width: 500px) {
 		margin-top: -4rem;
 	}
 
@@ -698,8 +699,10 @@ div, {
 	max-height:450px;
 }
 .how_we_pagination{
-	left:0px;
+	left: 6%;
 	width:20px;
+	top: 18% !important;
+    transform: none !important;
 	.swiper-pagination-bullet{
 	    width: 26px !important;
 	    height: 26px !important;
@@ -711,7 +714,7 @@ div, {
 	    background:url('../img/pagination-fill.png');
 	}
 }
-@media (hover: none), only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
 	.how_we_swiper {
 		.text-uppercase{
 		    min-height:70px;
@@ -724,7 +727,7 @@ div, {
 		bottom:90px !important;
 	}
 }
-@media (hover: none), only screen and (max-width: 440px) {
+@media only screen and (max-width: 440px) {
 	.how_we_pagination{
 		bottom:115px !important;
 	}
@@ -766,16 +769,23 @@ div, {
 }
 
 .who_we_swiper {
-	h3 {
-		min-height: 44px;
+	.client_name{
+		min-height: 44px;	
 	}
 }
 .who_we_swiper{
 	.image{
 		&:before{
-			border-right: 8px solid #faf8f5;
-			border-bottom: 8px solid #faf8f5;
+			background-image: url(../img/img-border.png);
+		    background-size: 100%;
+		    top: 0px;
+		    width: 72%;
+		    left: 0px;
+		    background-repeat: no-repeat;
+		    border: none;
+		    border-radius: 0;
 		}
+		
 	}
 }
 .eagle_icon {
@@ -784,5 +794,45 @@ div, {
     left: -60px;
 }
 
+.image_border:before{
+	background-image: url(../img/img-border.png);
+    background-size: 100%;
+	top: 0px;
+    width: 72%;
+    left: 0px;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 0;
+
+}
 
 
+
+.fixed-top.scrolled {
+	background-color: #ffffff!important;
+ 	.menu{
+ 		background-color: #FFFFFF !important;
+	    box-shadow: 0 5px 32px 14px rgba(0,0,0,0.07);
+	    transition: background-color 20ms linear;
+ 	}
+}
+
+.gform_wrapper{
+	#gform_15{
+		ul {
+			li.gfield {
+				.medium{
+					border-radius: 0px !important;
+					width:100% !important;
+				}
+			}
+		}
+	}
+} 
+
+#gform_15 input[type=submit]{
+	border-radius:0px !important;
+}
+.bc_header{
+	z-index:1031 !important;
+}

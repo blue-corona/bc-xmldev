@@ -77,8 +77,8 @@ get_header();
                                         </div>
                                     </div>
                                     <div class="col-md-5 d-none d-md-block">
-                                        <div class="image position-relative d-inline-block mx-auto p-3">
-                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.jpg" class="img-fluid" alt="team" >
+                                        <div class="image position-relative d-inline-block mx-auto p-3 image_border">
+                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid" alt="team" >
                                         </div>
                                     </div>
                               </div>
@@ -93,8 +93,8 @@ get_header();
                                         </div>
                                     </div>
                                     <div class="col-md-5 d-none d-md-block">
-                                        <div class="image position-relative d-inline-block mx-auto p-3">
-                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.jpg" class="img-fluid" alt="team" >
+                                        <div class="image position-relative d-inline-block mx-auto p-3 image_border">
+                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid" alt="team" >
                                         </div>
                                     </div>
                               </div>
@@ -109,8 +109,8 @@ get_header();
                                         </div>
                                     </div>
                                     <div class="col-md-5 d-none d-md-block">
-                                        <div class="image position-relative d-inline-block mx-auto p-3">
-                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.jpg" class="img-fluid" alt="team" >
+                                        <div class="image position-relative d-inline-block mx-auto p-3 image_border">
+                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid" alt="team" >
                                         </div>
                                     </div>
                               </div>
@@ -125,8 +125,8 @@ get_header();
                                         </div>
                                     </div>
                                     <div class="col-md-5 d-none d-md-block">
-                                        <div class="image position-relative d-inline-block mx-auto p-3">
-                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.jpg" class="img-fluid" alt="team" >
+                                        <div class="image position-relative d-inline-block mx-auto p-3 image_border">
+                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid" alt="team" >
                                         </div>
                                     </div>
                               </div>
@@ -141,8 +141,8 @@ get_header();
                                         </div>
                                     </div>
                                     <div class="col-md-5 d-none d-md-block">
-                                        <div class="image position-relative d-inline-block mx-auto p-3">
-                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.jpg" class="img-fluid" alt="team" >
+                                        <div class="image position-relative d-inline-block mx-auto p-3 image_border">
+                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid" alt="team" >
                                         </div>
                                     </div>
                               </div>
@@ -178,56 +178,56 @@ get_header();
                           <div class="swiper-slide">
                             <div class="px-4">
                                 <div class="text-center">
-                                  <div class="image position-relative d-inline-block mx-auto p-3">
+                                  <div class="image position-relative d-inline-block mx-auto p-2">
                                       <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brett-headshot.png">
                                   </div>
                                 </div>
-                                <h3 class="position-relative bottom_line_2 bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center">Brett Bernstein, CFP®</h3>
-                                <p class="bc_color_secondary bc_text_16 bc_line_height_50 bc_font_alt_1 d-block mt-2 text-center">CEO & Co-founder</p>
+                                <span class="position-relative bottom_line_2 bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center client_name">Brett Bernstein, CFP®</span>
+                                <p class="bc_color_secondary bc_text_16 bc_font_alt_1 d-block mt-2 text-center bc_line_height_40 bc_text_normal">CEO & Co-founder</p>
                             </div>
                           </div>
                           <div class="swiper-slide">
                             <div class="px-4">
                               <div class="text-center">
-                                <div class="image position-relative d-inline-block mx-auto p-3">
+                                <div class="image position-relative d-inline-block mx-auto p-2">
                                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rob-headshot.png">
                                 </div>
                               </div>
-                              <h3 class="position-relative bottom_line_2 bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center">Rob Kantor</h3>
-                              <p class="bc_color_secondary bc_text_16 bc_line_height_50 bc_font_alt_1 d-block mt-2 text-center">CIO & Co-founder</p>
+                              <span class="position-relative bottom_line_2 bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center client_name">Rob Kantor</span>
+                              <p class="bc_color_secondary bc_text_16 bc_font_alt_1 d-block mt-2 text-center bc_line_height_40 bc_text_normal">CIO & Co-founder</p>
                             </div>
                           </div>
                           <div class="swiper-slide">
                             <div class="px-4">
                               <div class="text-center">
-                                <div class="image position-relative d-inline-block mx-auto p-3">
+                                <div class="image position-relative d-inline-block mx-auto p-2">
                                       <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/curtis-headshot.png">
                                   </div>
                                 </div>
-                                <h3 class="position-relative bottom_line_2 bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center">Curtis Congdon, CRPC®, CFP®</h3>
-                                <p class="bc_color_secondary bc_text_16 bc_line_height_50 bc_font_alt_1 d-block mt-2 text-center">President</p>
+                                <span class="position-relative bottom_line_2 bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center client_name">Curtis Congdon, CRPC®, CFP®</span>
+                                <p class="bc_color_secondary bc_text_16 bc_font_alt_1 d-block mt-2 text-center bc_line_height_40 bc_text_normal">President</p>
                             </div>
                           </div>
                           <div class="swiper-slide">
                             <div class="px-4">
                                 <div class="text-center">
-                                  <div class="image position-relative d-inline-block mx-auto p-3">
+                                  <div class="image position-relative d-inline-block mx-auto p-2">
                                       <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brett-headshot.png">
                                   </div>
                                 </div>
-                                <h3 class="position-relative bottom_line_2 bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center">Brett Bernstein, CFP®</h3>
-                                <p class="bc_color_secondary bc_text_16 bc_line_height_50 bc_font_alt_1 d-block mt-2 text-center">CEO & Co-founder</p>
+                                <span class="position-relative bottom_line_2 bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center client_name">Brett Bernstein, CFP®</span>
+                                <p class="bc_color_secondary bc_text_16 bc_font_alt_1 d-block mt-2 text-center bc_line_height_40 bc_text_normal">CEO & Co-founder</p>
                             </div>
                           </div>
                           <div class="swiper-slide">
                             <div class="px-4">
                               <div class="text-center">
-                                <div class="image position-relative d-inline-block mx-auto p-3">
+                                <div class="image position-relative d-inline-block mx-auto p-2">
                                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rob-headshot.png">
                                 </div>
                               </div>
-                              <h3 class="position-relative bottom_line_2 bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center">Rob Kantor</h3>
-                              <p class="bc_color_secondary bc_text_16 bc_line_height_50 bc_font_alt_1 d-block mt-2 text-center">CIO & Co-founder</p>
+                              <span class="position-relative bottom_line_2 bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center client_name">Rob Kantor</span>
+                              <p class="bc_color_secondary bc_text_16 bc_font_alt_1 d-block mt-2 text-center bc_line_height_40 bc_text_normal">CIO & Co-founder</p>
                             </div>
                           </div>
                           
@@ -242,8 +242,8 @@ get_header();
                             <div class="swiper-button-prev who_we_prev bc_color_primary bc_text_30 bc_text_light bc_line_height_60"><i class="fal fa-2x fa-angle-left"></i></div>
                         </div>
                 </div>
-                <div class="col-md-5 order-1 order-md-2 mt-3 pb-5 text-center text-md-left team_text">
-                    <h2 class="text-capitalize bc_text_32 bc_line_height_32 bc_color_quaternary">A Team of <span class="d-md-block">Passionate Experts</span></h2>
+                <div class="col-md-5 order-1 order-md-2 mt-3 pb-5 text-center text-md-left team_text px-md-5">
+                    <h2>A Team of Passionate Experts</h2>
                     <p>With roots back to 1981 XML has been passionate about assembling a team of experts not just in money management but also in listening and in sincere care for our client's well being. We currently have CFPs, CRPCs, MBAs working to improve our Client's lives.</p>
                     <a href="#" class="btn_secondary px-4 py-2 mt-4 mb-5">FULL TEAM</a>
                 </div>
