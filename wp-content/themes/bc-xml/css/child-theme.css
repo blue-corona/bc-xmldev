@@ -9715,21 +9715,14 @@ div {
   min-height: 44px; }
 
 .who_we_swiper .image:before {
-  border-top: 2px solid #666d89;
-  border-left: 2px solid #666d89;
-  border-right: 10px solid #faf8f5;
-  border-bottom: 10px solid #faf8f5; }
-
-.who_we_swiper .image:after {
-  position: absolute;
-  content: "";
-  top: 4px;
-  left: 4px;
-  bottom: 0;
-  right: 0;
-  border-radius: 50%;
-  background: 0 0;
-  border: 4px solid #faf8f5; }
+  background-image: url(../img/img-border.png);
+  background-size: 100%;
+  top: 0px;
+  width: 72%;
+  left: 0px;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 0; }
 
 .eagle_icon {
   top: 0px;
@@ -9737,21 +9730,14 @@ div {
   left: -60px; }
 
 .image_border:before {
-  border-top: 9px solid #666d89;
-  border-left: 9px solid #666d89;
-  border-right-width: 25px;
-  border-bottom-width: 25px; }
-
-.image_border:after {
-  position: absolute;
-  content: "";
-  top: 11px;
-  left: 11px;
-  bottom: 0;
-  right: 0;
-  border-radius: 50%;
-  background: 0 0;
-  border: 6px solid #fff; }
+  background-image: url(../img/img-border.png);
+  background-size: 100%;
+  top: 0px;
+  width: 72%;
+  left: 0px;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 0; }
 
 .fixed-top.scrolled {
   background-color: #ffffff !important; }
