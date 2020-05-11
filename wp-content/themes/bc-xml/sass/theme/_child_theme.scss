@@ -724,11 +724,13 @@ div, {
 	    }
 	}
 	.how_we_pagination{
+		top: auto !important;
 		bottom:90px !important;
 	}
 }
 @media only screen and (max-width: 440px) {
 	.how_we_pagination{
+		top: auto !important;
 		bottom:115px !important;
 	}
 }

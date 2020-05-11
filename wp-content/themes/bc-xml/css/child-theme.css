@@ -8094,7 +8094,7 @@ main a {
   font-size: 19px; }
 
 .bc_text_20 {
-  font-size: 20px; }
+  font-size: 20px !important; }
 
 .bc_text_22 {
   font-size: 22px; }
@@ -9680,10 +9680,12 @@ div {
   .how_we_swiper p {
     min-height: 110px; }
   .how_we_pagination {
+    top: auto !important;
     bottom: 90px !important; } }
 
 @media only screen and (max-width: 440px) {
   .how_we_pagination {
+    top: auto !important;
     bottom: 115px !important; } }
 
 .who_we_head {
