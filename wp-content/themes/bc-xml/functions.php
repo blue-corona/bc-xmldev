@@ -36,6 +36,7 @@ add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
 
 $understrap_include = array(
     '/widgets/bc-how-we-work.php',
+    '/widgets/bc-resources-widget.php',
      '/bc-shortcode-override.php',
      '/custom-post-types.php'
 );
