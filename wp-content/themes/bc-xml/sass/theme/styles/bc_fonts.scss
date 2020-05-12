@@ -14,7 +14,7 @@ h2, .h2{
 	font-family: $default_font_family;
 	font-size: 36px;
 	font-weight: 100;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	line-height: 36px;
 	color: $brown_color;
 }
@@ -110,7 +110,7 @@ main a{
 .bc_text_16 { font-size: 16px; }
 .bc_text_18 { font-size: 18px; }
 .bc_text_19 { font-size: 19px; }
-.bc_text_20 { font-size: 20px; }
+.bc_text_20 { font-size: 20px !important; }
 .bc_text_22 { font-size: 22px; }
 .bc_text_24 { font-size: 24px; }
 .bc_text_26 { font-size: 26px; }

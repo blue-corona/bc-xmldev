@@ -647,7 +647,7 @@ div, {
 	left: 0;
 	z-index: 10;
 	width: 100%;
-	background: linear-gradient(#FFFFFF 0%, #ffffff00 100%);
+	background: linear-gradient(#FFFFFF 0%, #ffffff00 48%);
 }
 
 
@@ -724,17 +724,23 @@ div, {
 	    }
 	}
 	.how_we_pagination{
+		top: auto !important;
 		bottom:90px !important;
 	}
 }
 @media only screen and (max-width: 440px) {
 	.how_we_pagination{
+		top: auto !important;
 		bottom:115px !important;
 	}
 }
 .who_we_head {
     padding: 115px 0px;
     z-index: 9;
+    @media only screen and (max-width: 767px) {
+    	padding:50px 0px 115px;
+    	margin-top:-5rem;
+    }
 }
 .who_we{
 	.who_we_pagination{
@@ -767,25 +773,16 @@ div, {
 		}
 	}
 }
-
+.team_text{
+	p {
+    	@media only screen and (max-width: 767px) {
+    	 	padding: 0px 10px;
+    	}
+    }
+}
 .who_we_swiper {
 	.client_name{
 		min-height: 44px;	
-	}
-}
-.who_we_swiper{
-	.image{
-		&:before{
-			background-image: url(../img/img-border.png);
-		    background-size: 100%;
-		    top: 0px;
-		    width: 72%;
-		    left: 0px;
-		    background-repeat: no-repeat;
-		    border: none;
-		    border-radius: 0;
-		}
-		
 	}
 }
 .eagle_icon {
