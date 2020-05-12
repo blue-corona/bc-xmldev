@@ -5,7 +5,7 @@
                 <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="d-none navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
                     <span class="navbar-toggler-icon navbar-dark bc_color_primary"></span>
                 </button>
-                <div class="text-right pr-3 d-lg-none show-when-small" style="width: 100% !important;"> <!-- RM: 3/27 - Removed d-lg-none. Relying solely on media query hover(none) for touch devices-->
+                <div class="text-right d-lg-none show-when-small" style="width: 100% !important;"> <!-- RM: 3/27 - Removed d-lg-none. Relying solely on media query hover(none) for touch devices-->
                 <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
                     <span class="fal fa-times bc_color_primary bc_text-30 bc_line_height_24"></span>
                     </button>

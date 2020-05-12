@@ -10,10 +10,10 @@
 
 h2, .h2{
 	font-family: $quaternary_color;
-	font-size: 30px;
-	font-weight: 300;
-	text-transform: uppercase;
-	line-height: 30px;
+	font-size: 32px;
+	font-weight: 100;
+	text-transform: capitalize;
+	line-height: 32px;
 	color:$quaternary_color;
 }
 
@@ -89,12 +89,15 @@ main a{
 
 	//Classes for font sizes
 	.bc_sm_text_12 { font-size: 12px; }
+	.bc_sm_text_12_5 { font-size: 12.5px; }
 	.bc_sm_text_13 { font-size: 13px; }
 	.bc_sm_text_16 { font-size: 16px; }
-	.bc_sm_text_18 { font-size: 18px; }
+	.bc_sm_text_18 { font-size: 18px!important; }
 	.bc_sm_text_20 { font-size: 20px; }
 	.bc_sm_text_24 { font-size: 24px; }
+	.bc_sm_text_28 { font-size: 28px; }
 	.bc_sm_text_30 { font-size: 30px; }
+	.bc_sm_text_32 { font-size: 32px; }
 	.bc_sm_text_36 { font-size: 36px; }
 	.bc_sm_text_48 { font-size: 48px; }
 
@@ -106,10 +109,13 @@ main a{
 	.bc_sm_line_height_22 { line-height: 22px; }
 	.bc_sm_line_height_24 { line-height: 24px; }
 	.bc_sm_line_height_26 { line-height: 26px; }
+	.bc_sm_line_height_28 { line-height: 28px; }
 	.bc_sm_line_height_30 { line-height: 30px; }
+	.bc_sm_line_height_32 { line-height: 32px; }
 	.bc_sm_line_height_34 { line-height: 34px; }
 	.bc_sm_line_height_36 { line-height: 36px; }
 	.bc_sm_line_height_48 { line-height: 48px; }
+	.bc_sm_line_height_50 { line-height: 50px; }
 	.bc_sm_line_height_60 { line-height: 60px; }
 
 
