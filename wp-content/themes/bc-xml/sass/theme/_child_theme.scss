@@ -672,7 +672,7 @@ div, {
 		margin-top: -4.6rem;
 	}
 	@media only screen and (max-width: 500px) {
-		margin-top: -4rem;
+		margin-top: -3.8rem;
 	}
 
 	.what_we_video{
@@ -685,6 +685,10 @@ div, {
 		img{
 			opacity:0.3;
 			transition: all ease 0.4s;
+			@media only screen and (max-width: 575px) {
+				width: 65% !important;
+    			margin-right: 40px !important;
+			}
 		}
 		&:hover{
 			border-color: $tertiary_color;
@@ -832,4 +836,16 @@ div, {
 }
 .bc_header{
 	z-index:1031 !important;
+}
+.light_text{
+	@media only screen and (max-width: 767px) {
+    	 	opacity:0.6;
+    }
+}
+
+.form{
+	#gform_wrapper_16{
+		padding-left:0px !important;
+		padding-right:0px !important;
+	}
 }
