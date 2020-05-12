@@ -66,8 +66,8 @@ get_header('variant-announcement-bar');?>
      <div class="container">
        <div class="row no-gutters">
           <div class="col-lg-12 px-md-4">
-            <h2>Contact Us</h2>
-            <p>Do you have questions? We would love to begin a conversation.</p>
+            <h2 class="bc_sm_text_36 bc_sm_line_height_36">Contact Us</h2>
+            <p class="bc_sm_text_20 bc_sm_line_height_34">Do you have questions? We would love to begin a conversation.</p>
           </div>
           <div class="col-lg-12 text-center">
             <div class="entry-content bc_hero_form_body">
