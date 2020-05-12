@@ -40,17 +40,19 @@ defined( 'ABSPATH' ) || exit;
                 </div>
                 <div class="col-lg-2 text-center text-md-left mt-5 mt-md-0">
                     <span class="bc_text_26 bc_line_height_26 bc_font_default bc_text_light bc_color_primary">Locations</span>
-                    <span class="d-block bc_text_18 bc_line_height_40 bc_sm_line_height_50 bc_font_alt_1 bc_text_light bc_color_secondary mt-3 text-uppercase">Rockville, MD</span>
-                    <a href="#" class="d-block bc_text_18 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> T: 555-555-5555</a>
-                    <a href="#" class="d-block bc_text_18 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1">F: 555-555-5555</a>
-                    <span class="d-block bc_text_18 bc_line_height_40 bc_sm_line_height_50 bc_font_alt_1 bc_text_light bc_color_secondary mt-3 text-uppercase"> Falls Church, VA </span>
-                    <a href="#" class="d-block bc_text_18 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> T: 555-555-5555</a>
-                    <a href="#" class="d-block bc_text_18 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> LMA: 555-555-5555</a>
-                    <a href="#" class="d-block bc_text_18 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1">F: 555-555-5555</a>
-                    <a href="#" class="d-block bc_text_18 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> LMA: 555-555-5555</a>
-                    <span class="d-block bc_text_18 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_secondary mt-3 text-uppercase bc_sm_line_height_50"> Breckenridge, CO</span>
-                    <a href="#" class="d-block bc_text_18 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> T: 555-555-5555</a>
-                    <a href="#" class="d-block bc_text_18 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> F: 555-555-5555</a>
+                    <span class="bc_sm_line_height_50">
+                        <span class="d-block bc_text_18 bc_line_height_40 bc_sm_line_height_50 bc_font_alt_1 bc_text_light bc_color_secondary mt-3 text-uppercase">Rockville, MD</span>
+                        <a href="#" class="d-block bc_text_18 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> T: 555-555-5555</a>
+                        <a href="#" class="d-block bc_text_18 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1">F: 555-555-5555</a>
+                        <span class="d-block bc_text_18 bc_line_height_40 bc_sm_line_height_50 bc_font_alt_1 bc_text_light bc_color_secondary mt-3 text-uppercase"> Falls Church, VA </span>
+                        <a href="#" class="d-block bc_text_18 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> T: 555-555-5555</a>
+                        <a href="#" class="d-block bc_text_18 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> LMA: 555-555-5555</a>
+                        <a href="#" class="d-block bc_text_18 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1">F: 555-555-5555</a>
+                        <a href="#" class="d-block bc_text_18 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> LMA: 555-555-5555</a>
+                        <span class="d-block bc_text_18 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_secondary mt-3 text-uppercase bc_sm_line_height_50"> Breckenridge, CO</span>
+                        <a href="#" class="d-block bc_text_18 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> T: 555-555-5555</a>
+                        <a href="#" class="d-block bc_text_18 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> F: 555-555-5555</a>
+                    </span>
                 </div>
                 <div class="col-lg-2 d-none d-lg-block pl-lg-2">
                     <span class="d-block bc_text_26 bc_line_height_40 bc_font_default bc_text_light bc_color_primary">Company</span>
