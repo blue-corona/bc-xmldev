@@ -619,8 +619,8 @@ div, {
 .border_primary{
 	border: 1px solid $primary_color;
 }
-.borde_b_primary{
-	border-bottom: 6px solid $secondary_color;
+.borde_top_primary{
+	border-top: 6px solid $secondary_color;
 }
 .cursor_pointer{
 	&:hover{
@@ -631,7 +631,7 @@ div, {
 	position: fixed;
 	top: 37px;
 	z-index: 999;
-	background: red;
+	background: red; 
 	width: 100%;
 }
 .menu-alt{
