@@ -8944,10 +8944,10 @@ ul.gform_fields li::before {
     color: #1d1817; }
   h3, .h3 {
     font-family: #666d89;
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 300;
     text-transform: uppercase;
-    line-height: 30px;
+    line-height: 28px;
     color: #666d89; }
   h4, .h4 {
     font-family: #cbb893;
@@ -9017,7 +9017,7 @@ ul.gform_fields li::before {
   .bc_sm_text_18 {
     font-size: 18px !important; }
   .bc_sm_text_20 {
-    font-size: 20px; }
+    font-size: 20px !important; }
   .bc_sm_text_24 {
     font-size: 24px; }
   .bc_sm_text_28 {
@@ -9649,7 +9649,7 @@ div {
       margin-top: -4.6rem; } }
   @media only screen and (max-width: 500px) {
     .what_we_do {
-      margin-top: -4rem; } }
+      margin-top: -3.8rem; } }
   .what_we_do .what_we_video {
     border: 1px solid #fff;
     -webkit-box-shadow: 13px 13px 0px #cbb893;
@@ -9662,6 +9662,10 @@ div {
       opacity: 0.3;
       -webkit-transition: all ease 0.4s;
       transition: all ease 0.4s; }
+      @media only screen and (max-width: 575px) {
+        .what_we_do .what_we_video img {
+          width: 65% !important;
+          margin-right: 47px !important; } }
     .what_we_do .what_we_video:hover {
       border-color: #e7decd;
       cursor: pointer; }
@@ -9773,5 +9777,13 @@ div {
 
 .bc_header {
   z-index: 1031 !important; }
+
+@media only screen and (max-width: 767px) {
+  .light_text {
+    opacity: 0.6; } }
+
+.form #gform_wrapper_16 {
+  padding-left: 0px !important;
+  padding-right: 0px !important; }
 
 /*# sourceMappingURL=child-theme.css.map */
