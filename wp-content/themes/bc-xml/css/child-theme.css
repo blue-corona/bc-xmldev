@@ -8614,7 +8614,8 @@ ul.gform_fields li::before {
     opacity: .5;
     margin-top: 15px;
     font-size: 14px !important;
-    font-weight: 400 !important; }
+    font-weight: 400 !important;
+    text-transform: uppercase; }
     #gform_16 ul li label .gfield_required {
       color: #1D1817; }
 
@@ -8628,6 +8629,9 @@ ul.gform_fields li::before {
 
 #gform_16 .gform_footer {
   padding-left: 0 !important; }
+
+#gform_16 .floating_labels_wrapper .gform_footer {
+  display: block !important; }
 
 #gform_16 input[type=submit] {
   background-color: #666D89 !important;
@@ -9585,8 +9589,8 @@ div {
 .border_primary {
   border: 1px solid #666d89; }
 
-.borde_b_primary {
-  border-bottom: 6px solid #cbb893; }
+.borde_top_primary {
+  border-top: 6px solid #cbb893; }
 
 .cursor_pointer:hover {
   cursor: pointer; }
