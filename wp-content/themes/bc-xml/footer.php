@@ -77,7 +77,7 @@ defined( 'ABSPATH' ) || exit;
                         <?php echo do_shortcode('[gravityform id=16 ajax=true]')?>
                     </div>
                 </div>
-                <div class="col-lg-12 border-top text-md-left pt-2 mt-5 text-center px-0">
+                <div class="col-lg-12 border-top text-md-left pt-2 mt-5 text-center px-0 light_text">
                     <span class="bc_text_18 bc_line_height_30 bc_color_brown bc_font_alt_1">
                         <a href="#" class="bc_color_brown bc_text_normal bc_color_brown_hover  bc_sm_text_12_5 bc_sm_line_height_24">Terms of Use </a>   |   <a href="#" class="bc_color_brown bc_text_normal bc_color_brown_hover  bc_sm_text_12_5 bc_sm_line_height_24">Privacy Policy</a>   |   <a href="#" class="bc_color_brown bc_text_normal bc_color_brown_hover  bc_sm_text_12_5 bc_sm_line_height_24">ADV Part 2A </a>  <span class="d-md-inline-block d-none"> |</span>   <span class="d-block d-lg-inline-block"> <a href="#" class="bc_color_brown bc_text_normal bc_color_brown_hover  bc_sm_text_12_5 bc_sm_line_height_24"> Form CRS </a>   |  <a href="#" class="bc_color_brown bc_text_normal bc_color_brown_hover  bc_sm_text_12_5 bc_sm_line_height_24"> WRAP Brochure </a>  <span class="d-md-inline-block d-none"> |</span>   <a href="#" class="bc_color_brown bc_text_normal bc_color_brown_hover  bc_sm_text_12_5 bc_sm_line_height_24 d-none d-md-inline-block"> Important Notices</a></span>
                         <span class="d-block">

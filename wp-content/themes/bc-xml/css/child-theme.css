@@ -9774,4 +9774,8 @@ div {
 .bc_header {
   z-index: 1031 !important; }
 
+@media only screen and (max-width: 767px) {
+  .light_text {
+    opacity: 0.6; } }
+
 /*# sourceMappingURL=child-theme.css.map */
