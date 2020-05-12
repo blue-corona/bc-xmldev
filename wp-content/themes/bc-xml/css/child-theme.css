@@ -8615,7 +8615,7 @@ ul.gform_fields li::before {
     margin-top: 15px;
     font-size: 14px !important;
     font-weight: 400 !important;
-    text-transform: uppercase; }
+    text-transform: capitalize; }
     #gform_16 ul li label .gfield_required {
       color: #1D1817; }
 
