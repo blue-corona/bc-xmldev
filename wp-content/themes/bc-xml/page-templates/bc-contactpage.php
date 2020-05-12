@@ -29,9 +29,9 @@ get_header('variant-announcement-bar');?>
              </div>
              <div class="col-md-6 mb-5 pl-md-4">
                 <h3> ROCKVILLE, MD </h3>
-                <p class="mb-0"> One Preserve Parkway <br> Suite 120 <br> Rockville, MD 20852 <br></p>
-                <p class="bc_text_bold mb-0">T: 555-555-5555</p>
-                <p class="bc_text_bold mb-0">F: 555-555-5555</p>
+                <p class="mb-0 bc_sm_text_20 bc_sm_line_height_34"> One Preserve Parkway <br> Suite 120 <br> Rockville, MD 20852 <br></p>
+                <p class="bc_text_bold mb-0 bc_sm_text_20 bc_sm_line_height_34">T: 555-555-5555</p>
+                <p class="bc_text_bold mb-0 bc_sm_text_20 bc_sm_line_height_34">F: 555-555-5555</p>
                 <a href="#" class="bc_text_bold bc_text_20 bc_line_height_34"> MAP > </a>
              </div>
              <div class="col-md-6 text-right  mb-5">
@@ -39,9 +39,9 @@ get_header('variant-announcement-bar');?>
              </div>
              <div class="col-md-6  mb-5 pl-md-4">
                 <h3> FALLS CHURCH, VA </h3>
-                <p class="mb-0"> 7600 Leesburg Pike <br> Suite 120 East <br> Falls Church, VA 22043</p>
-                <p class="bc_text_bold mb-0">T: 555-555-5555</p>
-                <p class="bc_text_bold mb-0">F: 555-555-5555</p>
+                <p class="mb-0 bc_sm_text_20 bc_sm_line_height_34"> 7600 Leesburg Pike <br> Suite 120 East <br> Falls Church, VA 22043</p>
+                <p class="bc_text_bold mb-0 bc_sm_text_20 bc_sm_line_height_34">T: 555-555-5555</p>
+                <p class="bc_text_bold mb-0 bc_sm_text_20 bc_sm_line_height_34">F: 555-555-5555</p>
                 <a href="#" class="bc_text_bold bc_text_20 bc_line_height_34"> MAP > </a>
              </div>
              <div class="col-md-6 text-right  mb-5">
@@ -49,9 +49,9 @@ get_header('variant-announcement-bar');?>
              </div>
              <div class="col-md-6 mb-5 pl-md-4">
                 <h3> BRECKENRIDGE, CO </h3>
-                <p class="mb-0"> 208 S. Ridge Street <br> P.O. Box 3813 <br> Breckenridge, CO 80424 </p>
-                <p class="bc_text_bold mb-0">T: 555-555-5555</p>
-                <p class="bc_text_bold mb-0">F: 555-555-5555</p>
+                <p class="mb-0 bc_sm_text_20 bc_sm_line_height_34"> 208 S. Ridge Street <br> P.O. Box 3813 <br> Breckenridge, CO 80424 </p>
+                <p class="bc_text_bold mb-0 bc_sm_text_20 bc_sm_line_height_34">T: 555-555-5555</p>
+                <p class="bc_text_bold mb-0 bc_sm_text_20 bc_sm_line_height_34">F: 555-555-5555</p>
                 <a href="#" class="bc_text_bold bc_text_20 bc_line_height_34"> MAP > </a>
              </div>
              <div class="col-md-6 text-right mb-5">
