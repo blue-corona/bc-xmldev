@@ -9759,6 +9759,16 @@ div {
   border: none;
   border-radius: 0; }
 
+.sidebar_image_border:before {
+  background-image: url(../img/sidebar-img-border.png);
+  background-size: 100%;
+  top: 0px;
+  width: 72%;
+  left: 0px;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 0; }
+
 .fixed-top.scrolled {
   background-color: #ffffff !important; }
   .fixed-top.scrolled .menu {
@@ -9785,5 +9795,13 @@ div {
 .form #gform_wrapper_16 {
   padding-left: 0px !important;
   padding-right: 0px !important; }
+
+.bullete_style {
+  list-style: none; }
+  .bullete_style svg {
+    width: 10px !important;
+    height: 10px;
+    vertical-align: middle;
+    color: #666d89; }
 
 /*# sourceMappingURL=child-theme.css.map */

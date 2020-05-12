@@ -44,7 +44,7 @@ class bc_how_we_work extends WP_Widget {
 	echo '<h3 class="position-relative bottom_line bc_color_dark_primary bc_text_normal">how we work</h3>';
 	}
 	?>
-	<p class="mt-5 bc_color_dark_primary bc_text_24 bc_text_normal"><?php echo $instance['text_description'];?></p>
+	<p class="mt-5 bc_color_dark_primary bc_text_24 bc_text_normal px-2"><?php echo $instance['text_description'];?></p>
 	<a href="<?php echo get_home_url();?>" class="btn_primary bc_line_height_26 py-2 px-3 mt-4">learn how</a>
 </div>
 
