@@ -27,6 +27,13 @@ function theme_enqueue_styles() {
     }
 }
 
+add_action('admin_enqueue_scripts', 'bc_teams_include_admin_css_js');
+function bc_teams_include_admin_css_js($hook){
+  $current_screen = get_current_screen();
+    if ( $current_screen->post_type == 'bc_teams') {
+        wp_enqueue_script('bc-team-image-upload-js', get_stylesheet_directory_uri().'/src/js/bc-team-image-upload.js', array( 'jquery'));
+    }
+}
 
 
 function add_child_theme_textdomain() {
@@ -93,12 +100,9 @@ function card_shortcode( $atts, $content = null ) {
         $iconClass = 'fal fa-minus-circle';
     }
     $id = 'collapse'.rand(0,100000);
-    return '<div class="card rounded-0 mb-0">
-                <div id="headingOne" class="card-header position-relative border-bottom-0 bg-white cursor_pointer">
-                    <h3 class="card-title bc_color_primary">'.$title.'<i class="'.$iconClass.' bc_color_primary float-right toggle_icon mt-2 ml-2" data-toggle="collapse" data-target="#'.$id.'" aria-controls="'.$id.'"></i></h3>
-                </div>
-                <div id="'.$id.'" class="card-body collapse position-relative '.$expanded.'" aria-labelledby="headingOne" data-parent="#accordion">'.do_shortcode($content).'</div>
-            </div>';
+        return '<div class="card rounded-0 mb-0">
+        <div id="headingOne" class="card-header position-relative border-bottom-0 bg-white cursor_pointer"><h3 class="card-title bc_color_primary">'.$title.'<i class="'.$iconClass.' bc_color_primary float-right toggle_icon mt-2 ml-2" data-toggle="collapse" data-target="#'.$id.'" aria-controls="'.$id.'"></i></h3></div><div id="'.$id.'" class="card-body collapse position-relative '.$expanded.'" aria-labelledby="headingOne" data-parent="#accordion"><p class="text-gray">'.do_shortcode($content).'</p></div>
+        </div>';
 }
 
 //shortcode for phone number
@@ -133,3 +137,4 @@ function bc_logo_shortcode_for_menu($atts) {
 add_filter('wp_nav_menu_items', 'do_shortcode');
 
 //shortcode for background img
+remove_filter( 'the_content', 'wpautop' );
