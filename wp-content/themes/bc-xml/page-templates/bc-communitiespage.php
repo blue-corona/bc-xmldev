@@ -37,7 +37,7 @@ get_header();?>
                     ?> 
 
               </p>
-                <!--  <h1>Starting out - Solid Foundation</h1>
+                  <h1>Starting out - Solid Foundation</h1>
                     <p>Great work considering how best to position yourself for the future. We get that yes, someday, you want to retire, but there are also things you want to do now. You aren’t living for a future retirement, but rather want to maximize your entire life. We can work thru that together, building on lessons learned from others in a similar situation, but making it your own.</p>
 
                     <ul class="bullete_style pl-5">
@@ -48,12 +48,12 @@ get_header();?>
                         <li>How does anyone afford to have kids?!</li>
                         <li>Daycare is so expensive, should one of us stay home?</li>
                         <li>Can I be a little frivolous and travel? </li>
-                    </ul>-->
-                    <!-- Community Members -->
-                   <!--  <div class="mt-5 py-5 border-top">
+                    </ul>
+                    Community Members
+                    <div class="mt-5 py-5 border-top">
                       <h2>Community Members</h2>
                       <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
-                    </div> --> 
+                    </div> 
                 </div> 
 
               <!-- Community Members -->
@@ -73,7 +73,7 @@ get_header();?>
                             
                           </div>
                           <span class="bc_font_alt_1 bc_text_22 bc_line_height_26 bc_text_bold bc_color_primary border-bottom pb-2 mt-3 d-block">Full Name</span>
-                          <span class="bc_font_alt_1 bc_text_22 bc_line_height_24 bc_text_normal bc_color_secondary my-2 d-block">Titl</span>
+                          <span class="bc_font_alt_1 bc_text_20 bc_line_height_24 bc_text_normal bc_color_secondary my-2 d-block">Title</span>
                           <div class="position-absolute detail p-3">
                             <span class="bc_text_18 bc_line_height_30 text-white bc_font_default bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </span>
                           </div>
@@ -85,7 +85,7 @@ get_header();?>
                             
                           </div>
                           <span class="bc_font_alt_1 bc_text_22 bc_line_height_26 bc_text_bold bc_color_primary border-bottom pb-2 mt-3 d-block">Full Name</span>
-                          <span class="bc_font_alt_1 bc_text_22 bc_line_height_24 bc_text_normal bc_color_secondary my-2 d-block">Titl</span>
+                          <span class="bc_font_alt_1 bc_text_20 bc_line_height_24 bc_text_normal bc_color_secondary my-2 d-block">Title</span>
                           <div class="position-absolute detail p-3">
                             <span class="bc_text_18 bc_line_height_30 text-white bc_font_default bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </span>
                           </div>
@@ -97,7 +97,7 @@ get_header();?>
                             
                           </div>
                           <span class="bc_font_alt_1 bc_text_22 bc_line_height_26 bc_text_bold bc_color_primary border-bottom pb-2 mt-3 d-block">Full Name</span>
-                          <span class="bc_font_alt_1 bc_text_22 bc_line_height_24 bc_text_normal bc_color_secondary my-2 d-block">Titl</span>
+                          <span class="bc_font_alt_1 bc_text_20 bc_line_height_24 bc_text_normal bc_color_secondary my-2 d-block">Title</span>
                           <div class="position-absolute detail p-3">
                             <span class="bc_text_18 bc_line_height_30 text-white bc_font_default bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </span>
                           </div>
@@ -109,7 +109,7 @@ get_header();?>
                             
                           </div>
                           <span class="bc_font_alt_1 bc_text_22 bc_line_height_26 bc_text_bold bc_color_primary border-bottom pb-2 mt-3 d-block">Full Name</span>
-                          <span class="bc_font_alt_1 bc_text_22 bc_line_height_24 bc_text_normal bc_color_secondary my-2 d-block">Titl</span>
+                          <span class="bc_font_alt_1 bc_text_20 bc_line_height_24 bc_text_normal bc_color_secondary my-2 d-block">Title</span>
                           <div class="position-absolute detail p-3">
                             <span class="bc_text_18 bc_line_height_30 text-white bc_font_default bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </span>
                           </div>

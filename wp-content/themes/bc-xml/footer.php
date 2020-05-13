@@ -26,9 +26,12 @@ defined( 'ABSPATH' ) || exit;
             <div class="row no-gutters">
                 <div class="col-lg-4 pr-lg-4 mt-5 mt-md-0 text-center text-md-left">
                     <div class="footer_logo position-relative text-center">
-                        <a href="#">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/XML-Logo-footer.jpg" class="img-fluid d-block mx-auto" alt="logo">
+                        <a href="#" class="mt-n4 d-block">
+                            <img src="<?php //echo get_stylesheet_directory_uri(); ?>/img/XML-Logo-footer.jpg" class="img-fluid d-block mx-auto" alt="logo">
                         </a>
+                       <!--  <a href="#">
+                              <img src="<?php //echo bc_get_theme_mod('bc_theme_options', 'bc_logo_upload',false, get_template_directory_uri().'/img/XML-Logo-footer.jpg'); ?>" class="bc_branding_logo" alt="logo" style="max-width:<?php //echo bc_get_theme_mod('bc_theme_options', 'bc_max_width',false, 250);?>px">
+                        </a> -->
                     </div>
                     <span class="bc_text_16 bc_line_height_28 bc_font_alt_1 bc_color_primary d-block mt-5 mb-3">Securities offered through Lara, May & Associates, LLC, Member <span class="
                             bc_color_secondary">FINRA / SIPC </span> Headquartered at 7600 Leesburg Pike, Suite 120 East, Falls Church, VA 22043, 555-555-5555</span>
