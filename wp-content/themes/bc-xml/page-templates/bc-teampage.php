@@ -11,7 +11,7 @@ get_header();?>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
 
 <main ng-app="teamApp" ng-cloak>
-    <div class="container-fluid px-0 m-0 subpage_banner">
+    <div class="container-fluid px-0 m-0 subpage_banner mt-t mt-lg-0">
         <div class="row no-gutters">
             <div class="col-12">
                <?php if (has_post_thumbnail() ) {

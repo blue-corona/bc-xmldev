@@ -24,11 +24,14 @@ defined( 'ABSPATH' ) || exit;
     <div class="container-fluid text-md-left p-0 pt-5">
         <div class="container py-3">
             <div class="row no-gutters">
-                <div class="col-lg-4 pr-lg-4 text-center text-md-left">
+                <div class="col-lg-4 pr-lg-4 mt-5 mt-md-0 text-center text-md-left">
                     <div class="footer_logo position-relative text-center">
-                        <a href="#">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/XML-Logo-footer.jpg" class="img-fluid d-block mx-auto" alt="logo">
+                        <a href="#" class="mt-n4 d-block">
+                            <img src="<?php //echo get_stylesheet_directory_uri(); ?>/img/XML-Logo-footer.jpg" class="img-fluid d-block mx-auto" alt="logo">
                         </a>
+                       <!--  <a href="#">
+                              <img src="<?php //echo bc_get_theme_mod('bc_theme_options', 'bc_logo_upload',false, get_template_directory_uri().'/img/XML-Logo-footer.jpg'); ?>" class="bc_branding_logo" alt="logo" style="max-width:<?php //echo bc_get_theme_mod('bc_theme_options', 'bc_max_width',false, 250);?>px">
+                        </a> -->
                     </div>
                     <span class="bc_text_16 bc_line_height_28 bc_font_alt_1 bc_color_primary d-block mt-5 mb-3">Securities offered through Lara, May & Associates, LLC, Member <span class="
                             bc_color_secondary">FINRA / SIPC </span> Headquartered at 7600 Leesburg Pike, Suite 120 East, Falls Church, VA 22043, 555-555-5555</span>
@@ -54,8 +57,8 @@ defined( 'ABSPATH' ) || exit;
                         <a href="#" class="d-block bc_text_18 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1"> F: 555-555-5555</a>
                     </span>
                 </div>
-                <div class="col-lg-2 d-none d-lg-block pl-lg-2">
-                    <span class="d-block bc_text_26 bc_line_height_40 bc_font_default bc_text_light bc_color_primary">Company</span>
+                <div class="col-lg-2 d-none d-lg-block pl-lg-2 mt-5 mt-md-0">
+                    <span class="d-block bc_text_26 bc_line_height_26 bc_font_default bc_text_light bc_color_primary">Company</span>
                     <a href="#" class="d-block bc_text_16 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mt-3"> Team </a>
                     <a href="#" class="d-block bc_text_16 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> Beliefs</a>
                     <a href="#" class="d-block bc_text_16 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> Communities</a>
@@ -64,7 +67,7 @@ defined( 'ABSPATH' ) || exit;
                     <a href="#" class="d-block bc_text_16 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> Portfolio Logins</a>
                     <a href="#" class="d-block bc_text_16 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> Broker Check</a>
                 </div>
-                <div class="col-lg-2 mt-4 d-md-none text-center">
+                <div class="col-lg-2 mt-4 d-md-none text-center mt-5 mt-md-0">
                     <span class="d-block bc_text_26 bc_line_height_26 bc_font_default bc_text_light bc_color_primary">Logins</span>
                     <a href="#" class="d-block bc_text_16 bc_line_height_26 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mt-3"> Broker Check </a>
                     <a href="#" class="d-block bc_text_16 bc_line_height_26 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> Fidelity</a>
@@ -72,8 +75,8 @@ defined( 'ABSPATH' ) || exit;
                     <a href="#" class="d-block bc_text_16 bc_line_height_26 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> First Clearing</a>
                     <a href="#" class="d-block bc_text_16 bc_line_height_26 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover"> Wealth Portal</a>
                 </div>
-                <div class="col-lg-4 d-none d-lg-block">
-                    <span class="d-block bc_text_26 bc_line_height_40 bc_font_default bc_text_light bc_color_primary">Connect</span>
+                <div class="col-lg-4 d-none d-lg-block mt-5 mt-md-0">
+                    <span class="d-block bc_text_26 bc_line_height_26 bc_font_default bc_text_light bc_color_primary">Connect</span>
                     <span class="d-block mt-2 bc_text_18 bc_line_height_60 bc_font_alt_1 bc_text_16 bc_text_light bc_color_primary">Newsletter Signup</span>
                     <div class="form">
                         <?php echo do_shortcode('[gravityform id=16 ajax=true]')?>

@@ -6,10 +6,10 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 ?>
-<?php echo bc_get_theme_mod('bc_theme_options', 'footer','copyright_text', '<div class=" container-fluid pb-3" style="background: #e3e4e9;">
+<?php echo bc_get_theme_mod('bc_theme_options', 'footer','copyright_text', '<div class=" container-fluid pb-3 pb-md-0" style="background: #e3e4e9;">
   	<div class="container pb-5 pt-2 py-lg-0 pb-md-0 px-0 text-center text-md-left">
-  		 <div class="bc_text_18 bc_color_primary bc_sm_text_13 bc_text_16 bc_line_height_50 bc_sm_line_height_18 bc_text_normal bc_font_alt_1 bp-3">
-          <span class="bc_text_18 bc_color_primary bc_sm_text_13 bc_text_heavy bc_text_16 bc_line_height_50 bc_sm_line_height_18 bc_text_normal bc_font_alt_1"> © </span> '.date("Y").'  XML FINANCIAL GROUP      <span class="d-none d-lg-inline-block"> | </span> <br class="d-lg-none"> </span>
+  		 <div class="bc_color_primary bc_sm_text_13 bc_text_16 bc_line_height_50 bc_sm_line_height_18 bc_text_normal bc_font_alt_1 bp-3">
+          <span class="bc_color_primary bc_sm_text_13 bc_text_heavy bc_text_16 bc_line_height_50 bc_sm_line_height_18 bc_text_normal bc_font_alt_1"> © </span> '.date("Y").'  XML FINANCIAL GROUP      <span class="d-none d-lg-inline-block"> | </span> <br class="d-lg-none"> </span>
           <span class="d-lg-inline-block bc_color_primary --imp bc_text_16 bc_line_height_50 bc_sm_text_13 bc_sm_line_height_18 bc_text_normal bc_font_alt_1"> WEB DESIGN BY
           <a class="bc_color_primary bc_color_quinary_hover bc_text_normal no_hover_underline" href="https://www.bluecorona.com" target="_blank"><img src="'.get_template_directory_uri().'/img/bc_logo.png">&nbsp;Blue Corona</a> </span>
           <span class="d-inline-block bc_color_primary bc_sm_text_13 bc_text_16 bc_line_height_50 bc_sm_line_height_18 bc_text_normal bc_font_alt_1"> |</span>
