@@ -133,11 +133,9 @@ jQuery(".nav-link").on('touchstart',function(e){
 function toggleColor(toggleScope, toggleType){
   var openColorClass = jQuery(toggleScope).data('open-color-class');
   var closeColorClass = jQuery(toggleScope).data('close-color-class');
-
   if(typeof openColorClass == "undefined" && typeof closeColorClass == "undefined"){
     return;
   }
-
   if(toggleType != 'toggle'){
     jQuery(toggleScope).find('span').addClass(closeColorClass);
     // jQuery(toggleScope).find('svg').addClass(openColorClass);
@@ -145,7 +143,6 @@ function toggleColor(toggleScope, toggleType){
     // jQuery(toggleScope).find('svg').removeClass(closeColorClass);
     return;
   }
-
   jQuery(toggleScope).find('span').toggleClass(openColorClass);
   // jQuery(toggleScope).find('svg').toggleClass(openColorClass);
   jQuery(toggleScope).find('span').toggleClass(closeColorClass);
@@ -156,62 +153,52 @@ function toggleContent(toToggle, toggleScope, toggleType){
   if(!toggleType || typeof toggleType == "undefined"){
     toggleType = 'toggle';
   }
-
   jQuery(toToggle).animate({
     height: toggleType
   },"slow");
-
   var openIcon = jQuery(toggleScope).data('open-icon');
   var closeIcon = jQuery(toggleScope).data('close-icon');
-
   if(typeof openIcon == "undefined" || typeof closeIcon == "undefined"){
     openIcon = 'plus';
-    closeIcon = 'minus'; 
+    closeIcon = 'minus';
   }
-
   if(toggleType != "toggle"){
     jQuery(toggleScope).find('svg').addClass("fa-"+openIcon);
     jQuery(toggleScope).find('svg').removeClass("fa-"+closeIcon);
     toggleColor(toggleScope, toggleType);
     return;
   }
-
   var currentIcon = jQuery(toggleScope).find('svg').data('icon');
   var newIcon = currentIcon == openIcon ? closeIcon : openIcon;
-
   jQuery(toggleScope).find('svg').toggleClass("fa-"+openIcon);
   jQuery(toggleScope).find('svg').toggleClass("fa-"+closeIcon);
   toggleColor(toggleScope, toggleType);
-
-
   var text = jQuery(toggleScope).children('span').html();
   if(typeof text == "undefined"){
     return;
   }
-  if(currentIcon == 'plus' && text.search('read more') != -1) {
-    jQuery(toggleScope).children('span').html(text.replace('read more', 'read less')); 
+  if(currentIcon == 'plus' && text.search('Read More') != -1) {
+    jQuery(toggleScope).children('span').html(text.replace('Read More', 'Read Less'));
   }
-  if(currentIcon == 'minus' && text.search('read less') != -1) {
-    jQuery(toggleScope).children('span').html(text.replace('read less', 'read more'));  
+  if(currentIcon == 'minus' && text.search('Read Less') != -1) {
+    jQuery(toggleScope).children('span').html(text.replace('Read Less', 'Read More'));
   }
 }
+
 jQuery(".bc_toggle_content").on('click', function(e){
   e.preventDefault();
   var dataToToggle = jQuery(this).data('toggle');
   var dataToggleGroup = jQuery(this).data('toggle-group');
   toggleContent(dataToToggle, this);
-  
   if( typeof dataToggleGroup != "undefined"){
     jQuery(".bc_toggle_content").each(function(){
-      var dataToToggleNow = jQuery(this).data('toggle'); 
+      var dataToToggleNow = jQuery(this).data('toggle');
       if(jQuery(this).data('toggle-group') != dataToggleGroup || dataToToggle == dataToToggleNow){
-       return; 
+       return;
       }
       toggleContent(dataToToggleNow, this, 'hide');
     });
   }
-  
-
 });
 
 /*******************************
@@ -252,14 +239,14 @@ return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 
 });
 
-  function toggleIcon(e) {
+/*  function toggleIcon(e) {
       jQuery(e.target)
           .prev('.card-header')
           .find(".toggle-plus-minus")
           .toggleClass('fa-plus-circle fa-minus-circle');
   }
   jQuery('.accordion').on('hidden.bs.collapse', toggleIcon);
-  jQuery('.accordion').on('shown.bs.collapse', toggleIcon);
+  jQuery('.accordion').on('shown.bs.collapse', toggleIcon);*/
 
 
 //for nav bg on scroll on large screens

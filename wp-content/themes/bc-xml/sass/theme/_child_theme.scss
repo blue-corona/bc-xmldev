@@ -398,7 +398,7 @@ div, {
     	text-decoration: none !important;
     }
 }
-.accordion{
+/*.accordion{
 	.card-header.collapsed{
 		&:after {
 			position: absolute;
@@ -414,7 +414,8 @@ div, {
 		    background-size: contain;
 		}
 	}
-}
+}*/
+
 /*.accordion{
 	.card-header{
 		&:after {
@@ -562,7 +563,8 @@ div, {
 	padding-top: 140px;
 	@media only screen and (max-width: 740px) {
 		background: url(../img/lines-graphic-mobile.png);
-		background-size: cover;
+		background-size: 100% 100%;
+    	padding-top: 30px;
 	}
 }
 .members{
@@ -598,7 +600,7 @@ div, {
 	background-position: center;
 	padding-top: 140px;
 	@media only screen and (max-width: 740px) {
-		background: url(../img/testimonials-mobile.png);
+		/*background: url(../img/testimonials-mobile.png);*/
 		background-size: cover;
 	}
 }
