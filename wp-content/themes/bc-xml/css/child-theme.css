@@ -8652,6 +8652,12 @@ ul.gform_fields li::before {
 .bc_nav_container {
   background: none !important;
   background-color: #666d89; }
+  @media only screen and (max-width: 1024px) {
+    .bc_nav_container {
+      position: fixed !important;
+      top: 0px !important;
+      z-index: 10 !important;
+      background: #fff !important; } }
   @media only screen and (max-width: 768px) {
     .bc_nav_container {
       position: absolute !important;
@@ -8666,7 +8672,7 @@ ul.gform_fields li::before {
   @media (hover: none), only screen and (max-width: 991px) {
     .bc_nav_container a:hover {
       background-color: #ffffff00 !important; } }
-  @media (hover: none), only screen and (max-width: 991px) {
+  @media only screen and (max-width: 991px) {
     .bc_nav_container {
       background-color: #666d89; } }
   .bc_nav_container .navbar-nav {
@@ -8850,6 +8856,20 @@ ul.gform_fields li::before {
 .no_shadow:focus {
   -webkit-box-shadow: none !important;
           box-shadow: none !important; }
+
+@media only screen and (min-device-width: 991px) and (max-device-width: 1366px) {
+  .bc_nav_container {
+    position: fixed !important;
+    top: 0px !important;
+    z-index: 10 !important;
+    background: #fff !important; }
+  .navbar-nav li .img-fluid {
+    display: none !important; }
+  .close_btn {
+    display: block !important;
+    margin-left: auto !important; }
+  .eagle-png {
+    display: block !important; } }
 
 .bc_testimonial_swiper .swiper-slide-container {
   background-image: url("../img/slider-background.png");
@@ -9412,6 +9432,24 @@ div {
 		    background-size: contain;
 		}
 	}
+
+	.card-header.collapse{
+		&:before{
+		    position: absolute;
+		    right: 10px;
+			top: 50%;
+		    transform: translatey(-50%);
+			z-index: 10;
+		    content: "";
+		    height: 20px;
+		    width: 20px;
+		    background: url(../img/minus-solid.png);
+		    background-position: center;
+		    background-size: contain;
+		}
+	}
+}
+
 }*/
 /*.accordion{
 	.card-header{
@@ -9551,7 +9589,7 @@ div {
     .graphic_lines {
       background: url(../img/lines-graphic-mobile.png);
       background-size: 100% 100%;
-      padding-top: 30px; } }
+      padding-top: 65px; } }
 
 .members {
   height: 420px; }
@@ -9582,22 +9620,24 @@ div {
   background: url(../img/testimonials.png);
   background-size: 100% 100%;
   background-position: center;
-  padding-top: 140px; }
+  padding-top: 140px !important; }
   @media only screen and (max-width: 740px) {
     .testimonials {
       /*background: url(../img/testimonials-mobile.png);*/
-      background-size: cover; } }
+      background-size: cover;
+      padding-top: 100px !important; } }
 
 .Filter_btn {
   border: none;
   border-radius: 0;
   height: 57px;
   width: 255px; }
-  .Filter_btn:focus {
-    border: 1px solid #666d89;
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
-    outline: none !important; }
+
+.filter_btn_active {
+  border: 1px solid #666d89;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: none !important; }
 
 .bg-none {
   background: none !important; }
