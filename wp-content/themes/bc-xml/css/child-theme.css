@@ -6160,6 +6160,7 @@ button.bg-dark:focus {
   position: fixed !important; }
 
 .position-sticky {
+  position: -webkit-sticky !important;
   position: sticky !important; }
 
 .fixed-top {
@@ -6176,8 +6177,9 @@ button.bg-dark:focus {
   left: 0;
   z-index: 1030; }
 
-@supports (position: sticky) {
+@supports ((position: -webkit-sticky) or (position: sticky)) {
   .sticky-top {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020; } }
@@ -9412,12 +9414,11 @@ div {
 		    background-size: contain;
 		}
 	}
-}*/
-/*.accordion{
-	.card-header{
-		&:after {
+<<<<<<< HEAD
+	.card-header.collapse{
+		&:before{
 		    position: absolute;
-			right: 10px;
+		    right: 10px;
 			top: 50%;
 		    transform: translatey(-50%);
 			z-index: 10;
@@ -9429,20 +9430,10 @@ div {
 		    background-size: contain;
 		}
 	}
-	.collapse{
-		&:before{
-		    position: absolute;
-		    content: "";
-		    left: 25px;
-		    top: 3px;
-		    height: 1px;
-		    width: 40%;
-		    opacity: .5;
-		    background: $primary_color;
-		}
-	}
+}
+=======
 }*/
-.bottom_line:before {
+> > > > > > > f1f2d9969294373a6603660b51452a9ba4c80c8a .bottom_line:before {
   position: absolute;
   content: "";
   left: 50%;
@@ -9551,7 +9542,7 @@ div {
     .graphic_lines {
       background: url(../img/lines-graphic-mobile.png);
       background-size: 100% 100%;
-      padding-top: 30px; } }
+      padding-top: 65px; } }
 
 .members {
   height: 420px; }
@@ -9582,11 +9573,12 @@ div {
   background: url(../img/testimonials.png);
   background-size: 100% 100%;
   background-position: center;
-  padding-top: 140px; }
+  padding-top: 140px !important; }
   @media only screen and (max-width: 740px) {
     .testimonials {
       /*background: url(../img/testimonials-mobile.png);*/
-      background-size: cover; } }
+      background-size: cover;
+      padding-top: 100px !important; } }
 
 .Filter_btn {
   border: none;
