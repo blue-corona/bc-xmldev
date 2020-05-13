@@ -9412,6 +9412,24 @@ div {
 		    background-size: contain;
 		}
 	}
+
+	.card-header.collapse{
+		&:before{
+		    position: absolute;
+		    right: 10px;
+			top: 50%;
+		    transform: translatey(-50%);
+			z-index: 10;
+		    content: "";
+		    height: 20px;
+		    width: 20px;
+		    background: url(../img/minus-solid.png);
+		    background-position: center;
+		    background-size: contain;
+		}
+	}
+}
+
 }*/
 /*.accordion{
 	.card-header{
@@ -9551,7 +9569,7 @@ div {
     .graphic_lines {
       background: url(../img/lines-graphic-mobile.png);
       background-size: 100% 100%;
-      padding-top: 30px; } }
+      padding-top: 65px; } }
 
 .members {
   height: 420px; }
@@ -9582,11 +9600,12 @@ div {
   background: url(../img/testimonials.png);
   background-size: 100% 100%;
   background-position: center;
-  padding-top: 140px; }
+  padding-top: 140px !important; }
   @media only screen and (max-width: 740px) {
     .testimonials {
       /*background: url(../img/testimonials-mobile.png);*/
-      background-size: cover; } }
+      background-size: cover;
+      padding-top: 100px !important; } }
 
 .Filter_btn {
   border: none;

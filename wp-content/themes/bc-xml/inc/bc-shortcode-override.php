@@ -211,7 +211,7 @@ function custom_testimonial_shortcode($atts , $content = null){?>
                   <div class="swiper-button-prev testimonials-button-prev d-none d-lg-block">
                     <i class="far fa-chevron-left  bc_text_30 bc_line_height_34 bc_color_primary"></i>
                   </div>
-                  <div class="swiper-container testimonials-swiper mx-md-5 pb-3 mt-lg-5">
+                  <div class="swiper-container testimonials-swiper mx-md-5 pb-3 mt-5">
                     <div class="swiper-wrapper pb-3">
                           <!-- loop start -->
                 <?php 
@@ -238,7 +238,7 @@ function custom_testimonial_shortcode($atts , $content = null){?>
                     <!-- Add Pagination -->
                     <div class="swiper-pagination team-pagination"></div>
                   </div>
-                  <a href="#" class="btn_secondary bc_line_height_26 px-5 py-3 mt-3">read all</a>
+                  <!-- <a href="#" class="btn_secondary bc_line_height_26 px-5 py-3 mt-3">read all</a> -->
                 </div>
               </div>
             </div>
