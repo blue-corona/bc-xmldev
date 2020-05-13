@@ -74,33 +74,34 @@ function bc_team_run_after_title_meta_boxes() {
 
 function bc_team_metabox() {
    global $post;
+    $teams = json_decode(get_post_meta( $post->ID, 'teams', true ));
+    $locations = json_decode(get_post_meta( $post->ID, 'locations', true ));
+    $categories = [
+        'teams' => [
+            'selected'=> (in_array($teams, ['', null, false]) ? [] : $teams),
+            'options' => ['Leadership Team', 'Operations Team', 'Wealth Advisors']
+        ],
+        'locations' => [
+            'selected'=> (in_array($locations, ['', null, false]) ? [] : $locations),
+            'options' => ['Rockville, MD', 'Falls Church, VA', 'Breckenridge, CO']
+        ]
+    ];
     $team_position = get_post_meta( $post->ID, 'team_position', true );
     $image = get_post_meta( $post->ID, 'bc_team_custom_image', true );
-
-    $bc_leadership_metaboxvalue = get_post_meta( $post->ID, 'bc_leadership_metabox', true );
-
-    $bc_leadership_metabox = ( isset( $bc_leadership_metabox ) &&  '1' === $bc_leadership_metabox ) ? 1 : 0;
+    // print_r($categories);die;
+    foreach($categories as $category => $values):
     ?>
+    <div>
+        <h4 style="text-transform: capitalize;"><?php echo $category ?></h4>
+        <div>
+            <?php foreach($values['options'] as $option): ?>
+                <input type="checkbox" name="<?php echo $category?>[]" value="<?php echo $option ?>" <?php echo in_array($option, $values['selected']) ? 'checked' : ''; ?> >
+                <label><?php echo $option ?></label><br>
+            <?php endforeach; ?>
+        </div>
+    </div>
+    <?php endforeach; ?>
     
-    <div class="misc-pub-section misc-pub-section-last">
-        <label><b><?php _e('Team'); ?></b></label><br>
-        <label><input type="checkbox" value="1" <?php checked($bc_leadership_metabox, 1); ?> name="bc_leadership_metabox" /><?php _e('Leadership Team', 'pmg'); ?></label><br>
-
-        <label><input type="checkbox" value="Operations Team" <?php checked($value, true, true); ?> name="bc_operations_metabox" /><?php _e('Operations Team', 'pmg'); ?></label><br>
-
-        <label><input type="checkbox" value="Wealth Advisors" <?php checked($value, true, true); ?> name="bc_wealth_metabox" /><?php _e('Wealth Advisors', 'pmg'); ?></label><br>
-
-    </div>
-
-    <div class="misc-pub-section misc-pub-section-last">
-        <label><b><?php _e('Location'); ?></b></label><br>
-        <label><input type="checkbox" value="Rockville, MD" <?php checked($value, true, true); ?> name="bc_rockville_metabox" /><?php _e('Rockville, MD', 'pmg'); ?></label><br>
-
-        <label><input type="checkbox" value="Falls Church, VA" <?php checked($value, true, true); ?> name="bc_falls_church_metabox" /><?php _e('Falls Church, VA', 'pmg'); ?></label><br>
-
-        <label><input type="checkbox" value="Breckenridge, CO" <?php checked($value, true, true); ?> name="bc_breckenridge_metabox" /><?php _e('Breckenridge, CO', 'pmg'); ?></label><br>
-    </div>
-
     <div>
         <div>
             <label><?php _e( 'Position', 'team_position' );?></label>
@@ -140,14 +141,18 @@ function bc_team_save_metabox( $post_id, $post ) {
     if ( !isset( $_POST['bc_team_custom_image'] ) ) {return $post->ID;}
     $sanitizedcustomimage = wp_filter_post_kses( $_POST['bc_team_custom_image'] );
 
+    if ( !isset( $_POST['teams'] ) ) {return $post->ID;}
+    $sanitizedteams = json_encode( $_POST['teams'] );
 
-    
-    $bc_leadership_metabox = ( isset( $_POST['bc_leadership_metabox'] ) && '1' === $_POST['bc_leadership_metabox'] ) ? 1 : 0; // Input var okay.
-        update_post_meta( $post->ID, 'bc_leadership_metabox', esc_attr( $bc_leadership_metabox ) );
 
-    
+    if ( !isset( $_POST['locations'] ) ) {return $post->ID;}
+    $sanitizedlocations = json_encode( $_POST['locations'] );
+
     update_post_meta( $post->ID, 'team_position', $sanitizedposition );
     update_post_meta( $post->ID, 'bc_team_custom_image', $sanitizedcustomimage );
+    update_post_meta( $post->ID, 'teams', $sanitizedteams );
+    update_post_meta( $post->ID, 'locations', $sanitizedlocations );
+
 }
 
 
