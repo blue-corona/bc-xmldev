@@ -200,7 +200,9 @@
 		width: 45px;
 		height: 30px;
 	}
-	
+	.show-mar{
+		display:block !important;
+	}
 	nav.navbar-expand-lg{
 		.m-lg-auto, &.m-lg-auto{
 			margin: 0px 0px !important;

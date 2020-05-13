@@ -8800,6 +8800,8 @@ ul.gform_fields li::before {
   .bc-nav-dropdown-icon {
     width: 45px;
     height: 30px; }
+  .show-mar {
+    display: block !important; }
   nav.navbar-expand-lg {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
