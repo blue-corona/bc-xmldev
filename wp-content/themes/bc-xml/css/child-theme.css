@@ -6160,7 +6160,6 @@ button.bg-dark:focus {
   position: fixed !important; }
 
 .position-sticky {
-  position: -webkit-sticky !important;
   position: sticky !important; }
 
 .fixed-top {
@@ -6177,9 +6176,8 @@ button.bg-dark:focus {
   left: 0;
   z-index: 1030; }
 
-@supports ((position: -webkit-sticky) or (position: sticky)) {
+@supports (position: sticky) {
   .sticky-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020; } }
@@ -9587,11 +9585,12 @@ div {
   border-radius: 0;
   height: 57px;
   width: 255px; }
-  .Filter_btn:focus {
-    border: 1px solid #666d89;
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
-    outline: none !important; }
+
+.filter_btn_active {
+  border: 1px solid #666d89;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: none !important; }
 
 .bg-none {
   background: none !important; }
