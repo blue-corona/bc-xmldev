@@ -6160,7 +6160,6 @@ button.bg-dark:focus {
   position: fixed !important; }
 
 .position-sticky {
-  position: -webkit-sticky !important;
   position: sticky !important; }
 
 .fixed-top {
@@ -6177,9 +6176,8 @@ button.bg-dark:focus {
   left: 0;
   z-index: 1030; }
 
-@supports ((position: -webkit-sticky) or (position: sticky)) {
+@supports (position: sticky) {
   .sticky-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020; } }
@@ -8293,7 +8291,7 @@ li {
   background-color: #2c3e87 !important; }
 
 .bc_color_light_bg {
-  background-color: #B9A886 !important; }
+  background-color: #faf8f5 !important; }
 
 .bc_color_brown_bg {
   background-color: #1D1817; }
@@ -8303,6 +8301,9 @@ li {
 
 .bc_color_lightgray_bg {
   background-color: #E3E4E9 !important; }
+
+.bc_color_light_bg {
+  background-color: #faf8f5 !important; }
 
 .bc_color_primary_hover:hover {
   color: #666d89 !important; }
@@ -8637,6 +8638,7 @@ ul.gform_fields li::before {
   background-color: #666D89 !important;
   width: 166px !important;
   float: left;
+  font-family: "Work Sans", sans-serif;
   border-radius: 0 !important;
   font-size: 22px;
   margin: 10px 0;
@@ -9394,20 +9396,23 @@ div {
     background: #B9A886 !important;
     text-decoration: none !important; }
 
-.accordion .card-header.collapsed:after {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  -webkit-transform: translatey(-50%);
-          transform: translatey(-50%);
-  z-index: 10;
-  content: "";
-  height: 20px;
-  width: 20px;
-  background: url(../img/plus-solid.png);
-  background-position: center;
-  background-size: contain; }
-
+/*.accordion{
+	.card-header.collapsed{
+		&:after {
+			position: absolute;
+			right: 10px;
+			top: 50%;
+		    transform: translatey(-50%);
+			z-index: 10;
+		    content: "";
+		    height: 20px;
+		    width: 20px;
+		    background: url(../img/plus-solid.png);
+		    background-position: center;
+		    background-size: contain;
+		}
+	}
+}*/
 /*.accordion{
 	.card-header{
 		&:after {
@@ -9545,7 +9550,8 @@ div {
   @media only screen and (max-width: 740px) {
     .graphic_lines {
       background: url(../img/lines-graphic-mobile.png);
-      background-size: cover; } }
+      background-size: 100% 100%;
+      padding-top: 30px; } }
 
 .members {
   height: 420px; }
@@ -9579,7 +9585,7 @@ div {
   padding-top: 140px; }
   @media only screen and (max-width: 740px) {
     .testimonials {
-      background: url(../img/testimonials-mobile.png);
+      /*background: url(../img/testimonials-mobile.png);*/
       background-size: cover; } }
 
 .Filter_btn {
@@ -9759,6 +9765,16 @@ div {
   border: none;
   border-radius: 0; }
 
+.sidebar_image_border:before {
+  background-image: url(../img/sidebar-img-border.png);
+  background-size: 100%;
+  top: 0px;
+  width: 72%;
+  left: 0px;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 0; }
+
 .fixed-top.scrolled {
   background-color: #ffffff !important; }
   .fixed-top.scrolled .menu {
@@ -9785,5 +9801,13 @@ div {
 .form #gform_wrapper_16 {
   padding-left: 0px !important;
   padding-right: 0px !important; }
+
+.bullete_style {
+  list-style: none; }
+  .bullete_style svg {
+    width: 10px !important;
+    height: 10px;
+    vertical-align: middle;
+    color: #666d89; }
 
 /*# sourceMappingURL=child-theme.css.map */

@@ -398,7 +398,7 @@ div, {
     	text-decoration: none !important;
     }
 }
-.accordion{
+/*.accordion{
 	.card-header.collapsed{
 		&:after {
 			position: absolute;
@@ -414,7 +414,8 @@ div, {
 		    background-size: contain;
 		}
 	}
-}
+}*/
+
 /*.accordion{
 	.card-header{
 		&:after {
@@ -562,7 +563,8 @@ div, {
 	padding-top: 140px;
 	@media only screen and (max-width: 740px) {
 		background: url(../img/lines-graphic-mobile.png);
-		background-size: cover;
+		background-size: 100% 100%;
+    	padding-top: 30px;
 	}
 }
 .members{
@@ -598,7 +600,7 @@ div, {
 	background-position: center;
 	padding-top: 140px;
 	@media only screen and (max-width: 740px) {
-		background: url(../img/testimonials-mobile.png);
+		/*background: url(../img/testimonials-mobile.png);*/
 		background-size: cover;
 	}
 }
@@ -795,18 +797,30 @@ div, {
     left: -60px;
 }
 
-.image_border:before{
-	background-image: url(../img/img-border.png);
-    background-size: 100%;
-	top: 0px;
-    width: 72%;
-    left: 0px;
-    background-repeat: no-repeat;
-    border: none;
-    border-radius: 0;
-
+.image_border{
+	&:before{
+		background-image: url(../img/img-border.png);
+	    background-size: 100%;
+		top: 0px;
+	    width: 72%;
+	    left: 0px;
+	    background-repeat: no-repeat;
+	    border: none;
+	    border-radius: 0;
+	}
 }
-
+.sidebar_image_border{
+	&:before{
+		background-image: url(../img/sidebar-img-border.png);
+	    background-size: 100%;
+		top: 0px;
+	    width: 72%;
+	    left: 0px;
+	    background-repeat: no-repeat;
+	    border: none;
+	    border-radius: 0;
+	}
+}
 
 
 .fixed-top.scrolled {
@@ -847,5 +861,14 @@ div, {
 	#gform_wrapper_16{
 		padding-left:0px !important;
 		padding-right:0px !important;
+	}
+}
+.bullete_style{
+	list-style:none;
+	svg{
+		width: 10px !important;
+	    height: 10px;
+	    vertical-align: middle;
+	    color: $primary_color; 
 	}
 }
