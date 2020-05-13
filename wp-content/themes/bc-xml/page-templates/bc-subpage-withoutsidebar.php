@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: SubPage Withsidebar Template
+ * Template Name: SubPage Template
  */
 
 // Exit if accessed directly.
