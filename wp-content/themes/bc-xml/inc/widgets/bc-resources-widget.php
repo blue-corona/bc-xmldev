@@ -1,14 +1,14 @@
 <?php 
 /*Custom widget*/
 // BC How we Work Widget
-class bc_how_we_work extends WP_Widget {
+class bc_resources extends WP_Widget {
 	public function __construct() {
 
-		$id = 'bc_how_we_work';
-		$title = esc_html__('BC How we work', 'bc_how_we_work-custom-widget');
+		$id = 'bc_resources';
+		$title = esc_html__('BC Resources', 'bc_resources-custom-widget');
 		$options = array(
-			'classname' => 'bc_how_we_work-markup-widget',
-			'description' => esc_html__('Add Custom HTML in inputbox', 'bc_how_we_work-custom-widget')
+			'classname' => 'bc_resources-markup-widget',
+			'description' => esc_html__('Add Custom HTML in inputbox', 'bc_resources-custom-widget')
 		);
 		parent::__construct( $id, $title, $options );
 	}
@@ -35,17 +35,16 @@ class bc_how_we_work extends WP_Widget {
         $this->addSwiperInitServiceJsToFooter( $widgetInstance ); });
 	?>
 
-<div class="how_we_work position-relative overflow-hdden bc_color_lightgray_bg text-center px-4 pt-5 pb-4">
-<span></span>
+<div class="resources px-4 py-5 mt-5 text-center">
 	<?php 
 	if ( isset( $instance['title'] ) && !empty($instance['title']) ) {
 		echo $args['before_title'] . $instance['title'] . $args['after_title']; 
 	}else{
-	echo '<h3 class="position-relative bottom_line bc_color_dark_primary bc_text_normal">how we work</h3>';
+	echo '<h3 class="position-relative bottom_line text-uppercase bc_text_normal">resources</h3>';
 	}
 	?>
-	<p class="mt-5 bc_color_dark_primary bc_text_24 bc_text_normal px-2"><?php echo $instance['text_description'];?></p>
-	<a href="<?php echo get_home_url();?>" class="btn_primary bc_line_height_26 py-2 px-3 mt-4">learn how</a>
+	<p class="mt-5 bc_color_dark_primary bc_text_24 bc_text_normal"><?php echo $instance['text_description'];?></p>
+	<a href="<?php echo get_home_url();?>" class="btn_primary bc_line_height_26 px-3 py-2 mt-3">learn how</a>
 </div>
 
 <?php echo $args['after_widget'];
@@ -66,8 +65,8 @@ class bc_how_we_work extends WP_Widget {
 		$id = $this->get_field_id( 'title' );
 		$for = $this->get_field_id( 'title' );
 		$name = $this->get_field_name( 'title' );
-		$label = __( 'Title', 'bc_how_we_work-custom-widget' );
-		$title = '<h3 class="position-relative bottom_line bc_color_dark_primary bc_text_normal">how we work</h3>';
+		$label = __( 'Title', 'bc_resources-custom-widget' );
+		$title = '<h3 class="position-relative bottom_line text-uppercase bc_text_normal">resources</h3>';
 		if ( isset( $instance['title'] ) && ! empty( $instance['title'] ) ) {
 			$title = $instance['title'];
 		}
@@ -93,7 +92,7 @@ class bc_how_we_work extends WP_Widget {
 <?php }
 }
 // register widget
-function bc_how_we_work_register_widgets() {
-	register_widget( 'bc_how_we_work' );
+function bc_resources_register_widgets() {
+	register_widget( 'bc_resources' );
 }
-add_action( 'widgets_init', 'bc_how_we_work_register_widgets' );
+add_action( 'widgets_init', 'bc_resources_register_widgets' );
