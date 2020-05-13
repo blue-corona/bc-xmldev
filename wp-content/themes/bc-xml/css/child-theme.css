@@ -8800,18 +8800,6 @@ ul.gform_fields li::before {
   .bc-nav-dropdown-icon {
     width: 45px;
     height: 30px; }
-  .bc_nav_container {
-    position: fixed !important;
-    top: 0px !important;
-    z-index: 10 !important;
-    background: #fff !important; }
-  .navbar-nav li .img-fluid {
-    display: none !important; }
-  .close_btn {
-    display: block !important;
-    margin-left: auto !important; }
-  .eagle-png {
-    display: block !important; }
   nav.navbar-expand-lg {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -8870,6 +8858,20 @@ ul.gform_fields li::before {
 .no_shadow:focus {
   -webkit-box-shadow: none !important;
           box-shadow: none !important; }
+
+@media only screen and (min-device-width: 991px) and (max-device-width: 1366px) {
+  .bc_nav_container {
+    position: fixed !important;
+    top: 0px !important;
+    z-index: 10 !important;
+    background: #fff !important; }
+  .navbar-nav li .img-fluid {
+    display: none !important; }
+  .close_btn {
+    display: block !important;
+    margin-left: auto !important; }
+  .eagle-png {
+    display: block !important; } }
 
 .bc_testimonial_swiper .swiper-slide-container {
   background-image: url("../img/slider-background.png");
