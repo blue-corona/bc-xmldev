@@ -1,5 +1,11 @@
 // Nav bar color scheme according to theme customizer
 .bc_nav_container{
+	@media only screen and (max-width: 1024px) {
+		position:fixed !important;
+		top:0px !important;
+		z-index: 10 !important;
+		background: #fff !important;
+	}
 	@media only screen and (max-width: 768px) {
 		position: absolute !important;
 		top: 0 !important;
@@ -22,7 +28,7 @@
 	}
 	 
 	background-color: $primary_color; // Nav bar Background
-	@media (hover: none), only screen and (max-width: 991px) {
+	@media only screen and (max-width: 991px) {
 		background-color: $primary_color; // Mobile nav bar Background
 	}
 	.navbar-nav{
@@ -194,7 +200,28 @@
 		width: 45px;
 		height: 30px;
 	}
-	
+	.bc_nav_container{
+			position:fixed !important;
+			top:0px !important;
+			z-index: 10 !important;
+			background: #fff !important;
+		}
+	.navbar-nav{
+		li{
+			.img-fluid{
+					display:none !important
+			}
+		}
+	}
+
+	.close_btn{
+			display:block !important;
+			margin-left:auto !important;
+	}
+
+	.eagle-png {
+		display:block !important;
+	}
 	nav.navbar-expand-lg{
 		.m-lg-auto, &.m-lg-auto{
 			margin: 0px 0px !important;
@@ -251,4 +278,7 @@
 	&:focus{
 		box-shadow: none !important;
 	}
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+	
 }
