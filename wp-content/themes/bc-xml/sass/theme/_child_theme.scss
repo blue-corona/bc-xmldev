@@ -414,7 +414,7 @@ div, {
 		    background-size: contain;
 		}
 	}
-	.collapse{
+	.card-header.collapse{
 		&:before{
 		    position: absolute;
 		    right: 10px;
@@ -578,7 +578,7 @@ div, {
 	@media only screen and (max-width: 740px) {
 		background: url(../img/lines-graphic-mobile.png);
 		background-size: 100% 100%;
-    	padding-top: 30px;
+    	padding-top: 65px;
 	}
 }
 .members{
@@ -612,10 +612,11 @@ div, {
 	background: url(../img/testimonials.png);
 	background-size: 100% 100%;
 	background-position: center;
-	padding-top: 140px;
+	padding-top: 140px !important;
 	@media only screen and (max-width: 740px) {
 		/*background: url(../img/testimonials-mobile.png);*/
 		background-size: cover;
+		padding-top: 100px !important;
 	}
 }
 .Filter_btn{
