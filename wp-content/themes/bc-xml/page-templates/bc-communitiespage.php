@@ -28,15 +28,14 @@ get_header();?>
             <div class="row no-gutters">
                 <div class="col-lg-12">
                   <h2><?php the_title()?></h2>
-                   <p> <?php 
+                   <?php 
                     if ( have_posts() ) :
                     while ( have_posts() ) :  the_post();
                         the_content();
                     endwhile;
                     endif;
                     ?> 
-
-              </p>
+              
                   <h1>Starting out - Solid Foundation</h1>
                     <p>Great work considering how best to position yourself for the future. We get that yes, someday, you want to retire, but there are also things you want to do now. You aren’t living for a future retirement, but rather want to maximize your entire life. We can work thru that together, building on lessons learned from others in a similar situation, but making it your own.</p>
 
