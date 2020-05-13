@@ -628,11 +628,12 @@ div, {
 	border-radius: 0;
 	height: 57px;
   	width: 255px;
-  	&:focus{
-  		border: 1px solid $primary_color;
-  		box-shadow: none !important;
-  		outline: none !important;
-  	}
+}
+
+.filter_btn_active{
+	border: 1px solid $primary_color;
+	box-shadow: none !important;
+	outline: none !important;
 }
 .bg-none{
 	background: none !important;
