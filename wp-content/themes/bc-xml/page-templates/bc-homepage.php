@@ -19,24 +19,13 @@ get_header();
             get_template_part( 'page-templates/hero-section/bc-hero-video' );
         }
     ?>
-    <!-- background image use shortcode for mobile use background-image:url('../img/what-we-mobile.png');--->
-    <div class="container-fluid bc_home_section_bg p-0 pt-5 pb-5 what_we_do" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/img/what-we.png'); background-position: bottom; ">
 
-        <div class="container pt-5 pb-5 px-lg-5">
-            <div class="row text-center text-lg-center text-md-center p-lg-5 px-0">
-                <div class="col-12 offset-lg-2 col-lg-8 col-sm-12 pt-5 pb-5 px-2 px-md-0">
-                    <h3 class="position-relative bottom_line mb-5 bc_sm_line_height_28 bc_sm_text_28">What We Believe</h3>
-                    <div class="mx-md-5 mx-3 position-relative bg-white overflow-hidden what_we_video" data-toggle="modal" data-target="#exampleModal">
-                        <div class="row">
-                            <div class="offset-lg-1 col-lg-10 offset-md-1 col-md-10 mt-n3 pb-md-5 pb-3 d-flex justify-content-center align-items-center">
-                                <span class="position-absolute d-block play_icon text-center mt-md-5 mt-3 ml-n2">
-                                    <i class="fas fa-2x fa-play-circle bc_color_primary"></i>
-                                </span>
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/what-we-icon.png" class="img-fluid  mx-auto mt-md-n4 mt-n3 w-75">
+    <!-- what we believe -->
+    <?php get_template_part( 'page-templates/common/what-we-believe' ); ?> 
 
-                            </div>
-                        </div>
-                    </div>
+         <!--  how we work -->
+    <?php get_template_part( 'page-templates/common/how-we-work' ); ?>
+
 
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -60,215 +49,16 @@ get_header();
         </div>
     </div> 
 
-    <div class="container-fluid p-0 pt-5 pb-5">
-        <div class="container px-md-4">
-            <div class="row">
-                <div class="col-md-12 text-center text-lg-center text-md-center"><h3 class="position-relative bottom_line mb-5">How We Work</h3></div>
-                <div class="col-md-12 m-md-4">
-                    <div class="swiper-container how_we_swiper h-100">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide bg-white" >
-                              <div class="row align-items-center">
-                                    <div class="offset-md-1 col-md-5 col-12">
-                                        <div class="pl-md-5 text-center text-md-left">
-                                            <p class="text-uppercase bc_text_20">team driven<span class="d-block bc_color_primary bc_text_40 bc_text_semibold bc_line_height_38">investing</span></p>
-                                            <p>“No one knows everything.” We try to make informed, rational decisions that align your investments with your lifestyle.</p>
-                                            <a href="#" class="btn_primary py-2 px-3 mt-4">LEARN HOW</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 d-none d-md-block">
-                                        <div class="image position-relative d-inline-block mx-auto p-3 image_border">
-                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid" alt="team" >
-                                        </div>
-                                    </div>
-                              </div>
-                          </div>
-                          <div class="swiper-slide bg-white">
-                              <div class="row align-items-center">
-                                    <div class="offset-md-1 col-md-5 col-12">
-                                        <div class="pl-md-5 text-center text-md-left">
-                                            <p class="text-uppercase bc_text_20">360<span class="d-block bc_color_primary bc_text_40 bc_text_semibold bc_line_height_38">SUPPORT</span></p>
-                                            <p>“We have a person for that”. If it’s important to you, we are here to help, beyond just investments and planning.</p>
-                                            <a href="#" class="btn_primary py-2 px-3 mt-4">LEARN HOW</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 d-none d-md-block">
-                                        <div class="image position-relative d-inline-block mx-auto p-3 image_border">
-                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid" alt="team" >
-                                        </div>
-                                    </div>
-                              </div>
-                          </div>
-                          <div class="swiper-slide bg-white">
-                              <div class="row align-items-center">
-                                    <div class="offset-md-1 col-md-5 col-12">
-                                        <div class="pl-md-5 text-center text-md-left">
-                                            <p class="text-uppercase bc_text_20"><span class="d-block bc_color_primary bc_text_40 bc_text_semibold bc_line_height_38">QUALIFIED</span></p>
-                                            <p>“We’ve got the credentials.”</p>
-                                            <a href="#" class="btn_primary py-2 px-3 mt-4">Meet the team</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 d-none d-md-block">
-                                        <div class="image position-relative d-inline-block mx-auto p-3 image_border">
-                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid" alt="team" >
-                                        </div>
-                                    </div>
-                              </div>
-                          </div>
-                          <div class="swiper-slide bg-white">
-                              <div class="row align-items-center">
-                                    <div class="offset-md-1 col-md-5 col-12">
-                                        <div class="pl-md-5 text-center text-md-left">
-                                            <p class="text-uppercase bc_text_20">Community<span class="d-block bc_color_primary bc_text_40 bc_text_semibold bc_line_height_38">CENTRIC</span></p>
-                                            <p>“Our clients are not clones.”</p>
-                                            <a href="#" class="btn_primary py-2 px-3 mt-4">Learn more about how we advise our community</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 d-none d-md-block">
-                                        <div class="image position-relative d-inline-block mx-auto p-3 image_border">
-                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid" alt="team" >
-                                        </div>
-                                    </div>
-                              </div>
-                          </div>
-                          <div class="swiper-slide bg-white">
-                              <div class="row align-items-center">
-                                    <div class="offset-md-1 col-md-5 col-12">
-                                        <div class="pl-md-5 text-center text-md-left">
-                                            <p class="text-uppercase bc_text_20"><span class="d-block bc_color_primary bc_text_40 bc_text_semibold bc_line_height_38">INDEPENDENT</span></p>
-                                            <p>“We think for ourselves.”</p>
-                                            <a href="#" class="btn_primary py-2 px-3 mt-4">Read about our beliefs and how we invest in our community</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 d-none d-md-block">
-                                        <div class="image position-relative d-inline-block mx-auto p-3 image_border">
-                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid" alt="team" >
-                                        </div>
-                                    </div>
-                              </div>
-                          </div>
-                        </div>
-                        
-                        <div class="swiper-pagination how_we_pagination"></div>
-                       
-                    </div>
-                </div>                
-            </div>
-        </div>
-    </div>
 
-    <!-- background image use shortcode --->
-    <div class="container-fluid p-0 mt-n5">
-      <div class="who_we_head position-relative bc_home_section_bg " style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/greybg.png'); background-position: center;">
-      </div>
-    </div>
+    <!--  slide-background image --->
+  <?php get_template_part( 'page-templates/common/ background-image-for-home-page' ); ?> 
 
-    <!-- background image use shortcode--->
-    <div class="container-fluid p-0 pt-5 pb-5 position-relative bc_home_section_bg who_we mt-n8" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/img/homepage-testimonials.png'); background-position: top">
-      <div class="eagle_icon position-absolute d-none d-md-block">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/eagle.png" class="img-fluid w-100 animated">
-      </div>
-        <div class="container pt-5 pb-5 px-md-4">
-            <div class="row pt-5">
-                <div class="col-md-12 text-center text-lg-center text-md-center pt-5 pb-md-5"><h3 class="position-relative bottom_line mb-5">Who We Are</h3></div>
-                <div class="col-md-7 col-12 order-2 order-md-1 mt-3 pb-5">
-                  <!-- Swiper -->
-                    <div class="swiper-container who_we_swiper">
-                      <div class="swiper-wrapper mb-5">
-                          <div class="swiper-slide">
-                            <div class="px-4">
-                                <div class="text-center">
-                                  <div class="image position-relative d-inline-block mx-auto p-2 image_border">
-                                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brett-headshot.png">
-                                  </div>
-                                </div>
-                                <span class="position-relative bottom_line_2 bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center client_name">Brett Bernstein, CFP®</span>
-                                <p class="bc_color_secondary bc_text_16 bc_font_alt_1 d-block mt-2 text-center bc_line_height_40 bc_text_normal">CEO & Co-founder</p>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="px-4">
-                              <div class="text-center">
-                                <div class="image position-relative d-inline-block mx-auto p-2 image_border">
-                                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rob-headshot.png">
-                                </div>
-                              </div>
-                              <span class="position-relative bottom_line_2 bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center client_name">Rob Kantor</span>
-                              <p class="bc_color_secondary bc_text_16 bc_font_alt_1 d-block mt-2 text-center bc_line_height_40 bc_text_normal">CIO & Co-founder</p>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="px-4">
-                              <div class="text-center">
-                                <div class="image position-relative d-inline-block mx-auto p-2 image_border">
-                                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/curtis-headshot.png">
-                                  </div>
-                                </div>
-                                <span class="position-relative bottom_line_2 bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center client_name">Curtis Congdon, CRPC®, CFP®</span>
-                                <p class="bc_color_secondary bc_text_16 bc_font_alt_1 d-block mt-2 text-center bc_line_height_40 bc_text_normal">President</p>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="px-4">
-                                <div class="text-center">
-                                  <div class="image position-relative d-inline-block mx-auto p-2 image_border">
-                                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brett-headshot.png">
-                                  </div>
-                                </div>
-                                <span class="position-relative bottom_line_2 bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center client_name">Brett Bernstein, CFP®</span>
-                                <p class="bc_color_secondary bc_text_16 bc_font_alt_1 d-block mt-2 text-center bc_line_height_40 bc_text_normal">CEO & Co-founder</p>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="px-4">
-                              <div class="text-center">
-                                <div class="image position-relative d-inline-block mx-auto p-2 image_border">
-                                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rob-headshot.png">
-                                </div>
-                              </div>
-                              <span class="position-relative bottom_line_2 bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center client_name">Rob Kantor</span>
-                              <p class="bc_color_secondary bc_text_16 bc_font_alt_1 d-block mt-2 text-center bc_line_height_40 bc_text_normal">CIO & Co-founder</p>
-                            </div>
-                          </div>
-                          
-                        </div>
-                        <!-- Add Pagination -->
-                        <div class="swiper-pagination who_we_pagination "></div>
-                        
-                    </div>
-                    <!-- Add Arrows -->
-                        <div class="who_we_buttons">
-                            <div class="swiper-button-next who_we_next bc_color_primary bc_text_30 bc_text_light bc_line_height_60"><i class="fal fa-2x fa-angle-right"></i></div>
-                            <div class="swiper-button-prev who_we_prev bc_color_primary bc_text_30 bc_text_light bc_line_height_60"><i class="fal fa-2x fa-angle-left"></i></div>
-                        </div>
-                        <div class="fullteam d-md-none d-block text-center mb-5">
-                          <a href="#" class="btn_secondary px-4 py-2 mt-4 mb-5 ">FULL TEAM</a>
-                        </div>
-                </div>
-                <div class="col-md-5 order-1 order-md-2 mt-3 pb-md-5 pb-3 text-center text-md-left team_text px-md-5">
-                    <div class="px-md-3">
-                      <h2>A Team of Passionate Experts</h2>
-                      <p>With roots back to 1981 XML has been passionate about assembling a team of experts not just in money management but also in listening and in sincere care for our client's well being. We currently have CFPs, CRPCs, MBAs working to improve our Client's lives.</p>
-                      <a href="#" class="btn_secondary px-4 py-2 mt-4 mb-5 d-md-inline-block d-none">FULL TEAM</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
    
-    <div class="container-fluid px-0 borde_b_primary mt-n9">
-      <div class="graphic_lines pb-5">
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="col-lg-10 px-lg-4 offset-lg-1 text-center">
-                    <span class="position-relative bc_text_36 bc_line_height_36 mt-5 bc_font_default bc_text_thin text-white bottom_line1 d-block px-md-4 bc_sm_text_32 bc_sm_line_height_32">Wondering if there might be something more you and your money could do?</span>
-                    <span class="bc_text_20 bc_line_height_34 bc_sm_line_height_30 bc_font_alt_1 bc_text_light text-white d-block mt-4 pt-1 bc_sm_text_18 px-md-4 px-2">There are several different ways to connect with us. Chose whichever you are most  comfortable with. </span>
-                    <a href="#" class="btn_secondary px-5 py-3 mt-4 bc_line_height_26">let’s talk </a>
-                </div>
-            </div>
-        </div>
-      </div>
-    </div>
+    <!-- who we are--->
+      <?php get_template_part( 'page-templates/common/who-we-are' ); ?>
+
+   <!-- Wondering if there might be something more you and -->
+     <?php get_template_part( 'page-templates/common/Wondering-if-there' ); ?> 
 
     
     <?php 

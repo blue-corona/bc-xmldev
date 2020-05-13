@@ -27,6 +27,13 @@ function theme_enqueue_styles() {
     }
 }
 
+add_action('admin_enqueue_scripts', 'bc_teams_include_admin_css_js');
+function bc_teams_include_admin_css_js($hook){
+  $current_screen = get_current_screen();
+    if ( $current_screen->post_type == 'bc_teams') {
+        wp_enqueue_script('bc-team-image-upload-js', get_stylesheet_directory_uri().'/src/js/bc-team-image-upload.js', array( 'jquery'));
+    }
+}
 
 
 function add_child_theme_textdomain() {
