@@ -19,10 +19,10 @@ h2, .h2{
 
 h3, .h3{
 	font-family: $primary_color;
-	font-size: 26px;
+	font-size: 28px;
 	font-weight: 300;
 	text-transform: uppercase;
-	line-height: 30px;
+	line-height: 28px;
 	color: $primary_color;
 }
 
@@ -93,7 +93,7 @@ main a{
 	.bc_sm_text_13 { font-size: 13px; }
 	.bc_sm_text_16 { font-size: 16px; }
 	.bc_sm_text_18 { font-size: 18px!important; }
-	.bc_sm_text_20 { font-size: 20px; }
+	.bc_sm_text_20 { font-size: 20px!important; }
 	.bc_sm_text_24 { font-size: 24px; }
 	.bc_sm_text_28 { font-size: 28px; }
 	.bc_sm_text_30 { font-size: 30px; }
