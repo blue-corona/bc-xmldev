@@ -9,7 +9,7 @@ defined( 'ABSPATH' ) || exit;
 get_header('variant-announcement-bar');?>
 
 <main role="main">
-  <div class="container-fluid px-0 m-0 subpage_banner">
+  <div class="container-fluid px-0 m-0 subpage_banner mt-5 mt-lg-0">
         <div class="row no-gutters">
             <div class="col-12">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/contact-banner.jpg" class="img-fluid w-100" alt="Contact-banner">

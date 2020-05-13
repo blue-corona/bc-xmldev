@@ -1,4 +1,4 @@
-  <div class="container-fluid px-0 m-0 borde_b_primary mt-5">
+  <div class="container-fluid px-0 m-0 bc_color_light_bg">
       <div class="graphic_lines pb-5">
         <div class="container">
             <div class="row no-gutters">

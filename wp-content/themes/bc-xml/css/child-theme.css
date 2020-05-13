@@ -8293,7 +8293,7 @@ li {
   background-color: #2c3e87 !important; }
 
 .bc_color_light_bg {
-  background-color: #B9A886 !important; }
+  background-color: #faf8f5 !important; }
 
 .bc_color_brown_bg {
   background-color: #1D1817; }
@@ -8303,6 +8303,9 @@ li {
 
 .bc_color_lightgray_bg {
   background-color: #E3E4E9 !important; }
+
+.bc_color_light_bg {
+  background-color: #faf8f5 !important; }
 
 .bc_color_primary_hover:hover {
   color: #666d89 !important; }
@@ -8637,6 +8640,7 @@ ul.gform_fields li::before {
   background-color: #666D89 !important;
   width: 166px !important;
   float: left;
+  font-family: "Work Sans", sans-serif;
   border-radius: 0 !important;
   font-size: 22px;
   margin: 10px 0;
@@ -9408,6 +9412,20 @@ div {
   background-position: center;
   background-size: contain; }
 
+.accordion .collapse:before {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translatey(-50%);
+          transform: translatey(-50%);
+  z-index: 10;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: url(../img/minus-solid.png);
+  background-position: center;
+  background-size: contain; }
+
 /*.accordion{
 	.card-header{
 		&:after {
@@ -9545,7 +9563,8 @@ div {
   @media only screen and (max-width: 740px) {
     .graphic_lines {
       background: url(../img/lines-graphic-mobile.png);
-      background-size: cover; } }
+      background-size: 100% 100%;
+      padding-top: 30px; } }
 
 .members {
   height: 420px; }
@@ -9579,7 +9598,7 @@ div {
   padding-top: 140px; }
   @media only screen and (max-width: 740px) {
     .testimonials {
-      background: url(../img/testimonials-mobile.png);
+      /*background: url(../img/testimonials-mobile.png);*/
       background-size: cover; } }
 
 .Filter_btn {

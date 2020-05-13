@@ -46,6 +46,7 @@
 .bc_color_brown_bg { background-color: $brown_color; }
 .bc_color_black_bg { background-color: #000000; }
 .bc_color_lightgray_bg { background-color: $lightgray_color !important; }
+.bc_color_light_bg { background-color: $light_color !important; }
 
 //Classes for hover color
 .bc_color_primary_hover { &:hover{ color: $primary_color !important; } }
