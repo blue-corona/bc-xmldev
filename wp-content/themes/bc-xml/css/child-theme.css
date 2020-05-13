@@ -9398,39 +9398,27 @@ div {
     background: #B9A886 !important;
     text-decoration: none !important; }
 
-.accordion .card-header.collapsed:after {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  -webkit-transform: translatey(-50%);
-          transform: translatey(-50%);
-  z-index: 10;
-  content: "";
-  height: 20px;
-  width: 20px;
-  background: url(../img/plus-solid.png);
-  background-position: center;
-  background-size: contain; }
-
-.accordion .card-header.collapse:before {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  -webkit-transform: translatey(-50%);
-          transform: translatey(-50%);
-  z-index: 10;
-  content: "";
-  height: 20px;
-  width: 20px;
-  background: url(../img/minus-solid.png);
-  background-position: center;
-  background-size: contain; }
-
 /*.accordion{
-	.card-header{
+	.card-header.collapsed{
 		&:after {
-		    position: absolute;
+			position: absolute;
 			right: 10px;
+			top: 50%;
+		    transform: translatey(-50%);
+			z-index: 10;
+		    content: "";
+		    height: 20px;
+		    width: 20px;
+		    background: url(../img/plus-solid.png);
+		    background-position: center;
+		    background-size: contain;
+		}
+	}
+<<<<<<< HEAD
+	.card-header.collapse{
+		&:before{
+		    position: absolute;
+		    right: 10px;
 			top: 50%;
 		    transform: translatey(-50%);
 			z-index: 10;
@@ -9442,20 +9430,10 @@ div {
 		    background-size: contain;
 		}
 	}
-	.collapse{
-		&:before{
-		    position: absolute;
-		    content: "";
-		    left: 25px;
-		    top: 3px;
-		    height: 1px;
-		    width: 40%;
-		    opacity: .5;
-		    background: $primary_color;
-		}
-	}
+}
+=======
 }*/
-.bottom_line:before {
+> > > > > > > f1f2d9969294373a6603660b51452a9ba4c80c8a .bottom_line:before {
   position: absolute;
   content: "";
   left: 50%;
