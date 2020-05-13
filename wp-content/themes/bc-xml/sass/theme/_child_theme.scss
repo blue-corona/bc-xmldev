@@ -414,26 +414,8 @@ div, {
 		    background-size: contain;
 		}
 	}
-<<<<<<< HEAD
 }*/
-=======
-	.collapse{
-		&:before{
-		    position: absolute;
-		    right: 10px;
-			top: 50%;
-		    transform: translatey(-50%);
-			z-index: 10;
-		    content: "";
-		    height: 20px;
-		    width: 20px;
-		    background: url(../img/minus-solid.png);
-		    background-position: center;
-		    background-size: contain;
-		}
-	}
-}
->>>>>>> 5ecf85d5ec5ce8e35c7967f068181c65d85875c4
+
 /*.accordion{
 	.card-header{
 		&:after {
