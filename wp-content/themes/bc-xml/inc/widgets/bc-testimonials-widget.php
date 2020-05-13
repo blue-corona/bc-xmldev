@@ -35,7 +35,7 @@ class BC_Testimonials_Widget extends WP_Widget {
         $this->addSwiperInitTestimonialJsToFooter( $widgetInstance ); });
 	?>
 	<div class="who_we_are mt-5 pt-lg-5 text-center">
-	<h3 class="position-relative bottom_line text-uppercase bc_text_normal">
+	<h3 class="position-relative text-uppercase bc_text_normal">
 	<?php echo $instance['title'];?>
 	</h3>
 		<div id="<?php echo $this->id ?>" class="swiper-container team-swiper pb-3 mt-4">
@@ -51,7 +51,7 @@ class BC_Testimonials_Widget extends WP_Widget {
 	        $image = get_post_meta( get_the_ID(), 'testimonial_custom_image', true );
         ?>
         <div class="swiper-slide text-center p-4">
-            <div class="image position-relative d-inline-block mx-auto p-3">
+            <div class="image position-relative d-inline-block mx-auto p-3 sidebar_image_border">
                 <img src="<?php echo $image;?>"  class="img-fluid" alt="Contact-banner">
             </div>
              <span class="position-relative bottom_line_2 bc_color_primary bc_text_24 bc_line_height_50 bc_font_alt_1 bc_text_bold d-block"><?php the_title();?><sup>®</sup> </span>
@@ -83,7 +83,7 @@ class BC_Testimonials_Widget extends WP_Widget {
 		$for = $this->get_field_id( 'title' );
 		$name = $this->get_field_name( 'title' );
 		$label = __( 'Title', 'bc-testimonial-custom-widget' );
-		$title = '<h3 class="position-relative bottom_line text-uppercase bc_text_normal">who we are</h3>';
+		$title = '<h3 class="position-relative text-uppercase bc_text_normal">who we are</h3>';
 		if ( isset( $instance['title'] ) && ! empty( $instance['title'] ) ) {
 			$title = $instance['title'];
 		}

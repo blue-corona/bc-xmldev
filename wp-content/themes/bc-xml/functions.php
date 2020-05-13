@@ -54,10 +54,31 @@ foreach ( $understrap_include as $file ) {
 // <p>All property such as lawns, shrubbery, carpeting, floors, walls, furniture and door frames are protected. Damaged property will be replaced or repaired.</p>
 // [bc_card]
 //     [/bc_accordion]
+
+add_action('wp_footer', 'accordion_method');
+function accordion_method(){?>
+<script>
+jQuery(document).ready(function () {
+  jQuery('#accordion').on('show.bs.collapse', function (e) {
+      toggleIcon(e.target);
+  });
+  jQuery('#accordion').on('hidden.bs.collapse', function (e) {
+      toggleIcon(e.target);
+  });
+});
+function toggleIcon(target){
+    var target = jQuery(target).parent('.card').children('.card-header').children('h3').children('svg'); 
+    console.log(target);
+    target.toggleClass('fa-minus-circle');
+    target.toggleClass('fa-plus-circle');
+}
+</script>
+<?php }
+
 add_shortcode( 'bc_accordion', 'accordion_shortcode' );
 function accordion_shortcode( $atts, $content = null ) {
     $content = str_replace('<br>', '', $content);
-    return '<div id="accordion" class="accordion w-100 text-left">' . do_shortcode($content) . '</div>';
+    return '<div id="accordion" class="accordion w-100 border-bottom mt-4">' . do_shortcode($content) . '</div>';
 }
 add_shortcode( 'bc_card', 'card_shortcode' );
 function card_shortcode( $atts, $content = null ) {
@@ -72,13 +93,11 @@ function card_shortcode( $atts, $content = null ) {
         $iconClass = 'fal fa-minus-circle';
     }
     $id = 'collapse'.rand(0,100000);
-    return '<div class="card bg-transparent border-0 py-4 py-4">
-                <div id="headingOne" class="card-header border-0  bg-transparent p-0">
-                    <h3 class="my-3 bc_color_secondary  bc_font_alt_2 bc_line_height_36   my-4 bc_text_36 bc_text_light text-capitalize">'.$title.'<i class="'.$iconClass.' bc_color_success  bc_text_30  float-right toggle_icon mt-2 ml-2" data-toggle="collapse" data-target="#'.$id.'" aria-controls="'.$id.'"></i></h3>
+    return '<div class="card rounded-0 mb-0">
+                <div id="headingOne" class="card-header position-relative border-bottom-0 bg-white cursor_pointer">
+                    <h3 class="card-title bc_color_primary">'.$title.'<i class="'.$iconClass.' bc_color_primary float-right toggle_icon mt-2 ml-2" data-toggle="collapse" data-target="#'.$id.'" aria-controls="'.$id.'"></i></h3>
                 </div>
-                <div id="'.$id.'" class="collapse '.$expanded.'" aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="card-body">'.do_shortcode($content).'</div>
-                </div>
+                <div id="'.$id.'" class="card-body collapse position-relative '.$expanded.'" aria-labelledby="headingOne" data-parent="#accordion">'.do_shortcode($content).'</div>
             </div>';
 }
 
