@@ -30,7 +30,7 @@ function bc_team_custom_post_type() {
         'labels'              => $labels,
         'supports'            => array( 'title', 'editor', 'thumbnail', 'excerpt', 'page-attributes'),
         'taxonomies'          => array( 'genres' ),
-        'rewrite' => array( 'has_front' => false ,'slug' => 'our-Teams'),
+        'rewrite' => array( 'has_front' => false ,'slug' => 'our-team'),
         /* A hierarchical CPT is like Pages and can have
         * Parent and child items. A non-hierarchical CPT
         * is like Posts.
@@ -75,8 +75,32 @@ function bc_team_run_after_title_meta_boxes() {
 function bc_team_metabox() {
    global $post;
     $team_position = get_post_meta( $post->ID, 'team_position', true );
-    $image = get_post_meta( $post->ID, 'team_image', true );
+    $image = get_post_meta( $post->ID, 'bc_team_custom_image', true );
+
+    $bc_leadership_metaboxvalue = get_post_meta( $post->ID, 'bc_leadership_metabox', true );
+
+    $bc_leadership_metabox = ( isset( $bc_leadership_metabox ) &&  '1' === $bc_leadership_metabox ) ? 1 : 0;
     ?>
+    
+    <div class="misc-pub-section misc-pub-section-last">
+        <label><b><?php _e('Team'); ?></b></label><br>
+        <label><input type="checkbox" value="1" <?php checked($bc_leadership_metabox, 1); ?> name="bc_leadership_metabox" /><?php _e('Leadership Team', 'pmg'); ?></label><br>
+
+        <label><input type="checkbox" value="Operations Team" <?php checked($value, true, true); ?> name="bc_operations_metabox" /><?php _e('Operations Team', 'pmg'); ?></label><br>
+
+        <label><input type="checkbox" value="Wealth Advisors" <?php checked($value, true, true); ?> name="bc_wealth_metabox" /><?php _e('Wealth Advisors', 'pmg'); ?></label><br>
+
+    </div>
+
+    <div class="misc-pub-section misc-pub-section-last">
+        <label><b><?php _e('Location'); ?></b></label><br>
+        <label><input type="checkbox" value="Rockville, MD" <?php checked($value, true, true); ?> name="bc_rockville_metabox" /><?php _e('Rockville, MD', 'pmg'); ?></label><br>
+
+        <label><input type="checkbox" value="Falls Church, VA" <?php checked($value, true, true); ?> name="bc_falls_church_metabox" /><?php _e('Falls Church, VA', 'pmg'); ?></label><br>
+
+        <label><input type="checkbox" value="Breckenridge, CO" <?php checked($value, true, true); ?> name="bc_breckenridge_metabox" /><?php _e('Breckenridge, CO', 'pmg'); ?></label><br>
+    </div>
+
     <div>
         <div>
             <label><?php _e( 'Position', 'team_position' );?></label>
@@ -84,21 +108,21 @@ function bc_team_metabox() {
         </div>
     </div>
     
-    <div style="margin: 10px 0 15px 0;">
-        <div>
-        <label><?php _e( 'Image on Slider', 'team_image' );?></label>
-     <input type="text" name="bc_team_image_metabox" id="bc_team_image_metabox" class="meta-image col-sm-2" value="<?= $image;?>" accept='image/*' >
-        <input type="button" class="button bc-team-image-upload col-sm-3" value="Upload" style="margin-top: 10px;">
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Custom Image</label>
+        <div class="col-sm-10">
+            <input type="text" name="bc_team_custom_image" id="" class="meta-image col-sm-2" value="<?= $image;?>" required accept='image/*' style="margin-top: auto;">
+            <input type="button" class="button bc-team-image-upload col-sm-3" value="Upload" style="margin-top: 20px;">
 
-        <div class="image-preview" style="padding-top: 10px; ">
-            <?php if(isset($image) && !empty($image)){?>
-            <img src="<?php echo $image;?>" style="max-width:100%; width: 150px;">
-            <?php }else{?>
-            <img src="http://placehold.it/100x100"  style="max-width:100%; width: 150px;" class="rounded-circle"/>
-            <?php }?>
+            <div class="image-preview col-sm-3" style="margin-right: 20%;">
+                <?php if(isset($image) && !empty($image)){?>
+                <img src="<?php echo $image;?>" class="rounded-circle" style="width:90px;margin-top: 20px;">
+                <?php }else{?>
+                <img src="http://placehold.it/100x100" class="rounded-circle" style="width: 90px; height: 63px;"/>
+                <?php }?>
+            </div>
         </div>
-        </div>
-        </div>
+    </div>
  <?php wp_nonce_field( 'bc_team_form_metabox_nonce', 'bc_team_form_metabox_process' );
 }
 
@@ -110,12 +134,20 @@ function bc_team_save_metabox( $post_id, $post ) {
     }
     if ( !current_user_can( 'edit_post', $post->ID )) { return $post->ID;}
     if ( !isset( $_POST['bc_team_position_metabox'] ) ) { return $post->ID;}
+    
     $sanitizedposition = wp_filter_post_kses( $_POST['bc_team_position_metabox'] );
 
-      if ( !isset( $_POST['bc_team_image_metabox'] ) ) { return $post->ID;}
-    $sanitizedimage = wp_filter_post_kses( $_POST['bc_team_image_metabox'] );
+    if ( !isset( $_POST['bc_team_custom_image'] ) ) {return $post->ID;}
+    $sanitizedcustomimage = wp_filter_post_kses( $_POST['bc_team_custom_image'] );
+
+
+    
+    $bc_leadership_metabox = ( isset( $_POST['bc_leadership_metabox'] ) && '1' === $_POST['bc_leadership_metabox'] ) ? 1 : 0; // Input var okay.
+        update_post_meta( $post->ID, 'bc_leadership_metabox', esc_attr( $bc_leadership_metabox ) );
+
+    
     update_post_meta( $post->ID, 'team_position', $sanitizedposition );
-    update_post_meta( $post->ID, 'team_image', $sanitizedimage );
+    update_post_meta( $post->ID, 'bc_team_custom_image', $sanitizedcustomimage );
 }
 
 

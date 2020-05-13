@@ -109,7 +109,7 @@ get_header();?>
             </div>
         </div>
     </div>
-<?php get_template_part( 'page-templates/common/Wondering-if-there' ); ?> 
+<?php get_template_part( 'page-templates/common/wondering-if-there' ); ?> 
    <!--  <div class="container-fluid px-0 m-0 borde_b_primary mt-5">
       <div class="graphic_lines pb-5">
           <div class="container">
