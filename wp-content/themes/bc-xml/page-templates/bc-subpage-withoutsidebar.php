@@ -9,7 +9,7 @@ defined( 'ABSPATH' ) || exit;
 get_header();?>
 
 <main>
-    <div class="container-fluid px-0 m-0 subpage_banner">
+    <div class="container-fluid px-0 m-0 subpage_banner mt-5 mt-lg-0">
         <div class="row no-gutters">
             <div class="col-12 position-relative">  
      <?php if (has_post_thumbnail() ) {
