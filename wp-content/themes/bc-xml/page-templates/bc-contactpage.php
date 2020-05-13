@@ -9,15 +9,8 @@ defined( 'ABSPATH' ) || exit;
 get_header('variant-announcement-bar');?>
 
 <main role="main">
-  <div class="container-fluid px-0 m-0 subpage_banner mt-5 mt-lg-0">
-        <div class="row no-gutters">
-            <div class="col-12">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/contact-banner.jpg" class="img-fluid w-100" alt="Contact-banner">
-                <div class="gradient position-absolute"></div>
-            </div>
-        </div>
-    </div>
-   <div class="container-fluid m-0 py-5">
+  <?php get_template_part( 'page-templates/common/bc-banner-section' ); ?> 
+   <div class="container-fluid py-5 m-0">
      <div class="container">
        <div class="row no-gutters">
          <div class="col-lg-8">
