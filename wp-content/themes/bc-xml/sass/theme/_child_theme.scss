@@ -892,3 +892,11 @@ div, {
 	    color: $primary_color; 
 	}
 }
+
+@media only screen and (min-device-width: 767px) and (max-device-width: 1366px) {
+	.fixed-top.scrolled{
+		.bc_nav_container.menu{
+			background: #f6f4f1 !important;
+		}
+	}
+}

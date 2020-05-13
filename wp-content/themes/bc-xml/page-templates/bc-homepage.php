@@ -164,13 +164,13 @@ get_header();
     </div>
 
     <!-- background image use shortcode--->
-    <div class="container-fluid p-0 pt-5 pb-5 position-relative bc_home_section_bg who_we mt-n8" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/img/testimonials.png'); background-position: top">
+    <div class="container-fluid p-0 pt-5 pb-5 position-relative bc_home_section_bg who_we mt-n8" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/img/homepage-testimonials.png'); background-position: top">
       <div class="eagle_icon position-absolute d-none d-md-block">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/eagle.png" class="img-fluid w-100 animated">
       </div>
         <div class="container pt-5 pb-5 px-md-4">
             <div class="row pt-5">
-                <div class="col-md-12 text-center text-lg-center text-md-center pt-4 pb-md-5"><h3 class="position-relative bottom_line mb-5">Who We Are</h3></div>
+                <div class="col-md-12 text-center text-lg-center text-md-center pt-5 pb-md-5"><h3 class="position-relative bottom_line mb-5">Who We Are</h3></div>
                 <div class="col-md-7 col-12 order-2 order-md-1 mt-3 pb-5">
                   <!-- Swiper -->
                     <div class="swiper-container who_we_swiper">
