@@ -86,6 +86,7 @@ function bc_team_metabox() {
             'options' => ['Rockville, MD', 'Falls Church, VA', 'Breckenridge, CO']
         ]
     ];
+    $show_on_homepage = get_post_meta( $post->ID, 'show_on_homepage', true );
     $team_position = get_post_meta( $post->ID, 'team_position', true );
     $image = get_post_meta( $post->ID, 'bc_team_custom_image', true );
     // print_r($categories);die;
@@ -101,7 +102,14 @@ function bc_team_metabox() {
         </div>
     </div>
     <?php endforeach; ?>
-    
+    <hr>
+    <div>
+        <div>
+            <input type="hidden" name="show_on_homepage" value="false">
+            <input type="checkbox" name="show_on_homepage" value="true" <?php echo  ($show_on_homepage != 'false' ? 'checked': '')?>> Show On Home Page?
+        </div>
+    </div>
+
     <div>
         <div>
             <label><?php _e( 'Position', 'team_position' );?></label>
@@ -141,17 +149,22 @@ function bc_team_save_metabox( $post_id, $post ) {
     if ( !isset( $_POST['bc_team_custom_image'] ) ) {return $post->ID;}
     $sanitizedcustomimage = wp_filter_post_kses( $_POST['bc_team_custom_image'] );
 
-    if ( !isset( $_POST['teams'] ) ) {return $post->ID;}
-    $sanitizedteams = json_encode( $_POST['teams'] );
+    if ( isset( $_POST['teams'] ) ) {
+        $sanitizedteams = json_encode( $_POST['teams'] );
+    }
 
+    if ( isset( $_POST['locations'] ) ) {
+        $sanitizedlocations = json_encode( $_POST['locations'] );
+    }
 
-    if ( !isset( $_POST['locations'] ) ) {return $post->ID;}
-    $sanitizedlocations = json_encode( $_POST['locations'] );
+    if ( !isset( $_POST['show_on_homepage'] ) ) { return $post->ID;}
+    $sanitizedshowonhome = wp_filter_post_kses( $_POST['show_on_homepage'] );
 
     update_post_meta( $post->ID, 'team_position', $sanitizedposition );
     update_post_meta( $post->ID, 'bc_team_custom_image', $sanitizedcustomimage );
     update_post_meta( $post->ID, 'teams', $sanitizedteams );
     update_post_meta( $post->ID, 'locations', $sanitizedlocations );
+    update_post_meta( $post->ID, 'show_on_homepage', $sanitizedshowonhome );
 
 }
 
