@@ -25,7 +25,7 @@ get_header('variant-announcement-bar');?>
                 <p class="mb-0 bc_sm_text_20 bc_sm_line_height_34"> One Preserve Parkway <br> Suite 120 <br> Rockville, MD 20852 <br></p>
                 <p class="bc_text_bold mb-0 bc_sm_text_20 bc_sm_line_height_34">T: 555-555-5555</p>
                 <p class="bc_text_bold mb-0 bc_sm_text_20 bc_sm_line_height_34">F: 555-555-5555</p>
-                <a href="#" class="bc_text_bold bc_text_20 bc_line_height_34"> MAP > </a>
+                <a href="https://www.google.com/maps/dir/28.6805926,77.4587239/ROCKVILLE,+MD+One+Preserve+Parkway+Suite+120+Rockville,+MD+20852/@2.0511422,-86.7866768,3z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x89b7cd0097273a09:0x38e3cb52aadc4be1!2m2!1d-77.1486255!2d39.0656663" target="_blank" class="bc_text_bold bc_text_20 bc_line_height_34"> MAP > </a>
              </div>
              <div class="col-md-6 text-right  mb-5">
                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rockville.jpg" class="img-fluid" alt="rockville">
@@ -35,7 +35,7 @@ get_header('variant-announcement-bar');?>
                 <p class="mb-0 bc_sm_text_20 bc_sm_line_height_34"> 7600 Leesburg Pike <br> Suite 120 East <br> Falls Church, VA 22043</p>
                 <p class="bc_text_bold mb-0 bc_sm_text_20 bc_sm_line_height_34">T: 555-555-5555</p>
                 <p class="bc_text_bold mb-0 bc_sm_text_20 bc_sm_line_height_34">F: 555-555-5555</p>
-                <a href="#" class="bc_text_bold bc_text_20 bc_line_height_34"> MAP > </a>
+                <a href="https://www.google.com/maps/place/7600+Leesburg+Pike+%23120,+Falls+Church,+VA+22043,+USA/data=!4m2!3m1!1s0x89b64ad9b15ed109:0xb7e7a4b2af37d0c7?sa=X&ved=2ahUKEwirhbyonLPpAhVUAXIKHc5oBWcQ8gEwAHoECAsQAQ" target="_blank" class="bc_text_bold bc_text_20 bc_line_height_34"> MAP > </a>
              </div>
              <div class="col-md-6 text-right  mb-5">
                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/fallschurch.jpg" class="img-fluid" alt="rockville">
@@ -45,7 +45,7 @@ get_header('variant-announcement-bar');?>
                 <p class="mb-0 bc_sm_text_20 bc_sm_line_height_34"> 208 S. Ridge Street <br> P.O. Box 3813 <br> Breckenridge, CO 80424 </p>
                 <p class="bc_text_bold mb-0 bc_sm_text_20 bc_sm_line_height_34">T: 555-555-5555</p>
                 <p class="bc_text_bold mb-0 bc_sm_text_20 bc_sm_line_height_34">F: 555-555-5555</p>
-                <a href="#" class="bc_text_bold bc_text_20 bc_line_height_34"> MAP > </a>
+                <a href="https://www.google.com/maps/place/208+S+Ridge+St,+Breckenridge,+CO+80424,+USA/@39.4804752,-106.0453713,18z/data=!4m8!1m2!2m1!1sBRECKENRIDGE,+CO+208+S.+Ridge+Street+P.O.+Box+3813+Breckenridge,!3m4!1s0x876af666f7a1ce47:0x57addaa63eb7f64!8m2!3d39.4804735!4d-106.0444352" target="_blank" class="bc_text_bold bc_text_20 bc_line_height_34"> MAP > </a>
              </div>
              <div class="col-md-6 text-right mb-5">
                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/breckenridge.jpg" class="img-fluid" alt="rockville">
