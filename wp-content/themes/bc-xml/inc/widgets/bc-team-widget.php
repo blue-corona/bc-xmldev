@@ -56,7 +56,7 @@ class BC_teams_Widget extends WP_Widget {
               if ($show_on_homepage == 'true') {
         ?>
         <div class="swiper-slide text-center p-4">
-            <div class="image position-relative d-inline-block mx-auto p-3 sidebar_image_border" style="max-width:138px !important;">
+            <div class="image position-relative d-inline-block mx-auto p-3 sidebar_image_border">
             		
                     <?php if (isset($image) && !empty($image)){?>
                         <img class="img-fluid rounded-circle" style="max-width:138px !important;" src="<?php echo $image ?>">
