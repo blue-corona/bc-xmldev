@@ -613,14 +613,31 @@ div, {
 	}
 }
 .testimonials{
-	background: url(../img/testimonials.png);
+	background: url(../img/homepage-testimonials.png);
 	background-size: 100% 100%;
 	background-position: center;
 	padding-top: 140px !important;
+	position:relative;
 	@media only screen and (max-width: 740px) {
 		/*background: url(../img/testimonials-mobile.png);*/
 		background-size: cover;
 		padding-top: 100px !important;
+	}
+	.testimonial_icon{
+		top: -45%;
+	    width: 41%;
+	    left: -8%;
+	}
+	&:before{
+		content: "";
+	    background: #ffffff;
+	    width: 100%;
+	    height: 156px;
+	    position: absolute;
+	    top: -90px;
+	    left: 0px;
+	    z-index: 999;
+	    transform: skewY(-4deg);
 	}
 }
 .Filter_btn{
@@ -885,11 +902,16 @@ div, {
 }
 .bullete_style{
 	list-style:none;
-	svg{
-		width: 10px !important;
-	    height: 10px;
-	    vertical-align: middle;
-	    color: $primary_color; 
+	li{
+		position:relative;
+		&:before{
+			content: "\f111";
+		    font-size: 10px;
+		    vertical-align: middle;
+		    color: #666d89;
+		    font-family: "Font Awesome 5 Free";
+		    font-weight: 900;
+		}
 	}
 }
 
