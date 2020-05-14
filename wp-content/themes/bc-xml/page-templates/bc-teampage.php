@@ -178,7 +178,7 @@ get_header();?>
         $scope.filter[filterName].splice(0,1);
       }
 
-      $scope.filter[filterName].push(filterValue);
+      $scope.filter[filterName] = [filterValue];
     }
 
     $scope.resetFilter();
