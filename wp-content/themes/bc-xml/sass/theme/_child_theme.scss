@@ -792,7 +792,7 @@ div, {
 	}
 	.how_we_pagination{
 		top: auto !important;
-		bottom:60px !important;
+		bottom:45px !important;
 	}
 }
 
@@ -854,6 +854,7 @@ div, {
 }
 
 .image_border{
+	border-radius: 100%;
 	&:before{
 		background-image: url(../img/img-border.png);
 	    background-size: 100%;
@@ -863,6 +864,9 @@ div, {
 	    background-repeat: no-repeat;
 	    border: none;
 	    border-radius: 0;
+	}
+	img{
+		border-radius: 100%;
 	}
 }
 .sidebar_image_border{

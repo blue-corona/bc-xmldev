@@ -9098,7 +9098,7 @@ ul.gform_fields li::before {
   margin-top: -16rem; }
   @media only screen and (max-width: 767px) {
     .mt-n8 {
-      margin-top: -12.9rem; } }
+      margin-top: -15.5rem; } }
 
 .mt-n9 {
   margin-top: -13rem; }
@@ -9792,7 +9792,7 @@ div {
     min-height: 110px; }
   .how_we_pagination {
     top: auto !important;
-    bottom: 60px !important; } }
+    bottom: 45px !important; } }
 
 .who_we_head {
   padding: 115px 0px;
@@ -9839,15 +9839,19 @@ div {
   width: 33%;
   left: -60px; }
 
-.image_border:before {
-  background-image: url(../img/img-border.png);
-  background-size: 100%;
-  top: 0px;
-  width: 72%;
-  left: 0px;
-  background-repeat: no-repeat;
-  border: none;
-  border-radius: 0; }
+.image_border {
+  border-radius: 100%; }
+  .image_border:before {
+    background-image: url(../img/img-border.png);
+    background-size: 100%;
+    top: 0px;
+    width: 72%;
+    left: 0px;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 0; }
+  .image_border img {
+    border-radius: 100%; }
 
 .sidebar_image_border:before {
   background-image: url(../img/sidebar-img-border.png);
