@@ -49,19 +49,17 @@ class BC_teams_Widget extends WP_Widget {
 	            while($query->have_posts()) : $query->the_post();
 	        $title = get_post_meta( get_the_ID(), 'teams_title', true );
 	        $message = get_post_meta( get_the_ID(), 'teams_message', true );
-	      $image = get_post_meta( get_the_id(), 'bc_team_custom_image', true );
-
+	         $image = get_post_meta( get_the_id(), 'bc_team_custom_image', true );
 	          $team_position = get_post_meta( get_the_id(), 'team_position', true );
         ?>
         <div class="swiper-slide text-center p-4">
             <div class="image position-relative d-inline-block mx-auto p-3 sidebar_image_border">
-            		<?php if (has_post_thumbnail() ){
-                    $image = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_id()), 'full' );?>
-                    	<img class="img-fluid" src="<?php echo $image[0]; ?>">
-	                <?php }else{
-	                    echo '<img class="img-fluid" src="https://placehold.it/190x242">';
-	                }?>
-                <!-- <img src="<?php echo $image;?>"  class="img-fluid" alt="Contact-banner"> -->
+            		
+                    <?php if (isset($image) && !empty($image)){?>
+                        <img class="img-fluid" src="<?php echo $image ?>">
+                      <?php }else{
+                        echo '<img class="img-fluid" src="https://placehold.it/95x98">';
+                      }?>
             </div>
              <span class="position-relative bottom_line_2 bc_color_primary bc_text_24 bc_line_height_50 bc_font_alt_1 bc_text_bold d-block"><?php the_title();?><sup>®</sup> </span>
             <span class="bc_color_secondary bc_text_24 bc_line_height_50 bc_font_alt_1 d-block mt-2"><?php echo $team_position;?></span>
