@@ -12,6 +12,9 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 ?>
+<?php 
+$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+query_posts(['post_type'=>'bc_events','paged' => $paged]);?>
 <main>
 	<div class="container-fluid px-0 m-0 subpage_banner mt-5 mt-lg-0">
 	  <div class="row no-gutters">
@@ -26,11 +29,11 @@ get_header();
 		<div class="container">
 		  <div class="row no-gutters">
 		    <div class="col-lg-8 sub_page_sidebar">
-		      <h1>Our Blogss</h1>
+		      <h1>Events</h1>
 		     	<?php 
 		     	if ( have_posts() ) :
 		     		while ( have_posts() ) : the_post();
-		     			get_template_part( 'loop-templates/content', get_post_format() );
+		     			get_template_part( 'loop-templates/content-team', get_post_format() );
 					endwhile; else :
 					get_template_part( 'loop-templates/content', 'none' );
 				endif;
@@ -46,4 +49,6 @@ get_header();
 	</div>
 	<?php get_template_part( 'page-templates/common/wondering-if-there' ); ?> 
 </main>
+
 <?php get_footer(); ?>
+
