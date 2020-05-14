@@ -22,7 +22,7 @@
                                 <p class="bc_color_secondary bc_text_16 bc_font_alt_1 d-block mt-2 text-center bc_line_height_40 bc_text_normal">CEO & Co-founder</p>
                             </div>
                           </div>
-                          <!-- <div class="swiper-slide">
+                          <div class="swiper-slide">
                             <div class="px-4">
                               <div class="text-center">
                                 <div class="image position-relative d-inline-block mx-auto p-2 image_border">
@@ -65,7 +65,7 @@
                               <span class="position-relative bottom_line_2 bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center client_name">Rob Kantor</span>
                               <p class="bc_color_secondary bc_text_16 bc_font_alt_1 d-block mt-2 text-center bc_line_height_40 bc_text_normal">CIO & Co-founder</p>
                             </div>
-                          </div> -->
+                          </div>
                           
                         </div>
                         <!-- Add Pagination -->

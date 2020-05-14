@@ -27,16 +27,16 @@ get_header();?>
         <div class="container">
             <div class="row no-gutters">
                 <div class="col-lg-12">
+
                   <!-- <h2><?php //the_title()?></h2> -->
-                   <p> <?php 
-                    if ( have_posts() ) :
+                   <?php 
+                    /*if ( have_posts() ) :
                     while ( have_posts() ) :  the_post();
                         the_content();
                     endwhile;
-                    endif;
+                    endif;*/
                     ?> 
-
-              </p>
+              
                   <h1>Starting out - Solid Foundation</h1>
                     <p>Great work considering how best to position yourself for the future. We get that yes, someday, you want to retire, but there are also things you want to do now. You aren’t living for a future retirement, but rather want to maximize your entire life. We can work thru that together, building on lessons learned from others in a similar situation, but making it your own.</p>
 
@@ -53,6 +53,7 @@ get_header();?>
                       <h2>Community Members</h2>
                       <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
                     </div> 
+                    
                 </div> 
 
               <!-- Community Members -->
