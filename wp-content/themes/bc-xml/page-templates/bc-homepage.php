@@ -58,7 +58,7 @@ get_header();
       <?php get_template_part( 'page-templates/common/who-we-are' ); ?>
 
    <!-- Wondering if there might be something more you and -->
-     <?php get_template_part( 'page-templates/common/Wondering-if-there' ); ?> 
+     <?php get_template_part( 'page-templates/common/wondering-if-there' ); ?> 
 
     
     <?php 
