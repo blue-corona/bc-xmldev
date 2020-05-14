@@ -25,7 +25,7 @@ get_header('variant-announcement-bar');?>
                 <p class="mb-0 bc_sm_text_20 bc_sm_line_height_34"> One Preserve Parkway <br> Suite 120 <br> Rockville, MD 20852 <br></p>
                 <p class="bc_text_bold mb-0 bc_sm_text_20 bc_sm_line_height_34">T: 555-555-5555</p>
                 <p class="bc_text_bold mb-0 bc_sm_text_20 bc_sm_line_height_34">F: 555-555-5555</p>
-                <a href="https://www.google.com/maps/dir/28.6805926,77.4587239/ROCKVILLE,+MD+One+Preserve+Parkway+Suite+120+Rockville,+MD+20852/@2.0511422,-86.7866768,3z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x89b7cd0097273a09:0x38e3cb52aadc4be1!2m2!1d-77.1486255!2d39.0656663" target="_blank" class="bc_text_bold bc_text_20 bc_line_height_34"> MAP > </a>
+                <a href="https://www.google.com/maps/place/XML+Financial+Group/@39.0656663,-77.1508142,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7cd0097273a09:0x38e3cb52aadc4be1!8m2!3d39.0656663!4d-77.1486255" target="_blank" class="bc_text_bold bc_text_20 bc_line_height_34"> MAP > </a>
              </div>
              <div class="col-md-6 text-right  mb-5">
                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rockville.jpg" class="img-fluid" alt="rockville">
