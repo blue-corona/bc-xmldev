@@ -51,6 +51,7 @@ class BC_teams_Widget extends WP_Widget {
 	        $message = get_post_meta( get_the_ID(), 'teams_message', true );
 	         $image = get_post_meta( get_the_id(), 'bc_team_custom_image', true );
 	          $team_position = get_post_meta( get_the_id(), 'team_position', true );
+	          $show_on_homepage = get_post_meta( get_the_id(), 'show_on_homepage', true );
 	          if ($show_on_homepage == 'true') {
         ?>
         <div class="swiper-slide text-center p-4">
