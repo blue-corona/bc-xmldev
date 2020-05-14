@@ -8232,8 +8232,7 @@ main a {
   color: #4f9808; }
 
 li {
-  line-height: 40px;
-  text-transform: lowercase; }
+  line-height: 40px; }
 
 .bc_color_primary {
   color: #666d89 !important; }
@@ -9588,7 +9587,7 @@ div {
 
 .graphic_lines {
   background: url(../img/lines-graphic.png);
-  background-size: 100% 100%;
+  background-size: 110% 100%;
   background-position: center;
   padding-top: 140px; }
   @media only screen and (max-width: 740px) {
