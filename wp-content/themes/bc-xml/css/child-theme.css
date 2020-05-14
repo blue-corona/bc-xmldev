@@ -9741,13 +9741,17 @@ div {
       margin-top: -4.6rem; } }
   @media only screen and (max-width: 500px) {
     .what_we_do {
-      margin-top: -3.8rem; } }
+      margin-top: -3.7rem; } }
   .what_we_do .what_we_video {
     border: 1px solid #fff;
     -webkit-box-shadow: 13px 13px 0px #cbb893;
             box-shadow: 13px 13px 0px #cbb893;
     -webkit-transition: all ease 0.5s;
     transition: all ease 0.5s; }
+    @media only screen and (max-width: 767px) {
+      .what_we_do .what_we_video {
+        -webkit-box-shadow: 8px 8px 0px #cbb893;
+                box-shadow: 8px 8px 0px #cbb893; } }
     .what_we_do .what_we_video span {
       z-index: 9; }
     .what_we_do .what_we_video img {
@@ -9906,5 +9910,17 @@ h3.card-title {
     top: 0px;
     margin: 0px !important;
     right: 15px; }
+
+.graphic_lines h2 {
+  text-transform: inherit; }
+
+.how_we_swiper sup {
+  width: 7px;
+  height: 7px;
+  border: 1px solid #1d1817;
+  border-radius: 100%;
+  display: inline-block;
+  top: -13px;
+  left: -4px; }
 
 /*# sourceMappingURL=child-theme.css.map */
