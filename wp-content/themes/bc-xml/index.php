@@ -17,32 +17,21 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 ?>
 <main>
-				<div class="container-fluid px-0 m-0 subpage_banner">
-			   <div class="row no-gutters">
-			            <div class="col-12"
-			 <?php if (has_post_thumbnail() ) 
-			{ 
-			    $image = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_id() ), 'single-post-thumbnail' ); ?> style="min-height:391px;background-repeat: no-repeat; background-image: url('<?php echo $image[0]; ?>');"
-			     <?php 
-			 }
-			 else
-			 {
-			  ?> 
-			    style="min-height:391px; background-repeat: no-repeat;background-image: url('<?php echo get_stylesheet_directory_uri();?>/img/contact-banner.jpg');" 
-			    <?php 
-			}
-			    ?>>
-			   
-			</div>
-			</div>
-			</div>
+	<div class="container-fluid px-0 m-0 subpage_banner mt-5 mt-lg-0">
+	  <div class="row no-gutters">
+	    <div class="col-12 position-relative">  
+	      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/contact-banner.jpg" class="img-fluid w-100" alt="Contact-banner">
+	      <div class="gradient position-absolute"></div>
+	    </div>
+	  </div>
+	</div>
 
-
-  <div class="container-fluid py-5 m-0">
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="col-lg-8">
-                   <?php 
+	<div class="container-fluid py-5 m-0">
+		<div class="container">
+		  <div class="row no-gutters">
+		    <div class="col-lg-8">
+		      <h1>Our Blog</h1>
+		     	<?php 
 		     	if ( have_posts() ) :
 		     		while ( have_posts() ) : the_post();
 		     			get_template_part( 'loop-templates/content', get_post_format() );
@@ -58,13 +47,8 @@ get_header();
 		    <!-- right sidebar ends -->
 		  </div>
 		</div>
-	</div> 
-	<!-- Coupon starts -->
-	<?php get_template_part( 'page-templates/common/coupons' ); ?>
-                </div>
-               
-            </div>
-        </div>
-    </div>
+	</div>
+	<?php get_template_part( 'page-templates/common/wondering-if-there' ); ?> 
 </main>
 <?php get_footer()?>
+
