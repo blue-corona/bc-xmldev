@@ -134,11 +134,13 @@ add_shortcode('header_menu_logo', 'bc_logo_shortcode_for_menu');
 function bc_logo_shortcode_for_menu($atts) {
  $logo =  bc_get_theme_mod('bc_theme_options', 'bc_logo_upload',false, get_template_directory_uri().'/img/logo.png');
     ob_start();
-    if(isset($logo)){
-        echo '<img src="'.$logo.'" class="img-fluid d-none d-lg-block"/>';
-    }
+    if(isset($logo)){ ?>
+        <img src="<?php echo get_stylesheet_directory_uri().'/img/XML-Logo.png';?>" class="bc_branding_logo" alt="logo" style="max-width:<?php echo bc_get_theme_mod('bc_theme_options', 'bc_max_width',false, 200);?>px" srcset="<?php echo get_stylesheet_directory_uri().'/img/XML-Logo.png@2x.png';?> 2x, <?php echo get_stylesheet_directory_uri().'/img/XML-Logo.png@3x.png';?> 3x">
+        <!-- echo '<img src="'.$logo.'" srcset="'.get_template_directory_uri().'/img/logo1x.png 1x, " class="img-fluid d-none d-lg-block"/>'; -->
+    <?php }
     return ob_get_clean();
 }
+
 add_filter('wp_nav_menu_items', 'do_shortcode');
 
 //shortcode for background img
