@@ -21,6 +21,9 @@
               $image = get_post_meta( get_the_id(), 'bc_team_custom_image', true );
 
               $team_position = get_post_meta( get_the_id(), 'team_position', true );
+              $show_on_homepage = get_post_meta( get_the_id(), 'show_on_homepage', true );
+              // print_r($show_on_homepage);die('ss');
+              if ($show_on_homepage == 'true') {
               ?>
               <div class="swiper-slide">
                 <div class="px-4">
@@ -39,6 +42,7 @@
                 </div>
               </div>
               <?php
+              }
             endwhile; 
             wp_reset_query();
           endif;
