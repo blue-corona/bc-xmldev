@@ -188,14 +188,14 @@ function bc_podcast_custom_post_type() {
         'not_found'           => __( 'Not Found', 'bc-xml' ),
         'not_found_in_trash'  => __( 'Not found in Trash', 'bc-xml' ),
     );
-    
+
     $args = array(
         'label'               => __( 'Podcasts', 'bc-xml' ),
         'description'         => __( 'postcast', 'bc-xml' ),
         'labels'              => $labels,
         'supports'            => array( 'title', 'editor', 'thumbnail', 'excerpt', 'page-attributes'),
         'taxonomies'          => array( 'genres' ),
-        'rewrite' => array( 'has_front' => false ,'slug' => 'podcast'),
+        'rewrite' => array( 'has_front' => false ,'slug' => 'podcasts'),
         'hierarchical'        => true,
         'public'              => true,
         'show_ui'             => true,
