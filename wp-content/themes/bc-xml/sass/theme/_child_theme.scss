@@ -618,9 +618,9 @@ div, {
 	background-position: center;
 	padding-top: 140px !important;
 	position:relative;
-	margin-top: 60px;
+	margin-top: 6rem;
 	@media only screen and (max-width: 1024px) {
-		margin-top: 100px;
+		margin-top: 4rem;
 	}
 	@media only screen and (max-width: 740px) {
 		/*background: url(../img/testimonials-mobile.png);*/
@@ -629,27 +629,27 @@ div, {
 		margin-top:0px;
 	}
 	.testimonial_icon{
-		top: -45%;
-	    width: 41%;
-	    left: -8%;
+		top: -10rem;
+    	width: 41%;
+    	left: -10rem;
 	    @media only screen and (max-width: 1024px) {
-	    	top:-15%;
-	    }
+	    	top: -1rem;
+    		left: -5rem;	    }
 	}
 	&:before{
 		content: "";
-	    background: #ffffff;
+	    background: #fff;
 	    width: 100%;
-	    height: 180px;
+	    height: 13rem;
 	    position: absolute;
-	    top: -90px;
-	    left: 0px;
+	    top: -8rem;
+	    left: 0;
 	    z-index: 999;
 	    transform: skewY(-4deg);
 	    @media only screen and (max-width: 1024px) {
 	    	transform: skewY(-8deg);
-	    	height: 180px;
-		    top: -110px;
+    		height: 13rem;
+    		top: -4rem;
 	    }
 	    @media only screen and (max-width: 768px) {
 		    transform: skewY(-13deg);
@@ -789,21 +789,16 @@ div, {
 	}
 	.how_we_pagination{
 		top: auto !important;
-		bottom:90px !important;
+		bottom:60px !important;
 	}
 }
-@media only screen and (max-width: 440px) {
-	.how_we_pagination{
-		top: auto !important;
-		bottom:115px !important;
-	}
-}
+
 .who_we_head {
     padding: 115px 0px;
     z-index: 9;
     @media only screen and (max-width: 767px) {
     	padding:50px 0px 115px;
-    	margin-top:-5rem;
+    	margin-top:-1rem;
     }
 }
 .who_we{
@@ -910,9 +905,7 @@ div, {
 	z-index:1031 !important;
 }
 .light_text{
-	@media only screen and (max-width: 767px) {
-    	 	opacity:0.6;
-    }
+    opacity:0.6;
 }
 
 .form{
@@ -921,21 +914,22 @@ div, {
 		padding-right:0px !important;
 	}
 }
-.bullete_style{
-	list-style:none;
+
+main{
 	li{
+		list-style:none;
 		position:relative;
 		&:before{
 			content: "\f111";
-		    font-size: 10px;
-		    vertical-align: middle;
-		    color: #666d89;
-		    font-family: "Font Awesome 5 Free";
-		    font-weight: 900;
-		    margin-right: 5px;
+			font-size: 10px;
+			vertical-align: middle;
+			color: #666d89;
+			font-family: "Font Awesome 5 Free";
+			font-weight: 900;
+			margin-right: 5px;
 		}
 	}
-}
+}	
 
 @media only screen and (min-device-width: 767px) and (max-device-width: 1366px) {
 	.fixed-top.scrolled{

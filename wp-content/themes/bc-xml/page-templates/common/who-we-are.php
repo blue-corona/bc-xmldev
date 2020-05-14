@@ -5,7 +5,7 @@
   <div class="container pt-5 pb-0 px-md-4">
     <div class="row pt-5">
       <div class="col-md-12 text-center text-lg-center text-md-center pt-5 pb-md-5"><h3 class="position-relative bottom_line pt-4 mb-5">Who We Are</h3></div>
-      <div class="col-md-7 col-12 order-2 order-md-1 mt-3 pb-5">
+      <div class="col-xl-7 col-12 order-2 order-xl-1 mt-3 pb-5">
         <!-- Swiper -->
         <div class="swiper-container who_we_swiper">
           <div class="swiper-wrapper mb-5">
@@ -62,7 +62,7 @@
                         <a  href="<?php echo get_home_url();?>" class="btn_secondary px-4 py-2 mt-4 mb-5 ">FULL TEAM</a>
                       </div>
                     </div>
-                    <div class="col-md-5 order-1 order-md-2 mt-3 pb-md-0 pb-3 text-center text-md-left team_text px-md-5">
+                    <div class="col-xl-5 order-1 order-xl-2 mt-3 pb-md-0 pb-3 text-center text-xl-left team_text px-md-5">
                       <div class="px-md-3">
                         <h2>A Team of Passionate Experts</h2>
                         <p>With roots back to 1981 XML has been passionate about assembling a team of experts not just in money management but also in listening and in sincere care for our client's well being. We currently have CFPs, CRPCs, MBAs working to improve our Client's lives.</p>
