@@ -272,8 +272,11 @@ global $post;
 }
 function bc_events_overlay() {
 global $post;
-$title = get_post_meta( $post->ID, 'bc_event_when', true );?>
-<textarea class="form-control" rows="6" cols="85" name="bc_event_when" id="title"><?= $title ?></textarea>
+$when = get_post_meta( $post->ID, 'bc_event_when', true );
+$where = get_post_meta( $post->ID, 'bc_event_where', true );
+?>
+<textarea placeholder="when" class="form-control" rows="2" cols="50" name="bc_event_when" id="when"><?= $when; ?></textarea>
+<textarea placeholder="where" class="form-control" rows="2" cols="50" name="bc_event_where" id="where"><?= $where; ?></textarea>
 <?php
 wp_nonce_field( 'bc_event_when_metabox_nonce', 'bc_events_when_data' );
 }
@@ -290,6 +293,11 @@ function bc_save_events_fields( $post_id, $post ) {
     if ( !isset( $_POST['bc_event_when'] ) ) {
         return $post->ID;
     }
-    $sanitizedtitle = wp_filter_post_kses( $_POST['bc_event_when'] );
-    update_post_meta( $post->ID, 'bc_event_when', $sanitizedtitle );
+    if ( !isset( $_POST['bc_event_where'] ) ) {
+        return $post->ID;
+    }
+    $sanitizedwhen = wp_filter_post_kses( $_POST['bc_event_when'] );
+    $sanitizedwhere = wp_filter_post_kses( $_POST['bc_event_where'] );
+    update_post_meta( $post->ID, 'bc_event_when', $sanitizedwhen );
+    update_post_meta( $post->ID, 'bc_event_where', $sanitizedwhere );
 }

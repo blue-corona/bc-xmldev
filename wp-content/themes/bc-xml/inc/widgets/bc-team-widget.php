@@ -51,6 +51,9 @@ class BC_teams_Widget extends WP_Widget {
 	        $message = get_post_meta( get_the_ID(), 'teams_message', true );
 	         $image = get_post_meta( get_the_id(), 'bc_team_custom_image', true );
 	          $team_position = get_post_meta( get_the_id(), 'team_position', true );
+	          $show_on_homepage = get_post_meta( get_the_id(), 'show_on_homepage', true );
+              // print_r($show_on_homepage);die('ss');
+              if ($show_on_homepage == 'true') {
         ?>
         <div class="swiper-slide text-center p-4">
             <div class="image position-relative d-inline-block mx-auto p-3 sidebar_image_border">
@@ -64,6 +67,7 @@ class BC_teams_Widget extends WP_Widget {
              <span class="position-relative bottom_line_2 bc_color_primary bc_text_24 bc_line_height_50 bc_font_alt_1 bc_text_bold d-block"><?php the_title();?><sup>®</sup> </span>
             <span class="bc_color_secondary bc_text_24 bc_line_height_50 bc_font_alt_1 d-block mt-2"><?php echo $team_position;?></span>
         </div>
+    <?php }?>
 		 <?php
 		endwhile; 
 		wp_reset_query();
