@@ -135,7 +135,7 @@ function bc_logo_shortcode_for_menu($atts) {
  $logo =  bc_get_theme_mod('bc_theme_options', 'bc_logo_upload',false, get_template_directory_uri().'/img/logo.png');
     ob_start();
     if(isset($logo)){ ?>
-<img src="<?php echo bc_get_theme_mod('bc_theme_options', 'bc_logo_upload',false,  get_stylesheet_directory_uri().'/img/XML-Logo.png');?>" class="bc_branding_logo" alt="logo" style="max-width:<?php echo bc_get_theme_mod('bc_theme_options', 'bc_max_width',false, 200);?>px" srcset="<?php echo get_stylesheet_directory_uri().'/img/XML-Logo.png@2x.png';?> 2x, <?php echo get_stylesheet_directory_uri().'/img/XML-Logo.png@3x.png';?> 3x">
+<img src="<?php echo bc_get_theme_mod('bc_theme_options', 'bc_logo_upload',false,  get_stylesheet_directory_uri().'/img/XML-Logo.png');?>" class="bc_branding_logo" alt="logo" style="max-width:<?php echo bc_get_theme_mod('bc_theme_options', 'bc_max_width' ,'no_hover_underline',false, 200);?>px" srcset="<?php echo get_stylesheet_directory_uri().'/img/XML-Logo.png@2x.png';?> 2x, <?php echo get_stylesheet_directory_uri().'/img/XML-Logo.png@3x.png';?> 3x">
 
       
     <?php }
