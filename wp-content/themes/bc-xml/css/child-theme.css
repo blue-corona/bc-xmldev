@@ -9627,16 +9627,24 @@ div {
   background-size: 100% 100%;
   background-position: center;
   padding-top: 140px !important;
-  position: relative; }
+  position: relative;
+  margin-top: 60px; }
+  @media only screen and (max-width: 1024px) {
+    .testimonials {
+      margin-top: 100px; } }
   @media only screen and (max-width: 740px) {
     .testimonials {
       /*background: url(../img/testimonials-mobile.png);*/
       background-size: cover;
-      padding-top: 100px !important; } }
+      padding-top: 100px !important;
+      margin-top: 0px; } }
   .testimonials .testimonial_icon {
     top: -45%;
     width: 41%;
     left: -8%; }
+    @media only screen and (max-width: 1024px) {
+      .testimonials .testimonial_icon {
+        top: -15%; } }
   .testimonials:before {
     content: "";
     background: #ffffff;
@@ -9648,6 +9656,21 @@ div {
     z-index: 999;
     -webkit-transform: skewY(-4deg);
             transform: skewY(-4deg); }
+    @media only screen and (max-width: 1024px) {
+      .testimonials:before {
+        -webkit-transform: skewY(-8deg);
+                transform: skewY(-8deg);
+        height: 180px;
+        top: -110px; } }
+    @media only screen and (max-width: 768px) {
+      .testimonials:before {
+        -webkit-transform: skewY(-13deg);
+                transform: skewY(-13deg);
+        height: 180px;
+        top: -85px; } }
+    @media only screen and (max-width: 740px) {
+      .testimonials:before {
+        display: none; } }
 
 .Filter_btn {
   border: none;
