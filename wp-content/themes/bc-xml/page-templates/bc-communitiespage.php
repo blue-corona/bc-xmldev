@@ -41,13 +41,13 @@ get_header();?>
                     <p>Great work considering how best to position yourself for the future. We get that yes, someday, you want to retire, but there are also things you want to do now. You aren’t living for a future retirement, but rather want to maximize your entire life. We can work thru that together, building on lessons learned from others in a similar situation, but making it your own.</p>
 
                     <ul class="bullete_style pl-5">
-                        <li><i class="fas fa-circle"></i> How to I balance retirement, investing, paying off debt and maybe buying a home? 
-                        <li><i class="fas fa-circle"></i> Which type of retirement account is right for me?</li>
-                        <li><i class="fas fa-circle"></i> How do we make sense of our company benefits?</li>
-                        <li><i class="fas fa-circle"></i> Do I really need to think about insurance?</li>
-                        <li><i class="fas fa-circle"></i> How does anyone afford to have kids?!</li>
-                        <li><i class="fas fa-circle"></i> Daycare is so expensive, should one of us stay home?</li>
-                        <li><i class="fas fa-circle"></i> Can I be a little frivolous and travel? </li>
+                        <li> How to I balance retirement, investing, paying off debt and maybe buying a home? 
+                        <li> Which type of retirement account is right for me?</li>
+                        <li> How do we make sense of our company benefits?</li>
+                        <li> Do I really need to think about insurance?</li>
+                        <li> How does anyone afford to have kids?!</li>
+                        <li> Daycare is so expensive, should one of us stay home?</li>
+                        <li> Can I be a little frivolous and travel? </li>
                     </ul>
                     <div class="mt-5 py-5 border-top">
                       <h2>Community Members</h2>

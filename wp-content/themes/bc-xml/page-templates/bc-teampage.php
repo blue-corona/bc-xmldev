@@ -57,7 +57,7 @@ get_header();?>
             <div class="row m-0">
                          
              
-              <div class="col-lg-4 mt-5" ng-repeat="member in team track by $index">
+              <div class="col-lg-4 mt-5" ng-repeat="member in team track by $index" ng-show="filterMembers(member)                                                                        ">
                 <div class="members px-3 pt-3 pb-4 border position-relative overflow-hidden">
                     <div class="">
                       <img class="img-fluid" src="{{member.thumbnail}}">
@@ -95,11 +95,13 @@ get_header();?>
     $team = [];
     if($loop->have_posts()) {
       while($loop->have_posts()) : $loop->the_post();
+        $teams = json_decode(get_post_meta( get_the_id(), 'teams', true ));
+        $locations = json_decode(get_post_meta( get_the_id(), 'locations', true ));
         $member = [
           'team_position' => get_post_meta( get_the_id(), 'team_position', true ),
           'permalink' => get_the_permalink(),
-          'team' => get_post_meta( get_the_id(), 'team', true ),
-          'location' => get_post_meta( get_the_id(), 'location', true ),
+          'teams' => $teams == null ? []: $teams,
+          'locations' => $locations == null ? []: $locations,
           'title' => get_the_title() 
         ];
         if (has_post_thumbnail() ){
@@ -115,7 +117,6 @@ get_header();?>
   ?>
 
   var teamMembers = <?php echo json_encode($team); ?>;
-    
   var teamApp = angular.module('teamApp', []);
 
   // Defining the `TeamController` controller on the `teamApp` module
@@ -130,6 +131,21 @@ get_header();?>
 
     $scope.team = $window.teamMembers;
 
+    $scope.filterMembers = function(member){
+      if(angular.equals($scope.filter,$scope.defaultFilter)){
+        return true;
+      }
+      commonTeam = $scope.filter['team'].filter(value => member['teams'].includes(value));
+      commonLocation = $scope.filter['location'].filter(value => member['locations'].includes(value));
+      
+      if((commonTeam.length > 0 && commonLocation.length > 0) 
+        || ($scope.filter.team[0] == 'All' && commonLocation.length > 0) 
+        || (commonTeam.length > 0 && $scope.filter.location[0] == 'All')){
+        return true;
+      }
+      return false;
+
+    }
 
     $scope.resetFilter = function(){
       $scope.filter = angular.copy($scope.defaultFilter);
@@ -162,7 +178,7 @@ get_header();?>
         $scope.filter[filterName].splice(0,1);
       }
 
-      $scope.filter[filterName].push(filterValue);
+      $scope.filter[filterName] = [filterValue];
     }
 
     $scope.resetFilter();
