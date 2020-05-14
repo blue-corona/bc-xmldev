@@ -6160,6 +6160,7 @@ button.bg-dark:focus {
   position: fixed !important; }
 
 .position-sticky {
+  position: -webkit-sticky !important;
   position: sticky !important; }
 
 .fixed-top {
@@ -6176,8 +6177,9 @@ button.bg-dark:focus {
   left: 0;
   z-index: 1030; }
 
-@supports (position: sticky) {
+@supports ((position: -webkit-sticky) or (position: sticky)) {
   .sticky-top {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020; } }
@@ -8230,8 +8232,7 @@ main a {
   color: #4f9808; }
 
 li {
-  line-height: 40px;
-  text-transform: lowercase; }
+  line-height: 40px; }
 
 .bc_color_primary {
   color: #666d89 !important; }
@@ -8803,7 +8804,7 @@ ul.gform_fields li::before {
     top: 0px !important;
     z-index: 10 !important;
     background: #f6f4f1 !important; }
-  .navbar-nav li .img-fluid {
+  .navbar-nav li .bc_branding_logo {
     display: none !important; }
   .close_btn {
     display: block !important;
@@ -9097,7 +9098,7 @@ ul.gform_fields li::before {
   margin-top: -16rem; }
   @media only screen and (max-width: 767px) {
     .mt-n8 {
-      margin-top: -12.9rem; } }
+      margin-top: -15.5rem; } }
 
 .mt-n9 {
   margin-top: -13rem; }
@@ -9586,7 +9587,7 @@ div {
 
 .graphic_lines {
   background: url(../img/lines-graphic.png);
-  background-size: 100% 100%;
+  background-size: 110% 100%;
   background-position: center;
   padding-top: 140px; }
   @media only screen and (max-width: 740px) {
@@ -9791,7 +9792,7 @@ div {
     min-height: 110px; }
   .how_we_pagination {
     top: auto !important;
-    bottom: 60px !important; } }
+    bottom: 45px !important; } }
 
 .who_we_head {
   padding: 115px 0px;
@@ -9838,15 +9839,19 @@ div {
   width: 33%;
   left: -60px; }
 
-.image_border:before {
-  background-image: url(../img/img-border.png);
-  background-size: 100%;
-  top: 0px;
-  width: 72%;
-  left: 0px;
-  background-repeat: no-repeat;
-  border: none;
-  border-radius: 0; }
+.image_border {
+  border-radius: 100%; }
+  .image_border:before {
+    background-image: url(../img/img-border.png);
+    background-size: 100%;
+    top: 0px;
+    width: 72%;
+    left: 0px;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 0; }
+  .image_border img {
+    border-radius: 100%; }
 
 .sidebar_image_border:before {
   background-image: url(../img/sidebar-img-border.png);
