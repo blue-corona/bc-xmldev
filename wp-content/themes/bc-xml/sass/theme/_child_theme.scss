@@ -943,3 +943,14 @@ div, {
 		}
 	}
 }
+
+h3.card-title {
+    position: relative;
+    padding-right: 30px;
+    svg {
+	    position: absolute;
+	    top: 0px;
+	    margin: 0px !important;
+	    right: 15px;
+	}
+}

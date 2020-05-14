@@ -9903,4 +9903,13 @@ div {
   .fixed-top.scrolled .bc_nav_container.menu {
     background: #f6f4f1 !important; } }
 
+h3.card-title {
+  position: relative;
+  padding-right: 30px; }
+  h3.card-title svg {
+    position: absolute;
+    top: 0px;
+    margin: 0px !important;
+    right: 15px; }
+
 /*# sourceMappingURL=child-theme.css.map */
