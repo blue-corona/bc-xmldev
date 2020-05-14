@@ -1,28 +1,28 @@
 <?php
 /*Custom widget*/
-// BC Footer Menuone Widget
-class BC_Footer_Menuone_widget extends WP_Widget {
+// BC Footer Menutwo Widget
+class BC_Footer_Menutwo_widget extends WP_Widget {
 
    
     public function __construct() {
 
-        $id = 'BC_Footer_Menuone_widget';
-        $title = esc_html__('BC Navigation Menu (Footer)', 'bc-footer-menuone-custom-widget');
+        $id = 'BC_Footer_Menutwo_widget';
+        $title = esc_html__('BC Navigation Mobile Menu (Footer)', 'bc-footer-menutwo-custom-widget');
         $options = array(
-            'classname' => 'bc-footer-menuone-markup-widget',
-            'description' => esc_html__('Add Custom HTML in inputbox', 'bc-footer-menuone-custom-widget')
+            'classname' => 'bc-footer-menutwo-markup-widget',
+            'description' => esc_html__('Add Custom HTML in inputbox', 'bc-footer-menutwo-custom-widget')
         );
         parent::__construct( $id, $title, $options );
     }
 
     /**
-     * Outputs the content for the current Navigation Menu widget instance.
+     * Outputs the content for the current Navigation Mobile Menu widget instance.
      *
      * @since 3.0.0
      *
      * @param array $args     Display arguments including 'before_title', 'after_title',
      *                        'before_widget', and 'after_widget'.
-     * @param array $instance Settings for the current Navigation Menu widget instance.
+     * @param array $instance Settings for the current Navigation Mobile Menu widget instance.
      */
     public function widget( $args, $instance ) { 
 
@@ -49,7 +49,7 @@ class BC_Footer_Menuone_widget extends WP_Widget {
         $menu_items = wp_get_nav_menu_items($menu);
         if(isset($menu_items) && !empty($menu_items)):
 
-        echo '<div class="col-lg-2 d-none d-lg-block pl-lg-2 mt-5 mt-md-0">';
+        echo '<div class="col-lg-2 mt-4 d-md-none text-center mt-5 mt-md-0">';
         if ( $title ) {
             echo '<span class="d-block bc_text_26 bc_line_height_26 bc_font_default bc_text_light bc_color_primary">'.$title.'</span>';
             // echo $args['before_title'] . $title . $args['after_title'];
@@ -57,7 +57,7 @@ class BC_Footer_Menuone_widget extends WP_Widget {
 
         ?>
         <?php foreach ($menu_items as $key => $value) {?>
-                <a class="no_hover_underline d-block bc_text_16 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mt-3" href="<?php echo $value->url;?>">
+                <a class="no_hover_underline d-block bc_text_16 bc_line_height_26 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mt-3" href="<?php echo $value->url;?>">
                 <?php echo $value->title; ?>
                 </a>
         <?php }?>
@@ -65,10 +65,10 @@ class BC_Footer_Menuone_widget extends WP_Widget {
         echo '</div>';
         endif;
         // echo $args['after_widget'];
-    }
+        }
 
     /**
-     * Handles updating settings for the current Navigation Menu widget instance.
+     * Handles updating settings for the current Navigation Mobile Menu widget instance.
      *
      * @since 3.0.0
      *
@@ -89,7 +89,7 @@ class BC_Footer_Menuone_widget extends WP_Widget {
     }
 
     /**
-     * Outputs the settings form for the Navigation Menu widget.
+     * Outputs the settings form for the Navigation Mobile Menu widget.
      *
      * @since 3.0.0
      *
@@ -157,7 +157,7 @@ class BC_Footer_Menuone_widget extends WP_Widget {
     }
 }
 
-function bc_footer_menuone_register_widgets() {
-    register_widget( 'BC_Footer_Menuone_widget' );
+function bc_footer_menutwo_register_widgets() {
+    register_widget( 'BC_Footer_Menutwo_widget' );
 }
-add_action( 'widgets_init', 'bc_footer_menuone_register_widgets' );
+add_action( 'widgets_init', 'bc_footer_menutwo_register_widgets' );
