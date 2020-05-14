@@ -47,6 +47,9 @@ $understrap_include = array(
      '/bc-shortcode-override.php',
      '/custom-post-types.php',
     '/widgets/bc-team-widget.php',
+    '/widgets/bc-footer-location-widget.php',
+    '/widgets/bc-footer-menutwo-widget.php',
+    '/widgets/bc-footer-gravity-form-widget.php',
     
 );
 foreach ( $understrap_include as $file ) {
@@ -103,7 +106,7 @@ function card_shortcode( $atts, $content = null ) {
     }
     $id = 'collapse'.rand(0,100000);
         return '<div class="card rounded-0 mb-0">
-        <div id="headingOne" class="card-header position-relative border-bottom-0 bg-white cursor_pointer"><h3 class="card-title bc_color_primary">'.$title.'<i class="'.$iconClass.' bc_color_primary float-right toggle_icon mt-2 ml-2" data-toggle="collapse" data-target="#'.$id.'" aria-controls="'.$id.'"></i></h3></div><div id="'.$id.'" class="card-body collapse position-relative '.$expanded.'" aria-labelledby="headingOne" data-parent="#accordion"><p class="text-gray">'.do_shortcode($content).'</p></div>
+        <div id="headingOne" class="card-header position-relative border-bottom-0 bg-white cursor_pointer"><h3 class="card-title bc_color_primary">'.$title.'<i class="'.$iconClass.' bc_color_primary float-right toggle_icon mt-2 ml-2" data-toggle="collapse" data-target="#'.$id.'" arivvvvvvvva-controls="'.$id.'"></i></h3></div><div id="'.$id.'" class="card-body collapse position-relative '.$expanded.'" aria-labelledby="headingOne" data-parent="#accordion"><p class="text-gray">'.do_shortcode($content).'</p></div>
         </div>';
 }
 
@@ -118,7 +121,7 @@ function bc_site_info_phone_number ( $atts ) {
     $tel = bc_get_theme_mod('bc_theme_options', 'bc_phone',false, '3334357</sub>');
     ob_start();
     if($anchor){
-        echo "<a href='tel:$tel'>$tel</a>";
+        echo "<a class='bc_text_18 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1 no_hover_underline' href='tel:$tel'>$tel</a>";
     }else{
      echo $tel;
     }

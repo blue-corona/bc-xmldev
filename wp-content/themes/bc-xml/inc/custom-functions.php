@@ -94,7 +94,7 @@ function bc_get_theme_mod($setting, $key1 = false, $key2 = false, $default = fal
 /*Shortcode for social media icons*/
 add_shortcode( 'social-icons', 'bc_social_shortcode' );
 function bc_social_shortcode () {?>
-    <div class="bc_social_media pb-3" style="color: #5692b9;">
+    <div class="socil-icon position-relative">
     <?php
         $data = json_decode(bc_get_theme_mod('bc_theme_social_media','bc_social_media', false, false));
         if(isset($data) && !empty($data)){
@@ -104,8 +104,8 @@ function bc_social_shortcode () {?>
             foreach ($data as $key => $value) {
                 if(!empty($value->icon)){
                 ?>
-                <a target="_blank" class="mr-1 bc_social_media_fb mr-2 fa-lg" title="<?php echo $value->name;?>" href="<?php echo $value->url;?>">
-                    <i class="<?php echo $value->icon;?>"></i>
+                <a class="no_hover_underline" target="_blank" title="<?php echo $value->name;?>" href="<?php echo $value->url;?>">
+                    <i class="<?php echo $value->icon;?> bc_color_secondary bc_text_19 mr-2"></i>
                 </a>
             <?php } 
             }
