@@ -5,9 +5,9 @@ class BC_Footer_Address_Widget extends WP_Widget {
     public function __construct() {
 
         $id = 'BC_Footer_Address_widget';
-        $title = esc_html__('BC Footer Identity', 'bc-footer-address-custom-widget');
+        $title = esc_html__('BC Footer Identity', 'bc-footer-location-custom-widget');
         $options = array(
-            'classname' => 'bc-footer-address-markup-widget',
+            'classname' => 'bc-footer-address-markup-widget col-lg-4 pr-lg-4 mt-5 mt-md-0 text-center text-md-left',
             'description' => esc_html__('Add Custom HTML in inputbox', 'bc-footer-address-custom-widget')
         );
         parent::__construct( $id, $title, $options );
@@ -16,24 +16,16 @@ class BC_Footer_Address_Widget extends WP_Widget {
     public function widget( $args, $instance ) {
         echo $args['before_widget'];
         ?>
-
-    <div class="col-12 px-5 px-md-0 bc_color_secondary">
-            <img alt="footer logo" class="img-fluid" src="<?php echo get_template_directory_uri();?>/img/logo_footer.svg">
-            <hr class="mx-3 mx-lg-0" style="background-color:#5692b9;">
-            <h4 class="text-uppercase bc_color_secondary"><em aria-hidden="true" class="fa fa-mobile"></em> <?php echo bc_get_theme_mod('bc_theme_options', 'bc_phone',false, '(555) 555-5555');?></h4>
-            <div class="row">
-                <div class="col-lg-1 pr-0"><h4 class="bc_color_secondary"><em aria-hidden="true" class="far fa-map-marker-alt"></em></h4></div>
-                <div class="col-lg-9">
-                    <p class="bc_color_secondary" style="font-size: 14px; line-height: 20px">
-                    <?php echo bc_get_theme_mod('bc_theme_options', 'bc_address',false, '1401 Central Avenue, Suite 11 Charlotte, NC 28205');?>
-                     </p>
-                </div>
-                <div class="m-auto m-lg-0 col-lg-12">License - <?php echo bc_get_theme_mod('bc_theme_options', 'bc_license',false, 'CLT140111');?></div>
-                <div class="m-auto m-lg-0 col-lg-12">
-                    <?php echo do_shortcode('[social-icons]');?>
-                </div>    
-            </div>
-    </div>
+        <div class="footer_logo position-relative text-center">
+            <a href="<?php echo get_home_url();?>" class="mt-n4 d-block">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/XML-Logo-footer.jpg" class="img-fluid d-block mx-auto" alt="logo">
+            </a>
+        </div>
+        <span class="bc_text_16 bc_line_height_28 bc_font_alt_1 bc_color_primary d-block mt-5 mb-3">
+            <?php echo bc_get_theme_mod('bc_theme_options', 'bc_address',false, 'Securities offered through Lara, May & Associates, LLC, Member <span class="
+                bc_color_secondary">FINRA / SIPC </span> Headquartered at 7600 Leesburg Pike, Suite 120 East, Falls Church, VA 22043, '.do_shortcode('[site_info_phone_number]').' ');?>
+        </span>
+        <?php echo do_shortcode('[social-icons]');?>
     <?php echo $args['after_widget'];
     }
 }
