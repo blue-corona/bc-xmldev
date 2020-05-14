@@ -143,3 +143,11 @@ add_filter('wp_nav_menu_items', 'do_shortcode');
 
 //shortcode for background img
 remove_filter( 'the_content', 'wpautop' );
+
+// [cta_button title="CTA GOES HERE" link="/contact-us"]
+add_shortcode( 'cta_button', 'bc_cta_button' );
+function bc_cta_button ( $title, $url ) {
+    ob_start();
+    echo '<a href="'.get_home_url().$title['link'].'" class="btn_primary py-1 px-3 mt-4 bc_line_height_50">'.$title['title'].'</a>';
+    return ob_get_clean();
+}

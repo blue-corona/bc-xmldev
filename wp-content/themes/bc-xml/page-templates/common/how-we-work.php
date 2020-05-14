@@ -26,8 +26,7 @@
                 <div class="offset-md-1 col-md-5 col-12">
                   <div class="pl-md-5 text-center text-md-left">
                     <p class="text-uppercase bc_text_20">360<span class="d-block bc_color_primary bc_text_40 bc_text_semibold bc_line_height_38">SUPPORT</span></p>
-                    <p>“We have a person for that”. If it’s important to you, we are here to help, beyond just investments and planning.</p>
-                    <a href="<?php echo get_home_url();?>" class="btn_primary py-2 px-3 mt-4">LEARN HOW</a>
+                    <p> “We have a person for that”. If it’s important to you, we are here to help, beyond just investments and planning.</p>
                   </div>
                 </div>
                 <div class="col-md-5 d-none d-md-block">
@@ -42,8 +41,7 @@
                 <div class="offset-md-1 col-md-5 col-12">
                   <div class="pl-md-5 text-center text-md-left">
                     <p class="text-uppercase bc_text_20"><span class="d-block bc_color_primary bc_text_40 bc_text_semibold bc_line_height_38">QUALIFIED</span></p>
-                    <p>“We’ve got the credentials.”</p>
-                    <a href="<?php echo get_home_url();?>" class="btn_primary py-2 px-3 mt-4">Meet the team</a>
+                    <p>“We’ve got the credentials.” Meet the <a href="<?php echo get_home_url();?>">team.</a> </p>
                   </div>
                 </div>
                 <div class="col-md-5 d-none d-md-block">
@@ -58,8 +56,7 @@
                 <div class="offset-md-1 col-md-5 col-12">
                   <div class="pl-md-5 text-center text-md-left">
                     <p class="text-uppercase bc_text_20">Community<span class="d-block bc_color_primary bc_text_40 bc_text_semibold bc_line_height_38">CENTRIC</span></p>
-                    <p>“Our clients are not clones.”</p>
-                    <a href="<?php echo get_home_url();?>" class="btn_primary py-2 px-3 mt-4">Learn more about how we advise our community</a>
+                    <p>“Our clients are not clones.” Learn more about how we advise our <a href="<?php echo get_home_url();?>">community.</a> </p>
                   </div>
                 </div>
                 <div class="col-md-5 d-none d-md-block">
@@ -74,8 +71,7 @@
                 <div class="offset-md-1 col-md-5 col-12">
                   <div class="pl-md-5 text-center text-md-left">
                     <p class="text-uppercase bc_text_20"><span class="d-block bc_color_primary bc_text_40 bc_text_semibold bc_line_height_38">INDEPENDENT</span></p>
-                    <p>“We think for ourselves.”</p>
-                    <a href="<?php echo get_home_url();?>" class="btn_primary py-2 px-3 mt-4">Read about our beliefs and how we invest in our community</a>
+                    <p>“We think for ourselves.” Read about our <a href="<?php echo get_home_url();?>">beliefs</a> and how we invest in our community. </p>
                   </div>
                 </div>
                 <div class="col-md-5 d-none d-md-block">
