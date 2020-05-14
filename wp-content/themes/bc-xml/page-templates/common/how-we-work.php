@@ -25,7 +25,7 @@
               <div class="row align-items-center">
                 <div class="offset-md-1 col-md-5 col-12">
                   <div class="pl-md-5 text-center text-md-left">
-                    <p class="text-uppercase bc_text_20">360<span class="d-block bc_color_primary bc_text_40 bc_text_semibold bc_line_height_38">SUPPORT</span></p>
+                    <p class="text-uppercase bc_text_20">360 <sup></sup><span class="d-block bc_color_primary bc_text_40 bc_text_semibold bc_line_height_38">SUPPORT</span></p>
                     <p> “We have a person for that”. If it’s important to you, we are here to help, beyond just investments and planning.</p>
                   </div>
                 </div>
