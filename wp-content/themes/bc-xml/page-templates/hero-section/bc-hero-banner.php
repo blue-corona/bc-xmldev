@@ -8,7 +8,6 @@
                         
                    
                     <p class="px-lg-5 pb-5 pt-4 m-0 mx-auto w-75">It’s not just your money, it’s your life! We believe your money is a means to getting the most out of your life, and work with you to make that a reality.</p>');?>
-
                   <!--  <span class="pt-md-4 d-block h1 position-relative bottom_line bc_text_68 bc_line_height_52">Lifestyle Driven Advice</span>
                    <p class="px-lg-5 pb-5 pt-4 m-0 mx-auto w-75">It’s not just your money, it’s your life! We believe your money is a means to getting the most out of your life, and work with you to make that a reality.</p> -->
                 </div>
