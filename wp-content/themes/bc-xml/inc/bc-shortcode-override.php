@@ -200,7 +200,7 @@ function custom_testimonial_shortcode($atts , $content = null){?>
 
 
 <div class="container-fluid py-5 px-0 testimonials">
-    <div class="testimonial_icon position-absolute d-none d-md-block">
+    <div class="eagle_icon testimonial_icon position-absolute d-none d-md-block">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon-testimonials.png" class="img-fluid w-100 animated">
       </div>
         <div class="container">
