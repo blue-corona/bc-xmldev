@@ -45,7 +45,9 @@ $understrap_include = array(
     '/widgets/bc-how-we-work.php',
     '/widgets/bc-resources-widget.php',
      '/bc-shortcode-override.php',
-     '/custom-post-types.php'
+     '/custom-post-types.php',
+    '/widgets/bc-team-widget.php',
+    
 );
 foreach ( $understrap_include as $file ) {
     $filepath = locate_template( 'inc' . $file );
