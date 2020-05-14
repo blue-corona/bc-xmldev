@@ -11,7 +11,7 @@
                   <div class="pl-md-5 text-center text-md-left">
                     <p class="text-uppercase bc_text_20">team driven<span class="d-block bc_color_primary bc_text_40 bc_text_semibold bc_line_height_38">investing</span></p>
                     <p>“No one knows everything.” We try to make informed, rational decisions that align your investments with your lifestyle.</p>
-                    <a href="<?php echo get_home_url();?>" class="btn_primary py-2 px-3 mt-4">LEARN HOW</a>
+                    <a href="<?php echo get_home_url();?>/our-team/" class="btn_primary py-2 px-3 mt-4">LEARN HOW</a>
                   </div>
                 </div>
                 <div class="col-md-5 d-none d-md-block">

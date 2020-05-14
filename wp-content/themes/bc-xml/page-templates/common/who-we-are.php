@@ -59,7 +59,7 @@
                         <div class="swiper-button-prev who_we_prev bc_color_primary bc_text_30 bc_text_light bc_line_height_60"><i class="fal fa-2x fa-angle-left"></i></div>
                       </div>
                       <div class="fullteam d-md-none d-block text-center mb-5">
-                        <a  href="<?php echo get_home_url();?>" class="btn_secondary px-4 py-2 mt-4 mb-5 ">FULL TEAM</a>
+                        <a  href="<?php echo get_home_url();?>/our-team/" class="btn_secondary px-4 py-2 mt-4 mb-5 ">FULL TEAM</a>
                       </div>
                     </div>
                     <div class="col-xl-5 order-1 order-xl-2 mt-3 pb-md-0 pb-3 text-center text-xl-left team_text px-md-5">
