@@ -51,7 +51,7 @@ get_header();
 
 
     <!--  slide-background image --->
-  <?php get_template_part( 'page-templates/common/ background-image-for-home-page' ); ?> 
+  <?php get_template_part( 'page-templates/common/background-image-for-home-page' ); ?> 
 
    
     <!-- who we are--->
