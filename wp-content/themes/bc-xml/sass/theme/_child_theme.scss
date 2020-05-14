@@ -854,7 +854,6 @@ div, {
 }
 
 .image_border{
-	border-radius: 100%;
 	&:before{
 		background-image: url(../img/img-border.png);
 	    background-size: 100%;
@@ -865,9 +864,7 @@ div, {
 	    border: none;
 	    border-radius: 0;
 	}
-	img{
-		border-radius: 100%;
-	}
+
 }
 .sidebar_image_border{
 	&:before{

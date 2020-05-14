@@ -9839,19 +9839,15 @@ div {
   width: 33%;
   left: -60px; }
 
-.image_border {
-  border-radius: 100%; }
-  .image_border:before {
-    background-image: url(../img/img-border.png);
-    background-size: 100%;
-    top: 0px;
-    width: 72%;
-    left: 0px;
-    background-repeat: no-repeat;
-    border: none;
-    border-radius: 0; }
-  .image_border img {
-    border-radius: 100%; }
+.image_border:before {
+  background-image: url(../img/img-border.png);
+  background-size: 100%;
+  top: 0px;
+  width: 72%;
+  left: 0px;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 0; }
 
 .sidebar_image_border:before {
   background-image: url(../img/sidebar-img-border.png);
