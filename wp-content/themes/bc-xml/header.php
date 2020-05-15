@@ -32,7 +32,7 @@ defined( 'ABSPATH' ) || exit;
     echo  '<header class="bc_header">';
  }?>
     <!-- announcement bar background color-->
-    <div class="container-fluid bc_announcement_bar p-0">
+    <div class="container-fluid bc_announcement_bar alert fade show p-0 mb-0">
         
         <!-- Hide this section if announcement bar is disabled-->
         <?php if(bc_get_theme_mod('bc_theme_options', 'header', 'announcement_bar', 'enabled') == 'enabled'){?>
@@ -42,6 +42,9 @@ defined( 'ABSPATH' ) || exit;
                 <?php echo bc_get_theme_mod('bc_theme_options', 'header','announcement_bar_content', '
                 <div class="col-12 col-lg-12 text-center d-none d-lg-block">
                     <span class="bc_color_secondary bc_text_16 bc_line_height_36"> <span class="bc_color_primary">NEWS  //</span>  <span class="d-none d-md-inline">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do labore et dolore magna aliqua</span>  | <a href="#" class="bc_text_bold">  Learn More <i class="far fa-chevron-circle-right bc_text_18 ml-2 mt-2"></i> </a> </span>
+                    <button type="button" class="close bc_color_primary" data-dismiss="alert" aria-label="Close" style="background:none;opacity:1">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>'); ?>
 
                 <!-- announcement bar with button end-->
