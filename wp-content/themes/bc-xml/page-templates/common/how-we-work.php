@@ -16,7 +16,7 @@
                 </div>
                 <div class="col-md-5 d-none d-md-block">
                   <div class="image position-relative d-inline-block mx-auto p-3 image_border">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid" alt="team" >
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid rounded-circle" alt="team" >
                   </div>
                 </div>
               </div>
@@ -32,7 +32,7 @@
                 </div>
                 <div class="col-md-5 d-none d-md-block">
                   <div class="image position-relative d-inline-block mx-auto p-3 image_border">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid" alt="team" >
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid rounded-circle" alt="team" >
                   </div>
                 </div>
               </div>
@@ -48,7 +48,7 @@
                 </div>
                 <div class="col-md-5 d-none d-md-block">
                   <div class="image position-relative d-inline-block mx-auto p-3 image_border">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid" alt="team" >
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid rounded-circle" alt="team" >
                   </div>
                 </div>
               </div>
@@ -64,7 +64,7 @@
                 </div>
                 <div class="col-md-5 d-none d-md-block">
                   <div class="image position-relative d-inline-block mx-auto p-3 image_border">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid" alt="team" >
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid rounded-circle" alt="team" >
                   </div>
                 </div>
               </div>
@@ -80,7 +80,7 @@
                 </div>
                 <div class="col-md-5 d-none d-md-block">
                   <div class="image position-relative d-inline-block mx-auto p-3 image_border">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid" alt="team" >
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid rounded-circle" alt="team" >
                   </div>
                 </div>
               </div>
