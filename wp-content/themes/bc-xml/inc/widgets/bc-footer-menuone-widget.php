@@ -49,7 +49,7 @@ class BC_Footer_Menuone_widget extends WP_Widget {
         $menu_items = wp_get_nav_menu_items($menu);
         if(isset($menu_items) && !empty($menu_items)):
 
-        echo '<div class="col-lg-2 d-none d-lg-block pl-lg-2 mt-5 mt-md-1">';
+        echo '<div class="col-lg-2 d-none d-lg-block pl-lg-2 mt-5 mt-md-0">';
         if ( $title ) {
             echo '<span class="d-block bc_text_26 bc_line_height_26 bc_font_default bc_text_light bc_color_primary">'.$title.'</span>';
             // echo $args['before_title'] . $title . $args['after_title'];
@@ -57,7 +57,7 @@ class BC_Footer_Menuone_widget extends WP_Widget {
 
         ?>
         <?php foreach ($menu_items as $key => $value) {?>
-                <a class="no_hover_underline d-block bc_text_16 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mt-3" href="<?php echo $value->url;?>">
+                <a class="no_hover_underline d-block bc_text_16 bc_line_height_30 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mt-3" href="<?php echo $value->url;?>">
                 <?php echo $value->title; ?>
                 </a>
         <?php }?>

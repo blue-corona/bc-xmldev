@@ -7985,7 +7985,8 @@ h2, .h2 {
   font-weight: 100;
   text-transform: capitalize;
   line-height: 36px;
-  color: #1D1817; }
+  color: #1D1817;
+  letter-spacing: 1px; }
 
 h3, .h3 {
   font-family: "Work Sans", sans-serif;
@@ -7993,7 +7994,8 @@ h3, .h3 {
   font-weight: 300;
   text-transform: uppercase;
   line-height: 28px;
-  color: #666d89; }
+  color: #666d89;
+  letter-spacing: 1px; }
 
 h4, .h4 {
   font-family: "Work Sans", sans-serif;
@@ -8001,7 +8003,8 @@ h4, .h4 {
   font-weight: 300;
   text-transform: uppercase;
   line-height: 26px;
-  color: #cbb893; }
+  color: #cbb893;
+  letter-spacing: 1px; }
 
 h5, .h5 {
   font-family: "Work Sans", sans-serif;
@@ -8010,7 +8013,8 @@ h5, .h5 {
   text-transform: none;
   line-height: 24px;
   letter-spacing: default;
-  color: #666d89; }
+  color: #666d89;
+  letter-spacing: 1px; }
 
 h6, .h6 {
   font-family: "Work Sans", sans-serif;
@@ -8019,7 +8023,8 @@ h6, .h6 {
   text-transform: none;
   line-height: 18px;
   letter-spacing: default;
-  color: #666d89; }
+  color: #666d89;
+  letter-spacing: 1px; }
 
 p, .p, body {
   font-family: "Roboto", sans-serif;
@@ -8027,7 +8032,8 @@ p, .p, body {
   font-weight: 300;
   text-transform: none;
   line-height: 34px;
-  color: #1D1817; }
+  color: #1D1817;
+  letter-spacing: 1px; }
   p a:hover, .p a:hover, body a:hover {
     color: #cbb893;
     text-decoration: underline; }
@@ -9233,7 +9239,7 @@ ul.gform_fields li::before {
   bottom: 0; }
 
 .bc_our_services .btn {
-  padding: 5px 35px !important; }
+  padding: 5px 2rem !important; }
 
 div {
   scrollbar-color: #f38527 lightgrey; }
@@ -9326,7 +9332,12 @@ div {
     display: block !important; } }
 
 .bc_announcement_bar {
-  background-color: #f0ede7 !important; }
+  background-color: #f0ede7 !important;
+  letter-spacing: 1px; }
+
+.bc_announcement_bar_text a:hover {
+  color: #666d89;
+  text-decoration: underline; }
 
 @media only screen and (max-width: 740px) {
   .footer_logo img {
@@ -9405,7 +9416,10 @@ div {
   font-family: "Work Sans", sans-serif;
   display: inline-block;
   font-weight: 300 !important;
-  color: #ffffff !important; }
+  letter-spacing: 1px;
+  color: #ffffff !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important; }
   .btn_primary:hover {
     background: #545A71 !important;
     text-decoration: none !important; }
@@ -9423,8 +9437,11 @@ div {
   text-transform: uppercase;
   font-family: "Work Sans", sans-serif;
   display: inline-block;
+  letter-spacing: 1px;
   font-weight: 300 !important;
-  color: #ffffff !important; }
+  color: #ffffff !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important; }
   .btn_secondary:hover {
     background: #B9A886 !important;
     text-decoration: none !important; }
@@ -9684,13 +9701,15 @@ div {
   border: none;
   border-radius: 0;
   height: 57px;
-  width: 255px; }
+  width: 255px;
+  letter-spacing: 1px; }
 
 .filter_btn_active {
   border: 1px solid #666d89;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
-  outline: none !important; }
+  outline: none !important;
+  letter-spacing: 1px; }
 
 .bg-none {
   background: none !important; }
@@ -9706,7 +9725,6 @@ div {
 
 .menu {
   position: fixed;
-  top: 37px;
   z-index: 999;
   width: 100%;
   height: 180px;
