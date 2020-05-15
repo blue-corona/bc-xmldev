@@ -73,7 +73,7 @@
 			}
 		}
 		.dropdown-menu{ 
-			background-color: #cbb893cc !important; // Dropdown background
+			background-color: #e7decd !important; // Dropdown background
 			@media (hover: none), only screen and (max-width: 991px) {
 				 background-color: #ffffff00 !important; 
 			} 
@@ -89,8 +89,10 @@
 
 			a{	
 				color: $secondary_color; // Dropdown link
+					text-align: left;
 				svg { // Dropdown icon 
 					color: $primary_color; 
+
 					@media (hover: none), only screen and (max-width: 991px) {
 						color: $info_color;
 					}
@@ -106,9 +108,9 @@
 			}
 
 			&:hover{
-				background-color: #fffaf0; 	//Dropdown background hover	
+				background-color: #ffffff; 	//Dropdown background hover	
 				@media (hover: none), only screen and (max-width: 991px) {
-					background-color: #fffaf0 !important; // Mobile nav bar Background
+					background-color: #ffffff !important; // Mobile nav bar Background
 				}
 				svg { color: $secondary_color; } // Dropdown icon hover
 				a { // Dropdown icon hover

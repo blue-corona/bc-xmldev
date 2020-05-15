@@ -8721,7 +8721,7 @@ ul.gform_fields li::before {
       .bc_nav_container .navbar-nav li:hover a.nav-link {
         color: #cbb893; }
     .bc_nav_container .navbar-nav .dropdown-menu {
-      background-color: #cbb893cc !important; }
+      background-color: #e7decd !important; }
       @media (hover: none), only screen and (max-width: 991px) {
         .bc_nav_container .navbar-nav .dropdown-menu {
           background-color: #ffffff00 !important; } }
@@ -8729,7 +8729,8 @@ ul.gform_fields li::before {
     padding-top: 24px;
     padding-bottom: 24px; }
   .bc_nav_container .dropdown li a, .bc_nav_container .dropdown .dropdown-item a {
-    color: #cbb893; }
+    color: #cbb893;
+    text-align: left; }
     .bc_nav_container .dropdown li a svg, .bc_nav_container .dropdown .dropdown-item a svg {
       color: #666d89; }
       @media (hover: none), only screen and (max-width: 991px) {
@@ -8738,10 +8739,10 @@ ul.gform_fields li::before {
   .bc_nav_container .dropdown li:focus, .bc_nav_container .dropdown .dropdown-item:focus {
     background-color: #666d89; }
   .bc_nav_container .dropdown li:hover, .bc_nav_container .dropdown .dropdown-item:hover {
-    background-color: #fffaf0; }
+    background-color: #ffffff; }
     @media (hover: none), only screen and (max-width: 991px) {
       .bc_nav_container .dropdown li:hover, .bc_nav_container .dropdown .dropdown-item:hover {
-        background-color: #fffaf0 !important; } }
+        background-color: #ffffff !important; } }
     .bc_nav_container .dropdown li:hover svg, .bc_nav_container .dropdown .dropdown-item:hover svg {
       color: #cbb893; }
     .bc_nav_container .dropdown li:hover a, .bc_nav_container .dropdown .dropdown-item:hover a {
