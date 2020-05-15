@@ -35,9 +35,9 @@ class BC_teams_Widget extends WP_Widget {
         $this->addSwiperInitteamsJsToFooter( $widgetInstance ); });
 	?>
 	<div class="who_we_are mt-5 pt-lg-5 text-center">
-	<h3 class="position-relative text-uppercase bc_text_normal">
+	<!-- <h3 class="position-relative bottom_line bc_color_dark_primary bc_text_normal"> -->
 	<?php echo $instance['title'];?>
-	</h3>
+	<!-- </h3> -->
 		<div id="<?php echo $this->id ?>" class="swiper-container team-swiper pb-3 mt-4">
     	<div class="swiper-wrapper pb-2">
 
@@ -94,7 +94,7 @@ class BC_teams_Widget extends WP_Widget {
 		$for = $this->get_field_id( 'title' );
 		$name = $this->get_field_name( 'title' );
 		$label = __( 'Title', 'bc-teams-custom-widget' );
-		$title = '<h3 class="position-relative text-uppercase bc_text_normal">who we are</h3>';
+		$title = '';
 		if ( isset( $instance['title'] ) && ! empty( $instance['title'] ) ) {
 			$title = $instance['title'];
 		}
