@@ -14,7 +14,7 @@ class BC_FooterGravity_Widget extends WP_Widget {
 	}
 	
 	public function widget( $args, $instance ) {?>
-    <div class="col-lg-4 d-none d-lg-block mt-5 mt-md-0">
+    <div class="col-lg-3 d-none d-lg-block mt-5 mt-md-0">
         <span class="d-block bc_text_26 bc_line_height_26 bc_font_default bc_text_light bc_color_primary">
             <?php 
 				if ( isset( $instance['title'] ) && !empty($instance['title']) ) {
@@ -24,7 +24,7 @@ class BC_FooterGravity_Widget extends WP_Widget {
 				}
 			?>
         </span>
-        <span class="d-block mt-2 bc_text_18 bc_line_height_60 bc_font_alt_1 bc_text_16 bc_text_light bc_color_primary">Newsletter Signup</span>
+        <span class="d-block mt-2 bc_text_18 bc_line_height_50 bc_font_alt_1 bc_text_16 bc_text_light bc_color_primary">Newsletter Signup</span>
         <div class="form">
             <?php echo do_shortcode($instance['footergravityform']);?>
         </div>
