@@ -35,7 +35,7 @@ class bc_how_we_work extends WP_Widget {
         $this->addSwiperInitServiceJsToFooter( $widgetInstance ); });
 	?>
 
-<div class="how_we_work position-relative overflow-hdden bc_color_lightgray_bg text-center px-4 pt-5 pb-4">
+<div class="how_we_work position-relative overflow-hdden bc_color_lightgray_bg text-center px-4 pt-5 pb-4 pb-5">
 <span></span>
 	<?php 
 	if ( isset( $instance['title'] ) && !empty($instance['title']) ) {
