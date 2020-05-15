@@ -25,6 +25,9 @@
 			margin-top: 0px !important;
 			padding-bottom: 0px !important;
 			margin-bottom: 0px !important;
+			input{
+				border-radius:0px !important;
+			}
 			input::placeholder{
 				color:transparent;
 			}
@@ -342,6 +345,7 @@ ul.gform_fields li::before {
 	ul{
 		li{
 			padding-left: 0;
+			padding-right: 0;
 			label {
 			    color: #1D1817;
 			    opacity: .5;
@@ -392,3 +396,12 @@ ul.gform_fields li::before {
     	background: #545A71 !important;
     }
 }
+ .gform_wrapper{
+ 	ul{
+ 		li.gfield{
+ 			input.medium,textarea.medium{
+ 				border-radius: 0px !important
+ 			}
+ 		}
+ 	}
+ }

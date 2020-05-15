@@ -8,8 +8,9 @@
          <a href="<?php echo get_home_url();?>/important-notices/" class="no_hover_underline bc_color_brown bc_text_normal bc_color_brown_hover d-none d-md-inline-block"> Important Notices</a></span>
         <span class="d-block">
             <a href="<?php echo get_home_url();?>/important-notices/" class="no_hover_underline bc_color_brown bc_text_normal bc_color_brown_hover d-inline-block d-md-none"> Important Notices</a> <span class="bc_color_brown bc_text_normal d-inline-block d-md-none px-2">|</span> <a href="<?php echo get_home_url();?>/business-continuity-plan/" class="no_hover_underline bc_color_brown bc_text_normal bc_color_brown_hover"> Business Continuity  </a>
-             <span class="bc_color_brown bc_text_normal px-2">|</span> 
-             <a href="<?php echo get_home_url();?>" class="no_hover_underline bc_color_brown bc_text_normal bc_color_brown_hover">  XML Securities  </a>
+           <span class="bc_color_brown bc_text_normal px-2">|</span> 
+             <a href="<?php echo get_home_url();?>" class="no_hover_underline bc_color_brown bc_text_normal bc_color_brown_hover">  XML Securities  </a> 
+
         </span>
     </span>
 </div>

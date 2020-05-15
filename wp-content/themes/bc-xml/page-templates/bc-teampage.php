@@ -54,7 +54,7 @@ get_header();?>
                 <button ng-class="{'filter_btn_active': filterActive(filter.name, filterValue)}" ng-click="changeFilter(filter.name, filterValue)" class=" Filter_btn bc_color_primary bg-white bc_text_20 bc_line_height_28">{{filterValue}}</button>
               </div>
             </div>
-            <div class="row m-0">
+            <div class="row m-0 row-eq-height">
                          
              
               <div class="col-lg-4 mt-5" ng-repeat="member in team track by $index" ng-show="filterMembers(member)                                                                        ">
@@ -62,7 +62,7 @@ get_header();?>
                     <div class="">
                       <img class="img-fluid" src="{{member.thumbnail}}">
                     </div>
-                    <span class="bc_font_alt_1 bc_text_24 bc_line_height_28 bc_text_bold bc_color_primary border-bottom pb-2 mt-3 d-block">{{member.title}}®</span>
+                    <span class="bc_font_alt_1 bc_text_24 bc_line_height_28 bc_text_bold bc_color_primary border-bottom pb-2 mt-3 d-block">{{member.title}}</span>
                     <span class="bc_font_alt_1 bc_text_22 bc_line_height_41 bc_text_normal bc_color_secondary my-2 d-block">{{member.team_position}}</span>
                     <div class="position-absolute detail p-3 text-center">
                       <a href="{{member.permalink}}" class="bc_text_20 bc_line_height_48 text-white bc_font_default bc_text_normal no_hover_underline text-uppercase">View Full Bio <i class="fal fa-chevron-circle-right bc_font_default bc_text_20 bc_line_height_48"></i> </a>
