@@ -161,7 +161,7 @@ border-width:$border_width_custom_2;
 
 .bc_our_services {
 	.btn{
-		padding:5px 35px !important;
+		padding:5px 2rem !important;
 	}
 }
 
@@ -288,6 +288,15 @@ div, {
 }
 .bc_announcement_bar{
 	background-color: #f0ede7 !important;
+	letter-spacing: 1px;
+}
+.bc_announcement_bar_text{
+	a{
+		&:hover {
+		    color: #666d89;
+		    text-decoration: underline;
+		}
+	} 
 }
 .footer_logo{
 	img{
@@ -373,7 +382,10 @@ div, {
     font-family: $default_font_family;
     display: inline-block;
     font-weight: 300 !important;
+    letter-spacing: 1px;
     color: #ffffff !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
     &:hover{
     	background: #545A71 !important;
     	text-decoration: none !important;
@@ -391,8 +403,11 @@ div, {
     text-transform: uppercase;
     font-family: $default_font_family;
     display: inline-block;
+    letter-spacing: 1px;
     font-weight: 300 !important;
     color: #ffffff !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
     &:hover{
     	background: #B9A886 !important;
     	text-decoration: none !important;
@@ -666,12 +681,14 @@ div, {
 	border-radius: 0;
 	height: 57px;
   	width: 255px;
+  	letter-spacing: 1px;
 }
 
 .filter_btn_active{
 	border: 1px solid $primary_color;
 	box-shadow: none !important;
 	outline: none !important;
+	letter-spacing: 1px;
 }
 .bg-none{
 	background: none !important;
@@ -687,16 +704,16 @@ div, {
 		cursor: pointer;
 	}
 }
+
 .menu{
 	position: fixed;
-	top: 37px;
-	z-index: 999;
-	
+	z-index: 999;	
 	width: 100%;
 	height: 180px;
     width: 100%;
     background: linear-gradient(#fff 40%,rgba(255, 255, 255, 0) 100%) !important;
 }
+
 .menu-alt{
 	position: fixed;
 	top: 200px;

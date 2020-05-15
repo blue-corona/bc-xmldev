@@ -18,6 +18,7 @@ h2, .h2{
 	text-transform: capitalize;
 	line-height: 36px;
 	color: $brown_color;
+	letter-spacing:1px;
 }
 
 h3, .h3{
@@ -27,6 +28,7 @@ h3, .h3{
 	text-transform: uppercase;
 	line-height: 28px;
 	color: $primary_color;
+	letter-spacing:1px;
 }
 
 h4, .h4{
@@ -36,6 +38,7 @@ h4, .h4{
 	text-transform: uppercase;
 	line-height: 26px;
 	color: $secondary_color;
+	letter-spacing:1px;
 }
 
 h5, .h5{
@@ -46,6 +49,7 @@ h5, .h5{
 	line-height: 24px;
 	letter-spacing: default;
 	color: $primary_color;
+	letter-spacing:1px;
 }
 
 h6, .h6{
@@ -56,6 +60,7 @@ h6, .h6{
 	line-height: 18px;
 	letter-spacing: default;
 	color: $primary_color;
+	letter-spacing:1px;
 }
 
 
@@ -66,6 +71,7 @@ p, .p,body{
 	text-transform: none;
 	line-height: 34px;
 	color: $brown_color;
+	letter-spacing:1px;
 	a{
 		&:hover{
 			color: $secondary_color;
