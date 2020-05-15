@@ -1,4 +1,4 @@
-<div class="d-lg-none show-on-touch bg-white">
+<div class="d-lg-none show-on-touch bg-white menu_shadow">
     <div class="container-fluid m-0 px-0">
         <div class="container p-0">
             <div class="row no-gutters">

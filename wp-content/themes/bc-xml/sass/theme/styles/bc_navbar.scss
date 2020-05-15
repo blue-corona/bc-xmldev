@@ -44,6 +44,7 @@
 			    font-weight: 400;
 			    padding-right: 0.3rem !important;
 			    padding-left: .3rem !important;
+			    letter-spacing: 1px;
 			    &:hover{
 			    	color: $secondary_color !important;
 			    }
@@ -72,21 +73,26 @@
 			}
 		}
 		.dropdown-menu{ 
-			background-color: #cbb893cc !important; // Dropdown background
+			background-color: #e7decd !important; // Dropdown background
 			@media (hover: none), only screen and (max-width: 991px) {
 				 background-color: #ffffff00 !important; 
 			} 
 		} 
 	}
-
+	.dropdown-toggle{
+				    padding-top:42px;
+				    padding-bottom:42px;
+	}
 	.dropdown {
 		li, .dropdown-item {
 
 
 			a{	
 				color: $secondary_color; // Dropdown link
+					text-align: left;
 				svg { // Dropdown icon 
 					color: $primary_color; 
+
 					@media (hover: none), only screen and (max-width: 991px) {
 						color: $info_color;
 					}
@@ -102,9 +108,9 @@
 			}
 
 			&:hover{
-				background-color: #fffaf0; 	//Dropdown background hover	
+				background-color: #ffffff; 	//Dropdown background hover	
 				@media (hover: none), only screen and (max-width: 991px) {
-					background-color: #fffaf0 !important; // Mobile nav bar Background
+					background-color: #ffffff !important; // Mobile nav bar Background
 				}
 				svg { color: $secondary_color; } // Dropdown icon hover
 				a { // Dropdown icon hover
@@ -142,6 +148,7 @@
 .navbar-nav{
 	li{
 		padding: 0 !important;
+		margin:0px !important;
 		@media only screen and (max-width: 740px) {
 			padding: 0 30px !important;
 		}
@@ -205,10 +212,13 @@
 			top:0px !important;
 			z-index: 10 !important;
 			background: #f6f4f1 !important;
-		}
+	}
+	.menu{
+		height:0px!important;
+	}
 	.navbar-nav{
 		li{
-			.img-fluid{
+			.bc_branding_logo{
 					display:none !important
 			}
 		}
@@ -266,6 +276,11 @@
 			}
 		}
 	}
+	.fixed-top.scrolled{
+		.bc_nav_container.menu{
+			background: #f6f4f1 !important;
+		}
+	}
 }
 .navbar-collapse{
 	@media only screen and (max-width: 740px) {
@@ -287,4 +302,7 @@
 	&:focus{
 		box-shadow: none !important;
 	}
+}
+.menu_shadow {
+    box-shadow: 0 5px 32px 14px rgba(0,0,0,0.07);
 }

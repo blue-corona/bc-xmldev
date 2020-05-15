@@ -161,11 +161,11 @@ border-width:$border_width_custom_2;
 
 .bc_our_services {
 	.btn{
-		padding:5px 35px !important;
+		padding:5px 2rem !important;
 	}
 }
 
-div, {
+/*div, {
  	&::-webkit-scrollbar {
 	 	width: 10px;
 	 	background-color: 'lightgrey';
@@ -175,7 +175,7 @@ div, {
 	}
 
 	scrollbar-color: #f38527 lightgrey;  
-}
+}*/
 
 .bc_branding_btn_1, .bc_branding_btn_2{
 	@media screen and (min-width: 1024px) {
@@ -287,7 +287,16 @@ div, {
 	}
 }
 .bc_announcement_bar{
-	background-color: rgba(185, 168, 134, .2) !important;
+	background-color: #f0ede7 !important;
+	letter-spacing: 1px;
+}
+.bc_announcement_bar_text{
+	a{
+		&:hover {
+		    color: #666d89;
+		    text-decoration: underline;
+		}
+	} 
 }
 .footer_logo{
 	img{
@@ -373,7 +382,10 @@ div, {
     font-family: $default_font_family;
     display: inline-block;
     font-weight: 300 !important;
+    letter-spacing: 1px;
     color: #ffffff !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
     &:hover{
     	background: #545A71 !important;
     	text-decoration: none !important;
@@ -391,8 +403,11 @@ div, {
     text-transform: uppercase;
     font-family: $default_font_family;
     display: inline-block;
+    letter-spacing: 1px;
     font-weight: 300 !important;
     color: #ffffff !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
     &:hover{
     	background: #B9A886 !important;
     	text-decoration: none !important;
@@ -576,7 +591,7 @@ div, {
 }
 .graphic_lines{
 	background: url(../img/lines-graphic.png);
-	background-size: 100% 100%;
+	background-size: 110% 100%;
 	background-position: center;
 	padding-top: 140px;
 	@media only screen and (max-width: 740px) {
@@ -618,9 +633,9 @@ div, {
 	background-position: center;
 	padding-top: 140px !important;
 	position:relative;
-	margin-top: 60px;
+	margin-top: 6rem;
 	@media only screen and (max-width: 1024px) {
-		margin-top: 100px;
+		margin-top: 4rem;
 	}
 	@media only screen and (max-width: 740px) {
 		/*background: url(../img/testimonials-mobile.png);*/
@@ -629,27 +644,27 @@ div, {
 		margin-top:0px;
 	}
 	.testimonial_icon{
-		top: -45%;
-	    width: 41%;
-	    left: -8%;
+		top: -10rem;
+    	width: 41%;
+    	left: -10rem;
 	    @media only screen and (max-width: 1024px) {
-	    	top:-15%;
-	    }
+	    	top: -1rem;
+    		left: -5rem;	    }
 	}
 	&:before{
 		content: "";
-	    background: #ffffff;
+	    background: #fff;
 	    width: 100%;
-	    height: 156px;
+	    height: 13rem;
 	    position: absolute;
-	    top: -90px;
-	    left: 0px;
+	    top: -8rem;
+	    left: 0;
 	    z-index: 999;
 	    transform: skewY(-4deg);
 	    @media only screen and (max-width: 1024px) {
 	    	transform: skewY(-8deg);
-	    	height: 180px;
-		    top: -110px;
+    		height: 13rem;
+    		top: -4rem;
 	    }
 	    @media only screen and (max-width: 768px) {
 		    transform: skewY(-13deg);
@@ -666,12 +681,18 @@ div, {
 	border-radius: 0;
 	height: 57px;
   	width: 255px;
+  	letter-spacing: 1px;
+  	border:1px solid transparent;
+  	&:hover{
+  		border-color:$primary_color;
+  	}
 }
 
 .filter_btn_active{
 	border: 1px solid $primary_color;
 	box-shadow: none !important;
 	outline: none !important;
+	letter-spacing: 1px;
 }
 .bg-none{
 	background: none !important;
@@ -687,13 +708,16 @@ div, {
 		cursor: pointer;
 	}
 }
+
 .menu{
 	position: fixed;
-	top: 37px;
-	z-index: 999;
-	background: red; 
+	z-index: 999;	
 	width: 100%;
+	height: 180px;
+    width: 100%;
+    background: linear-gradient(#fff 40%,rgba(255, 255, 255, 0) 100%) !important;
 }
+
 .menu-alt{
 	position: fixed;
 	top: 200px;
@@ -732,13 +756,16 @@ div, {
 		margin-top: -4.6rem;
 	}
 	@media only screen and (max-width: 500px) {
-		margin-top: -3.8rem;
+		margin-top: -4.7rem;
 	}
 
 	.what_we_video{
 		border:1px solid #fff;
 		box-shadow:13px 13px 0px $secondary_color;
 		transition: all ease 0.5s;
+		@media only screen and (max-width:767px){
+			box-shadow: 8px 8px 0px $secondary_color;
+		}
 		span{
 		    z-index: 9;
 		}
@@ -786,24 +813,22 @@ div, {
 	    p{
 	    	min-height: 110px;
 	    }
+	    .btn_primary {
+		    margin-top: 3rem !important;
+		}
 	}
 	.how_we_pagination{
 		top: auto !important;
-		bottom:90px !important;
+		bottom:55px !important;
 	}
 }
-@media only screen and (max-width: 440px) {
-	.how_we_pagination{
-		top: auto !important;
-		bottom:115px !important;
-	}
-}
+
 .who_we_head {
     padding: 115px 0px;
     z-index: 9;
     @media only screen and (max-width: 767px) {
     	padding:50px 0px 115px;
-    	margin-top:-5rem;
+    	margin-top:-1rem;
     }
 }
 .who_we{
@@ -866,6 +891,7 @@ div, {
 	    border: none;
 	    border-radius: 0;
 	}
+
 }
 .sidebar_image_border{
 	&:before{
@@ -887,6 +913,7 @@ div, {
  		background-color: #FFFFFF !important;
 	    box-shadow: 0 5px 32px 14px rgba(0,0,0,0.07);
 	    transition: background-color 20ms linear;
+	    height: auto;
  	}
 }
 
@@ -910,9 +937,7 @@ div, {
 	z-index:1031 !important;
 }
 .light_text{
-	@media only screen and (max-width: 767px) {
-    	 	opacity:0.6;
-    }
+    opacity:0.6;
 }
 
 .form{
@@ -921,28 +946,23 @@ div, {
 		padding-right:0px !important;
 	}
 }
-.bullete_style{
-	list-style:none;
+
+main{
 	li{
+		list-style:none;
 		position:relative;
 		&:before{
 			content: "\f111";
-		    font-size: 10px;
-		    vertical-align: middle;
-		    color: #666d89;
-		    font-family: "Font Awesome 5 Free";
-		    font-weight: 900;
+			font-size: 10px;
+			vertical-align: middle;
+			color: #666d89;
+			font-family: "Font Awesome 5 Free";
+			font-weight: 900;
+			margin-right: 5px;
 		}
 	}
-}
+}	
 
-@media only screen and (min-device-width: 767px) and (max-device-width: 1366px) {
-	.fixed-top.scrolled{
-		.bc_nav_container.menu{
-			background: #f6f4f1 !important;
-		}
-	}
-}
 
 h3.card-title {
     position: relative;
@@ -952,5 +972,33 @@ h3.card-title {
 	    top: 0px;
 	    margin: 0px !important;
 	    right: 15px;
+	}
+}
+.graphic_lines{
+	h2{
+		text-transform: inherit;
+	}
+}
+.how_we_swiper {
+	sup {
+	    width: 7px;
+	    height: 7px;
+	    border: 1px solid #1d1817;
+	    border-radius: 100%;
+	    display: inline-block;
+	    top: -13px;
+	    left: -4px;
+	}
+}
+.mobile_banner{
+	&:before{
+	    content: "";
+	    opacity: 0.6;
+	    background: linear-gradient(180deg, #FFFFFF 0%, #ffffff00 100%);
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    top: 0px;
+	    left: 0px;
 	}
 }

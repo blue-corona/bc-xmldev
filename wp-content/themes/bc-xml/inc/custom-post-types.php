@@ -30,7 +30,7 @@ function bc_team_custom_post_type() {
         'labels'              => $labels,
         'supports'            => array( 'title', 'editor', 'thumbnail', 'excerpt', 'page-attributes'),
         'taxonomies'          => array( 'genres' ),
-        'rewrite' => array( 'has_front' => false ,'slug' => 'our-team'),
+        'rewrite' => array( 'has_front' => false ,'slug' => 'team'),
         /* A hierarchical CPT is like Pages and can have
         * Parent and child items. A non-hierarchical CPT
         * is like Posts.
@@ -86,6 +86,7 @@ function bc_team_metabox() {
             'options' => ['Rockville, MD', 'Falls Church, VA', 'Breckenridge, CO']
         ]
     ];
+    $show_on_homepage = get_post_meta( $post->ID, 'show_on_homepage', true );
     $team_position = get_post_meta( $post->ID, 'team_position', true );
     $image = get_post_meta( $post->ID, 'bc_team_custom_image', true );
     // print_r($categories);die;
@@ -101,7 +102,14 @@ function bc_team_metabox() {
         </div>
     </div>
     <?php endforeach; ?>
-    
+    <hr>
+    <div>
+        <div>
+            <input type="hidden" name="show_on_homepage" value="false">
+            <input type="checkbox" name="show_on_homepage" value="true" <?php echo  ($show_on_homepage != 'false' ? 'checked': '')?>> Show On Home Page?
+        </div>
+    </div>
+
     <div>
         <div>
             <label><?php _e( 'Position', 'team_position' );?></label>
@@ -141,19 +149,155 @@ function bc_team_save_metabox( $post_id, $post ) {
     if ( !isset( $_POST['bc_team_custom_image'] ) ) {return $post->ID;}
     $sanitizedcustomimage = wp_filter_post_kses( $_POST['bc_team_custom_image'] );
 
-    if ( !isset( $_POST['teams'] ) ) {return $post->ID;}
-    $sanitizedteams = json_encode( $_POST['teams'] );
+    if ( isset( $_POST['teams'] ) ) {
+        $sanitizedteams = json_encode( $_POST['teams'] );
+    }
 
+    if ( isset( $_POST['locations'] ) ) {
+        $sanitizedlocations = json_encode( $_POST['locations'] );
+    }
 
-    if ( !isset( $_POST['locations'] ) ) {return $post->ID;}
-    $sanitizedlocations = json_encode( $_POST['locations'] );
+    if ( !isset( $_POST['show_on_homepage'] ) ) { return $post->ID;}
+    $sanitizedshowonhome = wp_filter_post_kses( $_POST['show_on_homepage'] );
 
     update_post_meta( $post->ID, 'team_position', $sanitizedposition );
     update_post_meta( $post->ID, 'bc_team_custom_image', $sanitizedcustomimage );
     update_post_meta( $post->ID, 'teams', $sanitizedteams );
     update_post_meta( $post->ID, 'locations', $sanitizedlocations );
+    update_post_meta( $post->ID, 'show_on_homepage', $sanitizedshowonhome );
 
 }
 
 
 
+/* Podcast Post type*/
+add_action( 'init', 'bc_podcast_custom_post_type', 0 );
+function bc_podcast_custom_post_type() {
+    $labels = array(
+        'name'                => _x( 'Podcast', 'Post Type General Name', 'bc-xml' ),
+        'singular_name'       => _x( 'postcast', 'Post Type Singular Name', 'bc-xml' ),
+        'menu_name'           => __( 'Podcasts', 'bc-xml' ),
+        'parent_item_colon'   => __( 'Parent postcast', 'bc-xml' ),
+        'all_items'           => __( 'All Podcasts', 'bc-xml' ),
+        'view_item'           => __( 'View postcast', 'bc-xml' ),
+        'add_new_item'        => __( 'Add New postcast', 'bc-xml' ),
+        'add_new'             => __( 'Add New', 'bc-xml' ),
+        'edit_item'           => __( 'Edit postcast', 'bc-xml' ),
+        'update_item'         => __( 'Update postcast', 'bc-xml' ),
+        'search_items'        => __( 'Search postcast', 'bc-xml' ),
+        'not_found'           => __( 'Not Found', 'bc-xml' ),
+        'not_found_in_trash'  => __( 'Not found in Trash', 'bc-xml' ),
+    );
+
+    $args = array(
+        'label'               => __( 'Podcasts', 'bc-xml' ),
+        'description'         => __( 'postcast', 'bc-xml' ),
+        'labels'              => $labels,
+        'supports'            => array( 'title', 'editor', 'thumbnail', 'excerpt', 'page-attributes'),
+        'taxonomies'          => array( 'genres' ),
+        'rewrite' => array( 'has_front' => false ,'slug' => 'podcasts'),
+        'hierarchical'        => true,
+        'public'              => true,
+        'show_ui'             => true,
+        'show_in_menu'        => true,
+        'show_in_nav_menus'   => true,
+        'show_in_admin_bar'   => true,
+        'menu_position'       => 5,
+        'can_export'          => true,
+        'has_archive'         => true,
+        'exclude_from_search' => false,
+        'publicly_queryable'  => true,
+        'capability_type'     => 'page',
+        // 'publicly_queryable' => false,
+    );
+    register_post_type( 'bc_podcasts', $args );
+}
+
+/* Events Post type*/
+add_action( 'init', 'bc_events_custom_post_type', 0 );
+function bc_events_custom_post_type() {
+    $labels = array(
+        'name'                => _x( 'Event', 'Post Type General Name', 'bc-xml' ),
+        'singular_name'       => _x( 'event', 'Post Type Singular Name', 'bc-xml' ),
+        'menu_name'           => __( 'Events', 'bc-xml' ),
+        'parent_item_colon'   => __( 'Parent event', 'bc-xml' ),
+        'all_items'           => __( 'All Events', 'bc-xml' ),
+        'view_item'           => __( 'View event', 'bc-xml' ),
+        'add_new_item'        => __( 'Add New event', 'bc-xml' ),
+        'add_new'             => __( 'Add New', 'bc-xml' ),
+        'edit_item'           => __( 'Edit event', 'bc-xml' ),
+        'update_item'         => __( 'Update event', 'bc-xml' ),
+        'search_items'        => __( 'Search event', 'bc-xml' ),
+        'not_found'           => __( 'Not Found', 'bc-xml' ),
+        'not_found_in_trash'  => __( 'Not found in Trash', 'bc-xml' ),
+    );
+
+    $args = array(
+        'label'               => __( 'Events', 'bc-xml' ),
+        'description'         => __( 'event', 'bc-xml' ),
+        'labels'              => $labels,
+        'supports'            => array( 'title', 'editor', 'thumbnail', 'excerpt', 'page-attributes'),
+        'taxonomies'          => array( 'genres' ),
+        'rewrite' => array( 'has_front' => false ,'slug' => 'xml-events'),
+        'hierarchical'        => true,
+        'public'              => true,
+        'show_ui'             => true,
+        'show_in_menu'        => true,
+        'show_in_nav_menus'   => true,
+        'show_in_admin_bar'   => true,
+        'menu_position'       => 5,
+        'can_export'          => true,
+        'has_archive'         => true,
+        'exclude_from_search' => false,
+        'publicly_queryable'  => true,
+        'capability_type'     => 'page',
+        // 'publicly_queryable' => false,
+    );
+    register_post_type( 'bc_events', $args );
+}
+
+/*Create custom field (title) for pages, post, custom posts */
+add_action( 'add_meta_boxes', 'bc_create_event_overlay_metabox' );
+function bc_create_event_overlay_metabox() {
+global $post;
+    if(in_array($post->post_type, array('bc_events') )){
+        add_meta_box(
+            'bc_events_overlay',
+            'When',
+            'bc_events_overlay',
+            '',
+            'normal'
+        );
+    }
+}
+function bc_events_overlay() {
+global $post;
+$when = get_post_meta( $post->ID, 'bc_event_when', true );
+$where = get_post_meta( $post->ID, 'bc_event_where', true );
+?>
+<textarea placeholder="when" class="form-control" rows="2" cols="50" name="bc_event_when" id="when"><?= $when; ?></textarea>
+<textarea placeholder="where" class="form-control" rows="2" cols="50" name="bc_event_where" id="where"><?= $where; ?></textarea>
+<?php
+wp_nonce_field( 'bc_event_when_metabox_nonce', 'bc_events_when_data' );
+}
+/** Save the metabox */
+add_action( 'save_post', 'bc_save_events_fields', 1, 2 );
+function bc_save_events_fields( $post_id, $post ) {
+    if ( !isset( $_POST['bc_events_when_data'] ) ) return;
+    if ( !wp_verify_nonce( $_POST['bc_events_when_data'], 'bc_event_when_metabox_nonce' ) ) {
+        return $post->ID;
+    }
+    if ( !current_user_can( 'edit_post', $post->ID )) {
+        return $post->ID;
+    }
+    if ( !isset( $_POST['bc_event_when'] ) ) {
+        return $post->ID;
+    }
+    if ( !isset( $_POST['bc_event_where'] ) ) {
+        return $post->ID;
+    }
+    $sanitizedwhen = wp_filter_post_kses( $_POST['bc_event_when'] );
+    $sanitizedwhere = wp_filter_post_kses( $_POST['bc_event_where'] );
+    update_post_meta( $post->ID, 'bc_event_when', $sanitizedwhen );
+    update_post_meta( $post->ID, 'bc_event_where', $sanitizedwhere );
+}

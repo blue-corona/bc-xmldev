@@ -16,9 +16,10 @@ class BC_Footer_Address_Widget extends WP_Widget {
     public function widget( $args, $instance ) {
         echo $args['before_widget'];
         ?>
-        <div class="footer_logo position-relative text-center">
+        <div class="footer_logo position-relative text-md-left text-center">
             <a href="<?php echo get_home_url();?>" class="mt-n4 d-block">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/XML-Logo-footer.jpg" class="img-fluid d-block mx-auto" alt="logo">
+                <img src="<?php echo get_stylesheet_directory_uri().'/img/XML-Logo-footer.jpg';?>" class="bc_branding_logo img-fluid mt-n2" alt="logo" srcset="<?php echo get_stylesheet_directory_uri().'/img/xml-Logo-footer-2x.png';?> 2x, <?php echo get_stylesheet_directory_uri().'/img/xml-Logo-footer-3x.png';?> 3x">
+                <!-- <img src="<?php //echo get_stylesheet_directory_uri(); ?>/img/XML-Logo-footer.jpg" class="img-fluid d-block mx-auto" alt="logo"> -->
             </a>
         </div>
         <span class="bc_text_16 bc_line_height_28 bc_font_alt_1 bc_color_primary d-block mt-5 mb-3">

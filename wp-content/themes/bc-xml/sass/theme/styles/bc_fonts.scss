@@ -8,6 +8,7 @@ h1, .h1{
 	text-transform: uppercase;
 	line-height: 48px;
 	color: $primary_color;
+	letter-spacing: 1px;
 }
 
 h2, .h2{
@@ -17,6 +18,7 @@ h2, .h2{
 	text-transform: capitalize;
 	line-height: 36px;
 	color: $brown_color;
+	letter-spacing:1px;
 }
 
 h3, .h3{
@@ -26,6 +28,7 @@ h3, .h3{
 	text-transform: uppercase;
 	line-height: 28px;
 	color: $primary_color;
+	letter-spacing:1px;
 }
 
 h4, .h4{
@@ -35,6 +38,7 @@ h4, .h4{
 	text-transform: uppercase;
 	line-height: 26px;
 	color: $secondary_color;
+	letter-spacing:1px;
 }
 
 h5, .h5{
@@ -45,6 +49,7 @@ h5, .h5{
 	line-height: 24px;
 	letter-spacing: default;
 	color: $primary_color;
+	letter-spacing:1px;
 }
 
 h6, .h6{
@@ -55,6 +60,7 @@ h6, .h6{
 	line-height: 18px;
 	letter-spacing: default;
 	color: $primary_color;
+	letter-spacing:1px;
 }
 
 
@@ -65,6 +71,7 @@ p, .p,body{
 	text-transform: none;
 	line-height: 34px;
 	color: $brown_color;
+	letter-spacing:1px;
 	a{
 		&:hover{
 			color: $secondary_color;
@@ -118,7 +125,7 @@ main a{
 .bc_text_30 { font-size: 30px; }
 .bc_text_32 { font-size: 32px; }
 .bc_text_36 { font-size: 36px; }
-.bc_text_40 { font-size: 40px; }
+.bc_text_40 { font-size: 40px!important; }
 .bc_text_48 { font-size: 48px; }
 .bc_text_50 { font-size: 50px; }
 .bc_text_68 { font-size: 68px; }
@@ -140,7 +147,7 @@ main a{
 .bc_line_height_38 { line-height: 38px; }
 .bc_line_height_40 { line-height: 40px; }
 .bc_line_height_41 { line-height: 41px; }
-.bc_line_height_44 { line-height: 44px; }
+.bc_line_height_44 { line-height: 44px!important; }
 .bc_line_height_48 { line-height: 48px; }
 .bc_line_height_50 { line-height: 50px; }
 .bc_line_height_52 { line-height: 52px; }
@@ -163,5 +170,4 @@ main a{
 
 li{
 	line-height:40px;
-	text-transform:lowercase
 }

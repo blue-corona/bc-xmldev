@@ -134,12 +134,23 @@ add_shortcode('header_menu_logo', 'bc_logo_shortcode_for_menu');
 function bc_logo_shortcode_for_menu($atts) {
  $logo =  bc_get_theme_mod('bc_theme_options', 'bc_logo_upload',false, get_template_directory_uri().'/img/logo.png');
     ob_start();
-    if(isset($logo)){
-        echo '<img src="'.$logo.'" class="img-fluid d-none d-lg-block"/>';
-    }
+    if(isset($logo)){ ?>
+<img src="<?php echo bc_get_theme_mod('bc_theme_options', 'bc_logo_upload',false,  get_stylesheet_directory_uri().'/img/XML-Logo.png');?>" class="bc_branding_logo" alt="logo" style="min-width: 237px;" srcset="<?php echo get_stylesheet_directory_uri().'/img/XML-Logo.png@2x.png';?> 2x, <?php echo get_stylesheet_directory_uri().'/img/XML-Logo.png@3x.png';?> 3x">
+
+      
+    <?php }
     return ob_get_clean();
 }
+
 add_filter('wp_nav_menu_items', 'do_shortcode');
 
 //shortcode for background img
 remove_filter( 'the_content', 'wpautop' );
+
+// [cta_button title="CTA GOES HERE" link="/contact-us"]
+add_shortcode( 'cta_button', 'bc_cta_button' );
+function bc_cta_button ( $title, $url ) {
+    ob_start();
+    echo '<a href="'.get_home_url().$title['link'].'" class="btn_primary py-1 px-3 mt-4 bc_line_height_50">'.$title['title'].'</a>';
+    return ob_get_clean();
+}

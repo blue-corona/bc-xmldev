@@ -24,7 +24,7 @@ get_header();?>
             </div>
         </div>
     </div>
-    <div class="container-fluid py-5 p-0 m-0" ng-controller="TeamController">
+    <div class="container-fluid py-5 p-0 m-0 position-relative team_page" ng-controller="TeamController">
         <div class="container">
             <div class="row no-gutters">
               <div class="col-lg-12">

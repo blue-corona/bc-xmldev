@@ -125,8 +125,8 @@ function header_style($wp_customize){
 ?>
 <style type="text/css">
 .bc_announcement_bar { background-color:<?php echo bc_get_theme_mod('bc_theme_options', 'header','announcement_bar_bg', '#01385e');?>;}
-.bc_announcement_bar_text a{color:<?php echo bc_get_theme_mod('bc_theme_options', 'header','announcement_bar_text_color', '#ffffff');?>;}
-.bc_announcement_bar_text a:hover{color:<?php echo bc_get_theme_mod('bc_theme_options', 'header','announcement_bar_text_color', '#ffffff');?>;background: none;text-decoration:none;}
+.bc_announcement_bar_text a{color:<?php echo bc_get_theme_mod('bc_theme_options', 'header','announcement_bar_text_color', '#ffffff');?>;  text-decoration: underline; transition: all ease 0.4s;}
+/*.bc_announcement_bar_text a:hover{color:<?php //echo bc_get_theme_mod('bc_theme_options', 'header','announcement_bar_text_color', '#ffffff');?>;background: none;text-decoration:none;}*/
 </style>
 <?php
 }
