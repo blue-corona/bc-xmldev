@@ -813,10 +813,13 @@ border-width:$border_width_custom_2;
 	    p{
 	    	min-height: 110px;
 	    }
+	    .btn_primary {
+		    margin-top: 3rem !important;
+		}
 	}
 	.how_we_pagination{
 		top: auto !important;
-		bottom:45px !important;
+		bottom:55px !important;
 	}
 }
 
