@@ -42,7 +42,7 @@ defined( 'ABSPATH' ) || exit;
                        <span class="d-block bc_text_36 bc_line_height_36 text-white bc_font_alt_1 text-center bc_text_light text-uppercase">
             lorem ipsum      </span>
                         <div class="entry-content bc_hero_form_body">
-                           <?php echo do_shortcode('[gravityform id=27 ajax=true]')?>
+                           <?php echo do_shortcode('[gravityform id=15 ajax=true]')?>
                         </div>
                     </div>
                 </div>

@@ -17,11 +17,11 @@
 </div>
 
 
-<div class="container-fluid p-0 pt-5 pb-5 bc_hero_container bc_home_section_bg home_banner d-md-none d-sm-block" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/banner-graphic-mobile.png');  background-position: bottom;">
-    <div class="hero-overlay-gradient pt-5 pb-0">
-        <div class="container px-md-4 pt-5 pb-4">
-            <div class="row text-center text-lg-center text-md-center pt-md-5 pb-md-5">
-                <div class="offset-md-2 col-md-8 col-xs-12 offset-lg-2 col-lg-8 col-sm-12 m-auto pt-md-5 pb-md-5">
+<div class="container-fluid p-0 py-5 bc_hero_container bc_home_section_bg home_banner position-relative d-md-none d-sm-block mobile_banner" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/banner-graphic-mobile.png');  background-position: bottom;">
+    <div class="hero-overlay-gradient py-5">
+        <div class="container px-md-4 py-5">
+            <div class="row text-center text-lg-center text-md-center py-5">
+                <div class="offset-md-2 col-md-8 col-xs-12 offset-lg-2 col-lg-8 col-sm-12 m-auto py-5">
                      <?php echo bc_get_theme_mod('bc_theme_home_options', 'background_image', 'bc_background_image_overlay_text', ' <span class="pt-md-4 d-block position-relative bottom_line bc_text_40 bc_line_height_44 bc_text_thin bc_color_primary px-4 text-uppercase">Lifestyle Driven Advice</span>
                         
                    

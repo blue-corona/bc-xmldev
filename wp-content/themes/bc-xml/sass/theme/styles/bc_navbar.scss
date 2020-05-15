@@ -212,7 +212,10 @@
 			top:0px !important;
 			z-index: 10 !important;
 			background: #f6f4f1 !important;
-		}
+	}
+	.menu{
+		height:0px!important;
+	}
 	.navbar-nav{
 		li{
 			.bc_branding_logo{
@@ -299,4 +302,7 @@
 	&:focus{
 		box-shadow: none !important;
 	}
+}
+.menu_shadow {
+    box-shadow: 0 5px 32px 14px rgba(0,0,0,0.07);
 }
