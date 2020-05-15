@@ -108,9 +108,9 @@
 			}
 
 			&:hover{
-				background-color: #fffaf0; 	//Dropdown background hover	
+				background-color: #ffffff; 	//Dropdown background hover	
 				@media (hover: none), only screen and (max-width: 991px) {
-					background-color: #fffaf0 !important; // Mobile nav bar Background
+					background-color: #ffffff !important; // Mobile nav bar Background
 				}
 				svg { color: $secondary_color; } // Dropdown icon hover
 				a { // Dropdown icon hover

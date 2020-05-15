@@ -8731,10 +8731,10 @@ ul.gform_fields li::before {
   .bc_nav_container .dropdown li:focus, .bc_nav_container .dropdown .dropdown-item:focus {
     background-color: #666d89; }
   .bc_nav_container .dropdown li:hover, .bc_nav_container .dropdown .dropdown-item:hover {
-    background-color: #fffaf0; }
+    background-color: #ffffff; }
     @media (hover: none), only screen and (max-width: 991px) {
       .bc_nav_container .dropdown li:hover, .bc_nav_container .dropdown .dropdown-item:hover {
-        background-color: #fffaf0 !important; } }
+        background-color: #ffffff !important; } }
     .bc_nav_container .dropdown li:hover svg, .bc_nav_container .dropdown .dropdown-item:hover svg {
       color: #cbb893; }
     .bc_nav_container .dropdown li:hover a, .bc_nav_container .dropdown .dropdown-item:hover a {
