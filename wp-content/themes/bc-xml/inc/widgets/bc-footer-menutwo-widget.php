@@ -57,7 +57,7 @@ class BC_Footer_Menutwo_widget extends WP_Widget {
 
         ?>
         <?php foreach ($menu_items as $key => $value) {?>
-                <a class="no_hover_underline d-block bc_text_16 bc_line_height_26 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mt-3" href="<?php echo $value->url;?>">
+                <a class="no_hover_underline d-block bc_text_16 bc_line_height_26 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mt-3 <?php echo implode(" ",$value->classes);?>" target="<?php echo $value->target ?>" href="<?php echo $value->url;?>">
                 <?php echo $value->title; ?>
                 </a>
         <?php }?>
