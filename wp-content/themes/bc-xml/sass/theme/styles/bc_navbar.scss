@@ -44,6 +44,7 @@
 			    font-weight: 400;
 			    padding-right: 0.3rem !important;
 			    padding-left: .3rem !important;
+				
 			    &:hover{
 			    	color: $secondary_color !important;
 			    }
@@ -78,7 +79,10 @@
 			} 
 		} 
 	}
-
+	.dropdown-toggle{
+				    padding-top:24px;
+				    padding-bottom:24px;
+	}
 	.dropdown {
 		li, .dropdown-item {
 
@@ -142,6 +146,7 @@
 .navbar-nav{
 	li{
 		padding: 0 !important;
+		margin:0px !important;
 		@media only screen and (max-width: 740px) {
 			padding: 0 30px !important;
 		}
@@ -264,6 +269,11 @@
 			& > ul {
 				width: 100%
 			}
+		}
+	}
+	.fixed-top.scrolled{
+		.bc_nav_container.menu{
+			background: #f6f4f1 !important;
 		}
 	}
 }
