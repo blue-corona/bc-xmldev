@@ -854,7 +854,6 @@ div, {
 }
 
 .image_border{
-	border-radius: 100%;
 	&:before{
 		background-image: url(../img/img-border.png);
 	    background-size: 100%;
@@ -865,9 +864,7 @@ div, {
 	    border: none;
 	    border-radius: 0;
 	}
-	img{
-		border-radius: 100%;
-	}
+
 }
 .sidebar_image_border{
 	&:before{
@@ -938,13 +935,6 @@ main{
 	}
 }	
 
-@media only screen and (min-device-width: 767px) and (max-device-width: 1366px) {
-	.fixed-top.scrolled{
-		.bc_nav_container.menu{
-			background: #f6f4f1 !important;
-		}
-	}
-}
 
 h3.card-title {
     position: relative;

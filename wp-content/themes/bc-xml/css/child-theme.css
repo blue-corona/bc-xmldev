@@ -8118,7 +8118,7 @@ main a {
   font-size: 36px; }
 
 .bc_text_40 {
-  font-size: 40px; }
+  font-size: 40px !important; }
 
 .bc_text_48 {
   font-size: 48px; }
@@ -8178,7 +8178,7 @@ main a {
   line-height: 41px; }
 
 .bc_line_height_44 {
-  line-height: 44px; }
+  line-height: 44px !important; }
 
 .bc_line_height_48 {
   line-height: 48px; }
@@ -8717,6 +8717,9 @@ ul.gform_fields li::before {
       @media (hover: none), only screen and (max-width: 991px) {
         .bc_nav_container .navbar-nav .dropdown-menu {
           background-color: #ffffff00 !important; } }
+  .bc_nav_container .dropdown-toggle {
+    padding-top: 24px;
+    padding-bottom: 24px; }
   .bc_nav_container .dropdown li a, .bc_nav_container .dropdown .dropdown-item a {
     color: #cbb893; }
     .bc_nav_container .dropdown li a svg, .bc_nav_container .dropdown .dropdown-item a svg {
@@ -8756,7 +8759,8 @@ ul.gform_fields li::before {
   padding: 0rem 1rem; }
 
 .navbar-nav li {
-  padding: 0 !important; }
+  padding: 0 !important;
+  margin: 0px !important; }
   @media only screen and (max-width: 740px) {
     .navbar-nav li {
       padding: 0 30px !important; } }
@@ -8855,7 +8859,9 @@ ul.gform_fields li::before {
       nav.navbar-expand-lg #navbarSupportedContent.navbar-collapse.collapse:not(.show) {
         display: none !important; }
       nav.navbar-expand-lg #navbarSupportedContent.navbar-collapse > ul {
-        width: 100%; } }
+        width: 100%; }
+  .fixed-top.scrolled .bc_nav_container.menu {
+    background: #f6f4f1 !important; } }
 
 @media only screen and (max-width: 740px) {
   .navbar-collapse {
@@ -9839,19 +9845,15 @@ div {
   width: 33%;
   left: -60px; }
 
-.image_border {
-  border-radius: 100%; }
-  .image_border:before {
-    background-image: url(../img/img-border.png);
-    background-size: 100%;
-    top: 0px;
-    width: 72%;
-    left: 0px;
-    background-repeat: no-repeat;
-    border: none;
-    border-radius: 0; }
-  .image_border img {
-    border-radius: 100%; }
+.image_border:before {
+  background-image: url(../img/img-border.png);
+  background-size: 100%;
+  top: 0px;
+  width: 72%;
+  left: 0px;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 0; }
 
 .sidebar_image_border:before {
   background-image: url(../img/sidebar-img-border.png);
@@ -9900,10 +9902,6 @@ main li {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 5px; }
-
-@media only screen and (min-device-width: 767px) and (max-device-width: 1366px) {
-  .fixed-top.scrolled .bc_nav_container.menu {
-    background: #f6f4f1 !important; } }
 
 h3.card-title {
   position: relative;

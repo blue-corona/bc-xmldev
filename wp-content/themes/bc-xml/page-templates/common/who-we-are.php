@@ -31,7 +31,7 @@
                     <div class="image position-relative d-inline-block mx-auto p-2 image_border">
 
                       <?php if (isset($image) && !empty($image)){?>
-                        <img class="img-fluid" src="<?php echo $image ?>">
+                        <img class="img-fluid" style="max-width:138px !important;" src="<?php echo $image ?>">
                       <?php }else{
                         echo '<img class="img-fluid" src="https://placehold.it/95x98">';
                       }?>
