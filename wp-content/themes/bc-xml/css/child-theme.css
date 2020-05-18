@@ -10059,4 +10059,7 @@ h3.card-title {
   top: 0px;
   left: 0px; }
 
+.list-unstyled li:before {
+  display: none; }
+
 /*# sourceMappingURL=child-theme.css.map */
