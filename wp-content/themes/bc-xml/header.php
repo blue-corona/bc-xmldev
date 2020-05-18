@@ -32,7 +32,7 @@ defined( 'ABSPATH' ) || exit;
     echo  '<header class="bc_header">';
  }?>
     <!-- announcement bar background color-->
-    <div class="container-fluid bc_announcement_bar alert fade show p-0 mb-0">
+    <div class="container-fluid bc_announcement_bar alert fade show p-0 mb-0 bc_font_default">
         
         <!-- Hide this section if announcement bar is disabled-->
         <?php if(bc_get_theme_mod('bc_theme_options', 'header', 'announcement_bar', 'enabled') == 'enabled'){?>

@@ -9759,6 +9759,9 @@ ul.gform_fields li::before {
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #fff), to(rgba(255, 255, 255, 0))) !important;
   background: linear-gradient(#fff 40%, rgba(255, 255, 255, 0) 100%) !important; }
+  .menu:hover {
+    background: #fff !important;
+    height: auto; }
 
 .menu-alt {
   position: fixed;
@@ -9872,7 +9875,22 @@ ul.gform_fields li::before {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    opacity: 0.26; } }
+    opacity: 0.26; }
+  .subpage_banner {
+    margin-top: 8rem !important;
+    min-height: 150px; }
+    .subpage_banner img {
+      height: 150px;
+      -o-object-fit: cover;
+         object-fit: cover;
+      -o-object-position: center;
+         object-position: center; }
+  .page-template-bc-subpage-sidebar p {
+    margin-top: 1rem; }
+  .single-bc_teams img.float-left {
+    padding: 0px !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important; } }
 
 .who_we_head {
   padding: 115px 0px;
@@ -9948,6 +9966,11 @@ ul.gform_fields li::before {
     -webkit-transition: background-color 20ms linear;
     transition: background-color 20ms linear;
     height: auto; }
+  .fixed-top.scrolled img.bc_branding_logo {
+    min-width: 190px !important; }
+  .fixed-top.scrolled .dropdown-toggle {
+    padding-top: 31px;
+    padding-bottom: 31px; }
 
 .gform_wrapper #gform_15 ul li.gfield .medium {
   border-radius: 0px !important;
