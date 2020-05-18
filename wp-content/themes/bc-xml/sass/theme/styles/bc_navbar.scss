@@ -32,7 +32,9 @@
 		background-color: $primary_color; // Mobile nav bar Background
 	}
 	.navbar-nav{
-		display: contents !important;
+		display: flex !important;
+		justify-content:space-between;
+		flex:1;
 		li {
 			a {
 				color: $primary_color !important;
@@ -79,10 +81,10 @@
 			} 
 		} 
 	}
-	.dropdown-toggle{
+	/*.dropdown-toggle{
 				    padding-top:42px;
 				    padding-bottom:42px;
-	}
+	}*/
 	.dropdown {
 		li, .dropdown-item {
 
@@ -149,6 +151,9 @@
 	li{
 		padding: 0 !important;
 		margin:0px !important;
+		display:flex;
+		align-items:center;
+		justify-content:center;
 		@media only screen and (max-width: 740px) {
 			padding: 0 30px !important;
 		}
@@ -161,6 +166,7 @@
 .dropdown {
 
 	li {
+		
 		.dropdown-toggle.nav-link{
 	    	padding-top: 10px;
 			padding-bottom: 10px;	
