@@ -740,6 +740,10 @@ border-width:$border_width_custom_2;
 	z-index: 10;
 	width: 100%;
 	background: linear-gradient(#FFFFFF 0%, #ffffff00 48%);
+	@media only screen and (max-width: 768px) {
+		height: 100%;
+    	background: linear-gradient(#fff 0,#ffffff00 35%);
+	}
 }
 
 
