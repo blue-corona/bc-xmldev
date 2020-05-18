@@ -10060,4 +10060,7 @@ h3.card-title {
 .list-unstyled li:before {
   display: none; }
 
+nav ul.pagination li:before {
+  display: none !important; }
+
 /*# sourceMappingURL=child-theme.css.map */
