@@ -8665,11 +8665,7 @@ ul.gform_fields li::before {
 
 .bc_nav_container {
   background: none !important;
-  background-color: #666d89;
-  /*.dropdown-toggle{
-				    padding-top:42px;
-				    padding-bottom:42px;
-	}*/ }
+  background-color: #666d89; }
   @media only screen and (max-width: 1024px) {
     .bc_nav_container {
       position: fixed !important;
@@ -8694,15 +8690,7 @@ ul.gform_fields li::before {
     .bc_nav_container {
       background-color: #666d89; } }
   .bc_nav_container .navbar-nav {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1; }
+    display: contents !important; }
     .bc_nav_container .navbar-nav li a {
       color: #666d89 !important;
       text-align: center;
@@ -8743,6 +8731,9 @@ ul.gform_fields li::before {
       @media (hover: none), only screen and (max-width: 991px) {
         .bc_nav_container .navbar-nav .dropdown-menu {
           background-color: #ffffff00 !important; } }
+  .bc_nav_container .dropdown-toggle {
+    padding-top: 42px;
+    padding-bottom: 42px; }
   .bc_nav_container .dropdown li a, .bc_nav_container .dropdown .dropdown-item a {
     color: #cbb893;
     text-align: left; }
@@ -8784,16 +8775,7 @@ ul.gform_fields li::before {
 
 .navbar-nav li {
   padding: 0 !important;
-  margin: 0px !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  margin: 0px !important; }
   @media only screen and (max-width: 740px) {
     .navbar-nav li {
       padding: 0 30px !important; } }
