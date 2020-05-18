@@ -1108,3 +1108,10 @@ h3.card-title {
 	    left: 0px;
 	}
 }
+.list-unstyled{
+    li {
+        &:before{
+            display:none;
+        }
+    }
+}
