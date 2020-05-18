@@ -1115,3 +1115,13 @@ h3.card-title {
         }
     }
 }
+
+nav{
+    ul.pagination{
+         li{
+             &:before {
+                display: none !important;
+            }
+         }
+    }
+} 
