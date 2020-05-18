@@ -6160,6 +6160,7 @@ button.bg-dark:focus {
   position: fixed !important; }
 
 .position-sticky {
+  position: -webkit-sticky !important;
   position: sticky !important; }
 
 .fixed-top {
@@ -6176,8 +6177,9 @@ button.bg-dark:focus {
   left: 0;
   z-index: 1030; }
 
-@supports (position: sticky) {
+@supports ((position: -webkit-sticky) or (position: sticky)) {
   .sticky-top {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020; } }
@@ -8699,7 +8701,7 @@ ul.gform_fields li::before {
       font-weight: 400;
       padding-right: 0.3rem !important;
       padding-left: .3rem !important;
-      letter-spacing: 1px; }
+      letter-spacing: 2px; }
       .bc_nav_container .navbar-nav li a:hover {
         color: #cbb893 !important; }
       @media (hover: none), only screen and (max-width: 740px) {
@@ -9382,7 +9384,8 @@ ul.gform_fields li::before {
     bottom: -20px;
     left: 50%;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); } }
+            transform: translateX(-50%);
+    opacity: 0.26; } }
 
 .bc_footer_copyright_bar .bc_footer_copyright_links {
   color: #666d89 !important; }
@@ -9654,8 +9657,16 @@ ul.gform_fields li::before {
     transition: .5s;
     background: #666d89eb; }
     .members .detail a {
-      margin-top: 50%;
-      display: block; }
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
   .members:hover .detail {
     -webkit-transform: translateY(0);
             transform: translateY(0); }
@@ -9748,6 +9759,9 @@ ul.gform_fields li::before {
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #fff), to(rgba(255, 255, 255, 0))) !important;
   background: linear-gradient(#fff 40%, rgba(255, 255, 255, 0) 100%) !important; }
+  .menu:hover {
+    background: #fff !important;
+    height: auto; }
 
 .menu-alt {
   position: fixed;
@@ -9764,6 +9778,11 @@ ul.gform_fields li::before {
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(48%, #ffffff00));
   background: linear-gradient(#FFFFFF 0%, #ffffff00 48%); }
+  @media only screen and (max-width: 768px) {
+    .gradient {
+      height: 100%;
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(35%, #ffffff00));
+      background: linear-gradient(#fff 0, #ffffff00 35%); } }
 
 .what_we_do {
   margin-top: -11.7rem; }
@@ -9827,20 +9846,56 @@ ul.gform_fields li::before {
     height: 26px !important;
     background-size: cover;
     background: url("../img/pagination.png");
-    opacity: 1; }
+    opacity: 1;
+    background-repeat: no-repeat;
+    border-radius: 0px;
+    background-position: center; }
   .how_we_pagination .swiper-pagination-bullet-active {
-    background: url("../img/pagination-fill.png"); }
+    background: url("../img/pagination-fill.png");
+    background-repeat: no-repeat;
+    border-radius: 0px;
+    background-position: center;
+    outline: none; }
 
 @media only screen and (max-width: 767px) {
   .how_we_swiper .text-uppercase {
     min-height: 70px; }
   .how_we_swiper p {
-    min-height: 110px; }
+    min-height: 120px; }
   .how_we_swiper .btn_primary {
-    margin-top: 3rem !important; }
+    margin-top: 4rem !important; }
   .how_we_pagination {
     top: auto !important;
-    bottom: 55px !important; } }
+    bottom: 46px !important; }
+    .how_we_pagination .swiper-pagination-bullet, .how_we_pagination .swiper-pagination-bullet-active {
+      padding-top: 2rem;
+      padding-bottom: 2rem; }
+  .footer_locations:before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 160px;
+    background: #666d89;
+    bottom: -20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    opacity: 0.26; }
+  .subpage_banner {
+    margin-top: 8rem !important;
+    min-height: 150px; }
+    .subpage_banner img {
+      height: 150px;
+      -o-object-fit: cover;
+         object-fit: cover;
+      -o-object-position: center;
+         object-position: center; }
+  .page-template-bc-subpage-sidebar p {
+    margin-top: 1rem; }
+  .single-bc_teams img.float-left {
+    padding: 0px !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important; } }
 
 .who_we_head {
   padding: 115px 0px;
@@ -9916,6 +9971,11 @@ ul.gform_fields li::before {
     -webkit-transition: background-color 20ms linear;
     transition: background-color 20ms linear;
     height: auto; }
+  .fixed-top.scrolled img.bc_branding_logo {
+    min-width: 190px !important; }
+  .fixed-top.scrolled .dropdown-toggle {
+    padding-top: 31px;
+    padding-bottom: 31px; }
 
 .gform_wrapper #gform_15 ul li.gfield .medium {
   border-radius: 0px !important;
@@ -9927,7 +9987,12 @@ ul.gform_fields li::before {
 .bc_header {
   z-index: 1031 !important; }
 
-.light_text {
+.light_text a {
+  opacity: 0.6; }
+  .light_text a:hover {
+    opacity: 1; }
+
+.light_pipe {
   opacity: 0.6; }
 
 .form #gform_wrapper_16 {
