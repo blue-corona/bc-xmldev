@@ -765,6 +765,7 @@ border-width:$border_width_custom_2;
 
 //homepage css
 .what_we_do{
+	
 	margin-top: -11.7rem;
 	@media only screen and (max-width: 991px) {
 		margin-top: -12rem;
@@ -949,7 +950,10 @@ border-width:$border_width_custom_2;
 }
 .who_we_swiper {
 	.client_name{
-		min-height: 44px;	
+		min-height: 70px;	
+		@media only screen and (max-width: 767px) {
+    	 	min-height: auto;
+    	}
 	}
 }
 .eagle_icon {
@@ -1131,3 +1135,17 @@ nav{
          }
     }
 } 
+
+.top_line {
+    &:before{
+	    position: absolute;
+	    content: "";
+	    left: 50%;
+	    top: -7px;
+	    -webkit-transform: translateX(-50%);
+	    transform: translateX(-50%);
+	    height: 1px;
+	    width: 100px;
+	    background: #666d89;
+	}
+}
