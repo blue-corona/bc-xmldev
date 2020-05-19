@@ -10085,4 +10085,12 @@ nav ul.pagination li:before {
   width: 100px;
   background: #666d89; }
 
+.bullet_lists ul {
+  padding-left: 0px; }
+  .bullet_lists ul li {
+    padding-left: 3rem; }
+    @media only screen and (max-width: 767px) {
+      .bullet_lists ul li {
+        padding-left: 1.5rem; } }
+
 /*# sourceMappingURL=child-theme.css.map */

@@ -10,10 +10,10 @@ get_header();?>
 
 <main>
   <?php get_template_part( 'page-templates/common/bc-banner-section' ); ?> 
-  <div class="container-fluid py-5 m-0">
+  <div class="container-fluid py-5 m-0  bullet_lists">
     <div class="container">
       <div class="row no-gutters">
-        <div class="col-lg-12">
+        <div class="col-lg-12 ">
           <h1><?php the_title()?></h1>
           <?php 
           if ( have_posts() ) :

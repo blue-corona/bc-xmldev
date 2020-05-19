@@ -14,7 +14,7 @@ global $post;
     <div class="container-fluid py-5 m-0">
         <div class="container">
             <div class="row no-gutters">
-                <div class="col-lg-8">
+                <div class="col-lg-8  bullet_lists">
                   <h1><?php the_title()?></h1>
                   <?php 
                   if ( have_posts() ) :
