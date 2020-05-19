@@ -712,19 +712,7 @@ border-width:$border_width_custom_2;
 	}
 }
 
-.menu{
-	position: fixed;
-	z-index: 999;	
-	width: 100%;
-	height: 180px;
-    width: 100%;
-    background: linear-gradient(#fff 40%,rgba(255, 255, 255, 0) 100%) !important;
-    &:hover {
-	    background: #fff !important;
-	    height: auto;
-	}
-	
-}
+
 @media (hover: none) {
 
 	.menu{
@@ -996,11 +984,28 @@ border-width:$border_width_custom_2;
 	}
 }
 
-
+.fixed-top {
+ 	.menu{
+		position: fixed;
+		z-index: 999;	
+		width: 100%;
+	    background: linear-gradient(#fff 50%,rgba(255, 255, 255, 0) 100%) !important;
+	    transition:background 20ms linear;
+	    &:hover {
+		    background: #fff !important;
+		    height: auto;
+		}
+		
+	}
+	img.bc_branding_logo {
+		min-width: 237px !important;
+		transition:min-width ease 0.4s;
+	}
+}
 .fixed-top.scrolled {
 	background-color: #ffffff!important;
  	.menu{
- 		background-color: #FFFFFF !important;
+ 		background: #FFFFFF !important;
 	    box-shadow: 0 5px 32px 14px rgba(0,0,0,0.07);
 	    transition: background-color 20ms linear;
 	    height: auto;
@@ -1073,6 +1078,7 @@ main{
 h3.card-title {
     position: relative;
     padding-right: 30px;
+    margin-bottom:0px !important;
     svg {
 	    position: absolute;
 	    top: 0px;

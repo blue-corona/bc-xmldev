@@ -8725,7 +8725,7 @@ ul.gform_fields li::before {
       .bc_nav_container .navbar-nav li:hover svg {
         color: #666d89; }
       .bc_nav_container .navbar-nav li:hover a.nav-link {
-        color: #cbb893; }
+        color: #cbb893 !important; }
     .bc_nav_container .navbar-nav .dropdown-menu {
       background-color: #e7decd !important; }
       @media (hover: none), only screen and (max-width: 991px) {
@@ -9744,18 +9744,6 @@ ul.gform_fields li::before {
 .cursor_pointer:hover {
   cursor: pointer; }
 
-.menu {
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-  height: 180px;
-  width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #fff), to(rgba(255, 255, 255, 0))) !important;
-  background: linear-gradient(#fff 40%, rgba(255, 255, 255, 0) 100%) !important; }
-  .menu:hover {
-    background: #fff !important;
-    height: auto; }
-
 @media (hover: none) {
   .menu {
     height: 0px !important; }
@@ -9978,10 +9966,27 @@ ul.gform_fields li::before {
   border: none;
   border-radius: 0; }
 
+.fixed-top .menu {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #fff), to(rgba(255, 255, 255, 0))) !important;
+  background: linear-gradient(#fff 50%, rgba(255, 255, 255, 0) 100%) !important;
+  -webkit-transition: background 20ms linear;
+  transition: background 20ms linear; }
+  .fixed-top .menu:hover {
+    background: #fff !important;
+    height: auto; }
+
+.fixed-top img.bc_branding_logo {
+  min-width: 237px !important;
+  -webkit-transition: min-width ease 0.4s;
+  transition: min-width ease 0.4s; }
+
 .fixed-top.scrolled {
   background-color: #ffffff !important; }
   .fixed-top.scrolled .menu {
-    background-color: #FFFFFF !important;
+    background: #FFFFFF !important;
     -webkit-box-shadow: 0 5px 32px 14px rgba(0, 0, 0, 0.07);
             box-shadow: 0 5px 32px 14px rgba(0, 0, 0, 0.07);
     -webkit-transition: background-color 20ms linear;
@@ -10029,7 +10034,8 @@ main li {
 
 h3.card-title {
   position: relative;
-  padding-right: 30px; }
+  padding-right: 30px;
+  margin-bottom: 0px !important; }
   h3.card-title svg {
     position: absolute;
     top: 0px;

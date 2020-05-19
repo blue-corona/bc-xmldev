@@ -1,4 +1,4 @@
-<div class="container-fluid p-0 pt-5 pb-5 bc_hero_container bc_home_section_bg home_banner d-none d-md-block" style="background-image: url('<?php echo bc_get_theme_mod('bc_theme_home_options', 'background_image', 'bc_background_upload', false);?>'); background-position: bottom;">
+<div class="container-fluid p-0 pt-5 pb-5 bc_hero_container bc_home_section_bg home_banner position-relative d-none d-md-block" style="background-image: url('<?php echo bc_get_theme_mod('bc_theme_home_options', 'background_image', 'bc_background_upload', false);?>'); background-position: bottom;">
     <div class="hero-overlay-gradient pt-5 pb-5">
         <div class="container px-md-4 pt-5 pb-5">
             <div class="row text-center text-lg-center text-md-center pt-md-5 pb-md-5">
