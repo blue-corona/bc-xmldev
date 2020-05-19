@@ -104,8 +104,8 @@ function bc_social_shortcode () {?>
             foreach ($data as $key => $value) {
                 if(!empty($value->icon)){
                 ?>
-                <a class="no_hover_underline" target="_blank" title="<?php echo $value->name;?>" href="<?php echo $value->url;?>">
-                    <i class="<?php echo $value->icon;?> bc_color_secondary bc_text_19 mr-2"></i>
+                <a class="no_hover_underline bc_color_dark_hover" target="_blank" title="<?php echo $value->name;?>" href="<?php echo $value->url;?>">
+                    <i class="<?php echo $value->icon;?> bc_color_secondary bc_text_19 mr-2 bc_color_dark_hover"></i>
                 </a>
             <?php } 
             }

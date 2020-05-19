@@ -8343,6 +8343,9 @@ li {
 .bc_color_black_hover:hover {
   color: #000000 !important; }
 
+.bc_color_dark_hover:hover {
+  color: #545a71 !important; }
+
 .bc_color_primary_hover_bg:hover {
   background-color: #666d89; }
 

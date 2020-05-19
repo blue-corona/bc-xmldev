@@ -59,6 +59,7 @@
 .bc_color_info_hover { &:hover{ color: $info_color !important; } }
 .bc_color_brown_hover { &:hover{ color: $brown_color !important; } }
 .bc_color_black_hover { &:hover{ color: #000000 !important; } }
+.bc_color_dark_hover { &:hover{ color: $dark_color !important; } }
 
 //Classes for hover bg color
 .bc_color_primary_hover_bg { &:hover{ background-color: $primary_color; } }
