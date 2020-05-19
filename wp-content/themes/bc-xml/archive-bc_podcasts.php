@@ -30,6 +30,7 @@ query_posts(['post_type'=>'bc_podcasts','paged' => $paged]);?>
 		  <div class="row no-gutters">
 		    <div class="col-lg-8 sub_page_sidebar">
 		      <h1>Podcasts</h1>
+		     <h2>Common Sense Investing Show</h2>
 		     	<?php 
 		     	if ( have_posts() ) :
 		     		while ( have_posts() ) : the_post();

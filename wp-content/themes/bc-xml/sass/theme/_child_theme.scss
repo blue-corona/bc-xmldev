@@ -723,8 +723,36 @@ border-width:$border_width_custom_2;
 	    background: #fff !important;
 	    height: auto;
 	}
+	
 }
+@media (hover: none) {
 
+	.menu{
+		height:0px!important;
+	}
+	.bc_nav_container.menu{
+			position:fixed !important;
+			top:0px !important;
+			z-index: 10 !important;
+			background: #f6f4f1 !important;
+			&:hover{
+				background: #f6f4f1 !important;
+			}
+	}
+	.menu{
+		.container{
+			margin:0px;
+			width:100%;
+			max-width:100%;
+			.navbar-collapse{
+				background: #f6f4f1 !important;
+				height: 100vh !important;
+				padding-left:15px;
+				padding-right:15px;
+			}
+		}
+	}
+}
 	
 .menu-alt{
 	position: fixed;
@@ -825,6 +853,10 @@ border-width:$border_width_custom_2;
 	}
 }
 @media only screen and (max-width: 767px) {
+	.navbar-collapse{
+		padding-left:0px !important;
+		padding-right:0px !important;
+	}
 	.how_we_swiper {
 		.text-uppercase{
 		    min-height:70px;
@@ -1076,3 +1108,20 @@ h3.card-title {
 	    left: 0px;
 	}
 }
+.list-unstyled{
+    li {
+        &:before{
+            display:none;
+        }
+    }
+}
+
+nav{
+    ul.pagination{
+         li{
+             &:before {
+                display: none !important;
+            }
+         }
+    }
+} 
