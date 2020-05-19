@@ -90,7 +90,7 @@ function toggleIcon(target){
 add_shortcode( 'bc_accordion', 'accordion_shortcode' );
 function accordion_shortcode( $atts, $content = null ) {
     $content = str_replace('<br>', '', $content);
-    return '<div id="accordion" class="accordion w-100 border-bottom mt-4">' . do_shortcode($content) . '</div>';
+    return '<div id="accordion" class="accordion w-100 border-bottom mt-5">' . do_shortcode($content) . '</div>';
 }
 add_shortcode( 'bc_card', 'card_shortcode' );
 function card_shortcode( $atts, $content = null ) {
@@ -135,7 +135,7 @@ function bc_logo_shortcode_for_menu($atts) {
  $logo =  bc_get_theme_mod('bc_theme_options', 'bc_logo_upload',false, get_template_directory_uri().'/img/logo.png');
     ob_start();
     if(isset($logo)){ ?>
-<img src="<?php echo bc_get_theme_mod('bc_theme_options', 'bc_logo_upload',false,  get_stylesheet_directory_uri().'/img/XML-Logo.png');?>" class="bc_branding_logo" alt="logo" style="min-width: 237px;" srcset="<?php echo get_stylesheet_directory_uri().'/img/XML-Logo.png@2x.png';?> 2x, <?php echo get_stylesheet_directory_uri().'/img/XML-Logo.png@3x.png';?> 3x">
+<img src="<?php echo bc_get_theme_mod('bc_theme_options', 'bc_logo_upload',false,  get_stylesheet_directory_uri().'/img/XML-Logo.png');?>" class="bc_branding_logo" alt="logo" srcset="<?php echo get_stylesheet_directory_uri().'/img/XML-Logo.png@2x.png';?> 2x, <?php echo get_stylesheet_directory_uri().'/img/XML-Logo.png@3x.png';?> 3x">
 
       
     <?php }
