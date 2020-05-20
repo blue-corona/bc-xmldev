@@ -7005,36 +7005,29 @@ function toggleColor(toggleScope, toggleType){
 function toggleContent(toToggle, toggleScope, toggleType){
   if(!toggleType || typeof toggleType == "undefined"){
     toggleType = 'toggle';
-  }
-  jQuery(toToggle).animate({
+  }  jQuery(toToggle).animate({
     height: toggleType
-  },"slow");
-  var openIcon = jQuery(toggleScope).data('open-icon');
-  var closeIcon = jQuery(toggleScope).data('close-icon');
-  if(typeof openIcon == "undefined" || typeof closeIcon == "undefined"){
+  },"slow");  var openIcon = jQuery(toggleScope).data('open-icon');
+  var closeIcon = jQuery(toggleScope).data('close-icon');  if(typeof openIcon == "undefined" || typeof closeIcon == "undefined"){
     openIcon = 'plus';
     closeIcon = 'minus';
-  }
-  if(toggleType != "toggle"){
+  }  if(toggleType != "toggle"){
     jQuery(toggleScope).find('svg').addClass("fa-"+openIcon);
     jQuery(toggleScope).find('svg').removeClass("fa-"+closeIcon);
     toggleColor(toggleScope, toggleType);
     return;
-  }
-  var currentIcon = jQuery(toggleScope).find('svg').data('icon');
-  var newIcon = currentIcon == openIcon ? closeIcon : openIcon;
-  jQuery(toggleScope).find('svg').toggleClass("fa-"+openIcon);
+  }  var currentIcon = jQuery(toggleScope).find('svg').data('icon');
+  var newIcon = currentIcon == openIcon ? closeIcon : openIcon;  jQuery(toggleScope).find('svg').toggleClass("fa-"+openIcon);
   jQuery(toggleScope).find('svg').toggleClass("fa-"+closeIcon);
-  toggleColor(toggleScope, toggleType);
-  var text = jQuery(toggleScope).children('span').html();
+  toggleColor(toggleScope, toggleType);  var text = jQuery(toggleScope).children('span').html();
   if(typeof text == "undefined"){
     return;
   }
-  if(currentIcon == 'plus' && text.search('Read More') != -1) {
-    jQuery(toggleScope).children('span').html(text.replace('Read More', 'Read Less'));
+  if(currentIcon == 'plus' && text.search('read more') != -1) {
+    jQuery(toggleScope).children('span').html(text.replace('read more', 'read less'));
   }
-  if(currentIcon == 'minus' && text.search('Read Less') != -1) {
-    jQuery(toggleScope).children('span').html(text.replace('Read Less', 'Read More'));
+  if(currentIcon == 'minus' && text.search('read less') != -1) {
+    jQuery(toggleScope).children('span').html(text.replace('read less', 'read more'));
   }
 }
 
@@ -7042,8 +7035,7 @@ jQuery(".bc_toggle_content").on('click', function(e){
   e.preventDefault();
   var dataToToggle = jQuery(this).data('toggle');
   var dataToggleGroup = jQuery(this).data('toggle-group');
-  toggleContent(dataToToggle, this);
-  if( typeof dataToggleGroup != "undefined"){
+  toggleContent(dataToToggle, this);  if( typeof dataToggleGroup != "undefined"){
     jQuery(".bc_toggle_content").each(function(){
       var dataToToggleNow = jQuery(this).data('toggle');
       if(jQuery(this).data('toggle-group') != dataToggleGroup || dataToToggle == dataToToggleNow){
@@ -7051,8 +7043,7 @@ jQuery(".bc_toggle_content").on('click', function(e){
       }
       toggleContent(dataToToggleNow, this, 'hide');
     });
-  }
-});
+  }});
 
 /*******************************
 * ACCORDION WITH TOGGLE ICONS
