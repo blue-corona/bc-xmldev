@@ -6941,8 +6941,7 @@ function toggleFloatLabel(selector, type){
 jQuery(document).ready(function(){
     jQuery(".navbar-nav li").click(
     function(){
-        jQuery(this).children('ul').hide();
-        jQuery(this).children('ul').show();
+        jQuery(this).children('ul').toogle();
     });
 
     jQuery(".navbar-nav li").focusout(
