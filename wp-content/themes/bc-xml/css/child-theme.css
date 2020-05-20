@@ -9984,10 +9984,11 @@ ul.gform_fields li::before {
     background: #fff !important;
     height: auto; }
 
-.fixed-top img.bc_branding_logo {
-  min-width: 237px !important;
-  -webkit-transition: min-width ease 0.4s;
-  transition: min-width ease 0.4s; }
+@media screen and (min-width: 1024px) {
+  .fixed-top img.bc_branding_logo {
+    min-width: 237px !important;
+    -webkit-transition: min-width ease 0.4s;
+    transition: min-width ease 0.4s; } }
 
 .fixed-top.scrolled {
   background-color: #ffffff !important; }
@@ -9998,8 +9999,9 @@ ul.gform_fields li::before {
     -webkit-transition: background-color 20ms linear;
     transition: background-color 20ms linear;
     height: auto; }
-  .fixed-top.scrolled img.bc_branding_logo {
-    min-width: 190px !important; }
+  @media screen and (min-width: 1024px) {
+    .fixed-top.scrolled img.bc_branding_logo {
+      min-width: 190px !important; } }
   .fixed-top.scrolled .dropdown-toggle {
     padding-top: 31px;
     padding-bottom: 31px; }
@@ -10046,7 +10048,7 @@ h3.card-title {
     position: absolute;
     top: 0px;
     margin: 0px !important;
-    right: 15px; }
+    right: 0px; }
 
 .graphic_lines h2 {
   text-transform: inherit; }

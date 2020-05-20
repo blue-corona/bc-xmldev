@@ -1002,8 +1002,10 @@ border-width:$border_width_custom_2;
 		
 	}
 	img.bc_branding_logo {
-		min-width: 237px !important;
-		transition:min-width ease 0.4s;
+		@media screen and (min-width: 1024px) {
+			min-width: 237px !important;
+			transition:min-width ease 0.4s;
+		}
 	}
 }
 .fixed-top.scrolled {
@@ -1015,7 +1017,9 @@ border-width:$border_width_custom_2;
 	    height: auto;
  	}
 	img.bc_branding_logo {
-		min-width: 190px !important;
+		@media screen and (min-width: 1024px) {
+			min-width: 190px !important;
+		}
 	}
 	.dropdown-toggle{
 		padding-top:31px;
@@ -1087,7 +1091,7 @@ h3.card-title {
 	    position: absolute;
 	    top: 0px;
 	    margin: 0px !important;
-	    right: 15px;
+	    right: 0px;
 	}
 }
 .graphic_lines{
