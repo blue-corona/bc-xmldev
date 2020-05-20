@@ -86,14 +86,14 @@ function toggleFloatLabel(selector, type){
 
 
 jQuery(document).ready(function(){
-    jQuery(".navbar-nav li").click(
-    function(){
-        jQuery(this).children('ul').hide();
-        jQuery(this).children('ul').show();
-    },
-    function () {
-        jQuery('ul', this).hide();            
-    });
+    // jQuery(".navbar-nav li").click(
+    // function(){
+    //     jQuery(this).children('ul').hide();
+    //     jQuery(this).children('ul').show();
+    // },
+    // function () {
+    //     jQuery('ul', this).hide();            
+    // });
 
     jQuery('#navbarSupportedContent').on('hidden.bs.collapse', function () {
         toggleIcon();        
