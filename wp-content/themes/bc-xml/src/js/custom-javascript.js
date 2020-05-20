@@ -88,7 +88,7 @@ function toggleFloatLabel(selector, type){
 jQuery(document).ready(function(){
     jQuery(".navbar-nav li").click(
     function(){
-        jQuery(this).children('ul').toogle();
+        jQuery(this).children('ul').toggle();
     });
 
     jQuery(".navbar-nav li").focusout(
