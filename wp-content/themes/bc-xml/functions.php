@@ -154,3 +154,9 @@ function bc_cta_button ( $title, $url ) {
     echo '<a href="'.get_home_url().$title['link'].'" class="btn_primary py-1 px-3 mt-4 bc_line_height_50">'.$title['title'].'</a>';
     return ob_get_clean();
 }
+
+add_action('wp_head', 'show_template');
+function show_template() {
+    global $template;
+    echo basename($template);
+}
