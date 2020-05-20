@@ -37,8 +37,8 @@
                       }?>
                     </div>
                   </div>
-                  <span class="position-relative bottom_line_2 bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center client_name"><?php the_title();?>®</span>
-                  <p class="bc_color_secondary bc_text_16 bc_font_alt_1 d-block mt-3 text-center bc_line_height_20 bc_text_normal"><?php echo $team_position;?></p>
+                  <span class="position-relative bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center client_name"><?php the_title();?>®</span>
+                  <p class="bc_color_secondary top_line bc_text_16 bc_font_alt_1 d-block mt-3 text-center bc_line_height_20 bc_text_normal position-relative"><?php echo $team_position;?></p>
                 </div>
               </div>
               <?php

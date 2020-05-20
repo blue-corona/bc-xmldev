@@ -10,13 +10,13 @@ get_header();?>
 
 <main>
 <?php get_template_part( 'page-templates/common/bc-banner-section' ); ?> 
-    <div class="container-fluid py-5 p-0 m-0">
+    <div class="container-fluid py-5 p-0 m-0 bullet_lists">
         <div class="container">
             <div class="row no-gutters">
                 <div class="col-lg-12">
                     <h1>community Starting out - Solid Foundation</h1>
                     <p>Great work considering how best to position yourself for the future. We get that yes, someday, you want to retire, but there are also things you want to do now. You aren’t living for a future retirement, but rather want to maximize your entire life. We can work thru that together, building on lessons learned from others in a similar situation, but making it your own.</p>
-                    <ul class="bullete_style pl-5">
+                    <ul>
                       <li> How to I balance retirement, investing, paying off debt and maybe buying a home? 
                       <li> Which type of retirement account is right for me?</li>
                       <li> How do we make sense of our company benefits?</li>

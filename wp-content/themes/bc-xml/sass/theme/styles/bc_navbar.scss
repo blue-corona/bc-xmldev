@@ -69,7 +69,7 @@
 					background-color: none !important; // Mobile nav bar Background
 				}		
 				svg { color: $primary_color;} //Top level dropdown icon hover
-				a.nav-link { color: $secondary_color; } // Top level link hover	
+				a.nav-link { color: $secondary_color !important; } // Top level link hover	
 			}
 		}
 		.dropdown-menu{ 
