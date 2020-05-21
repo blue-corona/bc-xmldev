@@ -6940,8 +6940,9 @@ function toggleFloatLabel(selector, type){
 
 jQuery(document).ready(function(){
     
-    jQuery(".navbar-nav li").click(
+    jQuery(".navbar-nav li").hover(
     function(){
+      console.log('here')
         jQuery(this).children('ul').hide();
         jQuery(this).children('ul').show();
     },
