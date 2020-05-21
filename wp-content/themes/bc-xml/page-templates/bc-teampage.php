@@ -91,7 +91,7 @@ get_header();?>
 <script type="text/javascript">
   
   <?php 
-    $args  = array( 'post_type' => 'bc_teams', 'posts_per_page' => -1, 'order'=> 'DESC','post_status'  => 'publish');
+    $args  = array( 'post_type' => 'bc_teams', 'posts_per_page' => -1, 'order'=> 'DESC','post_status'  => 'publish', 'order'=> 'ASC','orderby' => 'menu_order');
     $loop = new WP_Query($args);
     $team = [];
     if($loop->have_posts()) {

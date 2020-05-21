@@ -42,7 +42,7 @@ class BC_teams_Widget extends WP_Widget {
     	<div class="swiper-wrapper pb-2">
 
         <?php 
-			$teams_args  = array( 'post_type' => 'bc_teams', 'posts_per_page' => -1, 'order'=> 'DESC','post_status'  => 'publish');
+			$teams_args  = array( 'post_type' => 'bc_teams', 'posts_per_page' => -1, 'order'=> 'ASC','orderby' => 'menu_order','post_status'  => 'publish');
 
 	        $query = new WP_Query( $teams_args );
 	        if ( $query->have_posts() ) :
