@@ -93,7 +93,7 @@ jQuery(document).ready(function(){
           jQuery(this).children('ul').toggle();
     });
 
-    jQuery(".navbar-nav li").mouseleave(
+    jQuery(".navbar-nav").mouseleave(
     function(e){
     //     e.stopPropagation();  
     //     console.log('here');
