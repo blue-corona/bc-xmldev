@@ -14,7 +14,7 @@ class BC_FooterGravity_Widget extends WP_Widget {
 	}
 	
 	public function widget( $args, $instance ) {?>
-    <div class="col-lg-3 d-none d-lg-block mt-5 mt-md-0">
+    <div class="col-lg-3 col-md-6 d-none d-md-block mt-5 mt-md-0">
         <span class="d-block bc_text_26 bc_line_height_26 bc_font_default bc_text_light bc_color_primary">
             <?php 
 				if ( isset( $instance['title'] ) && !empty($instance['title']) ) {

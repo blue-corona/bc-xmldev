@@ -19,7 +19,7 @@
 
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog modal-xl" role="document">
+                      <div class="modal-dialog modal-xl" id="vimeoWrap" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
                             <button type="button" class="close bc_color_secondary_hover_bg" data-dismiss="modal" aria-label="Close">
@@ -28,6 +28,7 @@
                           </div>
                           <div class="modal-body">
                             <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/403803057" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                            
                           </div>
                           
                         </div>

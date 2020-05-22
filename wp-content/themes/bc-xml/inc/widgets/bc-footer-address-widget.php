@@ -7,7 +7,7 @@ class BC_Footer_Address_Widget extends WP_Widget {
         $id = 'BC_Footer_Address_widget';
         $title = esc_html__('BC Footer Identity', 'bc-footer-location-custom-widget');
         $options = array(
-            'classname' => 'bc-footer-address-markup-widget col-lg-4 pr-lg-4 mt-5 mt-md-0 text-center text-md-left',
+            'classname' => 'bc-footer-address-markup-widget col-lg-4 col-md-6 pr-lg-4 mt-5 mt-md-0 text-center text-md-left',
             'description' => esc_html__('Add Custom HTML in inputbox', 'bc-footer-address-custom-widget')
         );
         parent::__construct( $id, $title, $options );

@@ -49,7 +49,7 @@ class BC_Footer_Menuone_widget extends WP_Widget {
         $menu_items = wp_get_nav_menu_items($menu);
         if(isset($menu_items) && !empty($menu_items)):
 
-        echo '<div class="col-lg-3 d-none d-lg-block pl-lg-5 mt-5 mt-md-0">';
+        echo '<div class="col-lg-3 col-md-6 d-none d-md-block pl-lg-5 mt-5 mt-md-0">';
         if ( $title ) {
             echo '<span class="d-block bc_text_26 bc_line_height_26 bc_font_default bc_text_light bc_color_primary">'.$title.'</span>';
             // echo $args['before_title'] . $title . $args['after_title'];
