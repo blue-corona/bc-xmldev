@@ -32,7 +32,12 @@
 		background-color: $primary_color; // Mobile nav bar Background
 	}
 	.navbar-nav{
-		display: contents !important;
+		display: flex !important;
+		align-items:center;
+		flex:1;
+		@media only screen and (max-width: 1024px) {
+			  display:block !important;
+		}
 		li {
 			a {
 				color: $primary_color !important;

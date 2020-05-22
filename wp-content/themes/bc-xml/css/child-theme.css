@@ -6160,6 +6160,7 @@ button.bg-dark:focus {
   position: fixed !important; }
 
 .position-sticky {
+  position: -webkit-sticky !important;
   position: sticky !important; }
 
 .fixed-top {
@@ -6176,8 +6177,9 @@ button.bg-dark:focus {
   left: 0;
   z-index: 1030; }
 
-@supports (position: sticky) {
+@supports ((position: -webkit-sticky) or (position: sticky)) {
   .sticky-top {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020; } }
@@ -8691,7 +8693,18 @@ ul.gform_fields li::before {
     .bc_nav_container {
       background-color: #666d89; } }
   .bc_nav_container .navbar-nav {
-    display: contents !important; }
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+    @media only screen and (max-width: 1024px) {
+      .bc_nav_container .navbar-nav {
+        display: block !important; } }
     .bc_nav_container .navbar-nav li a {
       color: #666d89 !important;
       text-align: center;
