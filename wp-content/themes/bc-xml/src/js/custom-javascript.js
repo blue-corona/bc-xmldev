@@ -271,3 +271,16 @@ jQuery(function () {
 // jQuery('.bc_header.fixed-top').hover(function(){
 //   jQuery(this).toggleClass('animated fadeIn');
 // });
+jQuery(document).ready(function($) {
+    $(function(){
+      //First get the  iframe URL
+    var url = $('.video-container iframe').attr('src');
+      
+      $('.close').click(function() {
+        $('.video-container').hide();
+        //Then assign the src to null, this then stops the video been playing
+      $('.video-container iframe').attr('src', '');
+      });
+    
+    });
+});
