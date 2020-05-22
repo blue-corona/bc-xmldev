@@ -7124,16 +7124,23 @@ jQuery(function () {
 // jQuery('.bc_header.fixed-top').hover(function(){
 //   jQuery(this).toggleClass('animated fadeIn');
 // });
-jQuery(document).ready(function($) {
-    $(function(){
-      //First get the  iframe URL
-    var url = $('.video-container iframe').attr('src');
+// jQuery(document).ready(function($) {
+//     $(function(){
+//       //First get the  iframe URL
+//     var url = $('.video-container iframe').attr('src');
       
-      $('.close').click(function() {
-        $('.video-container').hide();
-        //Then assign the src to null, this then stops the video been playing
-      $('.video-container iframe').attr('src', '');
-      });
+//       $('.close').click(function() {
+//         $('.video-container').hide();
+//         //Then assign the src to null, this then stops the video been playing
+//       $('.video-container iframe').attr('src', '');
+//       });
     
-    });
+//     });
+// });
+
+ jQuery('#exampleModal').on('hide.bs.modal', function(e) {
+    var $if = jQuery(e.delegateTarget).find('iframe');
+    var src = $if.attr("src");
+    $if.attr("src", '/empty.html');
+    $if.attr("src", src);
 });
