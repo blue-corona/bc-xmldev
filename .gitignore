@@ -1,3 +1,5 @@
+# Version 3.0
+
 *~
 .DS_Store
 .svn
@@ -6,7 +8,7 @@
 *.swp
 Thumbs.db
 
-# wordpress specific
+# wordpress specific
 wp-config.php
 wp-content/uploads/
 wp-content/blogs.dir/
@@ -17,20 +19,31 @@ wp-content/wp-cache-config.php
 wp-content/cache/*
 wp-content/cache/supercache/*
 
-# wpengine specific
+# wpengine specific
 .htaccess
 .smushit-status
 .gitattributes
 _wpeprivate*
 wp-content/object-cache.php
+wp-content/mu-plugins/
 wp-content/mu-plugins/mu-plugin.php
 wp-content/mu-plugins/slt-force-strong-passwords.php
 wp-content/mu-plugins/stop-long-comments.php
 wp-content/mu-plugins/force-strong-passwords*
 wp-content/mu-plugins/wpengine-common*
 wp-content/mysql.sql
+wp-content/themes/bc-penguin/Search-Replace-DB-master/
+wp-content/updraft/
+.wpe-pull-ignore
+.wpe-push-ignore
+.tmb/
+.wpe-devkit/
+.wpengine-conf/
+robots.txt
+sitemap.xml
+sitemap.xml.gz
 
-# wp core (as of 4.9.5)
+# wp core (as of 4.9.5)
 /db-config.php
 /index.php
 /license.txt
@@ -77,9 +90,8 @@ wp-content/mysql.sql
 /wp-content/plugins/*
 /wp-content/wp-rocket-config
 
-
-# large/disallowed file types
-# a CDN should be used for these
+# large/disallowed file types
+# a CDN should be used for these
 *.hqx
 *.bin
 *.exe
@@ -112,6 +124,26 @@ wp-content/mysql.sql
 *.asf
 *.wmv
 *.avi
-
 .phpintel/*
+
+# Do not ignore these files
 !.phpintel/
+!/wp-content/plugins/bc-affiliations
+!/wp-content/plugins/bc-affiliations-master
+!/wp-content/plugins/bluecorona-plugin-affiliations-master
+!/wp-content/plugins/bc-locations
+!/wp-content/plugins/bc-locations-master
+!/wp-content/plugins/bc-promotions
+!/wp-content/plugins/bc-promotions-master
+!/wp-content/plugins/bluecorona-plugin-promotions-master
+!/wp-content/plugins/bc-geotargeting
+!/wp-content/plugins/bc-geotargeting-master
+!/wp-content/plugins/bluecorona-plugin-geotargeting-master
+!/wp-content/plugins/bc-testimonials
+!/wp-content/plugins/bc-testimonials-master
+!/wp-content/plugins/bluecorona-plugin-testimonials-master
+!/wp-content/plugins/bc-schema
+!/wp-content/plugins/bc-schema-master
+!/wp-content/plugins/bluecorona-plugin-schema-master
+!/wp-content/plugins/citystate
+!/wp-content/plugins/citystate-new
