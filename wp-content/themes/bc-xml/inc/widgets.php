@@ -224,6 +224,13 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 				'description'   => __( 'Include Widgets you need in geotargeting area', 'understrap' ),
 			)
 		);
+		register_sidebar(
+			array(
+				'name'          => __( 'Team Page Right Sidebar', 'understrap' ),
+				'id'            => 'teampagesidebar',
+				'description'   => __( 'Include Widgets you need in the team page', 'understrap' ),
+			)
+		);
 		register_sidebar( array(
 		    'name'           => 'Footer',
 		    'id'             => 'footer',
