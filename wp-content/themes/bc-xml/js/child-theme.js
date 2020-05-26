@@ -6940,25 +6940,22 @@ function toggleFloatLabel(selector, type){
 
 jQuery(document).ready(function(){
     
-    jQuery(".navbar-nav li").hover(
-    function(){
-      console.log('here')
-        jQuery(this).children('ul').hide();
-        jQuery(this).children('ul').show();
-    },
-    function () {
-        jQuery('ul', this).hide();            
-    });
     //Code to implement on click functionality
-    // jQuery(".navbar-nav li").click(
-    // function(){
-    //     jQuery(this).children('ul').toggle();
-    // });
+    jQuery(".navbar-nav li").click(
+    function(){
+          jQuery(this).children('ul').toggle();
+    });
 
-    // jQuery(".navbar-nav li").focusout(
-    // function () {
-    //     jQuery('ul', this).hide();            
-    // });
+    jQuery(".navbar-nav").mouseleave(
+    function(e){
+    //     e.stopPropagation();  
+    //     console.log('here');
+    //     console.log(jQuery(e));
+        if(!jQuery(e.target).is('.dropdown-toggle')){
+          jQuery(this).find('ul').hide();
+        }
+    });
+   
 
     jQuery('#navbarSupportedContent').on('hidden.bs.collapse', function () {
         toggleIcon();        

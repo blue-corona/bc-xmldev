@@ -58,7 +58,7 @@ get_header();?>
             <div class="row m-0 row-eq-height">
                          
              
-              <div class="col-lg-4 mt-5" ng-repeat="member in team track by $index" ng-show="filterMembers(member)                                                                        ">
+              <div class="col-lg-4 col-12 col-md-6 mt-5" ng-repeat="member in team track by $index" ng-show="filterMembers(member)                                                                        ">
                 <div class="members px-3 pt-3 pb-4 border position-relative overflow-hidden">
                     <div class="">
                       <img class="img-fluid" src="{{member.thumbnail}}">
