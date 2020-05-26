@@ -26,7 +26,7 @@ defined( 'ABSPATH' ) || exit;
 
 <div class="h-100 modal fade w-100 p-0" id="myModal_mobile" tabindex="-1" role="dialog" aria-labelledby="disclaimerLabel" aria-hidden="true" style="    overflow-y: inherit !important;">
   <div class="modal-dialog modal-dialog-centered m-0 mh-100 w-100 vw-100 mw-100 pt-5" role="document" style="background: url('<?php echo get_stylesheet_directory_uri(); ?>/img/mobile-pop-bg.jpg'); background-position: right bottom;background-repeat: no-repeat !important;    background-size: cover !important;">
-    <div class="modal-content rounded-0 bc_home_section_bg position-relative border-0 h-100 vh-100" style="background:none;">
+    <div class="modal-content rounded-0 bc_home_section_bg position-relative border-0 h-100 vh-100 pt-5" style="background:none;">
       <div class="modal-header" style="z-index: 9; ">
         <button type="button" class="close mt-n4 text-white bc_text_36 bc_line_height_50 bc_text_light" data-dismiss="modal" aria-label="Close" style="opacity: 1">
           <i class="fal fa-times bc_color_white"></i>
