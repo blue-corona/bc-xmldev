@@ -29,11 +29,11 @@ query_posts(['post_type'=>'news','paged' => $paged]);?>
 		<div class="container">
 		  <div class="row no-gutters">
 		    <div class="col-lg-8 sub_page_sidebar">
-		      <h1>Events</h1>
+		      <h1>In The News</h1>
 		     	<?php 
 		     	if ( have_posts() ) :
 		     		while ( have_posts() ) : the_post();
-		     			get_template_part( 'loop-templates/content-team', get_post_format() );
+		     			get_template_part( 'loop-templates/content-news', get_post_format() );
 					endwhile; else :
 					get_template_part( 'loop-templates/content', 'none' );
 				endif;
