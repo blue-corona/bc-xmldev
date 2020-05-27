@@ -9658,7 +9658,8 @@ ul.gform_fields li::before {
   height: 100%; }
   .members .img {
     width: 100%;
-    height: 270px;
+    height: auto;
+    text-align: center;
     margin: auto; }
   .members .detail {
     left: 0;
