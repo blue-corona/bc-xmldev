@@ -44,7 +44,7 @@ class bc_resources extends WP_Widget {
 	}
 	?>
 	<p class="mt-5 bc_color_dark_primary bc_text_24 bc_text_normal"><?php echo $instance['text_description'];?></p>
-	<a href="<?php echo get_home_url();?>/articles-and-news/" class="btn_primary bc_line_height_26 px-3 py-2 mt-3">learn how</a>
+	<a href="<?php echo get_home_url();?>/resources/" class="btn_primary bc_line_height_26 px-3 py-2 mt-3">learn More</a>
 </div>
 
 <?php echo $args['after_widget'];

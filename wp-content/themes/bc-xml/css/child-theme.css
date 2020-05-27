@@ -8719,7 +8719,7 @@ ul.gform_fields li::before {
     .bc_nav_container .navbar-nav li a {
       color: #666d89 !important;
       text-align: center;
-      font-size: 16px;
+      font-size: 15px;
       line-height: 34px;
       text-transform: uppercase;
       font-weight: "Work Sans", sans-serif !important;
@@ -10008,9 +10008,10 @@ ul.gform_fields li::before {
 
 @media screen and (min-width: 1024px) {
   .fixed-top img.bc_branding_logo {
-    min-width: 237px !important;
+    min-width: 273px !important;
     -webkit-transition: min-width ease 0.4s;
-    transition: min-width ease 0.4s; } }
+    transition: min-width ease 0.4s;
+    padding-left: 2.3rem; } }
 
 .fixed-top.scrolled {
   background-color: #ffffff !important; }
@@ -10023,7 +10024,7 @@ ul.gform_fields li::before {
     height: auto; }
   @media screen and (min-width: 1024px) {
     .fixed-top.scrolled img.bc_branding_logo {
-      min-width: 190px !important; } }
+      min-width: 210px !important; } }
   .fixed-top.scrolled .dropdown-toggle {
     padding-top: 31px;
     padding-bottom: 31px; }
