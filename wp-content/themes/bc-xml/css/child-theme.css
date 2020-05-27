@@ -6160,6 +6160,7 @@ button.bg-dark:focus {
   position: fixed !important; }
 
 .position-sticky {
+  position: -webkit-sticky !important;
   position: sticky !important; }
 
 .fixed-top {
@@ -6176,8 +6177,9 @@ button.bg-dark:focus {
   left: 0;
   z-index: 1030; }
 
-@supports (position: sticky) {
+@supports ((position: -webkit-sticky) or (position: sticky)) {
   .sticky-top {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020; } }
@@ -8044,6 +8046,17 @@ main a {
   line-height: 34px;
   color: #cbb893; }
   main a:hover {
+    text-decoration: underline;
+    color: #cbb893; }
+
+#disclaimer a {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: none;
+  line-height: 34px;
+  color: #cbb893; }
+  #disclaimer a:hover {
     text-decoration: underline;
     color: #cbb893; }
 
@@ -10108,4 +10121,3 @@ nav ul.pagination li:before {
         padding-left: 1.5rem; } }
 
 /*# sourceMappingURL=child-theme.css.map */
-
