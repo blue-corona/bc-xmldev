@@ -41,7 +41,7 @@ defined( 'ABSPATH' ) || exit;
                 <!-- announcement bar content-->
                 <?php echo bc_get_theme_mod('bc_theme_options', 'header','announcement_bar_content', '
                 <div class="col-12 col-lg-12 text-center d-none d-lg-block bc_font_default bc_text_light">
-                    <span class="bc_color_secondary bc_text_16 bc_line_height_36"> <span class="bc_color_primary bc_text_medium">NEWS  //</span>  <span class="d-none d-md-inline">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do labore et dolore magna aliqua</span>  | <a href="#" class="bc_text_medium">  Learn More <i class="far fa-chevron-circle-right bc_text_18 ml-2 mt-2"></i> </a> </span>
+                    <span class="bc_color_secondary bc_text_16 bc_line_height_36"> <span class="bc_color_primary bc_text_medium">NEWS  //</span>  <span class="d-none d-md-inline"><a href="https://xmldev.wpengine.com/wp-content/uploads/2020/05/COVID-19-Website-Notice-2020.pdf" class="no_hover_underline bc_color_secondary_hover text-decoration-none">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do labore et dolore magna aliqua</a></span>  | <a href="#" class="bc_text_medium">  Learn More <i class="far fa-chevron-circle-right bc_text_18 ml-2 mt-2"></i> </a> </span>
                     <button type="button" class="close bc_color_primary" data-dismiss="alert" aria-label="Close" style="background:none;opacity:1">
                         <span aria-hidden="true">&times;</span>
                     </button>
