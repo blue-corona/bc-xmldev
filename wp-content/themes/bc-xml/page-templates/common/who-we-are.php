@@ -11,7 +11,7 @@
           <div class="swiper-wrapper mb-5">
 
            <?php 
-           $teams_args  = array( 'post_type' => 'bc_teams', 'posts_per_page' => 6, 'order'=> 'ASC','orderby' => 'menu_order', 'post_status'  => 'publish');
+           $teams_args  = array( 'post_type' => 'bc_teams', 'posts_per_page' => -1, 'order'=> 'ASC','orderby' => 'menu_order', 'post_status'  => 'publish');
 
            $query = new WP_Query( $teams_args );
            if ( $query->have_posts() ) :
