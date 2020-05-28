@@ -160,3 +160,17 @@ function show_template() {
     global $template;
     echo basename($template);
 }
+
+// START : [Member_Email email=""] - This short code only work on Member page #20321
+function member_email_function( $atts = array() ) {
+  
+    // set up default parameters
+    extract(shortcode_atts(array(
+     'email' => get_field('email')
+    ), $atts));
+    $output .='<p><a href="mailto:'.$email.'" class="btn_primary bc_line_height_26 px-3 py-2">LET\'s TALK</a></p>';
+    return $output;
+}
+
+add_shortcode('Member_Email', 'member_email_function');
+// : END

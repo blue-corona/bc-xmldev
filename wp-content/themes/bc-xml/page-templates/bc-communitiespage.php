@@ -15,11 +15,13 @@ get_header();?>
             <div class="row no-gutters">
                 <div class="col-lg-12">
                     <h1><?php the_title(); ?></h1>
-					<?php the_content(); ?>
+          <?php the_content(); ?>
+          <?php if(get_field( "team_members" )){ ?>
 					<div class="mt-5 py-5 border-top">
 						<h2>Community Members</h2>
 						<p class="mt-3">We know what you are going through, and we have the expertise to help make the right choices.</p>
-					</div>
+          </div>
+          <?php } ?>
                 </div> 
               <!-- Community Members -->
 				<?php 
