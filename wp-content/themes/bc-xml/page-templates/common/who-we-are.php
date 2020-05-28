@@ -23,7 +23,7 @@
               $team_position = get_post_meta( get_the_id(), 'team_position', true );
               $show_on_homepage = get_post_meta( get_the_id(), 'show_on_homepage', true );
               // print_r($show_on_homepage);die('ss');
-              if ($show_on_homepage == 'true') {
+              // if ($show_on_homepage == 'true') {
               ?>
               <div class="swiper-slide">
                 <div class="px-4">
@@ -42,7 +42,7 @@
                 </div>
               </div>
               <?php
-              }
+              // }
             endwhile; 
             wp_reset_query();
           endif;
@@ -50,7 +50,7 @@
                           
                         </div>
                         <!-- Add Pagination -->
-                        <div class="swiper-pagination who_we_pagination "></div>
+                        <!-- <div class="swiper-pagination who_we_pagination "></div> -->
                         
                       </div>
                       <!-- Add Arrows -->
@@ -78,13 +78,9 @@
                 var swiper = new Swiper('.who_we_swiper', {
                   slidesPerView: 3,
                   spaceBetween: 30,
-                  slidesPerGroup: 1,
+                  slidesPerGroup: 3,
                   loop: true,
                   loopFillGroupWithBlank: true,
-                  pagination: {
-                    el: '.who_we_pagination',
-                    clickable: true,
-                  },
                   navigation: {
                     nextEl: '.who_we_next',
                     prevEl: '.who_we_prev',

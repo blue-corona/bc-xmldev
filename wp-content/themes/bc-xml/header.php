@@ -23,6 +23,8 @@ defined( 'ABSPATH' ) || exit;
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="http://ianlunn.github.io/Hover/css/hover.css">
 </head>
 <body <?php body_class();?> >
 <!-- Show header accordingly fixed or default -->

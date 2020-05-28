@@ -56,7 +56,7 @@ add_action( 'add_meta_boxes', 'bc_team_create_metabox' );
 function bc_team_create_metabox() {
     add_meta_box(
         'bc_team_metabox',
-        'Show On Home Page', // Title to display
+        'Team Settings', // Title to display
         'bc_team_metabox', // Function to call that contains the metabox content
         'bc_teams', // Post type to display metabox on
         'side', // Where to put it (normal = main colum, side = sidebar, etc.)
@@ -106,7 +106,7 @@ function bc_team_metabox() {
     <div>
         <div>
             <input type="hidden" name="show_on_homepage" value="false">
-            <input type="checkbox" name="show_on_homepage" value="true" <?php echo  ($show_on_homepage != 'false' ? 'checked': '')?>> Show On Home Page?
+            <input type="checkbox" name="show_on_homepage" value="true" <?php echo  ($show_on_homepage != 'false' ? 'checked': '')?>> Show On Sub Page?
         </div>
     </div>
 
