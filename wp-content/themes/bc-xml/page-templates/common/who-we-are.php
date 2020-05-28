@@ -52,7 +52,7 @@
                           
                         </div>
                         <!-- Add Pagination -->
-                        <!-- <div class="swiper-pagination who_we_pagination "></div> -->
+                         <div class="swiper-pagination who_we_pagination "></div>
                         
                       </div>
                       <!-- Add Arrows -->
@@ -84,6 +84,12 @@
                   loop: true,
                   autoplay:true,
                   loopFillGroupWithBlank: true,
+                  pagination: {
+                    el: '.who_we_pagination',
+                            clickable: true,
+                            dynamicBullets: true,
+                            dynamicMainBullets: 1,
+                  },
                   navigation: {
                     nextEl: '.who_we_next',
                     prevEl: '.who_we_prev',
