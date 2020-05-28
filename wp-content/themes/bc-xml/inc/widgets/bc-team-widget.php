@@ -64,8 +64,8 @@ class BC_teams_Widget extends WP_Widget {
                         echo '<img class="img-fluid rounded-circle" src="https://placehold.it/138x138">';
                       }?>
             </div>
-             <span class="position-relative  bc_color_primary bc_text_24 bc_line_height_50 bc_font_alt_1 bc_text_bold d-block"><?php the_title();?><sup>®</sup> </span>
-            <span class="bc_color_secondary bc_text_24 bc_line_height_50 bc_font_alt_1 d-block mt-2"><?php echo $team_position;?></span>
+             <span class="position-relative  bc_color_primary bc_text_24 bc_line_height_36 bc_font_alt_1 bc_text_bold d-block"><?php the_title();?><sup>®</sup> </span>
+            <span class="bc_color_secondary bc_text_24 bc_line_height_30 bc_font_alt_1 d-block mt-2"><?php echo $team_position;?></span>
         </div>
     <?php }?>
 		 <?php
