@@ -82,6 +82,7 @@
                   spaceBetween: 30,
                   slidesPerGroup: 3,
                   loop: true,
+                  autoplay:true,
                   loopFillGroupWithBlank: true,
                   navigation: {
                     nextEl: '.who_we_next',
