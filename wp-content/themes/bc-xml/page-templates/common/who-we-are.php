@@ -90,16 +90,19 @@
                   },
                   breakpoints: {
                     540: {
+                      slidesPerGroup: 1,
                       autoplay:true,
                       slidesPerView: 1,
                       spaceBetween: 20,
                     },
                     640: {
+                      slidesPerGroup: 1,
                       autoplay:true,
                       slidesPerView: 2,
                       spaceBetween: 20,
                     },
                     768: {
+                      slidesPerGroup: 2,
                       autoplay:true,
                       slidesPerView: 2,
                       spaceBetween: 40,
