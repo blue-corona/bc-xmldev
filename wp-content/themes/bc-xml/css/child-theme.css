@@ -10126,4 +10126,10 @@ nav ul.pagination li:before {
 .home .who_we_swiper .bc_text_18 {
   font-size: 17px; }
 
+.home .who_we_swiper .bc_text_16 {
+  font-size: 15px; }
+
+.home .who_we_swiper a {
+  text-decoration: none; }
+
 /*# sourceMappingURL=child-theme.css.map */
