@@ -19,13 +19,14 @@
               $title = get_post_meta( get_the_ID(), 'teams_title', true );
               $message = get_post_meta( get_the_ID(), 'teams_message', true );
               $image = get_post_meta( get_the_id(), 'bc_team_custom_image', true );
-
+              $mem_name = (get_field('first_name'))?get_field('first_name').' '.get_field('last_name'):get_the_title();
               $team_position = get_post_meta( get_the_id(), 'team_position', true );
               $show_on_homepage = get_post_meta( get_the_id(), 'show_on_homepage', true );
               // print_r($show_on_homepage);die('ss');
               if ($show_on_homepage == 'true') {
               ?>
               <div class="swiper-slide">
+              <a href="<?php the_permalink();?>">
                 <div class="px-4">
                   <div class="text-center">
                     <div class="image position-relative d-inline-block mx-auto p-2 image_border">
@@ -37,9 +38,10 @@
                       }?>
                     </div>
                   </div>
-                  <span class="position-relative bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center client_name"><?php the_title();?>®</span>
+                  <span class="position-relative bc_color_primary bc_text_18 bc_line_height_22 bc_font_alt_1 bc_text_bold d-block text-capitalize text-center client_name"><?php echo $mem_name;?></span>
                   <p class="bc_color_secondary top_line bc_text_16 bc_font_alt_1 d-block mt-3 text-center bc_line_height_20 bc_text_normal position-relative"><?php echo $team_position;?></p>
                 </div>
+                </a>
               </div>
               <?php
               }
