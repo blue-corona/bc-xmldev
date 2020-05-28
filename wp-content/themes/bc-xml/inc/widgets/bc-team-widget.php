@@ -79,12 +79,13 @@ class BC_teams_Widget extends WP_Widget {
 		?>
     	<!-- end -->
         </div>
-    	<div class="swiper-pagination team-pagination"></div>
+		<div class="swiper-pagination team-pagination"></div>
+		<div class="who_we_buttons">
+			<div class="swiper-button-next who_we_next bc_color_primary bc_text_30 bc_text_light bc_line_height_60"><i class="fal fa-2x fa-angle-right"></i></div>
+			<div class="swiper-button-prev who_we_prev bc_color_primary bc_text_30 bc_text_light bc_line_height_60"><i class="fal fa-2x fa-angle-left"></i></div>
+		</div>
 	</div>
-	<div class="who_we_buttons">
-	<div class="swiper-button-next who_we_next bc_color_primary bc_text_30 bc_text_light bc_line_height_60"><i class="fal fa-2x fa-angle-right"></i></div>
-	<div class="swiper-button-prev who_we_prev bc_color_primary bc_text_30 bc_text_light bc_line_height_60"><i class="fal fa-2x fa-angle-left"></i></div>
-	</div>
+		
      <a href="<?php echo get_home_url();?>/our-team/" class="btn_secondary bc_line_height_26 px-4 py-2 mt-3">FULL TEAM</a>
     </div>
 <?php echo $args['after_widget'];
