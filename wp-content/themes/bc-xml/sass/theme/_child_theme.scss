@@ -951,7 +951,7 @@ border-width:$border_width_custom_2;
 }
 .who_we_swiper {
 	.client_name{
-		min-height: 70px;	
+		min-height: 40px;	
 		@media only screen and (max-width: 767px) {
     	 	min-height: auto;
     	}
@@ -1165,4 +1165,19 @@ nav{
 	    	}
     	}
     }
+}
+.home .who_we_swiper{
+
+	.px-4 {
+		   padding: 0 1.25rem !important
+	}
+	& .bc_text_18 {
+		font-size: 17px;
+	}
+	& .bc_text_16 {
+		font-size: 15px;
+	}
+	a{
+		text-decoration: none; 
+	}
 }

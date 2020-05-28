@@ -49,7 +49,7 @@ get_header('variant-announcement-bar');?>
                 <a href="https://www.google.com/maps/place/208+S+Ridge+St,+Breckenridge,+CO+80424,+USA/@39.4804752,-106.0453713,18z/data=!4m8!1m2!2m1!1sBRECKENRIDGE,+CO+208+S.+Ridge+Street+P.O.+Box+3813+Breckenridge,!3m4!1s0x876af666f7a1ce47:0x57addaa63eb7f64!8m2!3d39.4804735!4d-106.0444352" target="_blank" class="bc_text_bold bc_text_20 bc_line_height_34"> MAP > </a>
              </div>
              <div class="col-md-6 text-right mb-5">
-               <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/breckenridge.jpg" class="img-fluid" alt="rockville">
+               <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/xml-colorado-office.jpg" class="img-fluid" alt="rockville">
              </div>
            </div>
          </div>
