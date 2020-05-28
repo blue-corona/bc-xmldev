@@ -21,9 +21,10 @@ get_header();
             <div class="row no-gutters">
                 <div class="col-lg-8">
 				<?php $member_img = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ),'full' ); ?>
-                  <img class="float-left pr-3" src="<?php echo $member_img[0]; ?>" width="300" height="300"/>
+                  
 				  <h1><?php the_title()?></h1>
-				  <h2><?php echo get_post_meta( $post->ID, 'team_position', true ); ?></h2>
+          <h2><?php echo get_post_meta( $post->ID, 'team_position', true ); ?></h2>
+          <img class="float-left pr-3" src="<?php echo $member_img[0]; ?>" width="300" height="300"/>
                   <?php 
                   if ( have_posts() ) :
                     while ( have_posts() ) :  the_post();
