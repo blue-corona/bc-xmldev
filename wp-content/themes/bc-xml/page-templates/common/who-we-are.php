@@ -90,18 +90,22 @@
                   },
                   breakpoints: {
                     540: {
+                      autoplay:true,
                       slidesPerView: 1,
                       spaceBetween: 20,
                     },
                     640: {
+                      autoplay:true,
                       slidesPerView: 2,
                       spaceBetween: 20,
                     },
                     768: {
+                      autoplay:true,
                       slidesPerView: 2,
                       spaceBetween: 40,
                     },
                     1024: {
+                      autoplay:true,
                       slidesPerView: 2,
                       spaceBetween: 50,
                     },
