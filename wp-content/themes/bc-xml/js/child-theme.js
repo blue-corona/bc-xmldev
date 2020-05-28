@@ -6939,14 +6939,23 @@ function toggleFloatLabel(selector, type){
 
 
 jQuery(document).ready(function(){
-    jQuery(".navbar-nav li").hover(
+    
+    //Code to implement on click functionality
+    jQuery(".navbar-nav li").click(
     function(){
-        jQuery(this).children('ul').hide();
-        jQuery(this).children('ul').show();
-    },
-    function () {
-        jQuery('ul', this).hide();            
+          jQuery(this).children('ul').toggle();
     });
+
+    jQuery(".navbar-nav").mouseleave(
+    function(e){
+    //     e.stopPropagation();  
+    //     console.log('here');
+    //     console.log(jQuery(e));
+        if(!jQuery(e.target).is('.dropdown-toggle')){
+          jQuery(this).find('ul').hide();
+        }
+    });
+   
 
     jQuery('#navbarSupportedContent').on('hidden.bs.collapse', function () {
         toggleIcon();        
@@ -7112,3 +7121,23 @@ jQuery(function () {
 // jQuery('.bc_header.fixed-top').hover(function(){
 //   jQuery(this).toggleClass('animated fadeIn');
 // });
+// jQuery(document).ready(function($) {
+//     $(function(){
+//       //First get the  iframe URL
+//     var url = $('.video-container iframe').attr('src');
+      
+//       $('.close').click(function() {
+//         $('.video-container').hide();
+//         //Then assign the src to null, this then stops the video been playing
+//       $('.video-container iframe').attr('src', '');
+//       });
+    
+//     });
+// });
+
+ jQuery('#exampleModal').on('hide.bs.modal', function(e) {
+    var $if = jQuery(e.delegateTarget).find('iframe');
+    var src = $if.attr("src");
+    $if.attr("src", '/empty.html');
+    $if.attr("src", src);
+});

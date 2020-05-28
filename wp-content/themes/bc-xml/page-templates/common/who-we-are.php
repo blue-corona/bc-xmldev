@@ -11,7 +11,7 @@
           <div class="swiper-wrapper mb-5">
 
            <?php 
-           $teams_args  = array( 'post_type' => 'bc_teams', 'posts_per_page' => -1, 'order'=> 'DESC','post_status'  => 'publish');
+           $teams_args  = array( 'post_type' => 'bc_teams', 'posts_per_page' => 6, 'order'=> 'ASC','orderby' => 'menu_order', 'post_status'  => 'publish');
 
            $query = new WP_Query( $teams_args );
            if ( $query->have_posts() ) :
@@ -65,7 +65,7 @@
                     <div class="col-xl-5 order-1 order-xl-2 mt-3 pb-md-0 pb-3 text-center text-xl-left team_text px-md-5">
                       <div class="px-md-3">
                         <h2>A Team of Passionate Experts</h2>
-                        <p class="bc_sm_text_normal mt-4 mt-md-0">With roots back to 1981 XML has been passionate about assembling a team of experts not just in money management but also in listening and in sincere care for our client's well being. We currently have CFPs, CRPCs, MBAs working to improve our Client's lives.</p>
+                        <p class="bc_sm_text_normal mt-4 mt-md-0">With roots back to 1981 XML has been passionate about assembling a team of experts not just in money management but also in listening and in sincere care for our client's well being. We currently have CFPs, CRPCs, MBAs working to improve our client's lives.</p>
                         <a href="<?php echo get_home_url();?>/our-team/" class="btn_secondary px-4 py-2 mt-4 mb-0 d-md-inline-block d-none">FULL TEAM</a>
                       </div>
                     </div>

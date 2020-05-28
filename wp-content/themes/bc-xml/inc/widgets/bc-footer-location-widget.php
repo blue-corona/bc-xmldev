@@ -7,7 +7,7 @@ class BC_Footer_Location_Widget extends WP_Widget {
         $id = 'BC_Footer_Location_widget';
         $title = esc_html__('BC Footer Location', 'bc-footer-location-custom-widget');
         $options = array(
-            'classname' => 'bc-footer-location-markup-widget col-lg-2 text-center text-md-left mt-5 mt-md-0 position-relative footer_locations',
+            'classname' => 'bc-footer-location-markup-widget col-lg-2 col-md-6 text-center text-md-left mt-5 mt-md-0 position-relative footer_locations mb-md-5 mb-lg-0',
             'description' => esc_html__('Add Custom HTML in inputbox', 'bc-footer-location-custom-widget')
         );
         parent::__construct( $id, $title, $options );

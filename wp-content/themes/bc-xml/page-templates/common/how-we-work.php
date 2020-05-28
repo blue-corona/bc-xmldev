@@ -11,7 +11,7 @@
                   <div class="pl-md-4 text-center text-md-left">
                     <p class="text-uppercase bc_text_20">team driven<span class="d-block bc_color_primary bc_text_40 bc_text_semibold bc_line_height_38">investing</span></p>
                     <p class="px-3 px-md-0">“No one knows everything.” We try to make informed, rational decisions that align your investments with your lifestyle.</p>
-                    <a href="<?php echo get_home_url();?>/our-team/" class="btn_primary py-2 px-3 mt-4">LEARN HOW</a>
+                    <a href="<?php echo get_home_url();?>/services/" class="btn_primary py-2 px-3 mt-4">LEARN HOW</a>
                   </div>
                 </div>
                 <div class="col-md-5 d-none d-md-block">
@@ -32,7 +32,7 @@
                 </div>
                 <div class="col-md-5 d-none d-md-block">
                   <div class="image position-relative d-inline-block mx-auto p-3 image_border">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid rounded-circle" alt="team" >
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slider_2.png" class="img-fluid rounded-circle" alt="team" >
                   </div>
                 </div>
               </div>
@@ -42,13 +42,13 @@
                 <div class="offset-md-1 col-md-5 col-12">
                   <div class="pl-md-4 text-center text-md-left">
                     <p class="text-uppercase bc_text_20">&nbsp;<span class="d-block bc_color_primary bc_text_40 bc_text_semibold bc_line_height_38">QUALIFIED</span></p>
-                    <p>“We’ve got the credentials.” Meet the <a href="<?php echo get_home_url();?>">team.</a></p><br class="d-none d-md-block">
+                    <p>“We’ve got the credentials.” Meet the team.</p><br class="d-none d-md-block">
                     <a href="<?php echo get_home_url();?>/our-team/" class="btn_primary py-2 px-3 mt-4">LEARN HOW</a>
                   </div>
                 </div>
                 <div class="col-md-5 d-none d-md-block">
                   <div class="image position-relative d-inline-block mx-auto p-3 image_border">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid rounded-circle" alt="team" >
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slider_3.png" class="img-fluid rounded-circle" alt="team" >
                   </div>
                 </div>
               </div>
@@ -58,13 +58,13 @@
                 <div class="offset-md-1 col-md-5 col-12">
                   <div class="pl-md-4 text-center text-md-left">
                     <p class="text-uppercase bc_text_20">Community<span class="d-block bc_color_primary bc_text_40 bc_text_semibold bc_line_height_38">CENTRIC</span></p>
-                    <p>“Our clients are not clones.” Learn more about how we advise our <a href="<?php echo get_home_url();?>">community.</a> </p><br class="d-none d-md-block">
-                    <a href="<?php echo get_home_url();?>/our-team/" class="btn_primary py-2 px-3 mt-4">LEARN HOW</a>
+                    <p>“Our clients are not clones.” Learn more about how we advise our community. </p><br class="d-none d-md-block">
+                    <a href="<?php echo get_home_url();?>/communities/" class="btn_primary py-2 px-3 mt-4">LEARN HOW</a>
                   </div>
                 </div>
                 <div class="col-md-5 d-none d-md-block">
                   <div class="image position-relative d-inline-block mx-auto p-3 image_border">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid rounded-circle" alt="team" >
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slider_4.png" class="img-fluid rounded-circle" alt="team" >
                   </div>
                 </div>
               </div>
@@ -74,13 +74,13 @@
                 <div class="offset-md-1 col-md-5 col-12">
                   <div class="pl-md-4 text-center text-md-left">
                     <p class="text-uppercase bc_text_20">&nbsp;<span class="d-block bc_color_primary bc_text_40 bc_text_semibold bc_line_height_38">INDEPENDENT</span></p>
-                    <p>“We think for ourselves.” Read about our <a href="<?php echo get_home_url();?>">beliefs</a> and how we invest in our community. </p>
-                    <a href="<?php echo get_home_url();?>/our-team/" class="btn_primary py-2 px-3 mt-4">LEARN HOW</a>
+                    <p>“We think for ourselves.” Read about our beliefs and how we invest in our community. </p>
+                    <a href="<?php echo get_home_url();?>/philanthropy/" class="btn_primary py-2 px-3 mt-4">LEARN HOW</a>
                   </div>
                 </div>
                 <div class="col-md-5 d-none d-md-block">
                   <div class="image position-relative d-inline-block mx-auto p-3 image_border">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/investing.png" class="img-fluid rounded-circle" alt="team" >
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slider_5.png" class="img-fluid rounded-circle" alt="team" >
                   </div>
                 </div>
               </div>

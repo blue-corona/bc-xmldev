@@ -58,7 +58,7 @@ get_header();?>
             <div class="row m-0 row-eq-height">
                          
              
-              <div class="col-lg-4 mt-5" ng-repeat="member in team track by $index" ng-show="filterMembers(member)                                                                        ">
+              <div class="col-lg-4 col-12 col-md-6 mt-5" ng-repeat="member in team track by $index" ng-show="filterMembers(member)                                                                        ">
                 <div class="members px-3 pt-3 pb-4 border position-relative overflow-hidden">
                     <div class="">
                       <img class="img-fluid" src="{{member.thumbnail}}">
@@ -91,7 +91,7 @@ get_header();?>
 <script type="text/javascript">
   
   <?php 
-    $args  = array( 'post_type' => 'bc_teams', 'posts_per_page' => -1, 'order'=> 'DESC','post_status'  => 'publish');
+    $args  = array( 'post_type' => 'bc_teams', 'posts_per_page' => -1, 'order'=> 'DESC','post_status'  => 'publish', 'order'=> 'ASC','orderby' => 'menu_order');
     $loop = new WP_Query($args);
     $team = [];
     if($loop->have_posts()) {

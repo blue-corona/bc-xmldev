@@ -17,8 +17,9 @@ get_header('variant-announcement-bar');?>
            <div class="row no-gutters">
              <div class="col-lg-12 mb-4 pl-md-4">
                 <h1 class="bc_sm_text_48 bc_sm_line_height_48"> let’s talk </h1>
+                <p class="bc_sm_text_20 bc_sm_line_height_34 mb-3">Many busy successful people are uncertain about the financial advice they are receiving. We provide lifestyle driven advice on what matters most to you so that you can pursue a life according to your design.</p>
                 <h2 class="text-capitalize mt-4 bc_sm_text_36 bc_sm_line_height_36"> Our Offices </h2>
-                <p class="bc_sm_text_20 bc_sm_line_height_34"> Three locations to better serve our clients </p>
+                <p class="bc_sm_text_20 bc_sm_line_height_34"> Three locations to better serve our clients.</p>
              </div>
              <div class="col-md-6 mb-5 pl-md-4">
                 <h3> ROCKVILLE, MD </h3>
