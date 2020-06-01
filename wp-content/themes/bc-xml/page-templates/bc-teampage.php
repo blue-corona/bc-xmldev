@@ -41,7 +41,6 @@ get_header();?>
 
                    </p>
 
-              <!--   <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <a href="#"> hyperlink example </a> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint </p> -->
                 <p class="text-right mt-4" ng-show="showReset()"><a ng-click="resetFilter()" class="btn_secondary bc_line_height_26 py-2 px-4 btn">reset all</a>
                 </p>
               </div>

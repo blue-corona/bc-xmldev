@@ -13,7 +13,7 @@
                     </button>
                 </div>
                 <div class="col-2 bc_color_primary_bg text-center pt-3">
-                    <a href="tel: 555-555-5555"><i class="fas fa-phone text-white bc_text_24 bc_line_height_24"></i></a>
+                    <a href="tel:3017705234"><i class="fas fa-phone text-white bc_text_24 bc_line_height_24"></i></a>
                 </div>
             </div>
         </div>
