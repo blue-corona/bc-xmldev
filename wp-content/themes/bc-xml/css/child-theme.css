@@ -10132,4 +10132,8 @@ nav ul.pagination li:before {
 .home .who_we_swiper a {
   text-decoration: none; }
 
+@media only screen and (min-width: 1025px) {
+  .navbar-nav .dropdown:hover .dropdown-menu {
+    display: block !important; } }
+
 /*# sourceMappingURL=child-theme.css.map */
