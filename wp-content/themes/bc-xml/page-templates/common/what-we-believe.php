@@ -7,7 +7,7 @@
                     <h3 class="position-relative bottom_line mb-5 bc_sm_line_height_28 bc_sm_text_28">What We Believe</h3>
                     <div class="mx-md-5 mx-3 position-relative bg-white overflow-hidden what_we_video" data-toggle="modal" data-target="#exampleModal">
                         <div class="row">
-                            <div class="offset-lg-1 col-lg-10 offset-md-1 col-md-10 pb-md-5 pb-3 d-flex justify-content-center align-items-center">
+                            <div class="col-12 d-flex justify-content-center align-items-center">
                                 <span class="position-absolute d-block play_icon text-center mt-md-5 mt-3 ml-n2">
                                     <i class="fas fa-2x fa-play-circle bc_color_primary"></i>
                                 </span>
