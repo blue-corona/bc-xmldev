@@ -82,7 +82,7 @@
                   spaceBetween: 30,
                   slidesPerGroup: 3,
                   loop: true,
-                  autoplay:true,
+                  autoplay:false,
                   loopFillGroupWithBlank: true,
                   pagination: {
                     el: '.who_we_pagination',

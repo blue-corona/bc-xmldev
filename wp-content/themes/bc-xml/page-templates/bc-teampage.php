@@ -98,12 +98,13 @@ get_header();?>
       while($loop->have_posts()) : $loop->the_post();
         $teams = json_decode(get_post_meta( get_the_id(), 'teams', true ));
         $locations = json_decode(get_post_meta( get_the_id(), 'locations', true ));
+		$mem_name = (get_field('first_name'))?get_field('first_name').' '.get_field('last_name'):get_the_title();
         $member = [
           'team_position' => get_post_meta( get_the_id(), 'team_position', true ),
           'permalink' => get_the_permalink(),
           'teams' => $teams == null ? []: $teams,
           'locations' => $locations == null ? []: $locations,
-          'title' => get_the_title() 
+          'title' => $mem_name
         ];
         if (has_post_thumbnail() ){
           $image = wp_get_attachment_image_src( get_post_thumbnail_id( ), 'full' );

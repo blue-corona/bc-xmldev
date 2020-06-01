@@ -79,7 +79,7 @@ defined( 'ABSPATH' ) || exit;
   </div>
 </div>
 
-<a href="#" class="hvr-rectangle-out">Hover Effect</a>
+<!--<a href="#" class="hvr-rectangle-out">Hover Effect</a>-->
 <?php wp_footer(); ?>
 </body>
 </html>
