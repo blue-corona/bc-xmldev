@@ -24,7 +24,7 @@ class BC_Footer_Location_Widget extends WP_Widget {
             <a href="tel:3017704929" class="d-block bc_text_18 bc_line_height_24 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-3 mb-md-1 no_hover_underline">F: 301.770.4929</a>
             <span class="d-block bc_text_18 bc_line_height_40 bc_sm_line_height_50 bc_font_alt_1 bc_text_light bc_color_secondary mt-3 text-uppercase"> Falls Church, VA </span>
             <a href="tel:7037905999" class="d-block bc_text_18 bc_line_height_24 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-3 mb-md-1 no_hover_underline"> T: 703.790.5999</a>
-            <a href="tel:7038272300<" class="d-block bc_text_18 bc_line_height_24 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-3 mb-md-1 no_hover_underline"> LMA: 703.827.2300</a>
+            <a href="tel:7038272300" class="d-block bc_text_18 bc_line_height_24 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-3 mb-md-1 no_hover_underline"> LMA: 703.827.2300</a>
             <a href="tel:7037498588" class="d-block bc_text_18 bc_line_height_24 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-3 mb-md-1 no_hover_underline">F: 703.749.8588</a>
             <a href="tel:7048272314" class="d-block bc_text_18 bc_line_height_24 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-3 mb-md-1 no_hover_underline"> LMA: 704.827.2314</a>
             <span class="d-block bc_text_18 bc_line_height_40 bc_font_alt_1 bc_text_light bc_color_secondary mt-3 text-uppercase bc_sm_line_height_50"> Breckenridge, CO</span>
