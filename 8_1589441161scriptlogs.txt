@@ -1,0 +1,302 @@
+Thu May 14 03:26:01 EDT 2020 runing shell...
+Success: Updated post 237.
+post_id: 237
+post_title:Approaching Retirement – There are no “do-overs”
+post_type:page
+*****
+Success: Updated post 239.
+post_id: 239
+post_title:Settled into Retirement – And wanting to stay that way
+post_type:page
+*****
+Success: Updated post 241.
+post_id: 241
+post_title:Life Changes – Adapt and thrive
+post_type:page
+*****
+Success: Updated post 243.
+post_id: 243
+post_title:Mid-Career - Building wealth
+post_type:page
+*****
+Success: Updated post 245.
+post_id: 245
+post_title:Starting Out - Solid foundation
+post_type:page
+*****
+Success: Updated post 247.
+post_id: 247
+post_title:Charitable Giving – For now, for the future
+post_type:page
+*****
+Success: Updated post 249.
+post_id: 249
+post_title:Entrepreneurs – Crafting your own path
+post_type:page
+*****
+Success: Updated post 251.
+post_id: 251
+post_title:Our Team
+post_type:page
+*****
+Success: Updated post 253.
+post_id: 253
+post_title:Philanthropy
+post_type:page
+*****
+Success: Updated post 255.
+post_id: 255
+post_title:Brokerage Services
+post_type:page
+*****
+Success: Updated post 257.
+post_id: 257
+post_title:Services
+post_type:page
+*****
+Success: Updated post 259.
+post_id: 259
+post_title:Join Us
+post_type:page
+*****
+Success: Updated post 261.
+post_id: 261
+post_title:Resources
+post_type:page
+*****
+Success: Updated post 263.
+post_id: 263
+post_title:Upcoming Events
+post_type:page
+*****
+Success: Updated post 265.
+post_id: 265
+post_title:Podcasts
+post_type:page
+*****
+Success: Updated post 267.
+post_id: 267
+post_title:In The News
+post_type:page
+*****
+Success: Updated post 269.
+post_id: 269
+post_title:Brett’s Podcast On Raising Entrepreneurial Kids
+post_type:page
+*****
+Success: Updated post 271.
+post_id: 271
+post_title:XML Shark Tank Funding
+post_type:page
+*****
+Success: Updated post 273.
+post_id: 273
+post_title:Newsletter Archive
+post_type:page
+*****
+Success: Updated post 275.
+post_id: 275
+post_title:Announcements
+post_type:page
+*****
+Success: Updated post 277.
+post_id: 277
+post_title:The Focus Partnership
+post_type:page
+*****
+Success: Updated post 279.
+post_id: 279
+post_title:Articles of Interest
+post_type:page
+*****
+Success: Updated post 281.
+post_id: 281
+post_title:Business Continuity Plan
+post_type:page
+*****
+Success: Updated post 283.
+post_id: 283
+post_title:Important Notices
+post_type:page
+*****
+Success: Updated post 285.
+post_id: 285
+post_title:Website Terms and Privacy Policy
+post_type:page
+*****
+Success: Updated post 287.
+post_id: 287
+post_title:Beth Levine
+post_type:bc_teams
+*****
+Success: Updated post 288.
+post_id: 288
+post_title:Bob Abel, CPA
+post_type:bc_teams
+*****
+Success: Updated post 289.
+post_id: 289
+post_title:Brett Shane Bernstein, CFP&reg;
+post_type:bc_teams
+*****
+Success: Updated post 290.
+post_id: 290
+post_title:Carlos Fuentes
+post_type:bc_teams
+*****
+Success: Updated post 291.
+post_id: 291
+post_title:David Margulies
+post_type:bc_teams
+*****
+Success: Updated post 292.
+post_id: 292
+post_title:Debbie Rayman
+post_type:bc_teams
+*****
+Success: Updated post 293.
+post_id: 293
+post_title:Eric Wightman
+post_type:bc_teams
+*****
+Success: Updated post 294.
+post_id: 294
+post_title:Ever Petruzziello
+post_type:bc_teams
+*****
+Success: Updated post 295.
+post_id: 295
+post_title:Gerardo Salazar
+post_type:bc_teams
+*****
+Success: Updated post 296.
+post_id: 296
+post_title:Gina M. Neild
+post_type:bc_teams
+*****
+Success: Updated post 297.
+post_id: 297
+post_title:Jaime Brown
+post_type:bc_teams
+*****
+Success: Updated post 298.
+post_id: 298
+post_title:Jason Elliot Klopman, CFP&reg;
+post_type:bc_teams
+*****
+Success: Updated post 299.
+post_id: 299
+post_title:Jason Larochelle
+post_type:bc_teams
+*****
+Success: Updated post 300.
+post_id: 300
+post_title:Jennifer Szaro, CRCP&reg;
+post_type:bc_teams
+*****
+Success: Updated post 301.
+post_id: 301
+post_title:John Sciuto
+post_type:bc_teams
+*****
+Success: Updated post 302.
+post_id: 302
+post_title:Jon Lowe
+post_type:bc_teams
+*****
+Success: Updated post 303.
+post_id: 303
+post_title:Kevin Patrick Peters, CLU&reg;
+post_type:bc_teams
+*****
+Success: Updated post 304.
+post_id: 304
+post_title:Lauren O’Brien, CFP&reg;, CPA
+post_type:bc_teams
+*****
+Success: Updated post 305.
+post_id: 305
+post_title:Michelle P. Cooper JD, MBA
+post_type:bc_teams
+*****
+Success: Updated post 306.
+post_id: 306
+post_title:Michelle Mitchell
+post_type:bc_teams
+*****
+Success: Updated post 307.
+post_id: 307
+post_title:Nicole Treiber
+post_type:bc_teams
+*****
+Success: Updated post 308.
+post_id: 308
+post_title:Noorjahan Enayat, CFP&reg;
+post_type:bc_teams
+*****
+Success: Updated post 309.
+post_id: 309
+post_title:Rob D. Kantor
+post_type:bc_teams
+*****
+Success: Updated post 310.
+post_id: 310
+post_title:Robert Walterman
+post_type:bc_teams
+*****
+Success: Updated post 311.
+post_id: 311
+post_title:E. Ronald Lara, CFP&reg;
+post_type:bc_teams
+*****
+Success: Updated post 312.
+post_id: 312
+post_title:Sasha Chelekhov, CFP&reg;, CES™, MBA
+post_type:bc_teams
+*****
+Success: Updated post 313.
+post_id: 313
+post_title:Sharon Abbey
+post_type:bc_teams
+*****
+Success: Updated post 314.
+post_id: 314
+post_title:Stacey Lee
+post_type:bc_teams
+*****
+Success: Updated post 315.
+post_id: 315
+post_title:Steven Collins
+post_type:bc_teams
+*****
+Success: Updated post 316.
+post_id: 316
+post_title:Susan A. Harpe
+post_type:bc_teams
+*****
+Success: Updated post 317.
+post_id: 317
+post_title:Theresa Kosma
+post_type:bc_teams
+*****
+Success: Updated post 318.
+post_id: 318
+post_title:Todd Kullen
+post_type:bc_teams
+*****
+Success: Updated post 319.
+post_id: 319
+post_title:Let\u0027s Talk
+post_type:page
+*****
+Error: Invalid page template.
+Post Create Failed
+post_id:
+post_title:Starting out - Solid Foundation
+post_type:page
+*****
+Success: Updated post 322.
+post_id: 322
+post_title:Home
+post_type:page
+*****
