@@ -1,4 +1,4 @@
-# Version 3.0
+# Version 3.1
 
 *~
 .DS_Store
@@ -7,6 +7,9 @@
 *.bak
 *.swp
 Thumbs.db
+node_modules/*
+/composer.lock
+/package-lock.json
 
 # wordpress specific
 wp-config.php
