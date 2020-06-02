@@ -9137,6 +9137,14 @@ ul.gform_fields li::before {
   .bc_sm_letter_spacing_36 {
     letter-spacing: 36px; } }
 
+@media only screen and (max-width: 767px) {
+  h1, .h1 {
+    font-size: 27px;
+    line-height: 27px; }
+  h2, .h2 {
+    font-size: 22px;
+    line-height: 22px; } }
+
 .mt-n8 {
   margin-top: -16rem; }
   @media only screen and (max-width: 767px) {

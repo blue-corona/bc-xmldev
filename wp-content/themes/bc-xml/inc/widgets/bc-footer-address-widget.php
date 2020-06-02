@@ -23,7 +23,7 @@ class BC_Footer_Address_Widget extends WP_Widget {
             </a>
         </div>
         <span class="bc_text_16 bc_line_height_28 bc_font_alt_1 bc_color_primary d-block mt-5 mb-3">
-            <?php echo bc_get_theme_mod('bc_theme_options', 'bc_address',false, 'Securities offered through Lara, May & Associates, LLC, Member 
+            <?php echo bc_get_theme_mod('bc_theme_options', 'bc_address',false, 'Securities offered through XML Securities, LLC, Member 
             <a href="https://www.finra.org" class="bc_color_secondary no_hover_underline" target="_blank">FINRA / </a>
              <a href="https://www.sipc.org" class="bc_color_secondary no_hover_underline" target="_blank">SIPC </a> Headquartered at 7600 Leesburg Pike, Suite 120 East, Falls Church, VA 22043, '.do_shortcode('[site_info_phone_number]').' ');?>
         </span>
