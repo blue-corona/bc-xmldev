@@ -50,7 +50,7 @@ defined( 'ABSPATH' ) || exit;
                 </div>'); ?>
 
                 <!-- announcement bar with button end-->
-                <?php get_template_part( 'page-templates/header/bc-announcement-bar-mobile' ); ?>
+                <?php //get_template_part( 'page-templates/header/bc-announcement-bar-mobile' ); ?>
             </div>
         </div>
 
