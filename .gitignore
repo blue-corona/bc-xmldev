@@ -150,3 +150,8 @@ sitemap.xml.gz
 !/wp-content/plugins/bluecorona-plugin-schema-master
 !/wp-content/plugins/citystate
 !/wp-content/plugins/citystate-new
+wp-content/themes/bc-xml/node_modules/
+
+wp-content/themes/bc-xml/XMLDEV.code-workspace
+
+wp-content/themes/bc-xml/package-lock.json

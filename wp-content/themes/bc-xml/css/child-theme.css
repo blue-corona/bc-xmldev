@@ -9680,7 +9680,7 @@ ul.gform_fields li::before {
             transform: translateY(110%);
     -webkit-transition: .5s;
     transition: .5s;
-    background: #666d89eb; }
+    background: rgba(102, 109, 137, 0.9); }
     .members .detail a {
       height: 100%;
       display: -webkit-box;
