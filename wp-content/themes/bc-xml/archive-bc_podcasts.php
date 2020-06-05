@@ -42,8 +42,10 @@ query_posts(['post_type'=>'bc_podcasts','paged' => $paged]);?>
 		      	<!-- Pagination -->
 		      	<?php understrap_pagination(); ?>
 		    </div>
-		    <!-- rIGHT sidebar starts -->
-		    <?php get_template_part( 'sidebar-templates/sidebar', 'blogrightside' ); ?>
+			<!-- rIGHT sidebar starts -->
+			<div class="col-lg-4 pl-lg-4">
+				<?php get_template_part( 'sidebar-templates/sidebar', 'subpagerightsidebar' ); ?>
+			</div> 
 		    <!-- right sidebar ends -->
 		  </div>
 		</div>
