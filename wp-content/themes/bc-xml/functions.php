@@ -155,7 +155,7 @@ function bc_cta_button ( $title, $url ) {
     return ob_get_clean();
 }
 
-add_action('wp_head', 'show_template');
+//add_action('wp_head', 'show_template');
 function show_template() {
     global $template;
     echo basename($template);

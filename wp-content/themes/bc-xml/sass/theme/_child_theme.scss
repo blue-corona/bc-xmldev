@@ -1001,9 +1001,8 @@ border-width:$border_width_custom_2;
 	}
 	img.bc_branding_logo {
 		@media screen and (min-width: 1024px) {
-			min-width: 273px !important;
-			transition:min-width ease 0.4s;
-			padding-left:2.3rem;
+			max-width: 236px !important;
+			transition:max-width ease 0.4s;
 		}
 	}
 }
@@ -1017,7 +1016,7 @@ border-width:$border_width_custom_2;
  	}
 	img.bc_branding_logo {
 		@media screen and (min-width: 1024px) {
-			min-width: 210px !important;
+			max-width: 174px !important;
 		}
 	}
 	.dropdown-toggle{

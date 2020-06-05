@@ -8708,9 +8708,9 @@ ul.gform_fields li::before {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1; }
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 100%; }
     @media only screen and (max-width: 1024px) {
       .bc_nav_container .navbar-nav {
         display: block !important; } }
@@ -8798,7 +8798,13 @@ ul.gform_fields li::before {
 
 .navbar-nav li {
   padding: 0 !important;
-  margin: 0px !important; }
+  margin: 0px !important;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: auto !important; }
   @media only screen and (max-width: 740px) {
     .navbar-nav li {
       padding: 0 30px !important; } }
@@ -10011,10 +10017,9 @@ ul.gform_fields li::before {
 
 @media screen and (min-width: 1024px) {
   .fixed-top img.bc_branding_logo {
-    min-width: 273px !important;
-    -webkit-transition: min-width ease 0.4s;
-    transition: min-width ease 0.4s;
-    padding-left: 2.3rem; } }
+    max-width: 236px !important;
+    -webkit-transition: max-width ease 0.4s;
+    transition: max-width ease 0.4s; } }
 
 .fixed-top.scrolled {
   background-color: #ffffff !important; }
@@ -10027,7 +10032,7 @@ ul.gform_fields li::before {
     height: auto; }
   @media screen and (min-width: 1024px) {
     .fixed-top.scrolled img.bc_branding_logo {
-      min-width: 210px !important; } }
+      max-width: 174px !important; } }
   .fixed-top.scrolled .dropdown-toggle {
     padding-top: 31px;
     padding-bottom: 31px; }
