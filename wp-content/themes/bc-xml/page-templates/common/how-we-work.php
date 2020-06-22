@@ -100,7 +100,7 @@
     spaceBetween: 30,
     effect: 'fade',
     autoplay: {
-    delay: 2000,
+    delay: 3000,
   },
     pagination: {
       el: '.how_we_pagination',
