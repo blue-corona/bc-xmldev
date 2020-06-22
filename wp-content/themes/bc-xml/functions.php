@@ -64,18 +64,26 @@ foreach ( $understrap_include as $file ) {
 // [bc_accordion]
 // [bc_card title="Property Protection Guarantee"]
 // <p>All property such as lawns, shrubbery, carpeting, floors, walls, furniture and door frames are protected. Damaged property will be replaced or repaired.</p>
-// [bc_card]
-//     [/bc_accordion]
+// [/bc_card]
+// [/bc_accordion]
 
 add_action('wp_footer', 'accordion_method');
 function accordion_method(){?>
 <script>
 jQuery(document).ready(function () {
   jQuery('#accordion').on('show.bs.collapse', function (e) {
-      toggleIcon(e.target);
+    toggleIcon(e.target);
   });
+
+  jQuery('.collapse').on('shown.bs.collapse', function(e) {
+    var $card = jQuery(this).closest('.card');
+    jQuery('html,body').animate({
+      scrollTop: $card.offset().top - 140
+    }, 500);
+  });
+  
   jQuery('#accordion').on('hidden.bs.collapse', function (e) {
-      toggleIcon(e.target);
+    toggleIcon(e.target);
   });
 });
 function toggleIcon(target){
