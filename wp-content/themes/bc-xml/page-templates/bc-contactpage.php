@@ -35,9 +35,9 @@ get_header('variant-announcement-bar');?>
                 <h3> FALLS CHURCH, VA </h3>
                 <p class="mb-0 bc_sm_text_20 bc_sm_line_height_34"> 7600 Leesburg Pike <br> Suite 120 East <br> Falls Church, VA 22043</p>
                 <p class="bc_text_bold mb-0 bc_sm_text_20 bc_sm_line_height_34">T:   703.790.5999</p>
-                <p class="bc_text_bold mb-0 bc_sm_text_20 bc_sm_line_height_34">LMA: 703.827.2300</p>
+                <p class="bc_text_bold mb-0 bc_sm_text_20 bc_sm_line_height_34">or: 703.827.2300</p>
                 <p class="bc_text_bold mb-0 bc_sm_text_20 bc_sm_line_height_34">F:   703.749.8588</p>
-                <p class="bc_text_bold mb-0 bc_sm_text_20 bc_sm_line_height_34">LMA: 704.827.2314</p>
+                <p class="bc_text_bold mb-0 bc_sm_text_20 bc_sm_line_height_34">or: 704.827.2314</p>
                 <a href="https://www.google.com/maps/place/7600+Leesburg+Pike+%23120,+Falls+Church,+VA+22043,+USA/data=!4m2!3m1!1s0x89b64ad9b15ed109:0xb7e7a4b2af37d0c7?sa=X&ved=2ahUKEwirhbyonLPpAhVUAXIKHc5oBWcQ8gEwAHoECAsQAQ" target="_blank" class="bc_text_bold bc_text_20 bc_line_height_34"> MAP > </a>
              </div>
              <div class="col-md-6 text-right  mb-5">
