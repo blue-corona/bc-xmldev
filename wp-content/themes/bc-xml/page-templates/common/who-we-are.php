@@ -67,7 +67,7 @@
                     <div class="col-12 order-1 order-xl-2 mt-3 text-center text-xl-left team_text">
                       <div class="px-md-3">
                         <h2>A Team Of Passionate Professionals</h2>
-                        <p class="bc_sm_text_normal mt-4 mt-md-0">With roots back to 1981 XML is passionate about assembling a team with expertise not just in money management, but also in listening and with sincere care for our client’s well-being. We currently have specialists with designations and degrees ranging from CFPs, CRPCs, MBAs and others, working to improve our client’s lives.</p><!--test-->
+                        <p class="bc_sm_text_normal mt-4 mt-md-0">With roots back to 1981 XML is passionate about assembling a team with expertise not just in money management, but also in listening and with sincere care for our client’s well-being. We currently have specialists with designations and degrees ranging from CFPs, CRPCs, MBAs and others, working to improve our client’s lives.</p>
                         <a href="<?php echo get_home_url();?>/our-team/" class="btn_secondary px-4 py-2 mt-4 mb-0 d-md-inline-block d-none">FULL TEAM</a>
                       </div>
                     </div>
